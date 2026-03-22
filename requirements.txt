@@ -1,0 +1,8 @@
+groq
+openai
+anthropic
+elevenlabs
+pygame
+pydantic
+python-dotenv
+requests

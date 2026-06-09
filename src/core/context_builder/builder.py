@@ -6,20 +6,45 @@ from typing import List, Dict, Any, Optional
 from src.core.events import Event
 from src.core.action_buffer.buffer import ActionBuffer
 
+try:
+    from src.retrieval.fight_memory.store import FightMemoryStore
+    from src.retrieval.historical_search.searcher import HistoricalSearcher
+    from src.retrieval.sliding_window.analyzer import SlidingWindowAnalyzer
+    _RETRIEVAL_AVAILABLE = True
+except ImportError:
+    _RETRIEVAL_AVAILABLE = False
+
 
 class ContextBuilder:
     """
     Builds narrative context packages for LLM generation.
+    Optionally enriches prompts with RAG-retrieved fighter stats and history.
     """
-    
+
     def __init__(self):
         # Track last N outputs for narrative coherence
         self.recent_commentary = []
         self.max_history = 3
-        
+
         # Fighter names (set by orchestrator)
         self.fighter_names = {1: "Fighter 1", 2: "Fighter 2"}
+
+        # RAG components (None when unavailable — degrades gracefully)
+        self._fight_memory: Optional["FightMemoryStore"] = None
+        self._history: Optional["HistoricalSearcher"] = None
+        self._window_analyzer: Optional["SlidingWindowAnalyzer"] = None
     
+    def attach_retrieval(
+        self,
+        fight_memory: "FightMemoryStore",
+        history: "HistoricalSearcher",
+        action_buffer: "ActionBuffer",
+    ):
+        """Wire up RAG components. Called by orchestrator after setup."""
+        self._fight_memory = fight_memory
+        self._history = history
+        self._window_analyzer = SlidingWindowAnalyzer(action_buffer) if _RETRIEVAL_AVAILABLE else None
+
     def set_fighter_names(self, p1: str, p2: str):
         """Set fighter names for context"""
         self.fighter_names = {1: p1, 2: p2}
@@ -64,6 +89,22 @@ class ContextBuilder:
         # Determine tone based on track and excitement
         tone = self._determine_tone(track, tracker_states.get('excitement', 'MODERATE'))
         
+        # RAG enrichment — retrieved fighter stats + historical precedents
+        rag_fighter_stats = ""
+        rag_history = ""
+        live_stats = ""
+
+        if self._fight_memory is not None:
+            rag_fighter_stats = self._fight_memory.format_for_prompt(event_focus, k=2)
+
+        if self._history is not None:
+            rag_history = self._history.format_for_prompt(event_focus, k=1)
+
+        if self._window_analyzer is not None:
+            p1_name = self.fighter_names[1]
+            p2_name = self.fighter_names[2]
+            live_stats = self._window_analyzer.format_for_prompt(p1_name, p2_name, window_seconds=10.0)
+
         # Package everything
         context = {
             'track': track,
@@ -92,9 +133,13 @@ class ContextBuilder:
             },
             'fighter_names': self.fighter_names,
             'recent_commentary': self.recent_commentary[-self.max_history:],
-            'tone': tone
+            'tone': tone,
+            # RAG fields — may be empty strings if retrieval unavailable
+            'rag_fighter_stats': rag_fighter_stats,
+            'rag_history': rag_history,
+            'live_stats': live_stats,
         }
-        
+
         return context
     
     def add_commentary(self, commentary: str):

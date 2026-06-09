@@ -76,6 +76,21 @@ class TrackAGenerator:
         recent = context.get('recent_commentary', [])
         recent_text = "\n".join(recent[-2:]) if recent else "None yet"
         
+        rag_stats = context.get('rag_fighter_stats', '')
+        rag_history = context.get('rag_history', '')
+        live_stats = context.get('live_stats', '')
+
+        rag_block = ""
+        if rag_stats or rag_history or live_stats:
+            parts = []
+            if live_stats:
+                parts.append(live_stats)
+            if rag_stats:
+                parts.append(rag_stats)
+            if rag_history:
+                parts.append(rag_history)
+            rag_block = "\n\n" + "\n\n".join(parts)
+
         prompt = f"""You are a professional boxing analyst providing live commentary.
 
 FIGHTERS:
@@ -84,17 +99,13 @@ FIGHTERS:
 CURRENT SITUATION:
 - Round {round_num} ({round_phase} phase)
 - {event_focus}
-- Fight State: {tracker_summary}
-
-RECENT ACTION:
-- {action_summary['p1_landed']} punches landed by {fighter_1}
-- {action_summary['p2_landed']} punches landed by {fighter_2}
+- Fight State: {tracker_summary}{rag_block}
 
 RECENT COMMENTARY:
 {recent_text}
 
 TONE: {tone}
 
-Generate 1 SHORT sentence (10-15 words max) of analytical commentary. Be concise and insightful. Do NOT repeat recent commentary."""
+Generate 1 SHORT sentence (10-15 words max) of analytical commentary. Ground it in the stats above when relevant. Do NOT repeat recent commentary."""
         
         return prompt

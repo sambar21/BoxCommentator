@@ -1,8 +1,25 @@
+# LLM providers
 groq
 openai
 anthropic
+
+# RAG pipeline
+langchain
+langchain-community
+langchain-openai
+langchain-core
+pgvector
+psycopg2-binary
+
+# FastAPI service
+fastapi
+uvicorn[standard]
+pydantic
+
+# TTS / audio
 elevenlabs
 pygame
-pydantic
+
+# Utilities
 python-dotenv
 requests

@@ -30,7 +30,7 @@ class ClaudeClient(BaseLLMClient):
         self.api_key = api_key or os.getenv("ANTHROPIC_API_KEY")
         
         if not self.api_key:
-            print("⚠️  WARNING: No ANTHROPIC_API_KEY found!")
+            print("WARNING: No ANTHROPIC_API_KEY found.")
             print("   Set it in .env file or pass to constructor")
             print("   Get key at: https://console.anthropic.com")
         

@@ -32,7 +32,7 @@ class GroqClient(BaseLLMClient):
         self.api_key = api_key or os.getenv("GROQ_API_KEY")
         
         if not self.api_key:
-            print("⚠️  WARNING: No GROQ_API_KEY found!")
+            print("WARNING: No GROQ_API_KEY found.")
             print("   Set it in .env file or pass to constructor")
             print("   Get key at: https://console.groq.com")
         

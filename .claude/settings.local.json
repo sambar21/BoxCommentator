@@ -5,7 +5,15 @@
       "Bash(PYTHONIOENCODING=utf-8 python:*)",
       "Bash(echo:*)",
       "Bash(pip install:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\" -Recurse | Select-Object FullName | Where-Object { $_.FullName -notmatch '__pycache__' })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\tests\" -Recurse | Select-Object FullName | Where-Object { $_.FullName -notmatch '__pycache__' })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\retrieval\" -Recurse | Where-Object { -not $_.PSIsContainer -and $_.FullName -notmatch '__pycache__' } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\synthesis\" -Recurse | Where-Object { -not $_.PSIsContainer -and $_.FullName -notmatch '__pycache__' } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\generation\\\\personality_variants\",\"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\generation\\\\templates\" -Recurse 2>$null | Where-Object { -not $_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\utils\",\"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\synthesis\\\\recency_weighter\",\"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\\\\src\\\\synthesis\\\\trigger_logic\" -Recurse 2>$null | Where-Object { -not $_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(New-Item *)",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\Varun\\\\Documents\\\\Box.IO_AI_Commentator\"; $env:PYTHONUTF8=1; python -m pytest tests/unit/ -q 2>&1)"
     ]
   }
 }

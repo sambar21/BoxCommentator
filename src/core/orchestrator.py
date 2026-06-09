@@ -22,6 +22,13 @@ from src.generation.track_b.generator import TrackBGenerator
 from src.generation.llm_interface.base_client import BaseLLMClient
 from src.generation.llm_interface.llm_factory import LLMFactory
 
+try:
+    from src.retrieval.fight_memory.store import FightMemoryStore
+    from src.retrieval.historical_search.searcher import HistoricalSearcher
+    _RETRIEVAL_AVAILABLE = True
+except ImportError:
+    _RETRIEVAL_AVAILABLE = False
+
 
 class CommentaryOrchestrator:
     """
@@ -54,6 +61,17 @@ class CommentaryOrchestrator:
         self.llm = llm_client or LLMFactory.create_client()
         self.track_a_generator = TrackAGenerator(self.llm)
         self.track_b_generator = TrackBGenerator(self.llm)
+
+        # RAG components
+        if _RETRIEVAL_AVAILABLE:
+            self._fight_memory = FightMemoryStore()
+            self._history = HistoricalSearcher()
+            self.context_builder.attach_retrieval(
+                self._fight_memory, self._history, self.buffer
+            )
+        else:
+            self._fight_memory = None
+            self._history = None
         
         # Round state
         self.current_round = 1
@@ -81,8 +99,12 @@ class CommentaryOrchestrator:
         }
     
     def set_fighter_names(self, p1: str, p2: str):
-        """Set fighter names for commentary"""
+        """Set fighter names and seed RAG store with their profiles."""
         self.context_builder.set_fighter_names(p1, p2)
+        if self._fight_memory is not None:
+            self._fight_memory.seed_fighters([p1, p2])
+        if self._history is not None:
+            self._history.seed()
     
     def start_round(self, round_num: int):
         """Initialize new round"""
@@ -95,27 +117,40 @@ class CommentaryOrchestrator:
     def process_punch(self, punch: Punch) -> Optional[str]:
         """
         Process a punch and generate commentary if needed.
-        
-        This is the main entry point - called every time a punch happens.
-        
-        Args:
-            punch: Punch data
-            
+
         Returns:
             Generated commentary string or None
         """
-        # Add to buffer
+        t0 = time.perf_counter()
+
         self.buffer.add_punch(punch)
         self.stats['total_punches'] += 1
-        
-        # Update all trackers (they emit events to queue)
+
         self._process_trackers()
-        
-        # Tick queue (remove stale events)
         self.priority_queue.tick()
-        
-        # Decide if we should generate commentary
-        return self._generate_commentary_if_needed()
+
+        result = self._generate_commentary_if_needed()
+
+        latency_ms = (time.perf_counter() - t0) * 1000
+        self._record_latency(latency_ms)
+
+        return result
+
+    def _record_latency(self, latency_ms: float):
+        """Track latency for p95 reporting."""
+        samples = self.stats.setdefault('_latency_samples', [])
+        samples.append(latency_ms)
+        if len(samples) > 1000:
+            self.stats['_latency_samples'] = samples[-1000:]
+
+    def get_p95_latency(self) -> float:
+        """Return p95 end-to-end latency in milliseconds."""
+        samples = self.stats.get('_latency_samples', [])
+        if not samples:
+            return 0.0
+        sorted_s = sorted(samples)
+        idx = int(len(sorted_s) * 0.95)
+        return sorted_s[min(idx, len(sorted_s) - 1)]
     
     def _process_trackers(self):
         """Update all trackers and push their events to priority queue"""

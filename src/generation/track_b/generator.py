@@ -10,10 +10,10 @@ from src.generation.llm_interface.base_client import BaseLLMClient
 class TrackBGenerator:
     """
     Track B: The Reactor
-    - Focus: Big punches, knockdowns, hurt fighters
-    - Pace: Immediate, explosive
-    - Generation: Direct (200ms)
-    - Interruptible: No (completes quickly)
+    Focus: Big punches, knockdowns, hurt fighters
+    Pace: Immediate, explosive
+    Generation: Direct (200ms)
+    Interruptible: No (completes quickly)
     """
 
     def __init__(self, llm_client: BaseLLMClient):

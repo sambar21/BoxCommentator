@@ -10,10 +10,10 @@ from src.generation.llm_interface.base_client import BaseLLMClient
 class TrackAGenerator:
     """
     Track A: The Analyst
-    - Focus: Strategy, patterns, technique
-    - Pace: Conversational, thoughtful
-    - Generation: Streaming (300ms)
-    - Interruptible: Yes
+    Focus: Strategy, patterns, technique
+    Pace: Conversational, thoughtful
+    Generation: Streaming (300ms)
+    Interruptible: Yes
     """
 
     def __init__(self, llm_client: BaseLLMClient):

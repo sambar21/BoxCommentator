@@ -1,10 +1,8 @@
 # Box.IO AI Commentator
 
-**Real-time AI boxing commentary engine — punch-by-punch play-by-play with sub-600ms p95 latency.**
+**Real-time AI boxing commentary engine, punch by punch play by play with sub 600ms p95 latency.**
 
-Feed it raw fight data. Six statistical trackers build a living model of the fight. A priority queue with exponential time-decay surfaces the most interesting events. A dual-track LLM generator produces commentary — analytical breakdowns for evolving patterns, instant reactions for explosive moments — grounded by a pgvector RAG pipeline that retrieves live fighter stats and historical match data. A Go API gateway parallelizes LLM inference and event telemetry to cut end-to-end latency 20%.
-
----
+Feed it raw fight data. Six statistical trackers build a living model of the fight. A priority queue with exponential time decay surfaces the most interesting events. A dual track LLM generator produces commentary, analytical breakdowns for evolving patterns, instant reactions for explosive moments, grounded by a pgvector RAG pipeline that retrieves live fighter stats and historical match data. A Go API gateway parallelizes LLM inference and event telemetry to cut end to end latency 20%.
 
 ## Architecture
 
@@ -74,8 +72,6 @@ Feed it raw fight data. Six statistical trackers build a living model of the fig
 13. Go metrics.go records latency → p95 < 600ms guaranteed via 550ms timeout
 ```
 
----
-
 ## What's Built
 
 ### Core Pipeline (Python)
@@ -83,25 +79,25 @@ Feed it raw fight data. Six statistical trackers build a living model of the fig
 | Component | File | What it does |
 |---|---|---|
 | ActionBuffer | `src/core/action_buffer/buffer.py` | Circular `deque` (last 20 punches, O(1) append) |
-| Event | `src/core/events/events.py` | Typed event dataclass — type, priority, message, context |
+| Event | `src/core/events/events.py` | Typed event dataclass, type, priority, message, context |
 | PriorityQueue | `src/core/priority_queue/hot_queue.py` | Scored queue, `score = priority × 2^(-age/5s)`, staleness pruning |
-| CooldownManager | `src/core/cooldown/manager.py` | Per-type cooldown timers, priority override bypass |
+| CooldownManager | `src/core/cooldown/manager.py` | Per type cooldown timers, priority override bypass |
 | QueueConsumer | `src/core/queue_consumer/consumer.py` | 60/40 Track A/B balance routing |
 | ContextBuilder | `src/core/context_builder/builder.py` | Assembles LLM prompt from tracker states + recent actions |
-| Orchestrator | `src/core/orchestrator.py` | Central coordinator — punches in, commentary out |
+| Orchestrator | `src/core/orchestrator.py` | Central coordinator, punches in, commentary out |
 
 ### Six Trackers
 
 | Tracker | File | Algorithm |
 |---|---|---|
-| Dominance | `src/trackers/dominance/tracker.py` | Pendulum state machine over a doubly-linked list of 5 nodes (`P2_DOM ↔ P2_EDGE ↔ EVEN ↔ P1_EDGE ↔ P1_DOM`) |
+| Dominance | `src/trackers/dominance/tracker.py` | Pendulum state machine over a doubly linked list of 5 nodes (`P2_DOM ↔ P2_EDGE ↔ EVEN ↔ P1_EDGE ↔ P1_DOM`) |
 | Pace | `src/trackers/pace/tracker.py` | Punch frequency with hysteresis (separate entry/exit thresholds, prevents oscillation) |
-| Momentum | `src/trackers/momentum/tracker.py` | Sliding-window comparison: recent 10 punches vs prior 10 punches |
-| Excitement | `src/trackers/excitement/tracker.py` | Action density + idle-timeout detection (4s lull → filler commentary) |
+| Momentum | `src/trackers/momentum/tracker.py` | Sliding window comparison: recent 10 punches vs prior 10 punches |
+| Excitement | `src/trackers/excitement/tracker.py` | Action density + idle timeout detection (4s lull → filler commentary) |
 | Targets | `src/trackers/targets/tracker.py` | Head/body landing ratio to detect strategic shifts |
 | Round Context | `src/trackers/round_context/tracker.py` | Early/mid/late narrative framing per round phase |
 
-### Dual-Track LLM Generation
+### Dual Track LLM Generation
 
 ```
 Track A (Analytical)                    Track B (Urgent)
@@ -127,15 +123,13 @@ PROVIDER = "openai" # → OpenAIClient (~400ms, gpt-4o-mini)
 PROVIDER = "ollama" # → OllamaClient (free, local, variable)
 ```
 
-All behind `BaseLLMClient` — swap one line in `src/config/llm_config.py`, zero code changes.
-
----
+All behind `BaseLLMClient`, swap one line in `src/config/llm_config.py`, zero code changes.
 
 ## What's Being Built
 
-### Phase 1 — RAG Pipeline (pgvector + LangChain)
+### Phase 1, RAG Pipeline (pgvector + LangChain)
 
-**Problem:** Commentary is ungrounded — the LLM hallucinates stats ("Garcia has a 70% KO rate!" — wrong). Need real fighter data retrieved at inference time.
+**Problem:** Commentary is ungrounded, the LLM hallucinates stats ("Garcia has a 70% KO rate!", wrong). Need real fighter data retrieved at inference time.
 
 **Solution:** pgvector stores fighter profiles + historical fight summaries as embeddings. At fight start, seed fighter data. On every commentary request, retrieve top-k relevant stats and inject into prompt.
 
@@ -164,13 +158,12 @@ relevant_stats = retriever.get_relevant_documents(query=event_focus)
 ```
 
 **Why pgvector over a regular DB:**
-- Fighter profiles are unstructured text — "aggressive pressure fighter with a high guard, tends to walk opponents down"
-- Semantic search finds *conceptually relevant* stats, not just exact matches
-- Real-time query: "who lands body shots effectively?" → embedding → nearest neighbors → Canelo stats returned
 
----
+Fighter profiles are unstructured text, "aggressive pressure fighter with a high guard, tends to walk opponents down"
+Semantic search finds *conceptually relevant* stats, not just exact matches
+Real-time query: "who lands body shots effectively?" → embedding → nearest neighbors → Canelo stats returned
 
-### Phase 2 — Python FastAPI Service
+### Phase 2, Python FastAPI Service
 
 Wraps the orchestrator in an HTTP API so the Go gateway can call it.
 
@@ -193,9 +186,7 @@ async def process_punch(punch: PunchRequest) -> CommentaryResponse:
     )
 ```
 
----
-
-### Phase 3 — Go API Gateway
+### Phase 3, Go API Gateway
 
 High-concurrency HTTP server. Main job: parallelize LLM inference with event telemetry so neither blocks the other.
 
@@ -204,7 +195,7 @@ gateway/
 ├── main.go                     # HTTP server :8080, router, graceful shutdown
 ├── go.mod
 ├── handlers/
-│   └── punch_handler.go        # POST /api/v1/punch — validates, dispatches
+│   └── punch_handler.go        # POST /api/v1/punch, validates, dispatches
 ├── parallel/
 │   └── dispatcher.go           # Fan-out goroutines: commentary + telemetry
 ├── telemetry/
@@ -241,9 +232,10 @@ func Dispatch(punch PunchEvent) (string, error) {
 ```
 
 **Why 20% latency reduction:**
-- Without goroutines: commentary call (400ms) + telemetry logging (80ms) = 480ms sequential
-- With goroutines: max(400ms commentary, 80ms telemetry) = 400ms parallel
-- 480ms → 400ms = ~17% reduction (rounds to "20%" with connection overhead savings)
+
+Without goroutines: commentary call (400ms) + telemetry logging (80ms) = 480ms sequential
+With goroutines: max(400ms commentary, 80ms telemetry) = 400ms parallel
+480ms → 400ms = ~17% reduction (rounds to "20%" with connection overhead savings)
 
 **p95 latency tracking:**
 ```go
@@ -261,9 +253,7 @@ func (m *Metrics) P95() float64 {
 }
 ```
 
----
-
-### Phase 4 — Docker Compose
+### Phase 4, Docker Compose
 
 ```yaml
 # docker-compose.yml
@@ -294,24 +284,20 @@ services:
 
 One command to run the full stack: `docker compose up`
 
----
-
 ## Design Decisions
 
 | Problem | Solution | Why |
 |---|---|---|
-| Dominance isn't binary — fighters drift in and out of control | Pendulum state machine (5-node doubly-linked list) | Enforces ordered transitions; can't jump "even" → "dominating" without passing "edge" |
-| Pace tracker oscillates near thresholds | Hysteresis — different entry/exit thresholds per state | Standard signal-processing technique; eliminates flip-flopping at boundary values |
-| Old events clog the queue and produce stale commentary | Exponential half-life decay `2^(-age/5s)` | A 10s-old event scores at 25% of a fresh one; freshness always wins |
-| Commentator repeats itself every 2 seconds | Per-type cooldown timers with priority override | Blocks repeats; but a 9.5+ priority event (knockdown) always bypasses — because knockdowns always get called |
-| Need both thoughtful analysis and instant reactions | Dual-track generation with interrupt protocol | Track A streams for 300ms; if Track B event fires, cancels mid-stream and takes over |
-| LLM hallucinates fighter stats during live streams | pgvector RAG — real stats retrieved at inference time | Grounds every commentary line to real data; retrieval is semantic so "aggressive style" query returns stylistically relevant fighters |
-| Tracker states can contradict each other | ContradictionDetector synthesizes tension events | "P1 dominating but P2 building momentum" becomes its own high-priority narrative event |
-| Switching LLM providers shouldn't break anything | Abstract `BaseLLMClient` + factory pattern | Swap `PROVIDER = "groq"` to `"claude"` — zero code changes |
-| LLM goes down mid-fight | Template-based `EventSynthesizer` fallback | Graceful degradation — commentary quality drops but system never crashes |
-| Go gateway and Python LLM call can't both block response time | Goroutine fan-out with 550ms hard timeout | Parallel execution cuts sequential overhead ~20%; timeout guarantees p95 < 600ms |
-
----
+| Dominance isn't binary, fighters drift in and out of control | Pendulum state machine (5 node doubly linked list) | Enforces ordered transitions; can't jump "even" → "dominating" without passing "edge" |
+| Pace tracker oscillates near thresholds | Hysteresis, different entry/exit thresholds per state | Standard signal processing technique; eliminates flip flopping at boundary values |
+| Old events clog the queue and produce stale commentary | Exponential half life decay `2^(-age/5s)` | A 10s old event scores at 25% of a fresh one; freshness always wins |
+| Commentator repeats itself every 2 seconds | Per type cooldown timers with priority override | Blocks repeats; but a 9.5+ priority event (knockdown) always bypasses, because knockdowns always get called |
+| Need both thoughtful analysis and instant reactions | Dual track generation with interrupt protocol | Track A streams for 300ms; if Track B event fires, cancels mid stream and takes over |
+| LLM hallucinates fighter stats during live streams | pgvector RAG, real stats retrieved at inference time | Grounds every commentary line to real data; retrieval is semantic so "aggressive style" query returns stylistically relevant fighters |
+| Tracker states can contradict each other | ContradictionDetector synthesizes tension events | "P1 dominating but P2 building momentum" becomes its own high priority narrative event |
+| Switching LLM providers shouldn't break anything | Abstract `BaseLLMClient` + factory pattern | Swap `PROVIDER = "groq"` to `"claude"`, zero code changes |
+| LLM goes down mid fight | Template based `EventSynthesizer` fallback | Graceful degradation, commentary quality drops but system never crashes |
+| Go gateway and Python LLM call can't both block response time | Goroutine fan out with 550ms hard timeout | Parallel execution cuts sequential overhead ~20%; timeout guarantees p95 < 600ms |
 
 ## Project Structure
 
@@ -385,8 +371,6 @@ One command to run the full stack: `docker compose up`
         └── targets/                       # Head/body targeting patterns
 ```
 
----
-
 ## Quick Start
 
 ### Python only (no Docker required):
@@ -425,8 +409,6 @@ curl -X POST http://localhost:8080/api/v1/punch \
 | Claude | Paid | ~500ms | `ANTHROPIC_API_KEY` |
 | Ollama | Free (local) | Varies | `ollama pull qwen2.5:7b` |
 
----
-
 ## Tests
 
 ```bash
@@ -434,8 +416,6 @@ python -m pytest tests/unit/ -v   # 27 tests — event lifecycle, queue scoring/
                                    # cooldown timing + override, dominance pendulum,
                                    # pace hysteresis
 ```
-
----
 
 ## Tech Stack
 

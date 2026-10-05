@@ -18,7 +18,8 @@ class TrackBGenerator:
 
     def __init__(self, llm_client: BaseLLMClient):
         self.llm = llm_client
-        
+        self.last_prompt = ""
+
         # Track B settings
         self.max_tokens = 50  # ~1-2 sentences, SHORT
         self.temperature = 0.9  # More energetic
@@ -42,6 +43,17 @@ class TrackBGenerator:
             temperature=self.temperature
         )
     
+    def generate_streaming(self, context: dict, track_a_context: Optional[str] = None):
+        """Same prompt and params as generate(), but streamed so TTFT is measurable."""
+        prompt = self._build_prompt(context, track_a_context)
+        self.last_prompt = prompt
+
+        yield from self.llm.generate_streaming(
+            prompt,
+            max_tokens=self.max_tokens,
+            temperature=self.temperature
+        )
+
     def _build_prompt(self, context: dict, track_a_context: Optional[str]) -> str:
         """Build Track B prompt with transition words"""
         

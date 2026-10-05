@@ -2,9 +2,9 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# System deps for psycopg2
+# libpq/gcc for psycopg2; curl for the compose/k8s health checks
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpq-dev gcc \
+    libpq-dev gcc curl \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .

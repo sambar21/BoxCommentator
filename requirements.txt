@@ -21,5 +21,10 @@ elevenlabs
 pygame
 
 # Utilities
+pyyaml
 python-dotenv
 requests
+
+# Dev / tests
+pytest
+httpx

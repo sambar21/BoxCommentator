@@ -1,0 +1,43 @@
+{
+  "config": {
+    "backend": "nebius",
+    "routing": false,
+    "track_a": null,
+    "track_b": null,
+    "fallback": [],
+    "label": null,
+    "tag": "baseline",
+    "fights": 10,
+    "kind": "all",
+    "repeats": 1,
+    "concurrency": 1,
+    "context_mode": "recent",
+    "history_cap": 8,
+    "max_tokens_a": null,
+    "max_tokens_b": null,
+    "max_requests": null,
+    "max_usd": 0.2,
+    "rpm": 120.0,
+    "dry_run": false,
+    "warmup": true,
+    "scrape_metrics": true,
+    "out_dir": null
+  },
+  "label": "nebius",
+  "git_commit": "eb2a568",
+  "python": "3.13.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "vllm_version": null,
+  "backends": {
+    "nebius": {
+      "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "base_url": "https://api.tokenfactory.nebius.com/v1/",
+      "price_in": 0.1,
+      "price_out": 0.3,
+      "gpu_hour_usd": 0.0
+    }
+  },
+  "requests_made": 470,
+  "estimated_spend_usd": 0.027852,
+  "timestamp": "2026-10-04T21:14:27"
+}

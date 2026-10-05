@@ -1,0 +1,5 @@
+# Kokoro voice (local, open weights). Also needs the espeak-ng system package.
+kokoro>=0.9.4
+soundfile
+numpy
+pygame   # optional, only for --play

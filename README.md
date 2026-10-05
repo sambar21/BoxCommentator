@@ -1,8 +1,23 @@
 # Box.IO AI Commentator
 
-**Real-time AI boxing commentary engine, punch by punch play by play with sub 600ms p95 latency.**
+**Real-time AI boxing commentary engine, punch by punch play by play. Latency and quality numbers are being measured across self-hosted vLLM and hosted APIs; see [Status](#status).**
 
-Feed it raw fight data. Six statistical trackers build a living model of the fight. A priority queue with exponential time decay surfaces the most interesting events. A dual track LLM generator produces commentary, analytical breakdowns for evolving patterns, instant reactions for explosive moments, grounded by a pgvector RAG pipeline that retrieves live fighter stats and historical match data. A Go API gateway parallelizes LLM inference and event telemetry to cut end to end latency 20%.
+Feed it raw fight data. Six statistical trackers build a living model of the fight. A priority queue with exponential time decay surfaces the most interesting events. A dual track LLM generator produces commentary, analytical breakdowns for evolving patterns, instant reactions for explosive moments, grounded by a pgvector RAG pipeline that retrieves live fighter stats and historical match data. A Go API gateway runs LLM inference and event telemetry concurrently and cuts off requests that exceed a 550ms budget.
+
+
+## Status
+
+Turning this into a measured LLM-serving project: self-hosted Qwen2.5 on vLLM vs Nebius Token Factory vs Groq. Full plan: [`docs/BUILD_PLAN.md`](docs/BUILD_PLAN.md). Run guide: [`docs/RUNNING.md`](docs/RUNNING.md).
+
+**Built (all unit-tested; no real benchmark has been run yet)**
+- Knockdown events and a seeded 30-fight simulator with ground-truth knockdowns (`bench/fights.py`)
+- Benchmark runner with spend/request caps and rate pacing (`bench/bench.py`), knockdown-recall and invented-stat checks (`bench/quality.py`), charts and results table (`bench/charts.py`)
+- Per-generation timing (time to first token, total, tokens, cache hits) and prompts laid out for prefix caching
+- OpenAI-compatible backends config (vLLM, Nebius, Groq) and per-track routing with fallback
+- vLLM serving variants and experiment plan (`serving/`) and a Kaggle notebook
+- LoRA data generation (teacher distillation) and training (`finetune/`), Kokoro voice with time-to-first-audio (`voice/`), kind manifests (`k8s/`)
+
+**Results:** none yet. Nothing in this README claims a measured number until it appears in `bench/results/`.
 
 ## Architecture
 
@@ -69,7 +84,7 @@ Feed it raw fight data. Six statistical trackers build a living model of the fig
 10. Python: ContextBuilder assembles LLM prompt + RAG-retrieved fighter stats
 11. Python: LLM generates commentary (streaming for Track A, direct for Track B)
 12. Go goroutine A returns commentary → gateway responds to client
-13. Go metrics.go records latency → p95 < 600ms guaranteed via 550ms timeout
+13. Go metrics.go records latency; requests slower than 550ms are cut off with a 504
 ```
 
 ## What's Built
@@ -118,7 +133,7 @@ Interrupt protocol:
 
 ```python
 PROVIDER = "groq"   # → GroqClient (free, ~200ms, llama-3.3-70b)
-PROVIDER = "claude" # → ClaudeClient (~500ms, claude-haiku-4-5)
+PROVIDER = "claude" # → ClaudeClient (~500ms, claude-sonnet-4-5)
 PROVIDER = "openai" # → OpenAIClient (~400ms, gpt-4o-mini)
 PROVIDER = "ollama" # → OllamaClient (free, local, variable)
 ```
@@ -226,16 +241,16 @@ func Dispatch(punch PunchEvent) (string, error) {
     case result := <-commentaryCh:
         return result.Commentary, result.Err
     case <-time.After(550 * time.Millisecond):
-        return "", ErrTimeout  // guarantees p95 < 600ms
+        return "", ErrTimeout  // bounds worst-case wait at 550ms
     }
 }
 ```
 
-**Why 20% latency reduction:**
+**What the fan-out buys (illustrative, not yet measured):**
 
 Without goroutines: commentary call (400ms) + telemetry logging (80ms) = 480ms sequential
 With goroutines: max(400ms commentary, 80ms telemetry) = 400ms parallel
-480ms → 400ms = ~17% reduction (rounds to "20%" with connection overhead savings)
+The telemetry goroutine is a log write, so the saving is small; the timeout is the more important guarantee. Real numbers will come from `bench/` and replace the example figures above.
 
 **p95 latency tracking:**
 ```go
@@ -297,7 +312,7 @@ One command to run the full stack: `docker compose up`
 | Tracker states can contradict each other | ContradictionDetector synthesizes tension events | "P1 dominating but P2 building momentum" becomes its own high priority narrative event |
 | Switching LLM providers shouldn't break anything | Abstract `BaseLLMClient` + factory pattern | Swap `PROVIDER = "groq"` to `"claude"`, zero code changes |
 | LLM goes down mid fight | Template based `EventSynthesizer` fallback | Graceful degradation, commentary quality drops but system never crashes |
-| Go gateway and Python LLM call can't both block response time | Goroutine fan out with 550ms hard timeout | Parallel execution cuts sequential overhead ~20%; timeout guarantees p95 < 600ms |
+| Go gateway and Python LLM call can't both block response time | Goroutine fan out with 550ms hard timeout | Telemetry never waits on the LLM call; the timeout bounds the worst-case wait (measured p95 will be reported in Status) |
 
 ## Project Structure
 

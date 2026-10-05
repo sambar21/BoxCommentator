@@ -49,11 +49,22 @@ class LLMFactory:
         elif provider == "groq":
             return LLMFactory._create_groq()
         
-        else:
-            raise ValueError(
-                f"Unknown provider: {provider}. "
-                f"Options: 'ollama', 'claude', 'openai', 'groq'"
-            )
+        # Any backend named in config/backends.yaml (vLLM, Nebius, Groq, ...)
+        from src.config.backends import get_backend
+        from .openai_compat_client import OpenAICompatClient
+        backend = get_backend(provider)
+        if backend is not None:
+            if not backend.configured:
+                raise ValueError(
+                    f"Backend '{provider}' is missing base_url/model — "
+                    f"set its environment variables (see config/backends.yaml)"
+                )
+            return OpenAICompatClient(backend)
+
+        raise ValueError(
+            f"Unknown provider: {provider}. Options: 'ollama', 'claude', "
+            f"'openai', 'groq', or a backend name from config/backends.yaml"
+        )
     
     @staticmethod
     def _create_ollama() -> OllamaClient:

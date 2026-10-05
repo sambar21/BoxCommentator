@@ -3,6 +3,7 @@ Cooldown manager - prevents repetitive commentary.
 """
 
 import time
+from src.core import clock
 from typing import Dict, Optional
 from src.core.events import Event
 
@@ -21,7 +22,8 @@ class CooldownManager:
             'excitement_peak': 12.0,
             'target_zone_shift': 10.0,
             'round_change': 15.0,
-            'idle_timeout': 3.0  # Can repeat idle commentary more often
+            'idle_timeout': 3.0,  # Can repeat idle commentary more often
+            'knockdown': 2.0
         }
         
         # Priority thresholds for bypassing cooldown
@@ -31,7 +33,8 @@ class CooldownManager:
             'momentum_reversal': 9.0,
             'excitement_peak': 9.5,
             'target_zone_shift': 9.0,
-            'round_change': 10.0  # Never override round changes
+            'round_change': 10.0,  # Never override round changes
+            'knockdown': 9.5       # Back-to-back knockdowns are always called
         }
         
         # Active cooldowns: {event_type: expiry_timestamp}
@@ -52,7 +55,7 @@ class CooldownManager:
         self.total_checks += 1
         
         event_type = event.type
-        current_time = time.time()
+        current_time = clock.now()
         
         # Check if this event type has an active cooldown
         if event_type in self.active_cooldowns:
@@ -81,7 +84,7 @@ class CooldownManager:
         """
         event_type = event.type
         duration = self.base_cooldowns.get(event_type, 5.0)  # Default 5s
-        expiry_time = time.time() + duration
+        expiry_time = clock.now() + duration
         
         self.active_cooldowns[event_type] = expiry_time
     
@@ -94,7 +97,7 @@ class CooldownManager:
             return 0.0
         
         expiry_time = self.active_cooldowns[event_type]
-        remaining = max(0.0, expiry_time - time.time())
+        remaining = max(0.0, expiry_time - clock.now())
         
         # Clean up expired cooldowns
         if remaining == 0.0:

@@ -1,0 +1,65 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+nebius-smoke,nebius,0,fight-1000,A,stub,excitement_change,1,1,0.02,0.03,6,,,,1778,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,dominance_shift,5,1,1000.65,1000.67,6,,,,1826,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,pace_change,18,1,999.63,999.65,6,,,,1912,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,momentum_reversal,23,1,999.12,999.13,6,,,,1906,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,dominance_shift,27,1,999.72,999.73,6,,,,1872,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,momentum_reversal,30,1,999.87,999.88,6,,,,1913,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,excitement_change,34,1,999.86,999.88,6,,,,1854,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,target_zone_shift,36,1,999.85,999.87,6,,,,1862,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,momentum_reversal,39,1,1000.13,1000.17,6,,,,1887,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,dominance_shift,46,1,998.25,998.27,6,,,,1824,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,idle_timeout,47,1,999.23,999.24,6,,,,1841,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,A,stub,excitement_change,50,1,999.86,999.89,6,,,,1826,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1000,B,stub,knockdown,55,1,999.67,999.69,7,,,,364,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1000,A,stub,excitement_change,56,1,1000.32,1000.33,7,,,,1857,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1000,A,stub,momentum_reversal,58,1,999.02,999.04,7,,,,1872,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,excitement_change,1,1,1000.08,1000.1,6,,,,1870,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,13,1,999.52,999.53,6,,,,1942,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,pace_change,14,1,999.5,999.52,6,,,,1983,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,15,1,999.97,999.98,6,,,,1930,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,18,1,999.35,999.36,6,,,,2001,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,21,1,1000.0,1000.02,6,,,,1957,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,target_zone_shift,27,1,999.31,999.33,6,,,,1939,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,29,1,999.81,999.82,6,,,,1923,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,pace_change,31,1,1000.02,1000.03,6,,,,1970,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,33,1,999.49,999.51,6,,,,1981,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,target_zone_shift,35,1,1000.25,1000.26,6,,,,1936,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,36,1,1000.19,1000.21,6,,,,1924,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,37,1,999.83,999.85,6,,,,1968,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,38,1,999.38,999.39,6,,,,1984,,Steady pressure from the lead fighter.
+nebius-smoke,nebius,0,fight-1001,B,stub,knockdown,39,1,1000.13,1000.14,7,,,,416,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,40,1,999.32,999.33,7,,,,1997,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,41,1,1000.42,1000.43,7,,,,1938,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,pace_change,47,1,999.28,999.29,7,,,,1954,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,53,1,999.83,999.84,7,,,,1973,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_stable,54,1,999.98,999.99,7,,,,1932,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,pace_change,56,1,999.48,999.5,7,,,,1975,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,61,1,999.52,999.54,7,,,,1962,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,66,1,999.75,999.76,7,,,,1970,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,70,1,999.62,999.64,7,,,,1929,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,excitement_change,71,1,1000.57,1000.58,7,,,,1947,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_stable,73,1,999.4,999.42,7,,,,1946,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,75,1,999.53,999.54,7,,,,2000,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,76,1,1000.02,1000.03,7,,,,1924,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,77,1,1000.14,1000.15,7,,,,1928,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,78,1,999.06,999.08,7,,,,1970,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,80,1,999.91,999.93,7,,,,1919,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,82,1,1000.23,1000.24,7,,,,1990,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,83,1,999.34,999.36,7,,,,1942,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,84,1,999.75,999.76,7,,,,1947,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_stable,86,1,999.7,999.71,7,,,,1946,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,88,1,999.77,999.78,7,,,,1973,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_stable,89,1,1000.18,1000.2,7,,,,1982,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,95,1,999.61,999.63,7,,,,1950,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,105,1,1000.09,1000.1,7,,,,1970,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,excitement_change,107,1,999.61,999.63,7,,,,1968,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,109,1,999.01,999.03,7,,,,1997,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,idle_timeout,110,1,1000.41,1000.43,7,,,,1968,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,B,stub,knockdown,112,1,999.94,999.95,7,,,,385,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,target_zone_shift,113,1,999.73,999.74,7,,,,1992,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,116,1,999.49,999.5,7,,,,1938,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,123,1,999.31,999.32,7,,,,1954,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,momentum_reversal,137,1,999.55,999.56,7,,,,1972,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,dominance_shift,146,1,999.82,999.84,7,,,,1936,,KNOCKDOWN! He is down on the canvas!
+nebius-smoke,nebius,0,fight-1001,A,stub,target_zone_shift,149,1,999.9,999.92,7,,,,1929,,KNOCKDOWN! He is down on the canvas!

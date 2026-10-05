@@ -17,6 +17,7 @@ type PunchPayload struct {
 	Target       string `json:"target"`
 	Outcome      string `json:"outcome"`
 	Damage       int    `json:"damage"`
+	Knockdown    bool   `json:"knockdown"`
 	Fighter1Name string `json:"fighter1_name"`
 	Fighter2Name string `json:"fighter2_name"`
 	RoundNum     int    `json:"round_num"`
@@ -74,6 +75,8 @@ func (h *PunchHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		Target:       payload.Target,
 		Outcome:      payload.Outcome,
 		Damage:       payload.Damage,
+		Knockdown:    payload.Knockdown,
+		FightID:      payload.FightID,
 		Fighter1Name: payload.Fighter1Name,
 		Fighter2Name: payload.Fighter2Name,
 		RoundNum:     payload.RoundNum,

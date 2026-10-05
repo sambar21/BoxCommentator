@@ -1,0 +1,471 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+baseline,nebius,0,fight-1000,A,nebius,excitement_change,1,1,271.27,451.19,26,27,485,,1778,,"Johnson's perfect 100% accuracy on his lone jab highlights his precision, while Torres' zero output reflects early caution."
+baseline,nebius,0,fight-1000,A,nebius,dominance_shift,5,1,539.58,665.76,18,19,517,336,1911,,Johnson’s flawless jab efficiency showcases his counter-punching discipline against Torres’ cautious start.
+baseline,nebius,0,fight-1000,A,nebius,pace_change,18,1,547.42,736.63,29,30,546,336,2066,,Johnson’s 100% jab accuracy under pressure shows why his southpaw stance and timing are so effective against Torres’ early aggression.
+baseline,nebius,0,fight-1000,A,nebius,momentum_reversal,23,1,494.38,624.9,22,23,553,336,2071,,"Johnson’s 100% jab accuracy highlights his precision, countering Torres’ volume with surgical efficiency."
+baseline,nebius,0,fight-1000,A,nebius,dominance_shift,27,1,657.73,902.45,23,24,548,336,2035,,Johnson’s 90.9% accuracy proves his counterpunching discipline vs Torres’ high-volume approach.
+baseline,nebius,0,fight-1000,A,nebius,momentum_reversal,30,1,514.27,705.16,26,27,548,336,2037,,"Torres' 60% accuracy belies his volume, but Johnson's 80% efficiency is exploiting the gap."
+baseline,nebius,0,fight-1000,A,nebius,excitement_change,34,1,479.45,727.24,40,40,539,336,1964,,"Johnson’s 33.3% accuracy now, but his 72% defense and southpaw jab are neutralizing Torres’ 42% accuracy and 78-punch peak"
+baseline,nebius,0,fight-1000,A,nebius,target_zone_shift,36,1,586.3,837.25,28,29,556,336,1999,,Johnson’s 60% accuracy and 72% defense are stifling Torres’ 42% accuracy and high-volume assault.
+baseline,nebius,0,fight-1000,A,nebius,momentum_reversal,39,1,517.54,664.83,27,28,568,336,2030,,Johnson’s southpaw jab and 72% defense are cutting off Torres’ 42% accuracy and high-volume attacks.
+baseline,nebius,0,fight-1000,A,nebius,dominance_shift,46,1,544.85,716.62,27,28,538,336,1945,,Johnson’s 87.5% accuracy and elite defense are dismantling Torres’ 42% accuracy and high-volume assault.
+baseline,nebius,0,fight-1000,A,nebius,idle_timeout,47,1,495.35,697.85,20,21,536,336,1969,,Johnson’s 80% accuracy and jab control are neutralizing Torres’ volume and body attack.
+baseline,nebius,0,fight-1000,A,nebius,excitement_change,50,1,646.7,878.28,22,23,526,352,1941,,"Johnson’s 80% accuracy and jab control are shutting down Torres’ high-volume, body-focused attack."
+baseline,nebius,0,fight-1000,B,nebius,knockdown,55,1,511.26,619.4,15,16,101,,364,,WAIT—TORRES WITH A HOOK! JOHNSON DOWN!
+baseline,nebius,0,fight-1000,A,nebius,excitement_change,56,1,663.65,900.82,28,29,521,336,1919,,Torres' 50% accuracy and body focus are being neutralized by Johnson’s 60% precision and superior jab control.
+baseline,nebius,0,fight-1000,A,nebius,momentum_reversal,58,1,685.5,870.38,26,27,535,336,1948,,"Torres' 60% accuracy flares early, but Johnson’s 72% defense holds firm despite the pressure."
+baseline,nebius,0,fight-1001,A,nebius,excitement_change,1,1,504.92,651.3,24,25,504,32,1870,,Garcia opens with crisp precision—100% jab accuracy—testing Alvarez’s pressure with measured distance control.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,13,1,522.1,730.63,34,35,540,352,2014,,"Garcia’s 100% jab accuracy early shows his precision, but Alvarez’s 100% body shot landing hints at a dangerous pressure strategy."
+baseline,nebius,0,fight-1001,A,nebius,pace_change,14,1,547.02,661.09,20,21,568,352,2147,,"Garcia’s crisp jab finds range, but Alvarez’s pressure may exploit his body shot vulnerability."
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,15,1,528.24,638.36,15,16,554,352,2079,,Alvarez’s perfect body shot accuracy early targets Garcia’s known weakness.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,18,1,565.6,755.72,25,26,553,352,2095,,Alvarez’s 100% body shot accuracy exploits Garcia’s 22% body shot ratio vulnerability early.
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,21,1,563.02,751.39,29,30,545,352,2048,,Alvarez’s 100% body shot accuracy preys on Garcia’s 22% body defense — a dangerous early mismatch.
+baseline,nebius,0,fight-1001,A,nebius,target_zone_shift,27,1,590.17,768.45,22,23,553,352,2053,,Alvarez’s body shot precision exploits Garcia’s 22% body defense — a critical early edge.
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,29,1,494.82,741.16,26,27,546,352,2034,,Alvarez’s 60% accuracy and body shot focus target Garcia’s 22% body defense—early advantage.
+baseline,nebius,0,fight-1001,A,nebius,pace_change,31,1,551.97,773.82,28,29,551,352,2075,,"Alvarez’s 58% accuracy and body focus target Garcia’s 22% body defense, setting a calculated early edge."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,33,1,491.4,625.71,23,24,560,352,2101,,Alvarez’s pressure and body shot precision could exploit Garcia’s 22% body defense as rounds progress.
+baseline,nebius,0,fight-1001,A,nebius,target_zone_shift,35,1,554.2,725.0,28,29,551,352,2066,,"Alvarez’s 58% accuracy and body focus target Garcia’s 22% body defense, exploiting a key vulnerability early."
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,36,1,478.36,708.47,28,29,548,384,2059,,Garcia’s 33.3% accuracy and 100% body shot landing highlight early vulnerability to Alvarez’s pressure.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,37,1,493.64,789.55,24,25,564,352,2104,,Alvarez’s body attack is finding gaps—Garcia’s 22% body defense under early pressure.
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,38,1,474.22,729.89,27,28,562,352,2096,,"Alvarez’s 100% body accuracy early signals a tactical edge, exploiting Garcia’s 22% body defense."
+baseline,nebius,0,fight-1001,B,nebius,knockdown,39,1,457.15,567.59,17,18,107,16,416,,WAIT—GARCIA LANDS THE CROSS! ALVAREZ IS DOWN!
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,40,1,568.51,828.23,33,34,563,352,2065,,"Garcia’s 50% accuracy and straight right exploit Alvarez’s 67% defense, but Alvarez’s body shot ratio may yet turn the tide."
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,41,1,475.68,646.5,31,32,552,352,2035,,"Garcia’s 50% accuracy and straight right exploit Alvarez’s defense, but Alvarez’s 34% body shot ratio could shift momentum."
+baseline,nebius,0,fight-1001,A,nebius,pace_change,47,1,563.04,736.81,29,30,570,352,2129,,"Garcia’s 50% accuracy and straight right are exploiting Alvarez’s defense, but Alvarez’s body shot ratio could be the difference."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,53,1,474.35,631.53,26,27,574,352,2153,,"Garcia’s 75% accuracy and overhand right are landing, but Alvarez’s body shot volume could exploit fatigue."
+baseline,nebius,0,fight-1001,A,nebius,momentum_stable,54,1,510.02,723.78,37,39,557,352,2096,,"Garcia’s 83.3% accuracy and jab control are pressuring Alvarez, but his low body shot ratio leaves him vulnerable to Alvarez’s 34% body attack."
+baseline,nebius,0,fight-1001,A,nebius,pace_change,56,1,490.38,665.74,32,33,577,352,2153,,"Garcia’s 100% jab accuracy pressures Alvarez, but his 0% body shot defense invites Alvarez’s 34% body attack."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,61,1,478.09,637.29,29,30,582,352,2142,,Alvarez’s 100% jab accuracy and rising momentum exploit Garcia’s 0% body defense—dangerous for the champion.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,66,1,577.15,698.47,19,20,564,352,2115,,Alvarez’s perfect jab efficiency is probing Garcia’s exposed body defense—dangerous territory.
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,70,1,537.43,707.5,22,23,551,352,2059,,Alvarez’s 50% jab accuracy targets Garcia’s 0% body defense—pressure mounting.
+baseline,nebius,0,fight-1001,A,nebius,excitement_change,71,1,540.97,812.65,23,24,547,352,2047,,Alvarez’s 50% jab accuracy exploiting Garcia’s 0% body defense signals early pressure dominance.
+baseline,nebius,0,fight-1001,A,nebius,momentum_stable,73,1,536.02,796.77,32,33,548,352,2048,,"Alvarez’s 100% jab accuracy and 50% body shot rate suggest growing control, exploiting Garcia’s 0% body defense."
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,75,1,572.7,1037.66,31,32,577,352,2136,,Alvarez’s 66.7% accuracy and 50% body shot rate exploit Garcia’s 0% body defense—pressure mounting.
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,76,1,564.76,716.25,23,24,562,352,2063,,"Alvarez’s 100% body shot accuracy exploits Garcia’s zero body defense, signaling growing dominance."
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,77,1,576.38,714.65,22,23,556,352,2054,,Alvarez’s relentless pressure and 50% body shot accuracy are exploiting Garcia’s zero body defense.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,78,1,591.86,922.16,23,24,560,352,2096,,Alvarez’s 100% body accuracy targets Garcia’s zero body defense—dangerous early pressure.
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,80,1,648.31,1082.95,31,32,541,400,2035,,"Alvarez’s 58% accuracy and 34% body shot ratio exploit Garcia’s 22% body defense, building early pressure."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,82,1,617.27,1080.71,29,30,562,352,2113,,"Garcia’s 100% jab accuracy contrasts Alvarez’s 0% land rate, but Alvarez’s body shot threat remains latent."
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,83,1,731.21,1029.06,26,27,568,368,2083,,"Alvarez’s pressure mounts, but Garcia’s jab dominance and elite footwork keep him safe—body shot threat still looming."
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,84,1,484.74,742.72,22,23,564,384,2100,,"Garcia’s perfect jab accuracy counters Alvarez’s pressure, but the body shot threat remains a latent danger."
+baseline,nebius,0,fight-1001,A,nebius,momentum_stable,86,1,510.47,757.19,25,26,553,352,2100,,"Alvarez’s 66.7% accuracy belies Garcia’s footwork, but body shot threat lingers."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,88,1,586.66,824.88,27,28,563,352,2089,,"Garcia’s jab control is holding, but Alvarez’s 78% KO rate and body shot threat remain a looming danger."
+baseline,nebius,0,fight-1001,A,nebius,momentum_stable,89,1,501.47,900.48,36,37,560,336,2094,,"Garcia’s 100% accuracy is impressive, but Alvarez’s 34% body shot ratio and 78% KO rate remain a ticking time bomb."
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,95,1,582.46,916.37,26,27,572,352,2097,,Alvarez’s 80% accuracy and body shot dominance could exploit Garcia’s 22% body shot ratio vulnerability.
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,105,1,701.44,897.92,19,20,568,352,2117,,Alvarez’s body shot efficiency could exploit Garcia’s 22% body shot vulnerability.
+baseline,nebius,0,fight-1001,A,nebius,excitement_change,107,1,597.53,866.54,24,25,550,352,2082,,"Alvarez’s 34% body shot ratio targets Garcia’s 22% efficiency, a critical mismatch."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,109,1,481.96,672.19,23,24,559,352,2090,,Alvarez’s body shot volume targets Garcia’s 22% vulnerability—early pressure could exploit the gap.
+baseline,nebius,0,fight-1001,A,nebius,idle_timeout,110,1,494.31,615.7,20,21,555,352,2078,,"Alvarez’s pressure and body shot efficiency may exploit Garcia’s vulnerability, despite early inaccuracy."
+baseline,nebius,0,fight-1001,B,nebius,knockdown,112,1,455.8,638.51,22,23,100,48,385,,WAIT—GARCIA JUST CONNECTED WITH A CRUSHING CROSS! ALVAREZ IS DOWN!
+baseline,nebius,0,fight-1001,A,nebius,target_zone_shift,113,1,567.89,698.36,19,20,555,352,2091,,Garcia’s high accuracy and power exploit Alvarez’s body shot vulnerability despite early inaccuracy.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,116,1,561.31,730.92,21,22,542,352,2032,,Garcia’s jab efficiency and reach advantage are pressuring Alvarez early—watch for body shot traps.
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,123,1,492.43,653.29,26,27,546,352,2081,,"Garcia’s 50% accuracy and reach are pressuring Alvarez, but body shot vulnerability remains a ticking time bomb."
+baseline,nebius,0,fight-1001,A,nebius,momentum_reversal,137,1,482.89,662.65,20,21,559,352,2111,,Alvarez’s 80% body accuracy could exploit Garcia’s known vulnerability if pressure mounts.
+baseline,nebius,0,fight-1001,A,nebius,dominance_shift,146,1,509.04,668.5,24,25,553,352,2066,,"Garcia’s jab efficiency is sharp, but Alvarez’s 80% body accuracy looms as pressure builds."
+baseline,nebius,0,fight-1001,A,nebius,target_zone_shift,149,1,487.07,654.96,27,28,544,352,2038,,Garcia’s 0% body accuracy under pressure is a ticking time bomb against Alvarez’s 80% body shot efficiency.
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,1,1,507.93,630.98,20,21,490,32,1811,,Torres' slow start contrasts his peak output; Alvarez's defensive precision suggests control despite low pace.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,3,1,610.48,798.8,29,30,504,336,1911,,"Torres' low output and accuracy contrast his 78-punch peak, while Alvarez's 50% accuracy hints at early control."
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,5,1,603.91,832.69,30,31,540,336,2036,,"Torres' sluggish start defies his 78-punch peak, while Alvarez’s 66.7% jab accuracy shows early control."
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,18,1,825.58,1117.68,32,33,545,352,2030,,"Torres' 80% accuracy early masks his lower volume, while Alvarez lands 50% of his body shots—key to his pressure game."
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,19,1,742.49,1007.18,25,26,552,336,2038,,Torres' 100% accuracy masks low volume; Alvarez controls distance with crisp jabs despite zero landings.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,20,1,713.83,950.33,27,28,558,336,2068,,"Torres' 66.7% accuracy belies low volume, while Alvarez's jab control sets up his devastating body assault."
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,21,1,568.96,749.79,25,26,544,336,2032,,Torres' 33.3% accuracy masks low output; Alvarez's jab control remains key despite zero landings.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,23,1,697.07,853.55,27,28,558,336,2061,,"Alvarez's 100% accuracy on the hook highlights his precision, while Torres' zero landings signal early struggle."
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,25,1,1064.85,1390.81,21,22,545,336,2037,,Torres' 0% accuracy early hints at struggle against Alvarez's sharp jab and elite head movement.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,29,1,1247.41,1303.29,18,19,545,352,2042,,Torres’ 0% accuracy vs Alvarez’s elite head movement — early pressure mounting.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,30,1,682.12,943.74,17,18,536,336,2019,,Torres' zero landings highlight Alvarez’s elite head movement and jab control early.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,40,1,598.63,754.07,28,29,536,352,2026,,"Alvarez’s 50% body shot accuracy already shows his pressure is landing, while Torres’ zero body hits reveal early struggle."
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,41,1,604.63,971.34,26,27,542,336,2037,,Alvarez’s 100% body accuracy under pressure proves his timing and volume are overwhelming Torres’ swarming style.
+baseline,nebius,0,fight-1002,A,nebius,pace_change,43,1,482.47,615.58,23,24,554,336,2092,,Alvarez’s 50% body accuracy vs Torres’ 0% reveals early dominance in the pocket.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,45,1,493.7,632.81,23,24,542,336,2015,,Alvarez’s 66.7% accuracy and body control exploit Torres’ porous defense despite lower output.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,47,1,572.08,825.4,23,24,553,336,2033,,Alvarez’s 50% body accuracy vs Torres’ 0% shows early dominance in the pocket.
+baseline,nebius,0,fight-1002,B,nebius,dominance_shift,49,1,555.35,658.9,18,19,102,16,385,,BUT ALVAREZ IS TAKING OVER—DOMINANT CONTROL NOW!
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,50,1,571.24,748.96,24,25,547,336,2004,,Alvarez’s 60% accuracy and 67% body shot efficiency are exploiting Torres’ porous defense.
+baseline,nebius,0,fight-1002,B,nebius,dominance_shift,60,1,462.3,567.66,15,16,100,32,397,,BUT ALVAREZ IS NOW DOMINATING — TOTAL CONTROL!
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,61,1,571.92,719.4,28,29,544,336,2015,,Alvarez’s 66.7% accuracy and elite defense are exploiting Torres’ 55% defensive rating at this pace.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,62,1,492.71,710.16,31,32,546,336,1994,,Alvarez’s 66.7% accuracy and superior defense are capitalizing on Torres’ 55% defensive rating at this slow pace.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,64,1,493.92,612.2,24,25,556,368,2034,,"Alvarez’s 100% body accuracy exploits Torres’ 55% defense, despite slow pace."
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,67,1,642.44,760.4,23,24,549,336,2016,,"Torres’ 75% accuracy lands clean, but Alvarez’s elite defense holds firm despite the slow pace."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,70,1,485.33,609.59,26,27,543,336,1993,,"Torres’ 50% accuracy meets Alvarez’s 67% defense—pressure mounting, but body shots still missing."
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,79,1,477.46,584.26,25,26,534,336,1986,,"Torres' volume overwhelms, but Alvarez's 62.5% accuracy and elite defense keep him in control."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,82,1,478.95,595.42,21,22,555,336,2045,,Alvarez’s 100% accuracy and body shot efficiency are slicing through Torres’ volume.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,83,1,625.55,743.06,22,23,562,336,2078,,Alvarez’s 100% body shot accuracy is exploiting Torres’ porous defense despite the volume.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,84,1,805.19,917.25,17,18,544,336,2027,,Alvarez’s pinpoint body shots are countering Torres’ volume with surgical efficiency.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,87,1,486.19,632.58,27,28,548,336,2043,,"Alvarez’s 100% body shot accuracy exploits Torres’ 55% defense, countering volume with precision."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,89,1,564.14,760.1,28,29,559,368,2060,,"Alvarez’s 100% body accuracy dismantles Torres’ volume, exploiting his 55% defense with surgical precision."
+baseline,nebius,0,fight-1002,B,nebius,dominance_shift,90,1,571.18,675.38,14,15,109,32,407,,BUT ALVAREZ IS NOW OVERPOWERING TORRES!
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,91,1,692.51,869.7,25,26,541,352,2004,,"Alvarez’s 100% body accuracy exploits Torres’ 55% defense, turning volume into vulnerability."
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,92,1,500.39,639.61,26,27,533,336,1965,,"Alvarez’s 50% accuracy and elite defense exploit Torres’ 55% defense, turning volume into precision."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,94,1,486.03,710.68,25,26,569,336,2097,,Alvarez’s 58% accuracy and elite defense neutralize Torres’ 42% accuracy and porous defense.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,97,1,509.76,679.4,22,23,551,336,2020,,Alvarez’s 58% accuracy and elite defense are countering Torres’ volume with surgical precision.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,108,1,510.76,649.33,23,24,536,352,2011,,Alvarez’s 83.3% accuracy and body control are stifling Torres’ high-volume assault.
+baseline,nebius,0,fight-1002,B,nebius,knockdown,114,1,464.4,570.95,12,13,104,16,394,,WAIT—TORRES JUST DROP HIM WITH A HOOK!
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,115,1,496.0,606.71,22,23,539,336,1993,,Torres’ 100% accuracy belies low volume; Alvarez’s defense holds despite early pressure.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,120,1,531.27,701.55,32,33,536,336,1968,,Torres' 100% accuracy and body focus exploit Alvarez’s exposed midsection—dangerous for a fighter with 78% KO rate.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,135,1,478.7,631.02,35,36,554,336,2037,,"Alvarez’s 55.6% accuracy under fire highlights his composure, but Torres’ 100% body shot efficiency is a ticking time bomb."
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,136,1,594.9,710.37,27,28,556,336,2046,,Torres' 100% body shot accuracy threatens Alvarez’s elite chin—dangerous at 40% body ratio.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,137,1,543.95,733.98,28,29,578,336,2121,,Alvarez’s 75% accuracy under pressure contrasts Torres’ perfect body shot efficiency—dangerous at 40% ratio.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,145,1,663.61,807.78,24,25,565,336,2082,,Torres' 100% body accuracy is a serious threat—Alvarez’ chin will be tested.
+baseline,nebius,0,fight-1002,A,nebius,pace_change,155,1,578.28,784.17,20,21,549,336,2020,,Torres' 80% body accuracy threatens Alvarez’s durability—can he weather the storm?
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,157,1,600.83,797.29,22,23,551,352,2015,,Torres' 75% body accuracy is exploiting Alvarez’s lower body defense—can he keep pace?
+baseline,nebius,0,fight-1002,A,nebius,pace_change,162,1,504.04,651.72,24,25,532,336,1994,,Torres' 50% body accuracy vs Alvarez’s 67% defense—can the pressure fighter adapt?
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,166,1,621.09,838.52,30,31,533,336,1958,,Torres’ 66.7% body accuracy is a sharp contrast to Alvarez’s 67% defense—can the pressure fighter adjust?
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,170,1,773.43,1202.45,24,25,547,336,2017,,"Torres' body shot efficiency is rising, but Alvarez’s 50% body accuracy under pressure could be decisive."
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,174,1,587.36,894.11,24,25,538,336,1994,,"Torres’ body shots are finding home, but Alvarez’s 75% accuracy under pressure could turn the tide."
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,181,1,566.34,761.42,19,20,553,336,2106,,Alvarez’s 75% body accuracy under pressure could exploit Torres’ porous defense.
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,182,1,515.7,711.06,25,26,536,336,1998,,"Alvarez’s 66.7% body accuracy highlights his precision, targeting Torres’ weak defense with surgical efficiency."
+baseline,nebius,0,fight-1002,B,nebius,knockdown,183,1,434.95,557.24,15,16,105,32,399,,WAIT—TORRES WITH A BOMB! ALVAREZ DOWN!
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,184,1,506.49,697.16,27,28,525,336,1952,,"Torres' 50% accuracy belies his volume, but Alvarez's elite defense and body precision remain untested under pressure."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,185,1,510.62,761.08,22,23,546,336,2011,,Alvarez’s 100% body accuracy under pressure highlights his surgical precision despite Torres’ volume.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,187,1,518.43,637.88,19,20,541,336,2044,,Torres' volume stalls; Alvarez’s 100% body accuracy exploits the gap.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,188,1,652.96,803.84,25,26,550,336,2023,,"Alvarez’s 100% body accuracy exploits Torres’ porous defense, countering his volume with surgical precision."
+baseline,nebius,0,fight-1002,A,nebius,pace_change,193,1,532.03,678.49,26,27,545,336,2026,,"Alvarez’s 80% accuracy and body control exploit Torres’ 55% defense, shifting momentum decisively."
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,197,1,560.66,684.39,23,24,540,336,2026,,Alvarez’s 80% accuracy and body focus are exploiting Torres’ 55% defense effectively.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,202,1,596.98,811.68,27,28,541,336,1987,,Alvarez’s 85.7% accuracy and elite defense are overwhelming Torres’ 62.5% landing rate.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,208,1,594.3,702.39,21,22,560,336,2034,,Alvarez’s 80% accuracy and elite defense are dismantling Torres’ high-volume approach.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,212,1,520.87,642.99,21,22,544,352,2003,,Alvarez’s 75% accuracy and elite defense are stifling Torres’ high-volume attack.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,218,1,833.78,962.39,26,27,556,336,2042,,Alvarez’s 50% accuracy and body work are countering Torres’ 60% body shot rate effectively.
+baseline,nebius,0,fight-1002,A,nebius,pace_change,220,1,585.05,756.64,21,22,545,336,2010,,Alvarez’s 60% accuracy and body control are neutralizing Torres’ high-volume assault.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,223,1,578.62,774.57,32,33,544,352,1999,,Alvarez’s 80% accuracy and body control are stifling Torres’ volume despite the swarmer’s 40% body shot ratio.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,229,1,602.07,820.29,33,34,550,336,2040,,"Alvarez’s 50% accuracy and elite defense are weathering Torres’ volume, despite the swarmer’s 40% body shot ratio."
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,230,1,797.57,911.23,22,23,552,336,2032,,Alvarez’s 60% accuracy and elite defense are neutralizing Torres’ volume and body shots.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,231,1,502.37,609.96,23,24,549,336,2022,,Alvarez’s 50% accuracy and elite defense are countering Torres’ volume and body attack effectively.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,232,1,506.76,730.99,31,32,544,336,2032,,"Torres’ 42% accuracy under pressure, despite high volume, is failing to land key body shots against Alvarez’s 67% defense."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,243,1,535.86,655.84,22,23,550,336,2069,,Alvarez’s 75% accuracy and elite defense are neutralizing Torres’ volume and body attack.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,247,1,546.48,680.81,22,23,550,336,2061,,Alvarez’s 75% accuracy and elite defense are shutting down Torres’ high-volume body assault.
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,248,1,583.78,889.15,32,33,539,336,2014,,Alvarez’s 58% accuracy and 67% defense are stifling Torres’ 42% accuracy and 55% defense.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,249,1,560.46,717.05,21,22,544,336,2012,,Alvarez’s 100% accuracy and elite defense neutralize Torres’ high-volume assault.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,251,1,488.8,691.91,28,29,559,336,2019,,Alvarez’s 100% accuracy and elite defense are exploiting Torres’ 33.3% landing rate despite volume.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,253,1,488.02,687.28,23,24,546,352,2021,,Alvarez’s 66.7% accuracy and body shot efficiency are countering Torres’ volume effectively.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,255,1,537.49,653.06,21,22,540,336,1991,,Alvarez’s 100% body shot accuracy exploits Torres’ porous defense despite lower output.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,256,1,533.38,643.18,24,25,536,336,2018,,Alvarez’s pinpoint accuracy and body control are neutralizing Torres’ volume despite the swarmer’s relentless pressure.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,257,1,680.19,952.76,31,32,530,336,2008,,Alvarez’s 100% accuracy and body control are exploiting Torres’ 55% defense despite the swarmer’s high output.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,259,1,466.08,622.38,28,29,549,336,2039,,Alvarez’s 100% accuracy and elite defense are countering Torres’ 50% accuracy and porous defense effectively.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,261,1,472.02,594.97,23,24,551,336,2023,,Alvarez’s 66.7% accuracy and elite defense are neutralizing Torres’ high-volume assault.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,264,1,551.99,658.76,21,22,550,336,2032,,Alvarez’s 60% accuracy and elite defense are stifling Torres’ high-volume attack.
+baseline,nebius,0,fight-1002,A,nebius,round_context,271,1,476.86,594.13,23,24,541,336,2038,,Alvarez’s 71.4% accuracy and elite defense are turning Torres’ volume into wasted effort.
+baseline,nebius,0,fight-1002,A,nebius,excitement_change,273,1,553.46,742.86,25,26,532,336,1960,,Alvarez’s 83.3% accuracy and 60% body shot ratio are punishing Torres’ volume.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,285,1,562.74,717.56,27,28,547,336,2016,,Alvarez’s 60% accuracy and 100% body shot efficiency are turning Torres’ volume into wasted energy.
+baseline,nebius,0,fight-1002,B,nebius,knockdown,288,1,528.58,637.07,18,19,108,32,416,,WAIT—ALVAREZ WITH A STUNNING CROSS! TORRES IS DOWN!
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,289,1,2425.23,2587.8,23,25,540,336,2002,,"Alvarez’s 58% accuracy and elite defense neutralize Torres’s volume, turning swarming into vulnerability."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,291,1,521.7,811.95,22,23,541,336,1995,,Alvarez’s 58% accuracy and elite defense are exploiting Torres’s porous defense despite the volume.
+baseline,nebius,0,fight-1002,A,nebius,pace_change,305,1,569.11,864.95,28,29,542,336,2038,,Alvarez’s 60% accuracy under fire highlights his composure against Torres’s 50% KO rate and high volume.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,320,1,613.09,762.68,31,32,545,336,2010,,Torres’s 45.5% accuracy under pressure vs Alvarez’s 42.9%—both struggling to land cleanly despite high pace.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,324,1,508.88,651.82,22,23,559,336,2052,,Torres's 36.4% accuracy under pressure highlights his struggle to land cleanly despite high volume.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,333,1,486.58,633.11,30,31,550,336,2038,,"Torres’s 42.9% accuracy under fire contrasts Alvarez’s 22.2%, but Torres’s body shot volume remains relentless."
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,340,1,466.06,619.75,24,25,549,336,2037,,"Alvarez’s 60% body shot accuracy is taking toll, but Torres keeps pressuring despite fading precision."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,349,1,486.7,782.45,24,25,565,336,2093,,"Torres pressing hard but Alvarez’s 72.7% accuracy is cutting through, especially with those body shots."
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,359,1,506.78,806.86,27,28,541,336,2030,,Alvarez’s 44.4% accuracy and 25% body shots are carving through Torres’s high-volume assault.
+baseline,nebius,0,fight-1002,A,nebius,idle_timeout,360,1,491.39,601.0,23,24,540,336,2006,,Alvarez’s 42.9% accuracy and body shot efficiency are countering Torres’s volume effectively.
+baseline,nebius,0,fight-1002,A,nebius,target_zone_shift,361,1,595.0,714.41,27,28,539,336,1991,,Alvarez’s 40.0% accuracy and elite defense are neutralizing Torres’s 78-punch peak output.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,364,1,497.76,732.68,28,29,561,352,2060,,Alvarez’s 67% defense and 58% accuracy are stifling Torres’s 78-punch peak output.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,367,1,552.19,689.04,25,26,548,336,1992,,Torres’s 42% accuracy under pressure vs Alvarez’s 67% defense—tight defense neutralizing volume.
+baseline,nebius,0,fight-1002,A,nebius,pace_change,379,1,551.41,704.67,35,36,547,336,2000,,"Alvarez’s 67% defense is neutralizing Torres’s volume, but his 66.7% body shot rate on just 6 attempts is alarming."
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,386,1,595.63,697.27,17,18,564,336,2049,,Alvarez’s body shots are finding targets despite low volume—dangerous efficiency.
+baseline,nebius,0,fight-1002,A,nebius,dominance_shift,387,1,523.48,626.22,18,19,548,352,2057,,Alvarez’s elite defense and body shot efficiency are countering Torres’s volume threat.
+baseline,nebius,0,fight-1002,A,nebius,momentum_reversal,388,1,481.99,595.71,23,24,537,336,2029,,Alvarez’s 60% accuracy and body shot efficiency are neutralizing Torres’s volume despite lower output.
+baseline,nebius,0,fight-1002,A,nebius,momentum_stable,399,1,485.38,672.37,25,26,541,336,2036,,"Alvarez’s 66.7% body shot accuracy is exploiting Torres’s high volume, turning pressure into precision."
+baseline,nebius,0,fight-1003,A,nebius,excitement_change,1,1,499.33,702.37,25,26,485,480,1778,,"Johnson’s 100% accuracy on his first jab highlights his precision, while Torres’ zero output suggests early hesitation."
+baseline,nebius,0,fight-1003,A,nebius,idle_timeout,2,1,568.23,684.17,17,18,502,336,1878,,"Torres’ inactivity contrasts Johnson’s surgical jab, exploiting reach and precision early."
+baseline,nebius,0,fight-1003,A,nebius,idle_timeout,4,1,559.31,802.79,23,24,525,336,1969,33,"Torres’ low output and 33% accuracy contrast Johnson’s perfect jab, highlighting early control through precision."
+baseline,nebius,0,fight-1003,A,nebius,target_zone_shift,5,1,480.94,651.4,27,28,524,336,1977,,Torres’ 50% accuracy belies low volume; Johnson’s 100% jab efficiency exploits range and control.
+baseline,nebius,0,fight-1003,A,nebius,pace_change,10,1,581.73,695.89,20,21,531,336,1990,,"Torres’ 33% accuracy and low volume contrast Johnson’s crisp, efficient jabs."
+baseline,nebius,0,fight-1003,A,nebius,dominance_shift,16,1,602.38,752.23,21,22,534,336,1966,,"Torres presses with 42.9% accuracy, but Johnson’s perfect jab control dictates range."
+baseline,nebius,0,fight-1003,A,nebius,excitement_change,18,1,603.22,803.85,23,24,528,368,1939,,Johnson’s 100% accuracy and jab control exploit Torres’ 42.9% output efficiency.
+baseline,nebius,0,fight-1003,A,nebius,dominance_shift,19,1,573.1,842.6,30,31,546,336,2009,,Torres' 50% body accuracy contrasts Johnson's flawless 100% jab control—precision vs. volume in a tactical clash.
+baseline,nebius,0,fight-1003,A,nebius,idle_timeout,21,1,487.38,629.59,21,22,540,336,1977,,Torres' high volume meets Johnson's precision—early control hinges on jab efficiency and body shot accuracy.
+baseline,nebius,0,fight-1003,A,nebius,dominance_shift,24,1,486.02,616.34,23,24,536,336,1982,,"Torres pressures with volume, but Johnson’s 66.7% accuracy and jab control dictate the pace."
+baseline,nebius,0,fight-1003,A,nebius,momentum_reversal,27,1,507.68,645.78,24,25,541,336,2044,,"Torres' body shots are landing at 100%, but Johnson's jab precision is keeping him in control."
+baseline,nebius,0,fight-1003,B,nebius,knockdown,30,1,572.77,677.64,16,17,118,48,459,,WAIT—TORRES JUST HITS WITH A KNOCKDOWN HOOK!
+baseline,nebius,0,fight-1003,A,nebius,dominance_shift,31,1,526.42,760.9,28,29,528,336,1933,,"Torres' high volume and body shot efficiency are pressuring Johnson, but his 55% defense can't withstand the sustained assault."
+baseline,nebius,0,fight-1003,A,nebius,idle_timeout,32,1,475.84,724.11,33,34,520,336,1937,,"Torres' 50% accuracy and body shot focus exploit Johnson’s 55% defense, but Johnson’s 63% accuracy remains a threat."
+baseline,nebius,0,fight-1003,A,nebius,idle_timeout,37,1,565.8,761.18,27,28,547,336,2018,,"Torres is landing 100% of his body shots, but Johnson’s 63% accuracy could punish any lapse."
+baseline,nebius,0,fight-1003,A,nebius,momentum_reversal,38,1,472.16,618.23,26,27,552,336,2003,,"Torres' body shots land at 100%, but Johnson’s 63% accuracy threatens any overcommitment."
+baseline,nebius,0,fight-1003,A,nebius,momentum_stable,42,1,574.14,690.84,21,22,532,336,1935,,"Torres' body assault is precise, but Johnson’s 63% accuracy could exploit any opening."
+baseline,nebius,0,fight-1003,A,nebius,target_zone_shift,44,1,600.59,727.94,27,28,527,336,1933,,"Torres’ 80% accuracy on body shots pressures Johnson, but his 63% defense could punish any overextension."
+baseline,nebius,0,fight-1003,A,nebius,dominance_shift,49,1,496.59,630.24,23,24,530,336,1943,,"Torres' 50% body accuracy pressures Johnson, but 63% defense could punish overextension."
+baseline,nebius,0,fight-1003,A,nebius,momentum_reversal,53,1,478.77,596.76,20,21,539,336,1998,,"Torres' high body volume pressures Johnson, but 63% defense could punish overextension."
+baseline,nebius,0,fight-1003,B,nebius,excitement_peak,57,1,471.02,598.45,15,16,100,16,384,,"AND NOW—FISTS FLYING, BLOOD ON THE MAT!"
+baseline,nebius,0,fight-1003,A,nebius,pace_change,58,1,623.12,874.0,26,27,523,336,1901,,"Torres' 42% accuracy under pressure, but Johnson’s 60% precision on counters could turn the tide."
+baseline,nebius,0,fight-1004,A,nebius,excitement_change,1,1,492.46,666.53,27,28,492,368,1821,,"Alvarez opens with crisp precision—100% accuracy on his first shot, showcasing elite timing against Torres’s cautious approach."
+baseline,nebius,0,fight-1004,B,nebius,excitement_peak,12,1,473.51,519.89,8,9,96,16,365,,AND NOW—EXPLOSIVE ACTION!
+baseline,nebius,0,fight-1004,A,nebius,target_zone_shift,13,1,499.83,656.13,26,27,526,352,1973,,"Alvarez’s 75% accuracy early shows his precision, but Torres’s volume could overwhelm if he closes the distance."
+baseline,nebius,0,fight-1004,A,nebius,pace_change,18,1,629.11,847.55,28,29,535,336,1996,,Torres’s 50% body shot rate early could exploit Alvarez’s 34% body shot ratio if he closes the gap.
+baseline,nebius,0,fight-1004,A,nebius,dominance_shift,26,1,490.68,621.84,16,17,544,336,2007,,Torres's high body shot rate could pressure Alvarez if he closes the distance.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,30,1,577.82,747.22,30,31,538,352,1999,,Torres's 66.7% body accuracy vs Alvarez's 34% body ratio could open the door if he closes the distance.
+baseline,nebius,0,fight-1004,A,nebius,target_zone_shift,42,1,491.97,651.8,24,25,533,336,1968,,Torres’s 100% body accuracy early vs Alvarez’s 0% body hits—pressure building fast.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,46,1,535.82,658.08,24,25,553,336,2026,,"Torres is landing every body shot, but Alvarez’s 60% accuracy suggests he’s still finding his rhythm."
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,57,1,513.03,699.69,29,30,544,336,2018,,"Torres’s body shot efficiency is elite at 50%, but Alvarez’s 66.7% accuracy hints at a coming storm."
+baseline,nebius,0,fight-1004,B,nebius,knockdown,64,1,472.27,586.43,21,22,109,32,412,,WAIT—ALVAREZ WITH A CRUSHING UPPERCUT! TORRES IS DOWN!
+baseline,nebius,0,fight-1004,A,nebius,dominance_shift,65,1,539.28,655.44,20,21,562,336,2045,,Alvarez’s 100% accuracy and elite defense expose Torres’s porous guard early.
+baseline,nebius,0,fight-1004,A,nebius,excitement_change,66,1,480.42,594.4,22,24,546,336,1991,,"Alvarez’s 100% accuracy and elite defense exploit Torres’s porous guard, despite low pace."
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,68,1,479.83,659.61,23,24,534,352,1988,,Alvarez’s 58% accuracy and elite defense are punishing Torres’s 55% defense early.
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,70,1,478.01,586.3,21,22,538,336,1993,,Alvarez’s 75% accuracy and elite defense exploit Torres’s porous guard despite low pace.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,71,1,579.8,710.34,24,25,553,336,2041,,Alvarez’s 100% accuracy and pressure exploit Torres’s 55% defense despite low output.
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,73,1,526.36,721.04,25,26,550,352,2018,,Alvarez’s 100% accuracy under pressure exposes Torres’s 55% defense—dangerous early.
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,74,1,473.76,599.12,25,26,549,368,2011,,Alvarez’s 100% accuracy and relentless pressure exploit Torres’s 55% defense despite low output.
+baseline,nebius,0,fight-1004,B,nebius,dominance_shift,77,1,464.4,579.76,12,13,94,16,351,,BUT ALVAREZ IS OVERPOWERING NOW!
+baseline,nebius,0,fight-1004,A,nebius,momentum_stable,80,1,489.86,620.6,26,27,537,352,2002,,Alvarez’s 71.4% accuracy and body work are testing Torres’s 55% defense under pressure.
+baseline,nebius,0,fight-1004,A,nebius,narrative_tension,88,1,492.32,683.32,25,26,551,336,1999,,Torres’s 42% accuracy under pressure vs Alvarez’s 63.6%—the gap is widening.
+baseline,nebius,0,fight-1004,A,nebius,dominance_shift,91,1,554.3,729.75,30,31,561,336,2036,,Alvarez’s 42.9% accuracy and 33.3% body shots are exploiting Torres’s 55% defense.
+baseline,nebius,0,fight-1004,A,nebius,excitement_change,92,1,515.85,704.73,28,29,559,336,2016,,Alvarez’s 33.3% accuracy and body shot efficiency are exploiting Torres’s 55% defense despite low output.
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,94,1,499.49,612.3,22,23,558,352,2032,,Alvarez’s crisp jabs and superior accuracy are capitalizing on Torres’s porous defense despite lower output.
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,95,1,561.92,704.56,28,29,556,368,2054,,Torres’s 66.7% accuracy belies Alvarez’s 33.3% efficiency—pressure is wearing him down.
+baseline,nebius,0,fight-1004,A,nebius,idle_timeout,97,1,545.91,792.37,29,30,555,368,2043,,"Torres’s 100% body accuracy contrasts Alvarez’s clean counters, but Alvarez’s superior defense and late-round potency remain the edge."
+baseline,nebius,0,fight-1004,A,nebius,momentum_stable,99,1,486.69,659.14,22,23,560,336,2070,,Alvarez's 100% accuracy and elite defense expose Torres's porous defense despite high output.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,104,1,481.97,635.0,26,27,564,336,2114,,"Alvarez’s 100% accuracy and elite defense neutralize Torres’s volume, exploiting his porous guard with precision."
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,115,1,578.7,686.67,20,21,557,336,2070,,Alvarez’s 60% body shot accuracy is already punishing Torres’s high-volume approach.
+baseline,nebius,0,fight-1004,A,nebius,dominance_shift,123,1,475.49,582.22,21,22,541,336,2019,,Alvarez’s 100% body shot accuracy is turning Torres’s volume into wasted effort.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,134,1,550.49,767.58,26,27,535,352,1972,,Alvarez’s 60% body accuracy is neutralizing Torres’s 55.6% output with surgical precision.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,144,1,568.99,818.69,30,31,558,352,2048,,Alvarez’s 63.6% accuracy and 28.6% body shot rate are turning Torres’s volume into ineffective noise.
+baseline,nebius,0,fight-1004,B,nebius,knockdown,146,1,525.48,633.16,14,15,110,32,411,,WAIT—ALVAREZ JUST DROP HIM WITH A HOOK!
+baseline,nebius,0,fight-1004,A,nebius,excitement_change,147,1,478.49,720.46,24,25,551,336,2007,,Alvarez’s 67% defense and elite head movement neutralize Torres’s 78-punch pace.
+baseline,nebius,0,fight-1004,A,nebius,momentum_reversal,150,1,575.72,804.9,27,28,539,336,1955,,Alvarez’s 67% defense and body hook precision counter Torres’s high volume and 40% body shot ratio.
+baseline,nebius,0,fight-1005,A,nebius,excitement_change,1,1,535.51,843.2,26,27,501,32,1828,,"Garcia's perfect jab accuracy early hints at control, but Torres' high volume potential looms if he closes the distance."
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,12,1,488.92,673.74,32,33,526,352,1942,,"Torres' 62.5% accuracy early hints at volume payoff, but Garcia’s 50% body shot success could exploit his low defense."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,18,1,484.03,606.87,24,25,554,352,2049,,"Torres' sharp early accuracy suggests he's landing with purpose, but Garcia’s jab control keeps him safe for now."
+baseline,nebius,0,fight-1005,A,nebius,excitement_change,19,1,550.57,790.37,21,22,550,352,2043,,"Torres' early precision contrasts Garcia’s jab control, but body shot vulnerability looms if pressure mounts."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,28,1,475.87,615.3,27,28,547,352,2073,,"Torres' 20% accuracy belies his volume, but Garcia’s 50% jab efficiency keeps him in control."
+baseline,nebius,0,fight-1005,A,nebius,pace_change,36,1,477.29,616.85,25,26,567,352,2098,,Torres' 50% body accuracy early targets Garcia’s known weakness—can he exploit it before fatigue sets in?
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,37,1,561.76,668.21,19,20,552,352,2009,,Torres' 50% body accuracy targets Garcia’s vulnerability—can he sustain it?
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,45,1,477.2,637.12,28,29,563,352,2047,,Torres' 66.7% body accuracy exploits Garcia’s 22% body shot ratio — can he maintain this pressure?
+baseline,nebius,0,fight-1005,A,nebius,round_context,55,1,479.51,585.94,19,20,564,352,2080,,Torres' body shot efficiency is punishing Garcia’s known weakness—can he keep the pressure?
+baseline,nebius,0,fight-1005,B,nebius,dominance_shift,60,1,441.53,546.46,19,20,106,16,427,,BUT GARCIA'S JUST TAKEN CONTROL — HE'S DOMINATING NOW!
+baseline,nebius,0,fight-1005,A,nebius,narrative_tension,62,1,484.19,705.22,26,27,574,352,2083,,Garcia’s 64.3% accuracy and jab control are overwhelming Torres’ 50% body shot efficiency.
+baseline,nebius,0,fight-1005,A,nebius,pace_change,65,1,480.84,600.83,21,22,552,352,1998,,Garcia’s jab dominance and 66.7% accuracy are exploiting Torres’ porous defense.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,67,1,483.66,649.2,28,29,549,352,2008,,Garcia’s 50% body shot efficiency shocks Torres’ 40% ratio — a critical edge in the opening round.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,71,1,653.6,890.1,19,20,555,352,2024,,Garcia’s jab control is stifling Torres’ rhythm despite the latter’s high volume.
+baseline,nebius,0,fight-1005,A,nebius,pace_change,82,1,530.05,791.49,22,23,545,352,1989,,Torres’ 42% accuracy under pressure highlights his struggle to land cleanly against Garcia’s elusive jab.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,87,1,530.61,733.73,24,25,546,336,2027,,Torres' 37.5% accuracy and zero body shots suggest Garcia's jab is effectively disrupting his rhythm.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,99,1,488.46,777.28,30,31,560,368,2078,57,"Torres is landing 57% of his punches, but Garcia’s 45.5% accuracy shows he’s weathering the storm."
+baseline,nebius,0,fight-1005,A,nebius,target_zone_shift,106,1,471.47,763.18,29,30,549,352,1992,33,"Torres is pressing hard, but Garcia’s jab is cutting off the angle—only 33% accuracy, but he’s staying crisp."
+baseline,nebius,0,fight-1005,A,nebius,pace_change,108,1,565.01,846.12,36,37,556,352,2035,,"Torres' 66.7% accuracy and 50% body shot rate pressure Garcia, who struggles with 28.6% landing despite elite footwork."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,110,1,547.38,701.7,25,26,565,352,2048,,Torres’ 100% accuracy and body focus exploit Garcia’s 25% landing rate despite reach advantage.
+baseline,nebius,0,fight-1005,A,nebius,pace_change,111,1,507.91,655.61,24,25,568,352,2067,,Torres' 100% accuracy and body focus exploit Garcia’s 0% landing rate despite reach advantage.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,113,1,475.29,581.51,16,17,542,352,2008,,"Torres’ relentless body assault targets Garcia’s known vulnerability, despite low output."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,115,1,487.68,755.29,18,19,536,352,1981,,"Torres’ high body shot ratio and precision exploit Garcia’s vulnerability, despite low output."
+baseline,nebius,0,fight-1005,A,nebius,pace_change,121,1,508.2,692.79,23,24,530,352,1994,,Torres’ body shots are finding targets—Garcia’s 22% body ratio makes him vulnerable.
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,130,1,567.08,716.69,22,23,551,352,2041,,"Torres’ body shots are exploiting Garcia’s 22% body defense, despite Garcia’s jab control."
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,134,1,558.14,687.71,20,21,552,352,2040,,"Torres is exploiting Garcia’s 22% body defense with precise, high-volume body work."
+baseline,nebius,0,fight-1005,A,nebius,target_zone_shift,135,1,535.93,716.44,24,25,541,352,1979,,Torres’ 100% body accuracy targets Garcia’s 22% body defense — a critical vulnerability.
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,137,1,503.24,683.91,25,26,547,336,1997,,"Torres’ 100% body accuracy exploits Garcia’s 22% body defense, targeting a known weakness."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,142,1,513.66,645.29,21,22,561,352,2030,,Torres’ relentless body assault is exposing Garcia’s 22% body defense — a dangerous trend.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,143,1,467.16,731.11,25,27,543,352,1992,,Garcia’s 22% body defense under siege — Torres’ 40% body shot ratio turning the tide.
+baseline,nebius,0,fight-1005,B,nebius,dominance_shift,145,1,434.84,551.16,16,17,99,16,380,,BUT GARCIA'S TAKING OVER—DOMINANT NOW!
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,157,1,499.47,637.29,20,21,558,352,1985,,"Torres’ body shots are finding range, but Garcia’s jab control keeps him in the fight."
+baseline,nebius,0,fight-1005,B,nebius,dominance_shift,170,1,430.96,589.67,15,16,102,32,382,,BUT GARCIA'S TAKING OVER—TOTAL CONTROL NOW!
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,171,1,503.11,739.23,27,28,537,352,1957,,Garcia’s 61.5% accuracy and jab dominance are overwhelming Torres’ 33.3% landing rate.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,181,1,478.48,640.1,23,24,548,352,1963,33,Garcia’s 70% accuracy and jab control are exploiting Torres’ 33% landing rate.
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,191,1,476.62,643.79,24,25,564,352,2043,37;57,Garcia’s 57% accuracy and jab control are stifling Torres’ 37% connection rate.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,199,1,502.1,749.71,35,36,552,352,1991,,"Garcia’s 66.7% accuracy and jab dominance are neutralizing Torres’ high volume, despite the latter’s 100% body shot accuracy."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,213,1,537.74,837.59,30,31,566,352,2030,,Garcia’s 83.3% accuracy and jab control are stifling Torres’ volume despite his 25% body shot efficiency.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,227,1,658.18,812.08,22,23,568,336,2087,,"Torres’ body shots are flying, but Garcia’s jab is keeping him at bay—precision over volume."
+baseline,nebius,0,fight-1005,A,nebius,excitement_change,228,1,470.28,694.17,25,26,546,352,2023,,"Torres’ 40% body shot ratio under pressure, but Garcia’s 61% defense counters his volume."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,230,1,468.61,626.18,21,22,540,352,1973,,Torres’ 50% body accuracy stalls Garcia’s 61% defense—pressure mounting.
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,231,1,472.67,616.6,25,26,538,352,1963,,"Torres' 50% body accuracy targets Garcia’s 61% defense, but low pace limits volume impact."
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,235,1,581.79,782.05,22,23,555,352,1999,,Torres' 66.7% body accuracy is cutting through Garcia’s defense despite the slow pace.
+baseline,nebius,0,fight-1005,A,nebius,target_zone_shift,249,1,478.37,616.42,23,24,551,352,2003,,Torres' 40% body accuracy is exploiting Garcia’s 61% defense despite the slow pace.
+baseline,nebius,0,fight-1005,B,nebius,knockdown,251,1,466.01,616.07,15,16,109,16,406,,WAIT—TORRES WITH A BOMB! GARCIA IS DOWN!
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,252,1,566.59,764.46,24,25,549,352,2011,57,"Torres' 57% accuracy and body focus overwhelm Garcia’s 0% landing, exposing his defensive vulnerability."
+baseline,nebius,0,fight-1005,A,nebius,target_zone_shift,260,1,467.65,634.58,28,29,539,352,1967,,Torres' 50% body shot rate and 66.7% accuracy are exploiting Garcia’s 0% body defense.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,261,1,583.06,747.57,23,24,562,352,2043,,"Torres' 50% body shot rate is punishing Garcia, who’s 0% on body defense."
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,263,1,568.74,755.38,25,26,550,352,1988,,"Torres' relentless body assault, 66.7% accurate, is exposing Garcia’s 0% body defense."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,270,1,486.39,607.79,18,19,551,352,1983,,Torres' body shots are exploiting Garcia’s zero body defense—dangerous if sustained.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,274,1,472.57,660.64,23,24,539,352,1986,,Torres’ 66.7% body accuracy is punishing Garcia’s zero body defense—dangerous momentum.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,283,1,470.36,691.07,29,30,555,352,2030,,Torres' 50% body accuracy is exploiting Garcia’s 22% body shot ratio—dangerous edge in the clinch.
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,290,1,498.24,656.07,25,26,551,352,2000,,Torres’ 45.5% accuracy and high body volume are pressuring Garcia’s 61% defense.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,295,1,653.68,791.01,27,28,561,352,2010,,Garcia’s 50% body shot accuracy now vs Torres’ 40% body ratio—clinch dominance shifting.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,304,1,483.62,587.97,17,18,547,336,1967,,"Torres’ body assault is finding targets, but Garcia’s jab precision remains dangerous."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,308,1,478.45,707.53,27,28,549,352,2033,33,"Torres' body shots are landing at 33%, exploiting Garcia’s 22% body ratio—pressure is paying off."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,311,1,567.25,812.17,32,33,549,352,2015,,"Torres' 40% body shot ratio is exploiting Garcia’s 22% weakness, but Garcia’s 51% accuracy remains a threat."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,312,1,486.13,702.31,31,32,559,352,2027,,"Torres' relentless body assault exploits Garcia’s 22% body shot vulnerability, but Garcia’s 51% accuracy remains a ticking time bomb."
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,313,1,568.22,744.96,21,22,563,352,2077,,"Torres’ body attack efficiency contrasts Garcia’s precision, but both remain vulnerable to counterpunching."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,315,1,648.78,1147.33,28,29,544,352,2028,,"Torres’ body shots target Garcia’s 22% vulnerability, but Garcia’s 51% accuracy could explode at any moment."
+baseline,nebius,0,fight-1005,B,nebius,knockdown,316,1,427.54,612.06,15,16,102,48,380,,WAIT—TORRES WITH A BOMB! GARCIA IS DOWN!
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,317,1,492.8,1090.55,26,27,558,352,2037,,"Torres’ 40% body shot ratio exploiting Garcia’s vulnerability, but 33.3% accuracy limits damage."
+baseline,nebius,0,fight-1005,A,nebius,pace_change,322,1,484.56,681.98,19,20,543,352,1965,,"Torres' body attack is targeting Garcia’s known weakness, but low accuracy limits the damage."
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,329,1,536.41,764.83,20,21,547,352,2008,,"Torres' relentless body assault continues, but Garcia's elite defense keeps him upright despite the volume."
+baseline,nebius,0,fight-1005,B,nebius,knockdown,334,1,432.77,628.18,16,17,108,32,393,,WAIT—GARCIA WITH A CLINCHER! TORRES DOWN!
+baseline,nebius,0,fight-1005,A,nebius,excitement_change,335,1,580.73,876.56,30,31,556,336,2034,,"Garcia's 100% accuracy on the uppercut highlights his precision under pressure, countering Torres' high-volume body assault effectively."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,336,1,670.28,962.25,28,29,559,352,2026,,"Garcia’s 50% accuracy and elite footwork exploit Torres’ porous defense, countering his body attack with surgical precision."
+baseline,nebius,0,fight-1005,A,nebius,idle_timeout,338,1,483.0,674.85,24,25,563,352,2097,,Garcia’s 33.3% accuracy and jab dominance stall Torres’ 50% KO threat.
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,340,1,498.59,685.73,24,25,555,352,2041,,Garcia’s 51% accuracy and jab control neutralize Torres’ 40% body shot ratio.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,343,1,608.42,831.61,22,23,555,352,1995,,"Torres’ volume is mounting, but Garcia’s 51% accuracy keeps him safe despite the pressure."
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,349,1,525.48,691.65,22,23,547,352,1983,,Torres’ 60% accuracy belies Garcia’s 51% defense—volume meets precision.
+baseline,nebius,0,fight-1005,B,nebius,excitement_peak,352,1,506.85,615.4,12,13,98,16,361,,AND NOW—FIGHTING BREATH TO BREATH!
+baseline,nebius,0,fight-1005,A,nebius,momentum_stable,358,1,585.12,956.2,23,24,540,352,1940,,Torres’ 66.7% accuracy masks Garcia’s 20% landing—pressure overwhelming precision.
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,371,1,736.77,877.39,19,20,553,352,1990,,"Garcia’s jab efficiency rising, but Torres’ body attack could exploit his known vulnerability."
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,382,1,580.9,701.15,20,21,558,352,2049,,"Torres' body shots are finding rhythm, but Garcia’s jab precision remains elite despite the pressure."
+baseline,nebius,0,fight-1005,A,nebius,dominance_shift,395,1,565.56,682.04,21,22,550,352,2054,,Torres' 61.5% accuracy and heavy body focus could exploit Garcia’s known vulnerability.
+baseline,nebius,0,fight-1005,A,nebius,momentum_reversal,400,1,488.33,619.63,23,24,551,352,2026,33,Torres' 60% accuracy and 33% body shots could exploit Garcia’s documented body weakness.
+baseline,nebius,0,fight-1006,A,nebius,excitement_change,1,1,563.54,685.32,19,20,488,32,1829,,"Alvarez lands first with crisp timing, but Johnson’s elite accuracy suggests counter opportunities ahead."
+baseline,nebius,0,fight-1006,A,nebius,dominance_shift,7,1,563.41,762.02,35,36,515,336,1955,,"Alvarez's 66.7% accuracy early highlights his precision, but Johnson’s 63% accuracy looms as a threat if he lands his counters."
+baseline,nebius,0,fight-1006,A,nebius,pace_change,18,1,495.97,607.39,19,20,558,336,2120,,Alvarez's high accuracy and body shot volume could exploit Johnson’s lower body shot ratio.
+baseline,nebius,0,fight-1006,B,nebius,knockdown,21,1,484.28,593.79,14,15,113,16,435,,WAIT—ALVAREZ WITH A PUNCH THAT STUNS!
+baseline,nebius,0,fight-1006,A,nebius,momentum_stable,22,1,486.34,632.53,23,24,529,336,2001,,Alvarez’s 80% accuracy and body shot efficiency threaten Johnson’s 18% body ratio.
+baseline,nebius,0,fight-1006,A,nebius,idle_timeout,23,1,491.14,870.91,26,27,522,336,1935,33,Alvarez’s 60% accuracy and 33% body shots pressure Johnson’s 18% body ratio.
+baseline,nebius,0,fight-1006,A,nebius,momentum_reversal,37,1,474.29,721.21,32,33,546,336,2001,,Alvarez’s 36.4% accuracy and 25% body shots are probing Johnson’s 18% body defense—pressure mounting.
+baseline,nebius,0,fight-1006,A,nebius,pace_change,39,1,490.02,800.86,29,30,554,336,2024,,Alvarez’s 25% body shots are testing Johnson’s 18% body defense despite the southpaw’s sharp jab.
+baseline,nebius,0,fight-1006,A,nebius,momentum_reversal,49,1,531.08,902.94,40,40,567,336,2074,,"Alvarez’s 66.7% body shot accuracy in the opening minute is testing Johnson’s 18% body defense, but Johnson’s 72.7% accuracy counters effectively"
+baseline,nebius,0,fight-1006,B,nebius,dominance_shift,59,1,556.78,671.89,15,16,100,16,372,,BUT JOHNSON TAKES OVER — TOTAL CONTROL NOW!
+baseline,nebius,0,fight-1006,A,nebius,round_context,60,1,484.64,766.34,25,26,561,336,2087,,Johnson’s 72.7% accuracy counters are neutralizing Alvarez’s 66.7% body shot dominance.
+baseline,nebius,0,fight-1007,A,nebius,excitement_change,1,1,473.64,696.79,22,23,495,32,1824,,"Alvarez's perfect jab accuracy hints at precision, while Torres' zero output suggests caution in early exchanges."
+baseline,nebius,0,fight-1007,A,nebius,dominance_shift,5,1,476.2,655.68,24,25,523,336,1954,,"Alvarez's 80% jab accuracy early shows sharp precision, while Torres' zero landed punches reveal hesitation."
+baseline,nebius,0,fight-1007,A,nebius,pace_change,18,1,483.38,589.04,15,16,546,336,2078,,Alvarez's jab dominance and body shot efficiency already showing early edge.
+baseline,nebius,0,fight-1007,A,nebius,dominance_shift,24,1,480.62,860.55,33,34,559,336,2100,,"Torres' 38.5% accuracy and 20% body shot ratio show early volume, but Alvarez's precision and pressure are already taking control."
+baseline,nebius,0,fight-1007,A,nebius,momentum_stable,26,1,488.6,701.31,30,31,541,336,2062,,"Alvarez’s 66.7% accuracy and body shot efficiency are already pressuring Torres, who’s struggling to land despite high volume."
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,27,1,508.2,757.25,22,23,556,336,2074,,Alvarez’s 75% accuracy and body shot efficiency are stifling Torres’ high-volume approach.
+baseline,nebius,0,fight-1007,A,nebius,pace_change,28,1,541.35,794.3,22,23,554,336,2067,,Alvarez’s 75% accuracy and body shot dominance are neutralizing Torres’ high-volume assault.
+baseline,nebius,0,fight-1007,A,nebius,idle_timeout,29,1,501.78,690.21,27,28,536,336,1997,,Alvarez’s 58% accuracy and body shot precision are already disrupting Torres’ 78-punch/round rhythm.
+baseline,nebius,0,fight-1007,A,nebius,momentum_stable,36,1,577.05,745.38,24,25,539,352,2027,,Alvarez’s 58% accuracy and body shot focus are slowing Torres’ 78-punch pace.
+baseline,nebius,0,fight-1007,A,nebius,idle_timeout,38,1,582.62,737.87,26,27,535,352,1975,,Alvarez’s 66.7% accuracy and body focus are disrupting Torres’ 78-punch rhythm early.
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,39,1,537.35,773.5,26,27,562,336,2052,,Alvarez’s 58% accuracy and body focus are disrupting Torres’ 78-punch rhythm despite rising momentum.
+baseline,nebius,0,fight-1007,A,nebius,momentum_stable,40,1,598.7,747.74,21,22,556,352,2053,,Alvarez’s 100% body shot accuracy disrupts Torres’ high-volume rhythm early.
+baseline,nebius,0,fight-1007,A,nebius,idle_timeout,41,1,562.99,717.39,25,26,547,336,2000,,Alvarez’s 100% body shot accuracy is stifling Torres’ 78-punch rhythm early.
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,46,1,479.26,626.68,16,17,551,352,2014,,Alvarez’s body shot precision is already disrupting Torres’ high-volume rhythm.
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,56,1,487.05,613.81,21,22,544,336,2010,,Alvarez’s 20% body shot rate is already cutting into Torres’ high-volume offense.
+baseline,nebius,0,fight-1007,B,nebius,knockdown,60,1,429.41,536.33,16,17,106,16,400,,WAIT—ALVAREZ WITH A HOOK! TORRES IS DOWN!
+baseline,nebius,0,fight-1007,A,nebius,target_zone_shift,61,1,559.73,724.79,24,25,528,336,1929,,"Alvarez’s 50% body accuracy exploits Torres’ 40% body shot ratio, disrupting rhythm."
+baseline,nebius,0,fight-1007,A,nebius,idle_timeout,62,1,485.07,650.02,27,28,529,336,1931,33,Alvarez’s 60% accuracy and 33% body shot rate exploit Torres’ 55% defense gap.
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,66,1,485.01,644.86,24,25,552,336,2014,,"Alvarez’s body assault is landing at 80%, exploiting Torres’ porous defense and low body shot defense."
+baseline,nebius,0,fight-1007,A,nebius,excitement_change,68,1,540.96,789.18,23,24,545,336,2001,83,Alvarez’s 83% accuracy and body shot dominance are overwhelming Torres’ 55% defense.
+baseline,nebius,0,fight-1007,A,nebius,dominance_shift,73,1,487.12,684.12,26,27,541,336,2030,,"Alvarez’s 66.7% body accuracy is punishing Torres, who’s missing all body shots despite high volume."
+baseline,nebius,0,fight-1007,A,nebius,target_zone_shift,78,1,566.15,672.37,16,17,537,352,1973,,Torres’ 0% body accuracy under pressure highlights Alvarez’s surgical precision.
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,83,1,469.63,614.0,24,25,546,336,2043,,"Alvarez’s 60% body accuracy is dismantling Torres’ rhythm, despite the latter’s high volume."
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,92,1,475.46,609.58,22,23,551,336,2034,,"Alvarez’s 50% body accuracy is exploiting Torres’ porous defense, turning volume into control."
+baseline,nebius,0,fight-1007,A,nebius,target_zone_shift,94,1,490.12,673.02,30,31,545,336,2024,,"Torres’ 66.7% accuracy shines, but Alvarez’s 50% body landing rate is dictating the round’s rhythm."
+baseline,nebius,0,fight-1007,B,nebius,knockdown,95,1,425.03,537.0,15,16,105,32,393,,WAIT—TORRES WITH A BOMB! ALVAREZ DOWN!
+baseline,nebius,0,fight-1007,A,nebius,excitement_change,96,1,481.47,803.57,36,37,554,336,2027,,"Torres’ 100% body accuracy exploits Alvarez’s 34% body shot ratio, but Alvarez’s 50% land rate on body suggests lingering threat."
+baseline,nebius,0,fight-1007,A,nebius,target_zone_shift,101,1,592.99,917.79,38,39,541,336,1983,,Torres’ 40% body shot ratio vs. Alvarez’s 34% leaves him vulnerable—Alvarez’s 50% body land rate could turn this fight.
+baseline,nebius,0,fight-1007,A,nebius,dominance_shift,114,1,576.86,803.41,28,29,576,336,2078,,"Torres’ high body accuracy is pressuring Alvarez, but his 40% body shot ratio leaves him exposed to the left hook."
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,119,1,486.36,611.92,21,22,574,336,2105,,Alvarez’s 80% body accuracy vs. Torres’ porous defense could引爆 the fight.
+baseline,nebius,0,fight-1007,A,nebius,dominance_shift,120,1,496.6,725.24,28,29,555,336,2075,,"Torres is landing body shots at 100%, but Alvarez’s 80% body accuracy could turn this in his favor."
+baseline,nebius,0,fight-1007,A,nebius,idle_timeout,121,1,471.16,634.23,22,23,542,336,2000,,Alvarez’s 80% body accuracy could exploit Torres’ porous defense if he closes the distance.
+baseline,nebius,0,fight-1007,A,nebius,momentum_stable,123,1,567.07,725.68,22,23,537,336,1996,,Alvarez’s 80% body accuracy could punish Torres’ porous defense if he closes the gap.
+baseline,nebius,0,fight-1007,A,nebius,momentum_reversal,128,1,518.11,701.33,25,26,544,336,2041,,"Torres’ 40% accuracy and high pace may overwhelm, but Alvarez’s body shot precision could exploit the opening."
+baseline,nebius,0,fight-1007,A,nebius,dominance_shift,138,1,470.42,582.74,19,20,549,336,2038,,Alvarez’s body shot precision could exploit Torres’ porous defense if he closes the gap.
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,1,1,487.71,631.22,24,25,496,400,1815,,Torres' slow start masks his high-volume potential; Garcia’s elite accuracy could exploit early openings if he accelerates.
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,13,1,524.22,743.82,30,31,525,352,1951,,"Torres is landing 50% of his jabs, but Garcia’s 51% accuracy could turn the tide if he stays sharp."
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,14,1,488.44,612.59,20,21,551,352,2035,,Torres' jab efficiency contrasts with Garcia’s idle accuracy—pressure may force the latter to commit.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,16,1,614.07,871.46,32,33,543,352,1998,,"Garcia’s 100% accuracy early contrasts Torres’ 0% land rate, but Torres’ volume could overwhelm if he closes the distance."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,17,1,565.09,762.52,33,34,549,368,2028,,"Garcia’s 66.7% accuracy early contrasts Torres’ 0% land rate, but Torres’ volume may close the gap if he pressures."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,19,1,497.45,627.58,22,23,560,368,2036,,Torres’ 100% body accuracy early targets Garcia’s known vulnerability—can he sustain pressure?
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,20,1,479.81,611.07,22,23,550,432,2006,,Torres’ 100% body accuracy exploits Garcia’s known vulnerability—can he maintain this pressure?
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,22,1,473.04,632.2,31,32,556,352,2054,,Torres' relentless body assault targets Garcia’s 22% body shot ratio — a calculated risk against a fighter with two stoppages via body shots.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,23,1,509.12,682.18,24,25,554,352,2053,,Torres’ 40% body shot ratio vs. Garcia’s 22% vulnerability shows early tactical precision.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,26,1,470.83,592.78,24,25,553,352,2039,,Torres' body attack efficiency—100% landed—exploits Garcia’s known vulnerability despite low overall output.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,28,1,485.01,650.57,32,33,556,352,2041,,Torres is attacking Garcia’s body with surgical precision—100% efficiency—leveraging his 40% body shot ratio against a known weakness.
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,35,1,470.86,602.95,22,23,561,352,2065,,"Torres’ relentless body assault, 80% landed, targets Garcia’s known weakness with surgical precision."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,38,1,538.83,748.22,28,29,549,352,2063,,Torres' 66.7% body shot accuracy exploits Garcia’s 22% body shot ratio — a critical tactical edge.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,40,1,586.45,765.64,25,26,547,352,2012,,"Garcia’s 33.3% accuracy under pressure highlights vulnerability against Torres’ high-volume, body-focused strategy."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,41,1,501.28,626.3,20,21,556,352,2063,,"Torres’ body shot efficiency counters Garcia’s low ratio, exploiting a known weakness despite slow pace."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,43,1,553.64,680.72,21,22,568,352,2126,,"Torres’ body attack is exploiting Garcia’s 22% body shot ratio, despite slow pace."
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,47,1,465.71,605.19,20,21,538,352,1990,,Torres’ 40% body shot ratio is a direct threat to Garcia’s known vulnerability.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,50,1,480.91,758.16,27,28,532,352,1968,,Torres’ relentless body assault targets Garcia’s weak spot—his 22% body shot ratio—despite the slow pace.
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,52,1,557.1,740.96,26,27,561,352,2042,,Torres’ 66.7% body accuracy exploits Garcia’s 22% body shot weakness—dangerous early.
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,53,1,491.69,753.71,30,31,552,352,2019,,Torres’ 66.7% body accuracy targets Garcia’s 22% body shot vulnerability—early pressure could exploit a known weakness.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,54,1,495.51,650.83,26,27,554,384,2006,,Torres' 100% body accuracy early exploits Garcia’s 22% body shot weakness—high-risk strategy.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,56,1,475.33,699.41,25,26,547,352,1999,,Torres' relentless body assault targets Garcia’s 22% body shot vulnerability—early pressure could exploit a known weakness.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,58,1,488.69,712.84,22,23,542,384,2007,,"Torres' body attack targets Garcia’s 22% body shot weakness, but low accuracy limits impact."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,59,1,629.54,1051.15,29,30,543,384,2010,,Torres' body shots targeting Garcia’s 22% weakness are landing at 0.0% — early pressure failing to exploit vulnerability.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,60,1,500.66,673.49,24,25,540,352,2010,,"Torres’ high body shot ratio faces early futility against Garcia’s 22% vulnerability, despite relentless pressure."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,62,1,559.24,744.44,26,27,565,352,2115,,"Garcia’s 100% body shot accuracy counters Torres’ 40% body ratio, exposing tactical mismatch."
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,65,1,484.6,751.12,30,31,563,352,2064,,Garcia’s 66.7% body shot accuracy exploits Torres’ 40% ratio — a critical mismatch in the clinch.
+baseline,nebius,0,fight-1008,B,nebius,knockdown,66,1,444.47,581.11,14,15,107,32,399,,WAIT—GARCIA WITH A HOOK! TORRES DOWN!
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,67,1,477.54,695.43,27,28,554,352,1998,,Garcia’s 100% accuracy and body shot efficiency exploit Torres’ 40% body ratio and porous defense.
+baseline,nebius,0,fight-1008,B,nebius,dominance_shift,71,1,440.1,548.25,16,17,97,32,376,,BUT GARCIA'S JUST TAKEN CONTROL—DOMINANT!
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,73,1,478.7,689.74,29,30,553,352,1991,,"Garcia’s 100% accuracy exploits Torres’ porous defense, but his lack of body shots leaves a gap Torres could exploit."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,75,1,671.89,996.0,40,40,558,352,2036,,"Garcia’s 100% accuracy exploits Torres’ 55% defense, but his 0% body shot rate leaves him vulnerable to Torres’ 40% body attack."
+baseline,nebius,0,fight-1008,B,nebius,knockdown,82,1,506.1,613.67,12,13,109,48,416,,WAIT—GARCIA WITH A KNOCKDOWN!
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,83,1,643.32,867.0,40,40,552,352,1982,,"Garcia’s 66.7% accuracy under pressure exposes Torres’ 55% defense, but his 0% body defense invites Torres’ 40% body shot threat."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,89,1,496.99,621.33,21,22,549,352,1969,,"Garcia’s jab efficiency shines, but Torres’ body attack threat looms despite zero landed shots."
+baseline,nebius,0,fight-1008,A,nebius,narrative_tension,91,1,475.15,716.24,35,36,589,352,2153,,"Garcia’s 100% jab accuracy contrasts Torres’ 0% land rate, but Torres’ 40% body shot ratio remains a looming threat."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,93,1,541.92,683.69,20,21,565,352,2074,,"Garcia’s jab dominance continues, but Torres’ body shot threat remains dangerous despite missing early."
+baseline,nebius,0,fight-1008,B,nebius,dominance_shift,104,1,426.67,538.32,18,19,102,32,388,,BUT GARCIA JUST UNLEASHED A FLOODGATE OF POWER!
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,107,1,467.78,730.58,34,35,538,352,2000,,Garcia’s 51% accuracy and 85% KO rate now on display—Torres’ 55% defense can’t withstand this volume.
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,110,1,473.87,755.53,27,28,543,352,1933,,"Garcia’s jab finds its mark—25% accuracy, but Torres’ 55% defense is already under pressure."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,123,1,563.16,879.72,27,28,557,352,1995,,Torres’ 80% accuracy and body focus challenge Garcia’s 61% defense—early edge in volume and precision.
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,126,1,493.95,676.48,25,26,542,352,1983,,Torres’ 42% accuracy and body focus are testing Garcia’s 61% defense despite low landing numbers.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,128,1,500.09,680.98,19,20,548,352,2025,,"Torres’ body shots are probing Garcia’s defense, but low landing numbers suggest timing issues."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,135,1,580.1,733.23,24,25,545,352,2035,,Torres’ body shot volume vs Garcia’s 61% defense — timing key in this war of attrition.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,137,1,472.35,631.75,21,22,551,352,2040,,"Torres’ body attack lacks precision against Garcia’s 61% defense, limiting impact despite volume."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,138,1,512.13,664.04,24,25,542,352,2018,,Torres' 40% body shot ratio vs Garcia's 61% defense — precision under pressure critical.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,139,1,483.27,596.62,18,19,536,368,1981,,Torres' high volume meets Garcia's elite defense—precision will decide round's outcome.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,141,1,481.95,597.21,19,20,538,400,1979,,Torres' body shot volume vs Garcia's elite defense — one clean shot could shift momentum.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,143,1,573.84,836.9,27,28,532,400,1974,,"Garcia’s 100% accuracy under pressure highlights his edge, but Torres’ body shot volume could exploit the vulnerability."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,148,1,607.4,800.27,23,24,544,352,2038,,Garcia’s 80% accuracy on the body could be his lifeline against Torres’ relentless volume.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,151,1,560.97,676.47,19,20,560,352,2081,,"Torres’ body shots are finding rhythm, but Garcia’s jab accuracy remains a sharp counter."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,154,1,617.82,948.12,30,31,556,352,2053,,Torres’ 42.9% accuracy and 33.3% body shot rate exploit Garcia’s 22% body defense.
+baseline,nebius,0,fight-1008,A,nebius,pace_change,155,1,490.06,736.38,24,25,555,352,2024,,"Torres’ body shots are landing at 33.3%, exploiting Garcia’s 22% body defense."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,156,1,463.25,594.24,22,23,553,384,1983,,"Torres’ body attack is finding gaps, exploiting Garcia’s 22% body defense despite slow pace."
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,159,1,482.44,827.84,33,34,549,352,2008,,Torres’ body shots are connecting at 33.3% despite low pace—Garcia’s 22% body defense is under sustained pressure.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,162,1,534.25,725.82,24,25,569,352,2079,,Torres’ 100% body shot accuracy highlights Garcia’s 22% body defense vulnerability under pressure.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,171,1,618.07,823.09,20,21,558,352,2025,,Torres' relentless body assault exploiting Garcia’s 22% body defense is turning the tide.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,186,1,609.91,800.42,25,26,549,352,2035,,Garcia’s 22% body defense is under siege as Torres lands 40% of his body shots.
+baseline,nebius,0,fight-1008,B,nebius,excitement_peak,190,1,807.22,931.42,17,18,103,16,396,,AND NOW—TORRES UNLEASHES A FURY OF PUNCHES!
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,192,1,485.14,722.29,25,26,556,352,1977,,Torres' 40% body shot accuracy is overwhelming Garcia’s 22% defense—pressure is paying off.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,200,1,560.97,723.73,25,26,551,352,1969,,Torres' 54.5% accuracy and body shot pressure are exploiting Garcia’s 22% body defense.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,210,1,485.23,637.47,23,24,548,352,1991,,Torres’ 50% body accuracy is forcing Garcia to eat shots despite his 61% defense.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,218,1,528.22,671.62,24,25,555,352,1991,,Torres’ 50% body accuracy is overwhelming Garcia’s 22% body defense despite the reach advantage.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,224,1,476.37,580.79,18,19,541,368,1984,,"Torres’ relentless body assault is exploiting Garcia’s weak defense, despite the reach gap."
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,228,1,487.51,598.65,20,21,538,352,1979,,Torres' 80% body accuracy is punishing Garcia’s vulnerable defense despite the reach gap.
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,235,1,634.54,764.81,24,25,544,352,2014,,"Torres' 50% body accuracy is overwhelming Garcia's 61% defense, exploiting his known vulnerability."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,251,1,472.36,657.56,21,22,545,352,2022,33,Torres' body attack is landing efficiently—33% accuracy—exploiting Garcia’s known weakness.
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,252,1,475.47,606.48,22,23,547,352,2010,,Torres' 50% body accuracy is exploiting Garcia’s 61% defense—pressure mounting.
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,254,1,531.8,670.26,23,24,547,352,2015,,Garcia’s 100% accuracy under pressure highlights his elite technical defense despite Torres’ body assault.
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,256,1,544.54,717.77,26,27,541,352,1992,,Torres' 50% body accuracy vs. Garcia’s 61% defense reveals a critical edge in sustained pressure.
+baseline,nebius,0,fight-1008,A,nebius,pace_change,262,1,563.8,1169.94,34,35,545,352,2016,,"Torres’ 100% body accuracy exploits Garcia’s 61% defense, but Garcia’s 51% accuracy may still land the decisive blow."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,266,1,477.59,584.54,17,18,563,352,2065,,"Torres’ body shot precision is overwhelming Garcia’s defense, despite lower overall accuracy."
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,270,1,479.8,691.28,34,35,543,352,2003,,"Torres’ 50% body accuracy is punishing Garcia’s 61% defense, but Garcia’s 51% overall accuracy could still land the knockout."
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,277,1,473.31,925.57,31,32,554,352,2046,,"Torres’ 58.3% accuracy on body shots is exploiting Garcia’s 61% defense, turning the tide in the clinch."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,294,1,563.09,758.54,21,22,564,352,2052,,"Garcia’s jab efficiency is rising, but Torres’ body assault remains relentless despite low landing rate."
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,295,1,708.74,903.78,23,24,562,352,2056,,"Torres' relentless body assault, though low-landing, is pressuring Garcia’s defense despite his jab efficiency."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,304,1,1002.51,1244.2,24,25,549,336,2047,,"Torres’ body shots are probing, but Garcia’s 100% jab accuracy suggests he’s controlling distance."
+baseline,nebius,0,fight-1008,A,nebius,excitement_change,306,1,506.91,734.91,28,29,542,352,2029,,"Garcia's 50% accuracy masks Torres' volume, but body shot inefficiency limits damage despite 40% ratio."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,307,1,466.19,688.1,26,27,542,352,1992,,Torres' 40% body shot ratio unproductive at this pace; Garcia’s jab control remains unchallenged.
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,309,1,556.9,689.19,23,24,545,352,1981,,"Torres' body shots are landing at 100%, but low pace limits damage potential despite high ratio."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,314,1,586.05,717.92,17,18,547,352,2018,,"Torres is landing every body shot, but Garcia’s jab still dictates the pace."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,321,1,621.79,895.89,26,27,532,352,1968,,"Torres’ 100% body shot accuracy is cutting deep, but Garcia’s jab still controls distance despite low output."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,323,1,497.58,622.2,18,19,540,352,2000,,"Torres' relentless body assault exploits Garcia’s vulnerability, but low output limits damage potential."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,336,1,479.73,728.82,24,25,543,352,2026,,"Torres' 100% body accuracy is punishing Garcia’s known weakness, but low volume limits the damage."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,337,1,619.17,772.88,22,23,556,352,2088,,"Torres' 100% body accuracy targets Garcia’s known weakness, but low volume limits damage."
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,338,1,596.72,726.94,18,19,541,352,2000,,"Torres’ elite body accuracy exploits Garcia’s vulnerability, but low volume limits sustained pressure."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,340,1,479.85,645.22,18,19,532,352,1993,,"Torres' precision body shots target Garcia’s weakness, but low volume limits damage potential."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,345,1,563.44,707.7,23,24,530,352,2007,,"Garcia’s perfect accuracy masks vulnerability—Torres’ body shots, though few, target a known weakness."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,348,1,584.35,844.57,20,21,540,336,2024,,"Torres’ body shots land with precision, but low volume limits damage despite Garcia’s known vulnerability."
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,357,1,472.08,661.58,31,32,542,352,2021,,"Torres’ body shots find their mark—Garcia’s 22% body ratio makes him vulnerable, but Torres’ low volume limits damage."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,367,1,495.24,1057.93,27,28,553,352,2063,,"Torres’ high body shot accuracy is threatening, but his low volume can’t exploit Garcia’s 22% body weakness effectively."
+baseline,nebius,0,fight-1008,A,nebius,pace_change,376,1,547.47,849.46,25,26,570,352,2104,,"Torres’ body shots are crisp, but his low volume can’t capitalize on Garcia’s 22% body weakness."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,377,1,494.59,815.77,28,29,549,352,2025,,"Torres’ body shots land, but his 42% accuracy and low volume can’t pressure Garcia’s 61% defense."
+baseline,nebius,0,fight-1008,B,nebius,knockdown,379,1,457.61,563.38,15,16,101,32,377,,WAIT—TORRES WITH A CLEAN CROSS! GARCIA IS DOWN!
+baseline,nebius,0,fight-1008,A,nebius,dominance_shift,380,1,504.32,826.06,29,30,552,352,1996,,"Torres' 42% accuracy and body shot focus exploit Garcia’s 22% body defense, but low volume limits sustained pressure."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,385,1,560.38,780.43,25,26,550,352,1995,,Torres’ 80% accuracy and body focus are exploiting Garcia’s 22% body defense despite lower volume.
+baseline,nebius,0,fight-1008,A,nebius,target_zone_shift,389,1,550.67,1001.6,25,26,551,352,2009,,Torres’ 85.7% body accuracy is punishing Garcia’s 22% body defense despite lower volume.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,394,1,524.24,644.26,17,18,546,352,1984,,"Torres’ precision and body assault are overwhelming Garcia’s defense, despite lower volume."
+baseline,nebius,0,fight-1008,A,nebius,momentum_reversal,396,1,627.48,880.91,27,28,553,352,2032,,Torres' 66.7% body accuracy exploiting Garcia’s 22% body defense — a critical vulnerability under pressure.
+baseline,nebius,0,fight-1008,A,nebius,momentum_stable,397,1,526.98,731.27,26,27,549,352,2051,,"Torres' 66.7% body accuracy targets Garcia’s 22% body defense, exploiting a key vulnerability."
+baseline,nebius,0,fight-1008,A,nebius,idle_timeout,399,1,591.92,968.77,29,30,553,336,2014,,Torres' relentless body assault now hitting at 66.7% accuracy — Garcia’s 22% body defense crumbling under pressure.
+baseline,nebius,0,fight-1009,A,nebius,excitement_change,1,1,604.82,949.83,29,30,504,32,1871,,"Garcia's perfect 100% accuracy early suggests sharp jab control, but Alvarez's zero output indicates a deliberate, probing approach."
+baseline,nebius,0,fight-1009,A,nebius,idle_timeout,3,1,490.02,878.47,29,30,524,352,1983,,"Garcia’s 66.7% accuracy highlights crisp jab control, while Alvarez’s zero output signals a calculated, pressure-building strategy."
+baseline,nebius,0,fight-1009,A,nebius,target_zone_shift,5,1,602.85,772.27,17,18,565,352,2140,,Garcia’s crisp jab control contrasts Alvarez’s patient pressure buildup despite zero output.
+baseline,nebius,0,fight-1009,A,nebius,pace_change,10,1,593.23,845.12,26,27,547,352,2100,,"Garcia’s 66.7% jab accuracy sets pace, but Alvarez’s pressure buildup hints at late-round danger."
+baseline,nebius,0,fight-1009,A,nebius,dominance_shift,16,1,596.87,805.22,26,27,554,352,2082,,"Garcia’s 60% jab accuracy early shows control, but Alvarez’s relentless pressure could exploit fatigue as rounds progress."
+baseline,nebius,0,fight-1009,A,nebius,pace_change,18,1,519.08,679.03,21,22,553,352,2091,,Garcia’s jab control fades; Alvarez’s 50% cross accuracy signals early pressure dominance.
+baseline,nebius,0,fight-1009,A,nebius,dominance_shift,19,1,498.66,810.13,25,26,562,368,2111,,Garcia’s 100% jab accuracy fades; Alvarez’s pressure mounts with 50% cross efficiency.
+baseline,nebius,0,fight-1009,A,nebius,idle_timeout,20,1,604.01,816.75,25,26,552,352,2044,,Alvarez’s 50% cross accuracy under pressure signals early dominance—Garcia’s jab control is fading.
+baseline,nebius,0,fight-1009,A,nebius,momentum_reversal,22,1,495.32,706.44,21,22,570,352,2110,,Garcia’s perfect jab efficiency is eroding as Alvarez’s body-focused pressure begins to take toll.
+baseline,nebius,0,fight-1009,A,nebius,dominance_shift,24,1,540.47,827.83,34,35,563,352,2121,,Garcia’s 100% jab accuracy is under siege as Alvarez ramps up body shots—22% of his output is already targeting the midsection.
+baseline,nebius,0,fight-1009,A,nebius,dominance_shift,25,1,485.86,668.03,26,27,557,352,2099,,Alvarez’s 50% accuracy and rising body shot volume exploit Garcia’s 22% body shot ratio vulnerability.
+baseline,nebius,0,fight-1009,A,nebius,idle_timeout,26,1,567.85,794.25,23,24,561,352,2081,,"Alvarez’s body shot volume already exceeds Garcia’s 22% ratio, exploiting a known vulnerability early."
+baseline,nebius,0,fight-1009,A,nebius,momentum_reversal,27,1,492.34,699.76,28,29,561,352,2101,,Alvarez’s 50% body accuracy already outpaces Garcia’s 22% ratio—early exploitation of a known weakness.
+baseline,nebius,0,fight-1009,A,nebius,momentum_stable,28,1,511.23,616.11,16,17,555,352,2082,,Alvarez’s early body precision targets Garcia’s known vulnerability with surgical efficiency.
+baseline,nebius,0,fight-1009,A,nebius,pace_change,33,1,499.1,804.66,28,29,550,352,2076,,Alvarez’s 75% body accuracy in round one exploits Garcia’s 22% body shot ratio—early and precise.
+baseline,nebius,0,fight-1009,A,nebius,momentum_reversal,36,1,536.43,863.29,29,30,560,352,2095,,Alvarez’s 80% body accuracy preys on Garcia’s 22% body shot ratio—early dominance with surgical precision.
+baseline,nebius,0,fight-1009,B,nebius,knockdown,38,1,578.68,698.8,16,17,111,16,413,,WAIT—ALVAREZ WITH A BANG! KNOCKDOWN!
+baseline,nebius,0,fight-1009,A,nebius,momentum_reversal,39,1,564.73,800.95,30,31,568,352,2095,,"Alvarez’s 34% body shot ratio and elite timing exploit Garcia’s 22% body defense, landing cleanly with uppercuts."
+baseline,nebius,0,fight-1009,A,nebius,momentum_stable,40,1,515.85,786.83,32,33,560,352,2052,,Alvarez’s 100% accuracy and 34% body shot ratio exploit Garcia’s 22% body defense with precise uppercuts.
+baseline,nebius,0,fight-1009,A,nebius,momentum_reversal,50,1,538.26,978.97,28,29,569,352,2090,,Alvarez’s 80% accuracy and 34% body shot ratio are overwhelming Garcia’s 22% body defense.
+baseline,nebius,0,fight-1009,A,nebius,idle_timeout,52,1,708.19,936.23,27,28,560,352,2059,,Alvarez’s 83.3% accuracy and relentless body pressure are testing Garcia’s 22% body defense early.
+baseline,nebius,0,fight-1009,A,nebius,target_zone_shift,53,1,488.78,760.5,30,31,558,352,2049,,Alvarez’s 66.7% accuracy and 50% body shot success are exploiting Garcia’s 22% body defense.
+baseline,nebius,0,fight-1009,A,nebius,momentum_reversal,54,1,560.49,854.84,27,28,576,352,2115,,"Garcia’s jab control is neutralizing Alvarez’s pressure, but his 33.3% accuracy under fire raises concern."
+baseline,nebius,0,fight-1009,A,nebius,momentum_stable,55,1,487.8,651.83,26,27,567,352,2089,,Alvarez’s 100% body shot accuracy exploits Garcia’s 22% body defense—dangerous early.

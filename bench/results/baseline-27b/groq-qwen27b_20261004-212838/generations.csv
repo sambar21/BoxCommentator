@@ -1,0 +1,151 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,excitement_change,1,1,452.73,483.41,14,15,497,,1778,,Johnson’s 76-inch reach advantage dictates early patience against Torres.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,dominance_shift,5,1,2152.54,2212.15,19,20,518,,1861,,Johnson’s perfect 100% accuracy is already stalling Torres’s high-volume approach.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,pace_change,18,1,2343.14,2401.53,18,19,549,,1991,,Torres’s 75% body shot ratio is visibly draining Johnson’s stamina early.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,momentum_reversal,23,1,2474.68,2534.17,19,20,557,,1985,,Johnson’s 76-inch reach is effectively neutralizing Torres’s high-volume swarming game.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,dominance_shift,27,1,2195.5,2242.66,22,23,548,,1956,,Johnson’s 90.9% accuracy is completely shutting down Torres’s high-volume swarming tactics early.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,momentum_reversal,30,1,2345.74,2407.65,24,25,558,,2021,8,"Torres is throwing 66.7% body shots, desperately trying to close the 8-inch reach gap."
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,excitement_change,34,1,2401.78,2432.49,14,15,550,,1961,,Torres is struggling to close the eight-inch reach gap against Johnson.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,target_zone_shift,36,1,2362.68,2420.2,19,20,541,,1943,,"Johnson’s 60% accuracy punishes Torres’s reckless, low-percentage early volume."
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,momentum_reversal,39,1,2266.29,2326.43,19,20,546,,1961,67,Johnson’s 67% accuracy is already dismantling Torres’s low-percentage early volume.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,dominance_shift,46,1,2362.76,2423.01,22,23,535,,1910,,Johnson’s 87.5% accuracy outclasses Torres’s 60% in this early exchange.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,idle_timeout,47,1,2320.29,2351.0,16,17,537,,1920,,Johnson’s 80% accuracy completely neutralizes Torres’s struggling early volume.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,excitement_change,50,1,3358.87,3385.35,15,16,531,,1901,,Johnson’s 76-inch reach is effectively boxing out the shorter Torres.
+baseline-27b,groq-qwen27b,0,fight-1000,B,groq-qwen27b,knockdown,55,1,1382.87,1410.8,14,15,107,,364,,WAIT! TORRES HOOK! JOHNSON IS DOWN!
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,excitement_change,56,1,2450.41,2483.12,17,18,527,,1887,,Johnson's 72% defense rating likely helps him recover from that sudden shock.
+baseline-27b,groq-qwen27b,0,fight-1000,A,groq-qwen27b,momentum_reversal,58,1,2905.34,2941.21,18,19,537,,1912,,Torres’s 40% body shot ratio could finally open up Johnson’s guard.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,excitement_change,1,1,1939.82,1967.03,15,16,515,,1870,,Garcia uses his four-inch reach advantage to control the early distance.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,13,1,2250.08,2280.36,18,19,543,,1976,,"Alvarez is launching 100% body shots, targeting Garcia's known vulnerability."
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,pace_change,14,1,2311.78,2366.42,16,17,556,,2056,,"Garcia’s crisp cross is landing effectively, keeping Alvarez at bay early."
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,15,1,2352.89,2408.27,18,19,547,,2005,,Alvarez's 100% body accuracy targets Garcia's specific knockout vulnerability immediately.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,18,1,2329.67,2386.71,18,19,565,,2089,,Garcia's 74-inch reach advantage dictates the slow pace in round one.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,21,1,2319.48,2364.04,23,24,554,,2040,,Alvarez’s 100% accuracy overwhelms Garcia’s struggling 25% jab output right now.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,target_zone_shift,27,1,2842.04,2879.84,18,19,553,,2012,33,Garcia’s 33% body ratio targets Alvarez’s known vulnerability early on.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,29,1,1916.45,1955.38,21,22,549,,1998,,Garcia’s 33% accuracy struggles against Alvarez’s relentless 60% jab pressure.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,pace_change,31,1,2338.27,2373.79,20,21,555,,2043,,"Alvarez’s 58% accuracy exceeds Garcia’s 51%, highlighting early tactical precision."
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,33,1,2536.91,2595.79,21,22,560,,2066,,"Garcia’s 74-inch reach dictates the early pace, neutralizing Alvarez’s initial pressure."
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,target_zone_shift,35,1,2198.94,2231.3,18,19,554,,2031,,Alvarez’s 78% KO rate signals lethal intent behind his current offensive setup.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,36,1,2620.43,2681.9,25,26,549,,2015,,Garcia’s 74-inch reach neutralizes Alvarez’s early pressure at a slow 24 punches per minute.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,37,0,,1953.56,0,,,,2063,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,38,1,2473.35,2524.88,22,23,547,,2000,,Alvarez’s 58% accuracy targets Garcia’s 74-inch reach to open a path forward.
+baseline-27b,groq-qwen27b,0,fight-1001,B,groq-qwen27b,knockdown,39,1,2456.06,2486.44,15,16,113,,416,,WAIT! THE CROSS! GARCIA KNOCKS HIM DOWN!
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,40,0,,2222.72,0,,,,2040,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,41,1,2379.55,2438.37,18,19,529,,1906,,Garcia’s 74-inch reach effectively neutralized Alvarez’s early pressure attempts.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,pace_change,47,0,,2324.66,0,,,,1963,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,53,1,2411.15,2471.77,22,23,544,,1982,,Garcia’s 75% accuracy is dismantling Alvarez’s 25% offense right now!
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_stable,54,1,2492.5,2546.58,24,25,536,,1929,66;83,Garcia’s 83% accuracy on the jab outpaces Alvarez’s 66% significantly right now.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,pace_change,56,0,,2194.88,0,,,,2052,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,61,1,2512.05,2572.3,20,21,548,,1970,,Alvarez’s 33.3% body shot ratio targets Garcia’s critical vulnerability right now.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,66,0,,2220.51,0,,,,1980,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,70,1,2735.74,2763.86,18,19,535,,1939,,"Alvarez is winning the early exchange, with Garcia's 20% accuracy struggling."
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,excitement_change,71,0,,2110.17,0,,,,1952,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_stable,73,1,2413.86,2468.19,16,17,533,,1951,,Alvarez’s 50% body shot ratio targets Garcia’s known vulnerability.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,75,0,,2256.53,0,,,,1995,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,76,1,2454.35,2482.29,15,16,527,,1919,,Garcia’s fresh footwork effectively neutralizes Alvarez’s early pressure.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,77,0,,2576.72,0,,,,1929,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,78,1,2620.14,2680.13,19,20,542,,1971,,Alvarez’s 100% accuracy signals dangerous early pressure on Garcia’s vulnerable body.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,80,0,,1886.77,0,,,,1932,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,82,1,2544.57,2601.64,20,21,539,,2003,,Garcia’s 100% jab accuracy contrasts sharply with Alvarez’s recent missed cross.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,83,0,,2161.14,0,,,,1950,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,84,1,2471.26,2531.07,21,22,541,,1955,,Garcia’s 74-inch reach advantage is dictating the slow pacing of the opening exchange.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_stable,86,0,,2298.3,0,,,,1960,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,88,1,2576.14,2609.6,17,18,549,,1987,,Alvarez’s current 25% accuracy highlights the challenge of closing the distance.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_stable,89,0,,2226.65,0,,,,1990,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,95,1,3341.6,3399.92,17,18,538,,1958,,Alvarez’s 50% body shot ratio is targeting Garcia’s known vulnerability.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,105,0,,1344.66,0,,,,1970,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,excitement_change,107,1,2560.51,2590.49,16,17,534,,1968,,Alvarez’s single uppercut signals an early tactical shift against Garcia’s jab.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,109,0,,2213.32,0,,,,2004,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,idle_timeout,110,1,2453.13,2510.47,18,19,536,,1975,,Garcia’s 74-inch reach currently stifles Alvarez’s early pressure tactics.
+baseline-27b,groq-qwen27b,0,fight-1001,B,groq-qwen27b,knockdown,112,1,2361.15,2378.06,9,10,106,,385,,WAIT! Garcia lands a POWERFUL cross!
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,target_zone_shift,113,1,2416.32,2475.64,20,21,553,,2030,,Alvarez’s 100% accuracy signals a sharp tactical adjustment against Garcia’s reach advantage.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,116,0,,2302.19,0,,,,1995,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,123,1,2392.1,2444.34,19,20,538,,1975,,Garcia’s rising momentum and 50% accuracy signal a dangerous early comeback attempt.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,momentum_reversal,137,0,,2294.14,0,,,,1984,,
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,dominance_shift,146,1,2418.56,2473.69,18,19,538,,1948,,Alvarez’s 80% body shot volume targets Garcia’s known late-round vulnerability.
+baseline-27b,groq-qwen27b,0,fight-1001,A,groq-qwen27b,target_zone_shift,149,0,,2315.36,0,,,,1936,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,1,1,2593.44,2652.34,21,22,502,,1811,,Alvarez leverages his 70.5-inch reach to neutralize Torres's aggressive swarming.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,3,1,2197.87,2257.91,21,22,518,,1882,,"Alvarez’s 58% accuracy currently outpaces Torres’s 42%, leveraging superior defense."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,5,0,,2299.82,0,,,,1979,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,18,1,2687.94,2729.83,20,21,520,,1898,,"Torres is swarming effectively, landing 80% of his punches in this early exchange."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,19,0,,2060.13,0,,,,1898,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,20,1,2401.09,2474.2,21,22,534,,1928,,Torres' 50% body shot ratio is already suffocating Alvarez in the opening moments!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,21,0,,2616.35,0,,,,1903,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,23,1,2178.41,2210.73,15,16,540,,1939,,"Alvarez lands a crisp hook, seizing early momentum against the stagnant Torres."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,25,0,,2296.68,0,,,,1907,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,29,1,2485.13,2514.73,15,16,525,,1913,,"Both men are missing wildly, with zero connections in the final ten seconds."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,30,0,,2300.1,0,,,,1920,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,40,1,2432.35,2490.79,18,19,529,,1939,,Alvarez's 50% body shot ratio is already shaping the early pressure game.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,41,0,,2301.4,0,,,,1903,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,pace_change,43,1,2924.14,2968.75,22,23,531,,1929,,Torres trades 100% accuracy for zero body shots while Alvarez lands half on the midsection.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,45,0,,1844.0,0,,,,1913,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,47,1,2477.99,2536.92,20,21,542,,1950,,Alvarez's 50% body landing rate is steadily wearing Torres down in the early rounds.
+baseline-27b,groq-qwen27b,0,fight-1002,B,groq-qwen27b,dominance_shift,49,1,2727.13,2754.83,11,12,108,,385,,BUT Alvarez is DOMINATING with relentless pressure!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,50,1,2105.42,2165.33,18,19,551,,2013,,Alvarez’s 60% accuracy with hooks is already testing Torres’s porous defense.
+baseline-27b,groq-qwen27b,0,fight-1002,B,groq-qwen27b,dominance_shift,60,1,2182.2,2212.74,13,14,106,,397,,BUT Alvarez has TORRES COMPLETELY STUNNED!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,61,1,2466.34,2521.82,20,21,550,,1998,,Alvarez’s precise cross (66.7% accuracy) exploits Torres’s porous defense early.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,62,0,,2266.22,0,,,,1970,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,64,1,2345.19,2404.5,18,19,530,,1901,,"Alvarez’s 70.5-inch reach advantage dictates the slow, technical pace."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,67,0,,2599.31,0,,,,1896,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,70,1,2213.41,2245.67,17,18,527,,1891,,"Torres surges forward, ignoring Alvarez’s reach to hunt for close-range damage."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,79,0,,2274.3,0,,,,1873,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,82,1,2849.58,2909.5,18,19,534,,1933,,Alvarez’s perfect accuracy and heavy body work are already dictating the fight’s tempo.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,dominance_shift,83,0,,1880.67,0,,,,1987,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,84,1,2459.72,2485.79,12,13,532,,1940,,Torres is struggling to land as Alvarez controls the range.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,87,0,,2314.26,0,,,,1927,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,89,1,2460.4,2524.2,22,23,540,,1937,,Alvarez’s 100% accuracy and heavy body work are neutralizing Torres’s swarming attempts.
+baseline-27b,groq-qwen27b,0,fight-1002,B,groq-qwen27b,dominance_shift,90,1,2346.14,2371.05,13,14,115,,407,,BUT Alvarez is DOMINATING this absolute CYCLONE!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,91,1,2436.19,2495.25,20,21,548,,1994,,Alvarez’s 100% accuracy and body work are controlling the slow pace against Torres.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,92,0,,2214.56,0,,,,1964,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,94,1,2599.69,2637.71,20,21,551,,1987,,Alvarez’s 78% KO rate looms large as pressure builds in the late round.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,97,0,,2163.69,0,,,,1899,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,108,1,2537.43,2574.58,18,19,522,,1895,,Torres is hammering Alvarez’s body with 80% of his recent punches.
+baseline-27b,groq-qwen27b,0,fight-1002,B,groq-qwen27b,knockdown,114,1,2342.19,2397.43,16,17,110,,394,,WAIT! TORRES HOOKS ALVAREZ TO THE CANVAS!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,115,0,,2234.53,0,,,,1979,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,120,1,2464.57,2524.4,20,21,531,,1883,,"Torres's 42% accuracy is low, yet this specific hook landed with devastating impact."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,135,1,2349.1,2392.51,23,24,533,,1918,,"Alvarez's 55.6% accuracy outpaces Torres, proving his superior precision in the early rounds."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,136,0,,2296.91,0,,,,1985,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,dominance_shift,137,1,2427.36,2487.02,18,19,552,,2000,,Alvarez’s 75% accuracy and rising momentum dictate the slow-paced tactical opening.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,145,0,,2318.57,0,,,,1966,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,pace_change,155,1,2381.01,2418.65,18,19,528,,1919,,"Torres floods the zone with 80% body shots, forcing Alvarez to absorb."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,157,0,,2689.28,0,,,,1927,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,pace_change,162,1,4094.82,4155.1,23,24,521,,1896,,Alvarez’s 66.7% accuracy and 50% body shots punish Torres’s porous defense!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,166,0,,308.19,0,,,,1865,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,170,1,2527.77,2587.16,19,20,529,,1905,,Alvarez’s 100% accuracy on the hook is surgically precise right now.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,174,0,,2217.75,0,,,,1852,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,181,1,12352.76,12407.55,20,21,537,,1970,,Torres’ 66.7% accuracy shows he’s finding the body with uppercuts.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,182,1,8838.21,8896.48,24,25,526,,1885,,Alvarez’s 66.7% body shot ratio in this 10-second burst controls the midrange.
+baseline-27b,groq-qwen27b,0,fight-1002,B,groq-qwen27b,knockdown,183,1,185.54,241.23,18,19,111,,399,,WAIT! TORRES LANDS A CLOSER! ALVAREZ IS DOWN!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,184,1,3060.69,3184.24,19,20,541,,1925,,Alvarez’s 67% defense proves crucial as he absorbs Torres’s high-volume pressure.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,185,1,1742.3,1802.21,21,22,555,,1981,,"Alvarez’s 70.5-inch reach neutralizes Torres’s swarming volume, controlling distance."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,187,1,8614.17,8657.72,22,23,546,,1991,,"Alvarez’s 100% accuracy lands a critical body jab, halting Torres’s slow pace."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,188,1,865.96,900.38,17,18,566,,2016,,Alvarez’s 78% KO rate looms over his precise body attacks.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,pace_change,193,1,1736.92,1795.5,21,22,554,,1985,33,Alvarez’s 80% accuracy surges as Torres’s 33% struggles to land.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,197,1,2374.07,2435.48,23,24,541,,1942,,Alvarez’s 80% accuracy exposes Torres’s 55% defensive vulnerability in the mid-rounds.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,202,1,2481.39,2509.37,15,16,550,,1954,,Torres lands a clean cross as he surges forward in the pocket.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,dominance_shift,208,1,2207.26,2268.37,25,26,563,,2010,,Torres’s 58.3% accuracy overwhelms Alvarez as the pace hits 102 punches per minute.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,212,0,,2208.14,0,,,,1975,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,218,1,2397.99,2445.8,24,25,552,,1958,,Alvarez’s 50% accuracy contrasts sharply with Torres’s 38.5% in this frantic exchange.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,pace_change,220,0,,2345.46,0,,,,1924,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,223,1,2717.9,2773.64,18,19,534,,1909,,Alvarez’s 80% accuracy in the last ten seconds highlights his superior precision.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,229,0,,2044.85,0,,,,1926,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,230,1,2531.9,2590.9,18,19,518,,1889,,"Torres flails uselessly while Alvarez lands precise jabs, maintaining a clear edge."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,231,0,,2235.17,0,,,,1903,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,232,1,2424.73,2485.9,21,22,530,,1928,,Torres' 25% accuracy signals desperation as Alvarez's precise cross dictates the fight's rhythm.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,243,0,,2277.85,0,,,,1944,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,247,1,2617.58,2676.7,18,19,531,,1946,,Alvarez's 75% accuracy sharpens his momentum as Torres struggles to land.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,248,0,,2126.25,0,,,,1906,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,249,1,2572.36,2633.88,18,19,521,,1904,,Alvarez's 100% accuracy on the jab highlights his elite defensive efficiency.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,251,0,,2195.26,0,,,,1926,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,253,1,2408.92,2450.78,22,23,528,,1918,,"Alvarez is dictating terms with 66.7% accuracy, punishing Torres’s low volume significantly."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,255,1,2418.53,2582.01,15,16,524,,1892,,"Alvarez’s precise hook targets the body, exploiting Torres’s slower pace."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,256,0,,2169.34,0,,,,2004,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,257,1,2927.53,2958.04,15,16,513,,1875,,"Torries struggles to land as Alvarez dictates this slow, tactical early exchange."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,idle_timeout,259,0,,2165.47,0,,,,1891,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,target_zone_shift,261,1,2858.15,2919.57,22,23,520,,1885,,"Alvarez’s 66.7% accuracy suffocates Torres, who remains stuck in the pocket."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,dominance_shift,264,0,,1594.22,0,,,,1911,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,round_context,271,1,2456.85,2524.88,20,21,532,,1945,,Alvarez’s 71.4% accuracy and heavy body work are punishing Torres early on.
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,excitement_change,273,0,,2210.58,0,,,,1865,,
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,285,1,2436.35,2468.45,20,21,532,,1924,,"Alvarez’s 60% accuracy targets the body, steadily wearing down the swarmer."
+baseline-27b,groq-qwen27b,0,fight-1002,B,groq-qwen27b,knockdown,288,1,2779.58,2807.13,12,13,114,,416,,WAIT! ALVAREZ DROPS TORRES!
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_stable,289,1,3687.99,3741.47,24,25,541,,1954,,"Alvarez’s 67% defense neutralizes Torres’s 50% KO threat, securing the early edge."
+baseline-27b,groq-qwen27b,0,fight-1002,A,groq-qwen27b,momentum_reversal,291,0,,810.13,0,,,,1948,,

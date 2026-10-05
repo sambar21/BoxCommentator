@@ -6,6 +6,7 @@ Triggers idle commentary during lulls.
 from typing import Optional
 import random
 import time
+from src.core import clock
 from src.core.action_buffer.buffer import ActionBuffer
 from src.core.events import Event
 
@@ -22,7 +23,7 @@ class ExcitementTracker:
         self.previous_state = None
         
         # Time since last update
-        self.last_update_time = time.time()
+        self.last_update_time = clock.now()
         
         # Idle timeout (seconds of low activity before triggering idle commentary)
         self.idle_timeout = 4.0
@@ -68,7 +69,7 @@ class ExcitementTracker:
     
     def update(self) -> Optional[Event]:
         """Check excitement level"""
-        current_time = time.time()
+        current_time = clock.now()
         new_state = self._calculate_state()
         
         # Check for idle timeout (if in LULL for too long)
@@ -125,6 +126,6 @@ class ExcitementTracker:
             message=random.choice(self.contexts["IDLE"]),
             context={
                 "reason": "idle_timeout",
-                "time_since_action": time.time() - self.last_update_time
+                "time_since_action": clock.now() - self.last_update_time
             }
         )

@@ -16,7 +16,8 @@ class QueueConsumer:
     
     def __init__(self, track_b_threshold: float = 9.0):
         self.track_b_threshold = track_b_threshold
-        
+        self.never_demote_above = 9.5
+
         # Content balance tracking (60/40 rule)
         self.track_a_count = 0
         self.track_b_count = 0
@@ -50,7 +51,7 @@ class QueueConsumer:
         base_track = self._decide_track(primary.priority)
         
         # Apply 60/40 balance adjustment
-        final_track = self._apply_balance(base_track)
+        final_track = self._apply_balance(base_track, primary.priority)
         
         # Update counters
         if final_track == 'B':
@@ -79,11 +80,15 @@ class QueueConsumer:
             return 'B'
         return 'A'
     
-    def _apply_balance(self, base_track: str) -> str:
+    def _apply_balance(self, base_track: str, priority: float = 0.0) -> str:
         """
         Apply 60/40 balance rule.
         Target: 60% Track A, 40% Track B
+        Events above 9.5 (knockdowns) are never demoted.
         """
+        if base_track == 'B' and priority > self.never_demote_above:
+            return 'B'
+
         total = self.track_a_count + self.track_b_count
         
         if total < 5:

@@ -1,0 +1,471 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,excitement_change,1,1,538.82,639.05,11,19,497,,1778,,Johnson’s single landed jab highlights his 63% accuracy against Torres’s early caution.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,dominance_shift,5,1,539.27,640.09,9,16,522,,1875,,Johnson's perfect four-for-four start contrasts sharply with Torres's single attempt.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,pace_change,18,1,747.52,856.99,10,20,549,320,2008,,Johnson's perfect eleven-for-ten record highlights his elite 63% accuracy early on.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,momentum_reversal,23,1,526.25,636.74,12,15,554,320,1998,,Johnson’s flawless eleven-punch burst completely dominates the frantic early pace.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,dominance_shift,27,1,777.89,881.92,8,26,544,320,1961,,Johnson’s 90.9% accuracy completely dwarfs Torres’s 57.1% in this frantic opening.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,momentum_reversal,30,1,879.39,982.87,10,19,556,320,2001,,"Johnson’s 80% accuracy here sharply contrasts Torres’s desperate, porous early surge."
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,excitement_change,34,1,763.57,804.31,6,22,547,320,1945,,Torres’s 0.0% accuracy highlights his struggle against Johnson’s 76-inch reach.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,target_zone_shift,36,1,641.01,740.14,11,19,542,320,1950,,Torres struggles to penetrate Johnson’s elite 72% defense with zero landed hooks.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,momentum_reversal,39,1,751.98,856.69,8,22,552,320,1971,,Johnson’s 66.7% accuracy shows he’s comfortably picking off Torres’s short-range hooks.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,dominance_shift,46,1,735.26,838.33,9,26,536,320,1916,,Torres’s 60% accuracy signals early trouble against Johnson’s 87.5% counter-punching.
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,idle_timeout,47,1,770.95,878.58,12,30,542,320,1937,,"Johnson’s 80% accuracy currently outclasses Torres’s 50%, favoring the southpaw’s counter-punching game."
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,excitement_change,50,1,810.94,918.64,7,20,547,320,1939,,Johnson’s elite 63% accuracy is neutralizing Torres’s high-volume swarming approach.
+baseline-27b,nebius-27b,0,fight-1000,B,nebius-27b,knockdown,55,1,748.71,855.53,10,15,107,,364,,WAIT! DOWN JONES! TORRES LANDS THE HOOK!
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,excitement_change,56,1,755.66,858.89,9,22,531,320,1907,,"Johnson’s 72% defense absorbs the flurry, maintaining a tactical edge against the swarmer."
+baseline-27b,nebius-27b,0,fight-1000,A,nebius-27b,momentum_reversal,58,1,735.85,841.56,9,23,541,320,1930,,Torres’s 60% clip accuracy proves he can land despite his porous 55% defense.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,excitement_change,1,1,731.31,836.32,8,15,515,,1870,,"Alvarez holds back, while Garcia probes with a single clean jab."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,13,1,774.62,823.84,6,15,542,,1968,,Garcia's perfect accuracy highlights his superior jab range against Alvarez.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,pace_change,14,1,534.19,633.23,10,20,551,320,2047,,Garcia leverages his 74-inch reach advantage to control the early distance effectively.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,15,1,861.48,982.97,9,17,546,320,2017,,"Alvarez targets Garcia's known body vulnerability early, aiming to disrupt his rhythm."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,18,1,747.3,855.25,8,22,566,320,2098,,Alvarez's 100% accuracy targets Garcia's 22% body shot ratio early.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,21,1,833.73,871.8,5,18,555,320,2034,,Garcia’s 25% accuracy struggles against Alvarez’s relentless early pressure.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,target_zone_shift,27,1,746.73,850.96,7,22,550,320,2006,,Garcia’s 85% KO rate threatens Alvarez’s 67% defense early on.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,29,1,738.94,843.71,11,24,546,320,1985,33,Alvarez’s 58% accuracy crushes Garcia’s 33% early volume in this opening exchange.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,pace_change,31,1,747.92,790.1,6,21,560,320,2038,,"Garcia’s 74-inch reach advantage dictates the slow, technical pace of round one."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,33,1,529.63,630.61,6,23,562,320,2067,,"Garcia’s 74-inch reach is dictating the slow, technical pace of the opening round."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,target_zone_shift,35,1,768.24,874.71,8,22,555,320,2022,,Alvarez’s early 0% accuracy suggests he is respecting Garcia’s 74-inch reach advantage.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,36,1,842.9,989.69,8,21,553,320,2017,,Garcia’s early 100% body shot ratio targets Alvarez’s known defensive vulnerability.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,37,1,608.65,708.26,8,22,562,320,2063,,Garcia’s 50% accuracy exploits Alvarez’s 74-inch reach deficit early on.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,38,1,776.54,880.96,9,17,564,320,2064,,Alvarez’s single landed cross hints at early volume against Garcia’s high output.
+baseline-27b,nebius-27b,0,fight-1001,B,nebius-27b,knockdown,39,1,899.16,1005.85,11,21,113,,416,,WAIT! GARCIA CRUSHES ALVAREZ WITH A DEVASTATING RIGHT HAND!
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,40,1,769.72,877.06,9,21,568,320,2063,,Garcia’s 74-inch reach advantage allows him to safely extend his powerful cross early.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,41,1,548.36,645.33,8,21,555,320,2011,,"Garcia’s 74-inch reach secures a safe cross, establishing an early edge."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,pace_change,47,1,552.43,663.2,9,18,559,320,2040,,Garcia’s 50% accuracy on the cross keeps him ahead early.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,53,1,737.19,841.37,11,26,564,320,2030,,Garcia’s 75% accuracy crushes Alvarez’s 25% as the reach advantage dictates early rounds.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_stable,54,1,782.87,886.66,8,28,557,320,2006,,Garcia’s 83.3% accuracy currently outclasses Alvarez’s 66.7% in the opening exchanges.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,pace_change,56,1,798.49,824.9,4,17,578,320,2078,,Alvarez’s 50% body shot ratio targets Garcia’s known vulnerability.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,61,1,770.81,875.27,8,25,568,320,2043,,Alvarez’s 100% accuracy surges as he targets Garcia’s 22% body shot weakness.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,66,1,565.1,671.78,9,26,556,320,2042,57,Alvarez’s 80% accuracy is currently outpacing Garcia’s 57% in this mid-round exchange.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,70,1,780.26,838.11,6,16,565,320,2020,,Alvarez’s relentless pressure is already exploiting Garcia’s late-round fatigue vulnerability.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,excitement_change,71,1,794.04,898.93,8,20,559,320,2055,,Alvarez's 100% body accuracy targets Garcia's known vulnerability against body shots.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_stable,73,1,810.22,913.17,7,19,550,320,2053,,Alvarez's 50% body volume targets Garcia's specific vulnerability against body shots.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,75,1,771.84,877.42,9,17,572,320,2098,,Alvarez’s relentless body work is visibly wearing down Garcia’s late-round stamina.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,76,1,549.01,654.75,6,19,546,320,2020,,Garcia’s 85% KO rate remains a threat despite the slow pace.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,77,1,756.06,865.24,7,20,549,320,1999,,Garcia’s 74-inch reach advantage is effectively neutralizing Alvarez’s early pressure.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,78,1,778.19,891.14,10,26,565,320,2044,,Alvarez’s 100% jab accuracy signals a tactical shift to bypass Garcia’s 74-inch reach advantage.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,80,1,645.29,712.89,10,27,553,320,2029,,"Garcia’s 74-inch reach dictates the early range, keeping Alvarez’s 78% KO threat at bay."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,82,1,746.58,851.38,7,23,572,320,2102,,Garcia’s 100% accuracy in the last ten seconds neutralizes Alvarez’s early pressure.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,83,1,805.14,917.62,11,17,569,320,2042,,Alvarez must ignore early jab misses to avoid Garcia’s known body-shot vulnerability.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,84,1,786.87,889.75,8,19,560,320,2044,,Garcia’s superior 74-inch reach currently dictates the opening distance against Alvarez.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_stable,86,1,742.82,844.17,7,15,552,320,2047,,Alvarez’s late-round pressure targets Garcia’s known body-shot vulnerability.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,88,1,801.05,905.23,10,17,561,320,2066,,Garcia’s zero landed punches cede momentum as Alvarez’s pressure mounts.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_stable,89,1,889.01,993.74,7,19,551,320,2059,,Garcia’s 74-inch reach currently neutralizes Alvarez’s early pressure effectively.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,95,1,741.54,847.91,7,15,556,320,2032,,Alvarez’s fifty percent body shots target Garcia’s known vulnerability early.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,105,1,777.33,887.39,8,20,551,320,2057,,Alvarez’s 60% accuracy shows he’s finding his range behind Garcia’s jab.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,excitement_change,107,1,752.46,805.92,7,19,551,320,2045,,Garcia’s 74-inch reach advantage allows him to control the early distance.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,109,1,742.86,846.26,8,19,566,320,2071,,"Garcia’s 74-inch reach still dictates range, forcing Alvarez to chase."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,idle_timeout,110,1,732.38,843.11,7,16,557,320,2040,,Alvarez’s relentless pressure is testing Garcia’s susceptibility to body shots early.
+baseline-27b,nebius-27b,0,fight-1001,B,nebius-27b,knockdown,112,1,822.32,930.31,7,14,106,,385,,WAIT! GARCIA DROPS ALVAREZ!
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,target_zone_shift,113,1,758.38,864.44,8,19,554,320,2032,,Garcia’s superior 74-inch reach allowed him to extend the range effectively.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,116,1,768.9,872.82,8,23,545,320,1969,,Alvarez’s 78% KO rate hints at danger despite the slow 42-punch pace.
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,123,1,548.68,654.03,8,23,559,320,2027,,"Garcia's 50% accuracy outpaces Alvarez, signaling his rising momentum in the early rounds."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,momentum_reversal,137,1,754.95,860.01,9,19,569,320,2059,,"Alvarez is flooding Garcia with body shots at 80%, targeting his known vulnerability."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,dominance_shift,146,1,727.45,833.0,10,29,560,320,2039,,"Garcia’s 62.5% accuracy currently outpaces Alvarez, keeping the pace at 108 punches per minute."
+baseline-27b,nebius-27b,0,fight-1001,A,nebius-27b,target_zone_shift,149,1,779.69,808.53,4,17,559,320,2037,,Alvarez’s 50% body output now threatens Garcia’s known vulnerability.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,1,1,766.6,870.14,6,15,502,,1811,,Torres tests range with a single jab against Alvarez's measured pace.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,3,1,766.26,874.37,10,19,511,,1870,,Alvarez uses superior 58% accuracy to neutralize Torres's early volume attempts.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,5,1,538.85,638.77,6,19,537,320,1963,,Alvarez’s superior 58% accuracy effectively neutralizes Torres’s early volume attempts.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,18,1,761.35,920.23,8,17,536,320,1981,,Alvarez’s heavy body shots are already disrupting Torres’s aggressive swarming rhythm.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,19,1,747.62,798.89,7,21,538,320,1989,,Torres’s early 100% accuracy suggests he is effectively closing the distance against Alvarez.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,20,1,763.36,866.17,9,19,551,320,2025,,"Torres lands a hook to the body, testing Alvarez’s 67% defense."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,21,1,743.95,846.75,7,22,544,320,1977,,Alvarez’s 70.5-inch reach neutralizes Torres’s high-volume swarming attempts early.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,23,1,789.85,904.89,10,23,559,320,2003,,"Alvarez's 78% KO threat dominates early, neutralizing Torres’s 42% accuracy."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,25,1,802.89,857.85,6,19,550,320,1987,,"Alvarez’s superior reach extends his jab, effectively neutralizing Torres’s short-range pressure."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,29,1,768.09,872.84,9,25,551,320,2007,,Alvarez’s 70.5-inch reach advantage currently neutralizes Torres’s 68-inch swarming attempts.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,30,1,795.11,903.06,9,20,553,320,2034,,Torres’s four missed punches highlight his vulnerability against Alvarez’s superior reach and defensive head movement.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,40,1,753.58,852.96,10,18,558,320,2074,,Alvarez’s 50% body shot ratio targets Torres’s porous defense early.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,41,1,788.79,892.85,8,17,547,320,2016,,"Alvarez’s perfect accuracy targets the body, exploiting Torres’s porous defensive structure."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,43,1,816.38,849.92,5,18,547,320,2016,,Alvarez’s 67% defense neutralizes Torres’s high-volume output effectively.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,45,1,768.03,800.89,5,15,540,320,1988,,Alvarez’s superior accuracy neutralizes Torres’s early high-volume output.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,47,1,895.61,897.44,7,24,552,320,2007,,"Alvarez lands body shots, exploiting his 58% accuracy against Torres’s porous 55% defense."
+baseline-27b,nebius-27b,0,fight-1002,B,nebius-27b,dominance_shift,49,1,823.02,928.72,7,15,108,,385,,BUT ALVAREZ IS SMOTHERING HIM COMPLETELY!
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,50,1,759.17,863.75,9,18,557,320,2009,,Alvarez’s high accuracy is neutralizing Torres’s high-volume swarming tactics early.
+baseline-27b,nebius-27b,0,fight-1002,B,nebius-27b,dominance_shift,60,1,741.75,846.01,7,12,106,,397,,BUT Alvarez is DOMINATING this exchange NOW!
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,61,1,597.48,707.39,9,17,547,320,2007,,Alvarez’s superior accuracy is currently stalling Torres’s high-volume pressure game.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,62,1,542.0,641.63,7,21,544,320,1977,,Alvarez’s 50% body shot ratio is currently dictating the slow pace against Torres.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,64,1,741.39,845.92,8,23,547,320,1988,,Alvarez’s 100% body accuracy contrasts sharply with Torres’s zero body shots in this exchange.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,67,1,766.58,872.47,11,25,550,320,2002,,Alvarez's 70.5-inch reach advantage is neutralizing Torres's high-volume short-range swarming tactics.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,70,1,867.81,972.8,12,23,556,320,2017,,Torris’s 42% accuracy struggles against Alvarez’s superior 58% precision in current exchanges.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,79,1,745.67,856.57,9,28,545,320,1990,,Alvarez's superior 62.5% accuracy currently outclasses Torres's 42.9% in the mid-round.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,82,1,583.04,637.97,7,24,567,320,2035,,Alvarez’s perfect 100% accuracy in the last ten seconds completely overwhelms Torres’s lower output.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,83,1,774.92,878.2,7,22,580,320,2087,,"Alvarez’s 100% body accuracy dominates the slow pace, forcing Torres into defensive retreat."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,84,1,650.6,766.39,7,18,559,320,2045,,"Alvarez’s single body shot disrupts the slow pace, maintaining his defensive edge."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,87,1,797.35,911.37,9,21,561,320,2042,,"Alvarez’s early body shot disrupts Torres’s rhythm, maintaining the pressure fighter’s tactical edge."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,89,1,735.42,840.23,10,21,566,320,2061,,Alvarez's perfect accuracy and heavy body focus are neutralizing Torres's high-volume swarming strategy.
+baseline-27b,nebius-27b,0,fight-1002,B,nebius-27b,dominance_shift,90,1,750.71,798.83,6,17,115,,407,,BUT ALVAREZ IS TAKING TOTAL CONTROL OF THE FIGHT!
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,91,1,522.01,619.66,6,20,549,320,2011,,Alvarez’s perfect accuracy and heavy body focus neutralize Torres’s high-volume swarming strategy.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,92,1,763.64,868.39,7,15,543,320,1980,,Alvarez’s superior defense neutralizes Torres’s low-volume jab attempts.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,94,1,765.47,870.72,9,17,565,320,2074,,Alvarez leverages his reach advantage to control distance against the swarming Torres.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,97,1,558.67,652.79,8,17,544,320,1986,,Alvarez’s superior range and defense continue to frustrate the swarming Torres.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,108,1,815.1,927.17,7,16,535,320,1989,,Alvarez’s jab precision neutralizes Torres’s high-volume body attack effectively.
+baseline-27b,nebius-27b,0,fight-1002,B,nebius-27b,knockdown,114,1,740.76,765.53,4,10,110,,394,,WAIT! Torres hooks! Alvarez is DOWN!
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,115,1,563.92,663.52,10,22,542,320,1989,,"Alvarez’s superior 58% accuracy neutralizes Torres’s volume, keeping the pressure fight controlled."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,120,1,769.56,937.75,8,20,546,320,1977,,Torres’s 100% accuracy early contrasts sharply with Alvarez’s missed uppercuts.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,135,1,537.86,638.87,10,24,554,320,2012,,"Alvarez’s 55.6% accuracy outclasses Torres, maintaining the pressure advantage early in round two."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,136,1,789.35,892.47,8,21,545,320,1985,,Alvarez’s 57.1% accuracy highlights his superior technical precision in this early exchange.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,137,1,799.4,958.16,9,21,573,320,2097,,Alvarez’s 75.0% accuracy and rising momentum secure a slight edge over Torres.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,145,1,745.39,795.47,6,22,564,320,2053,,Torres’s 40% accuracy lags behind Alvarez’s superior 60% striking efficiency.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,155,1,862.14,990.99,7,22,552,320,1991,,Torres’s 80% body targeting threatens Alvarez’s 67% defense against high volume.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,157,1,755.98,861.85,7,23,563,320,2014,,Alvarez's superior 58% accuracy neutralizes Torres's high-volume 42% accuracy struggle.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,162,1,741.83,846.33,7,22,547,320,1993,,Alvarez's 66.7% accuracy sharply contrasts Torres's recent 50% efficiency.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,166,1,765.6,872.27,8,19,544,320,1951,,Alvarez’s 50% body shot ratio is now visibly impacting Torres’s movement.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,170,1,738.36,858.92,7,17,546,320,1977,,"Alvarez's perfect accuracy targets the body, forcing Torres into a defensive shell."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,174,1,780.72,820.22,5,21,532,320,1940,,Alvarez’s 75% accuracy exposes Torres’s porous defense against elite counter-punching.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,181,1,769.23,871.82,7,17,555,320,2071,,Torres struggles against Alvarez’s superior defense and elite counter-punching instincts.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,182,1,527.33,632.54,8,22,543,320,1994,,"Alvarez’s 67% defense neutralizes Torres’s high-volume pressure, keeping the pace slow."
+baseline-27b,nebius-27b,0,fight-1002,B,nebius-27b,knockdown,183,1,862.1,966.46,11,20,111,,399,,WAIT! A HUGGING CROSS DROPS ALVAREZ TO THE CANVAS!
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,184,1,566.92,675.03,9,24,539,320,1939,,Alvarez’s superior 58% accuracy neutralizes Torres’s 42% accuracy during the slow pace.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,185,1,788.78,939.64,8,25,560,320,1992,,Alvarez’s 100% accuracy on the body jab contrasts sharply with Torres’s 50% cross.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,187,1,836.01,1003.36,9,22,553,320,1994,,Alvarez’s elite 67% defense shuts down Torres’s porous 55% defensive record.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,188,1,750.71,855.04,9,20,568,320,2011,,Alvarez’s 50% body shot ratio is currently dictating the slow-paced action.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,193,1,754.39,802.9,6,21,555,320,2000,,Alvarez’s 80% live accuracy exposes Torres’s porous 55% defensive record.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,197,1,735.52,844.35,8,20,542,320,1968,,Alvarez’s superior 58% accuracy neutralizes Torres’s high-volume swarming approach.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,202,1,773.17,876.65,9,21,545,320,1960,,Alvarez’s 85.7% live accuracy highlights the gap versus Torres’s porous defense.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,208,1,747.41,852.56,10,24,564,320,2025,,Torres's 42.9% body targeting targets Alvarez's 34% body shot ratio weakness.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,212,1,792.31,897.62,10,20,553,320,1987,,Torres's high-volume jab is stifling Alvarez's elite 58% accuracy early.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,218,1,707.96,808.67,7,24,570,320,2024,,"Alvarez's 50% accuracy now exceeds Torres's 38.5%, signaling a momentum shift."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,220,1,731.13,834.08,7,25,554,320,1988,33,Alvarez’s 60% accuracy and 33% body work are neutralizing Torres’s high-volume jab.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,223,1,526.08,625.56,8,23,558,320,1984,,Alvarez’s recent 80% accuracy and body targeting are effectively neutralizing Torres’s swarming pressure.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,229,1,735.56,842.22,9,26,557,320,2033,,Alvarez’s 50% recent accuracy is currently outpacing Torres’s 33% in this late round.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,230,1,775.14,878.52,9,27,548,320,1998,,Alvarez’s 60% accuracy is currently outpacing Torres’s struggling 25% in the late second round.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,231,1,756.52,860.16,8,19,559,320,2000,,Alvarez’s recent 50% accuracy contrasts sharply with Torres’s zero landing rate.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,232,1,553.09,591.15,5,20,557,320,2020,,Torres’s 42% accuracy struggles against Alvarez’s superior 67% defense.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,243,1,781.57,823.01,6,19,547,320,1999,,Alvarez’s 75% accuracy in the last ten seconds highlights his superior precision.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,247,1,806.15,948.72,6,22,548,320,2002,,Torres’s 50% body focus is failing against Alvarez’s elite 67% defense.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,248,1,788.46,903.66,9,18,548,320,1985,,"Alvarez’s recent hook lands, exposing Torres’s porous defense in this tactical pause."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,249,1,832.12,948.53,9,20,542,320,1987,,Alvarez’s 100% jab accuracy highlights Torres’s struggle against superior defensive movement.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,251,1,768.72,874.16,8,16,556,320,2027,,Torres’s low-volume jab struggle highlights Alvarez’s superior defensive head movement.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,253,1,774.93,878.8,8,21,545,320,2021,,Alvarez’s 50% body shot ratio punishes Torres’s porous defense significantly right now.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,255,1,545.79,650.11,7,17,538,320,1974,,Alvarez’s accurate body hook exploits Torres’s porous defense in the late round.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,256,1,739.59,794.09,6,15,542,320,2006,,"Alvarez lands a clean hook, highlighting his superior accuracy over Torres."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,257,1,559.75,688.64,10,27,529,320,1957,,Alvarez’s 78% KO rate looms large as his 58% accuracy punishes Torres’s porous defense.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,259,1,760.54,865.88,7,21,548,320,1972,,Torres’s 40% body shot ratio targets Alvarez’s 34% defensive vulnerability.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,261,1,833.34,986.77,11,21,552,320,1966,,Torres’s early body shot targets Alvarez’s 67% defense despite his superior reach advantage.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,264,1,629.65,719.85,8,22,553,320,2002,33,Alvarez’s live 60% accuracy currently outclasses Torres’s struggling 33% volume.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,round_context,271,1,798.9,871.71,7,18,552,320,2041,,Alvarez’s early jab dominance effectively neutralizes Torres’s 42% accuracy.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,excitement_change,273,1,944.08,1079.29,9,23,540,320,1946,83,"Alvarez’s 83% accuracy now dictates pace, neutralizing Torres’s high-volume swarming attempts."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,285,1,837.18,943.61,9,21,552,320,2019,,"Alvarez’s exclusive body focus targets Torres’s porous defense, exploiting the swarmer’s vulnerability."
+baseline-27b,nebius-27b,0,fight-1002,B,nebius-27b,knockdown,288,1,765.83,875.49,8,14,114,,416,,WAIT! Alvarez’s cross DROPS Torres to the canvas!
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,289,1,560.34,659.88,8,18,542,320,2004,,"Alvarez’s high accuracy exploits Torres’s porous defense, maintaining the early-round edge."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,291,1,746.78,851.33,10,17,543,320,1979,,Alvarez’s fifty percent accuracy currently outboxes Torres’s zero percent landing rate.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,305,1,737.06,840.89,9,18,543,320,2012,,Alvarez’s sixty percent accuracy outclasses Torres’s struggling thirty-eight percent volume game.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,320,1,774.14,880.43,7,18,542,320,1991,,Alvarez’s forty-three percent accuracy currently edges out Torres’s forty-five percent volume.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,324,1,600.97,709.63,9,16,548,320,2031,,Torres’s forty percent body shot ratio targets Alvarez’s midsection effectively.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,333,1,801.82,842.41,6,17,543,320,2005,,Alvarez’s fifty percent body ratio contrasts sharply with Torres’s thirty-three percent.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,340,1,784.89,888.36,8,17,542,320,1995,,Alvarez’s sixty percent body shot ratio is visibly slowing Torres’s forward momentum.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,349,1,758.36,866.97,9,20,557,320,2053,,Alvarez’s seventy-two point seven percent accuracy neutralizes Torres’s surging uppercuts effectively.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,359,1,747.64,850.64,7,24,542,320,2012,,Alvarez’s current 44.4% accuracy is far below his elite 58% career average.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,idle_timeout,360,1,759.07,858.22,8,24,545,320,1987,,Alvarez’s current 42.9% accuracy lags significantly behind his career 58% average.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,target_zone_shift,361,1,772.8,892.51,11,21,549,320,1962,,"Alvarez’s 40% accuracy remains below his career average, signaling cautious early-round probing."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,364,1,761.62,868.0,8,21,568,320,2055,,Alvarez’s 58% accuracy edge looms large as Torres’s volume fails to connect.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,367,1,693.5,806.01,8,18,547,320,1992,,"Both fighters are exclusively targeting the body, ignoring head strikes in this mid-round exchange."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,pace_change,379,1,745.16,918.53,8,21,545,320,1997,,"Alvarez's 50% accuracy outpaces Torres, proving his pressure is more effective here."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,386,1,776.72,901.49,10,24,556,320,2021,33,"Torres lands 33% body shots, but Alvarez’s 67% body ratio dominates the exchange."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,dominance_shift,387,1,803.27,910.76,10,27,553,320,2026,,"Torres lands 60% of punches, outpacing Alvarez's 66.7% accuracy in this exchange."
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_reversal,388,1,759.39,878.65,12,17,565,320,2023,,Alvarez's rising momentum contrasts sharply with Torres's high-volume but porous defense.
+baseline-27b,nebius-27b,0,fight-1002,A,nebius-27b,momentum_stable,399,1,519.04,617.31,8,13,556,320,2017,,Torres struggles against Alvarez’s superior defense and current dominance.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,excitement_change,1,1,777.25,884.69,11,22,497,448,1778,,Johnson's 76-inch reach advantage keeps the high-volume swarmer at a safe distance early.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,idle_timeout,2,1,544.94,647.49,8,20,511,320,1848,,Johnson's 63% accuracy neutralizes Torres's early pressure with precise counter lefts.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,idle_timeout,4,1,968.15,1078.85,9,25,537,320,1935,,Torres's 33.3% accuracy shows he is struggling to penetrate Johnson's 72% defense.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,target_zone_shift,5,1,790.13,896.28,9,19,541,320,1942,,Torres's high volume struggles to penetrate Johnson's elite 72% defensive shell.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,pace_change,10,1,930.89,1052.49,9,19,537,320,1942,,Johnson’s 76-inch reach is already keeping the aggressive swarmer at bay.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,dominance_shift,16,1,870.68,1018.02,7,18,537,320,1945,,Johnson’s southpaw right jab is effectively neutralizing Torres’s aggressive orthodox approach.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,excitement_change,18,1,558.73,657.85,9,19,536,320,1945,,Torres’s 40% body focus signals he’s hunting a short-range opening.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,dominance_shift,19,1,788.1,892.72,8,22,551,320,2006,,Torres’s 42% accuracy struggles against Johnson’s 72% defensive wall early on.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,idle_timeout,21,1,767.16,872.32,7,17,540,320,1929,,"Johnson’s 76-inch reach advantage currently dictates the slow, tactical pace."
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,dominance_shift,24,1,765.16,869.66,8,19,536,320,1916,,Johnson’s 63% accuracy currently outclasses Torres’s volume at this slow pace.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,momentum_reversal,27,1,790.13,893.68,7,16,545,320,1999,,"Torres is throwing exclusively body shots, ignoring Johnson’s superior head accuracy."
+baseline-27b,nebius-27b,0,fight-1003,B,nebius-27b,knockdown,30,1,780.97,826.01,6,13,124,,459,,WAIT! Torres lands a HOOK! Johnson is DOWN!
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,dominance_shift,31,1,582.24,697.85,9,16,529,320,1923,8,The 8-inch reach advantage gives Johnson room to set up his counters.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,idle_timeout,32,1,796.28,954.41,9,19,517,320,1878,,Johnson's 63% accuracy suggests he will effectively neutralize Torres's early volume.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,idle_timeout,37,1,738.3,777.92,5,16,533,320,1929,,"Torres is targeting the body exclusively, while Johnson lands a precise cross."
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,momentum_reversal,38,1,792.33,896.88,9,23,539,320,1958,,Johnson’s 100% accuracy highlights his disciplined counter-punching against Torres's high-volume approach.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,momentum_stable,42,1,744.58,853.49,7,22,530,320,1938,,Torres’s 50% body focus contrasts sharply with Johnson’s 72% overall defense.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,target_zone_shift,44,1,827.5,938.19,9,16,537,320,1941,,"Torres's cross-heavy output is pressing Johnson, who remains perfectly accurate."
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,dominance_shift,49,1,786.41,890.25,9,18,532,320,1909,,Johnson’s perfect accuracy neutralizes Torres’s high-volume pressure in this tight early exchange.
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,momentum_reversal,53,1,771.13,919.15,8,21,535,320,1983,,Johnson's 80% accuracy in the last ten seconds highlights his sharp counter-punching.
+baseline-27b,nebius-27b,0,fight-1003,B,nebius-27b,excitement_peak,57,1,757.61,858.59,7,12,107,,384,,AND NOW! THEY'RE TRADING BLOWS!
+baseline-27b,nebius-27b,0,fight-1003,A,nebius-27b,pace_change,58,1,865.91,977.32,9,19,533,320,1891,,"Torres is throwing 13 punches to Johnson's 5, flooding the pocket."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,excitement_change,1,1,575.83,682.33,9,19,504,320,1821,,"Alvarez tests with a precise hook, leveraging superior 58% accuracy over Torres."
+baseline-27b,nebius-27b,0,fight-1004,B,nebius-27b,excitement_peak,12,1,789.31,833.06,6,14,103,,365,,AND NOW THE PATIENCE SHATTERS IN AN INSTANT!
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,target_zone_shift,13,1,918.41,965.95,6,21,536,320,1945,33,Torres swarms at 33% accuracy while Alvarez counters with 75% precision.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,pace_change,18,1,775.14,817.16,6,17,548,320,1975,,Alvarez’s 60% accuracy neutralizes Torres’s early swarm effectively.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,dominance_shift,26,1,780.82,883.0,9,15,540,320,1936,,Torres's high body shot ratio targets Alvarez's relentless pressure strategy.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,30,1,771.7,815.42,6,15,538,320,1967,,Alvarez’s superior accuracy counters Torres’s early high-volume swarm effectively.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,target_zone_shift,42,1,796.07,896.72,7,19,529,320,1946,,Alvarez’s 66.7% accuracy neutralizes Torres’s early body attack.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,46,1,765.38,870.86,8,20,545,320,1986,,Alvarez’s 60% accuracy currently neutralizes Torres’s high-volume short-range combinations.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,57,1,878.01,882.01,7,27,547,320,1989,,Torres’s 30.8% accuracy struggles against Alvarez’s 66.7% precision in the opening exchange.
+baseline-27b,nebius-27b,0,fight-1004,B,nebius-27b,knockdown,64,1,818.13,924.42,11,17,115,,412,,WAIT! TORRES DROPPED! UPPER HOOK HITS HOME!
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,dominance_shift,65,1,809.95,923.96,7,17,568,320,2026,,Alvarez’s early body shot targets Torres’s porous 55% defense.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,excitement_change,66,1,814.54,925.18,7,22,551,320,1965,,"Alvarez’s 100% accuracy exposes Torres’s porous defense, establishing an early tactical edge."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,68,1,776.88,883.56,10,22,542,320,1976,,"Alvarez’s superior 58% accuracy neutralizes Torres’s early volume, maintaining a slow pace."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,70,1,744.1,846.83,7,17,548,320,2005,,Alvarez’s early jab accuracy highlights his superior defense against Torres’s passive output.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,71,1,753.39,857.26,8,19,560,320,2055,,"Alvarez’s flawless jab accuracy exploits Torres’s passive stance, dictating the early pace."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,73,1,772.01,877.46,7,19,553,320,2029,,"Alvarez’s perfect accuracy controls distance, stalling Torres’s high-volume swarming attempts."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,74,1,550.99,660.04,8,18,550,320,2027,,Alvarez’s superior accuracy neutralizes Torres’s low-volume output in this early exchange.
+baseline-27b,nebius-27b,0,fight-1004,B,nebius-27b,dominance_shift,77,1,746.39,851.19,7,16,100,,351,,BUT ALVAREZ IS CRUSHING TORRES WITH POWER!
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_stable,80,1,750.54,861.45,10,19,546,320,2006,71,Alvarez’s 71% accuracy exposes Torres’s porous defense despite the volume attempt.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,narrative_tension,88,1,776.65,880.48,7,15,560,320,2004,,Alvarez’s superior accuracy is dismantling Torres despite the rising pace.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,dominance_shift,91,1,745.75,850.32,8,20,556,320,2029,,Torres’s 25% accuracy signals he is struggling to penetrate Alvarez’s elite defense.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,excitement_change,92,1,795.55,842.61,7,20,551,320,2016,,"Alvarez’s 67% defense neutralizes Torres’s volume, forcing a tactical reset."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,94,1,763.46,896.58,7,21,552,320,2005,,"Torres struggles to penetrate Alvarez’s elite defense, forcing the swarmer into a tactical reset."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,95,1,769.98,878.39,10,21,559,320,2014,,Torris’s 50% body ratio targets Alvarez’s 78% KO rate weakness.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,idle_timeout,97,1,769.56,877.62,7,18,559,320,2008,,"Alvarez’s 58% accuracy outclasses Torres, controlling the pace effectively."
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_stable,99,1,833.69,938.3,8,19,554,320,1987,,Alvarez’s perfect accuracy and superior reach neutralize Torres’s high-volume swarming attempts.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,104,1,766.34,802.15,6,19,562,320,2058,,Alvarez’s perfect accuracy and superior reach neutralize Torres’s high-volume swarming attempts.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,115,1,782.85,887.79,8,19,559,320,2056,,Alvarez lands six body shots while Torres’s jab accuracy plummets to fourteen percent.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,dominance_shift,123,1,750.14,851.49,9,18,545,320,2004,,Alvarez’s early body dominance forces Torres to retreat from his preferred close-range range.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,134,1,765.67,876.23,9,19,543,320,1987,,Alvarez’s sixty percent accuracy outclasses Torres’s fifty-five percent in this rapid exchange.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,144,1,987.97,988.79,7,21,560,320,2066,,Alvarez’s sixty-three percent accuracy currently dwarfs Torres’s forty percent in this high-pressure exchange.
+baseline-27b,nebius-27b,0,fight-1004,B,nebius-27b,knockdown,146,1,727.96,748.9,4,12,116,,411,,WAIT! A HOOK! TORRES IS DOWN!
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,excitement_change,147,1,763.75,869.23,8,20,552,320,2006,,Alvarez’s superior 58% accuracy neutralizes Torres’s high-volume swarming strategy.
+baseline-27b,nebius-27b,0,fight-1004,A,nebius-27b,momentum_reversal,150,1,742.86,847.6,8,20,545,320,1948,,Alvarez’s 78% KO rate looms as he counters Torres’s aggressive surge.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,excitement_change,1,1,532.19,631.72,7,18,513,,1828,,Garcia’s 74-inch reach advantage dictates the early slow pace here.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,12,1,789.8,820.31,6,15,530,,1889,,Torres is closing the gap to nullify Garcia’s reach advantage.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,18,1,757.1,908.41,9,16,541,320,1940,,"Garcia’s jab controls distance, keeping the balanced fight in check."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,excitement_change,19,1,756.78,872.93,7,17,537,320,1942,,Garcia’s superior 51% accuracy dominates the early technical exchange.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,28,1,520.64,619.42,8,21,547,320,1989,,Garcia’s 74-inch reach is currently dictating the early pace of the bout.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,36,1,746.51,795.35,6,18,569,320,2039,,Torres’ 50% body shot ratio targets Garcia’s known vulnerability immediately.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,37,1,896.68,1000.74,10,24,551,320,1961,,Garcia’s 51% accuracy and 74-inch reach are forcing Torres into the defensive rear.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,45,1,784.06,889.49,11,22,573,320,2027,,Garcia’s 61-punch peak is outpacing Torres as momentum shifts decisively.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,round_context,55,1,831.73,934.89,8,23,575,320,2063,,"Torres lands a hook, but Garcia’s 62.5% accuracy is currently dominating the exchanges."
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,dominance_shift,60,1,790.11,894.04,10,15,112,,427,,BUT Garcia is UNLEASHING a DEVASTATING combination!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,narrative_tension,62,1,751.29,792.37,6,20,586,320,2076,,Garcia’s 64.3% accuracy completely overwhelms Torres’s early volume.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,65,1,571.76,673.08,8,18,554,320,1973,6,Garcia’s 6-inch reach advantage is clearly dictating the early range.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,67,1,551.6,657.29,9,17,552,320,1975,,"Torres struggles to land, forcing him to close the six-inch reach gap."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,71,1,526.7,637.64,8,20,553,320,1985,,Torres’s 50% accuracy shows he’s finally finding range despite the reach gap.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,82,1,761.09,869.55,10,21,547,320,1957,,Garcia’s 20% accuracy suggests he is struggling to connect despite his reach advantage.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,87,1,738.88,845.12,7,27,558,320,2005,,Garcia’s 40% accuracy is landing harder than Torres’s 37.5% in this fast pace.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,99,1,727.98,829.05,7,17,574,320,2037,,Torres’s 40% body ratio is targeting Garcia’s known vulnerability.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,target_zone_shift,106,1,557.44,666.13,8,24,551,320,1937,33,Torres’s 60% accuracy is currently outpacing Garcia’s struggling 33% landing rate.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,108,1,835.12,878.78,6,19,550,320,1976,,Torres’s relentless hooks exploit Garcia’s current 28.6% landing rate.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,110,1,766.73,877.8,8,22,555,320,1972,,Garcia’s 25% landing rate signals he is currently being overwhelmed by Torres’s pressure.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,111,1,752.26,857.37,8,16,560,320,2012,,Torres’s single landed hook contrasts sharply with Garcia’s three missed crosses.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,113,1,756.82,861.0,9,23,543,320,1989,,"Garcia’s 74-inch reach dominates the slow pace, neutralizing Torres’s swarming tactics."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,115,1,575.7,680.16,7,25,547,320,1966,,"Garcia’s 61% defense neutralizes Torres’s slow pace, keeping the swarmer at bay."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,121,1,756.11,872.57,9,21,556,320,1978,,"Garcia’s 74-inch reach controls distance, forcing Torres into low-percentage shots."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,130,1,803.98,965.71,7,12,568,320,2026,,Torres lands cleaner than Garcia in this opening exchange.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,134,1,793.11,825.52,6,16,552,320,2007,,"Torres is landing exclusively on the body, targeting Garcia’s known vulnerability."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,target_zone_shift,135,1,771.48,884.81,8,17,539,320,1946,,"Garcia’s straight right is cutting through, keeping the pressure at bay."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,137,1,860.35,964.49,7,19,548,320,1980,,Garcia’s superior reach advantage keeps the high-volume swarmer at a distance.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,142,1,538.1,657.4,6,16,560,320,2002,,"Torres is struggling to land, while Garcia targets the body with precision."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,143,1,755.33,859.91,11,23,544,320,1965,,Garcia’s 51% accuracy and body focus are currently neutralizing Torres’s swarming tactics.
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,dominance_shift,145,1,794.4,901.93,7,18,105,,380,,BUT GARCIA IS DOMINATING THIS RING ABSOLUTELY!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,157,1,773.0,878.23,8,18,569,320,1998,,Torres is flooding the center with high-volume short-range combinations to close the gap.
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,dominance_shift,170,1,736.17,754.61,4,13,108,,382,,BUT GARCIA IS DOMINATING THE CENTER!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,171,1,773.85,889.14,7,16,545,320,1953,,Garcia’s six percent accuracy edge keeps him ahead in the center.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,181,1,777.48,881.42,9,21,547,320,1935,,"Torres is flooding the body at seventy-five percent, but Garcia's reach still controls the center."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,191,1,768.34,878.09,9,20,563,320,2042,,"Garcia’s superior footwork keeps him outside, neutralizing Torres’s heavy body pressure."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,199,1,815.55,918.95,7,19,558,320,2020,,Garcia’s sixty-six percent accuracy is currently neutralizing Torres’s frantic body attacks.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,213,1,747.64,852.29,8,23,558,320,2006,83,"Garcia’s 83 percent accuracy is completely dismantling Torres’s frantic, low-volume offensive attempt."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,227,1,772.13,877.08,9,21,557,320,2051,,"At just six punches per minute, this slow pace favors Garcia's superior 51% accuracy."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,excitement_change,228,1,740.84,846.94,11,18,550,320,2013,,Early silence favors Garcia’s superior 61% defense as Torres’s volume fades.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,230,1,746.34,852.45,9,18,544,320,1953,,"Torres lands 50% on body, exploiting Garcia's known vulnerability early."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,231,1,744.76,871.22,7,21,540,320,1950,,Garcia’s 74-inch reach currently neutralizes Torres’s short-range body attack strategy.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,235,1,777.32,885.2,9,20,560,320,1996,,Garcia’s 74-inch reach keeps Torres from closing the distance for body shots.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,target_zone_shift,249,1,802.01,910.0,7,19,557,320,1991,,Torres’s 40% body ratio targets Garcia’s known vulnerability against heavy pressure.
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,knockdown,251,1,820.41,925.65,8,20,115,,406,,WAIT! TORRES HITS THE **UPPERCUT**! GARCIA IS DOWN!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,252,1,791.99,898.3,9,26,562,320,2023,57,Garcia’s 61% defense is failing as Torres’s 57% accuracy overwhelms his reach advantage.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,target_zone_shift,260,1,765.88,872.06,8,23,558,320,1962,,Torres's 66.7% accuracy currently neutralizes Garcia's 74-inch reach advantage.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,261,1,750.85,855.74,8,19,571,320,2020,,Garcia’s 85% KO rate looks dormant as Torres dominates early exchanges.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,263,1,735.4,839.17,7,18,553,320,1979,,Torres’s 40% body ratio targets Garcia’s specific two-stop vulnerability.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,270,1,759.12,862.46,7,24,552,320,1968,,Garcia’s 60% clip accuracy is currently outpacing Torres’s 40% volume.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,274,1,747.78,789.01,7,19,550,320,1959,,Garcia’s 66.7% accuracy is currently dominating the early exchange.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,283,1,768.54,810.0,7,27,570,320,1996,,Garcia’s 80% accuracy crushes Torres’s 30.8% volume in this frantic early exchange.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,290,1,554.15,665.57,8,15,557,320,1965,,Both fighters are trading effective jabs in this rapid-fire opening exchange.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,295,1,761.63,866.69,9,24,561,320,1992,,Garcia’s 50% accuracy outpaces Torres’s 40% as he lands heavy crosses.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,304,1,763.13,872.41,9,20,546,320,1946,,Garcia’s 75% body targeting threatens Torres’s porous defense with surgical precision.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,308,1,775.68,877.94,10,25,561,320,2015,33,"Torres is smothering him, landing 33% body shots in this 42% accuracy surge."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,311,1,794.77,833.11,7,15,562,320,1994,,"Torres’s rising momentum forces Garcia into a slow, defensive rhythm."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,312,1,768.59,875.12,8,23,552,320,1967,,Garcia’s 74-inch reach advantage is currently neutralized by Torres’s relentless close-range pressure.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,313,1,758.44,798.7,6,22,550,320,2007,,Torres’s 42% accuracy struggles to penetrate Garcia’s superior 61% defensive rating.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,315,1,766.0,874.39,8,22,549,320,1974,,"Garcia’s elite footwork dictates the slow pace, keeping Torres’s swarming game at bay."
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,knockdown,316,1,818.92,922.55,8,16,108,,380,,WAIT! TORRES DROPS GARCIA WITH THAT UPPER CUT!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,317,1,807.42,919.65,12,24,565,320,2021,6,"Torres exploits the 6-inch reach deficit, landing a high-accuracy uppercut to disrupt Garcia's rhythm."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,pace_change,322,1,791.58,908.54,8,18,554,320,1977,,"Torres closes the 6-inch gap, swarming behind that effective uppercut."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,329,1,844.96,955.07,9,26,556,320,1991,,"Garcia lands hooks to exploit Torres's 55% defense, keeping the high-volume swarmer at bay."
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,knockdown,334,1,523.56,634.7,7,18,114,,393,,WAIT! GARCIA DROPS TORRES WITH THAT UPPERCUT!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,excitement_change,335,1,774.98,818.7,7,21,576,320,2022,,Garcia's 85% KO rate proves lethal as he exploits Torres's porous defense.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,336,1,817.7,925.26,10,28,564,320,1968,,"Garcia’s 61% defense neutralizes Torres’s swarming, while his 74-inch reach controls the distance."
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,idle_timeout,338,1,732.86,835.41,9,20,566,320,2009,,Torres’s 42% accuracy vanishes as Garcia’s jab dictates the slow pace.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,340,1,777.35,881.69,9,20,563,320,2015,,Torres’s 40% body ratio looks irrelevant here as Garcia dictates the slow pace.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,343,1,790.1,837.9,8,19,559,320,1997,,Garcia's 74-inch reach lets him control the distance with his jab.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,349,1,725.06,836.63,10,22,552,320,1961,,"Torres’s 60% accuracy is suffocating Garcia, who is missing wildly from range."
+baseline-27b,nebius-27b,0,fight-1005,B,nebius-27b,excitement_peak,352,1,958.4,1077.31,8,15,105,,361,,AND NOW TORRES AND GARCIA UNLEASH TOTAL WAR!
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_stable,358,1,848.77,1065.3,7,18,555,320,1956,,Garcia’s 20% accuracy shows he’s missing wildly from range.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,371,1,881.24,993.0,9,28,563,320,1977,,Garcia’s 54.5% accuracy completely outboxes Torres’s dismal 28.6% in this burst.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,382,1,809.55,915.56,8,21,574,320,2012,,Garcia’s 60% accuracy in the last ten seconds highlights his superior range control.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,dominance_shift,395,1,787.88,896.26,8,15,572,320,2023,,Torres lands 8 punches while Garcia only connects 3 here.
+baseline-27b,nebius-27b,0,fight-1005,A,nebius-27b,momentum_reversal,400,1,869.62,976.08,8,18,558,320,1979,,Torres’s 60% accuracy proves he is effectively closing the reach gap.
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,excitement_change,1,1,755.42,859.49,9,17,499,,1829,,"Alvarez probes early, but Johnson's superior reach advantage keeps the pace slow."
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,dominance_shift,7,1,544.74,647.75,10,14,524,,1931,,Alvarez lands four straight crosses while Johnson misses his opening hook.
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,pace_change,18,1,765.66,864.94,8,18,546,320,2043,,Alvarez's heavy body work is dictating the pace despite Johnson's reach advantage.
+baseline-27b,nebius-27b,0,fight-1006,B,nebius-27b,knockdown,21,1,556.65,663.37,6,14,119,,435,,WAIT! CROSS CONNECTS! JOHNSON IS DOWN!
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,momentum_stable,22,1,911.86,1015.84,10,20,540,320,1993,,Alvarez's superior output and 58% accuracy neutralize Johnson's reach advantage early.
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,idle_timeout,23,1,531.6,632.93,8,21,530,320,1940,,"Alvarez's 78% KO threat forces Johnson into passive, disciplined counter-punching."
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,momentum_reversal,37,1,782.76,897.33,11,20,549,320,2011,,Alvarez's 34% body ratio targets Johnson's midsection despite early volume struggles.
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,pace_change,39,1,853.29,965.95,7,23,548,320,2014,,Johnson’s 28.6% accuracy shows he’s waiting for the perfect counter-punching opportunity.
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,momentum_reversal,49,1,857.96,972.48,8,26,560,320,2050,,Johnson’s 72.7% accuracy is already outpacing Alvarez’s 50% in this opening flurry.
+baseline-27b,nebius-27b,0,fight-1006,B,nebius-27b,dominance_shift,59,1,819.38,842.96,6,11,106,,372,,BUT Johnson is TAKING TOTAL CONTROL here!
+baseline-27b,nebius-27b,0,fight-1006,A,nebius-27b,round_context,60,1,875.1,906.82,6,17,553,320,2023,,Johnson’s 76-inch reach is neutralizing Alvarez’s early pressure attempts.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,excitement_change,1,1,800.26,835.26,6,15,507,,1824,,"Alvarez probes with a precise jab, maintaining a measured tactical pace."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,dominance_shift,5,1,793.23,918.35,8,20,528,,1913,,Alvarez’s 80% accuracy here far exceeds his 58% career norm.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,pace_change,18,1,888.76,1011.72,8,21,547,320,1989,,"Torres matches Alvarez’s pace early, but his 42% career accuracy lags behind."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,dominance_shift,24,1,818.28,922.8,8,23,573,320,2053,,Torres’ 38.5% accuracy shows he’s landing more than Alvarez’s 25%.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_stable,26,1,547.25,643.89,7,27,549,320,1999,,Alvarez’s 66.7% accuracy currently outpaces Torres’ 20.0% in this opening exchange.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,27,1,797.99,808.68,6,20,555,320,1967,,Alvarez’s 75% accuracy crushes Torres’ zero percent in this early exchange.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,pace_change,28,1,785.19,902.04,8,20,561,320,2009,,"Alvarez controls the early pace, landing 75% while Torres has thrown zero punches."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,idle_timeout,29,1,737.98,843.67,7,14,544,320,1972,,Alvarez’s rising momentum contrasts sharply with Torres’ slow start.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_stable,36,1,904.86,1079.76,9,22,536,320,1985,,Torres’ 28.6% accuracy signals he’s struggling to connect in the opening seconds.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,idle_timeout,38,1,894.75,1113.32,10,26,532,320,1947,,Alvarez’s 66.7% accuracy already far outpaces Torres’ 28.6% opening mark.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,39,1,981.5,1055.89,7,15,572,320,2044,,"Alvarez lands two hooks at fifty percent accuracy, establishing early dominance."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_stable,40,1,882.52,883.63,6,17,557,320,2020,,Alvarez's 100% body shot ratio signals early tactical pressure.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,idle_timeout,41,1,1090.74,1322.33,10,23,544,320,1966,,Alvarez's 33.3% accuracy shows early struggles despite his 58% career average.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,46,1,1195.23,1347.99,7,13,557,320,2003,,Torres struggles to land against Alvarez's relentless early pressure.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,56,1,826.76,973.79,9,27,551,320,2002,,"Torres’s high volume is emerging, but his 40% accuracy lags behind Alvarez’s 45.5%."
+baseline-27b,nebius-27b,0,fight-1007,B,nebius-27b,knockdown,60,1,962.09,1021.04,5,19,112,,400,,WAIT! ALVAREZ HOOKS TORRES FOR THE KNOCKDOWN!
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,target_zone_shift,61,1,881.95,1039.91,7,21,549,320,1935,,Alvarez’s 58% accuracy proves decisive over Torres’s porous 55% defense.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,idle_timeout,62,1,889.92,998.83,8,23,541,320,1923,,Alvarez’s 70.5-inch reach advantage effectively neutralizes Torres’s high-volume swarming approach.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,66,1,842.34,948.11,8,18,557,320,2023,,"Alvarez’s cross lands while Torres’s jab misses, cementing the early edge."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,excitement_change,68,1,871.14,901.09,6,20,547,320,1994,,Torres’s 40% body shot ratio is currently useless against Alvarez’s forward pressure.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,dominance_shift,73,1,761.78,875.79,8,22,544,320,2003,,"Alvarez’s 60% accuracy currently outpaces Torres, showing superior precision in the opening exchanges."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,target_zone_shift,78,1,826.23,934.87,8,19,542,320,1976,,Alvarez’s relentless pressure forces Torres’s high-volume output to stall in the mid-phase.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,83,1,764.26,869.8,8,21,557,320,2056,,Alvarez’s 60% body shot focus is effectively smothering Torres’s usual volume.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,92,1,789.32,912.33,8,21,563,320,2031,,"Torres’s volume surges to 78 punches per round, challenging Alvarez’s early dominance."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,target_zone_shift,94,1,767.3,867.22,7,22,553,320,2002,,Alvarez’s 40% body shots are smothering Torres’s high-volume swarming attack.
+baseline-27b,nebius-27b,0,fight-1007,B,nebius-27b,knockdown,95,1,802.82,843.81,5,10,111,,393,,WAIT! Torres drops Alvarez with a CROSS!
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,excitement_change,96,1,888.68,995.15,10,19,553,320,2007,,Alvarez's 78% KO power neutralizes Torres's volume advantage decisively.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,target_zone_shift,101,1,550.63,646.51,7,21,531,320,1928,,Alvarez's 58% accuracy completely outclasses Torres's 42% volume game.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,dominance_shift,114,1,1268.41,1371.88,9,21,554,320,1972,,Torres's 66.7% body shot ratio signals he's digging for a counter.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,119,1,948.95,1071.32,8,21,562,320,2008,33,"Alvarez’s 80% accuracy crushes Torres’s 33%, signaling early dominance."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,dominance_shift,120,1,602.1,691.25,8,15,560,320,2025,,Alvarez's left hook threatens Torres's porous defense as momentum shifts.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,idle_timeout,121,1,1045.35,1150.65,9,16,541,320,1972,,"Alvarez's high volume overwhelms the slower pace, building early dominance."
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_stable,123,1,775.52,887.11,9,20,530,320,1954,,Alvarez's 70.5-inch reach neutralizes Torres's swarming style early.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,momentum_reversal,128,1,879.36,981.87,8,14,548,320,2008,,Torres lands two jabs while Alvarez misses all three shots.
+baseline-27b,nebius-27b,0,fight-1007,A,nebius-27b,dominance_shift,138,1,822.22,930.91,8,24,548,320,1970,,"Alvarez controls the 70.5-inch reach, keeping Torres's 25% accuracy at bay."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,1,1,846.8,961.2,8,18,508,320,1815,,Early caution prevails as both men probe at a slow six punches per minute pace.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,13,1,1359.51,1462.61,7,17,531,320,1907,,"Torres lands half his shots on the body, while Garcia stays head-high."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,14,1,727.83,832.53,9,27,544,320,1962,,"Garcia’s 74-inch reach currently neutralizes Torres, forcing the swarmer into futile long-range jabs."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,16,1,759.48,863.13,8,20,549,320,1969,,Garcia’s 74-inch reach advantage currently dictates the early pace of this bout.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,17,1,739.16,844.35,8,23,556,320,1986,,Garcia’s early 66.7% accuracy highlights his superior precision against Torres’ slow start.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,19,1,759.73,865.07,10,18,550,320,1970,,"Torres is forcing the early engagement, targeting Garcia's vulnerable midsection with precision."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,20,1,763.3,864.86,10,22,548,384,1984,,"Garcia's 74-inch reach currently dictates range, keeping the swarmer at bay."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,22,1,795.44,906.28,7,23,564,320,2037,,"Garcia’s 74-inch reach neutralizes Torres, keeping the swarmer at safe distance."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,23,1,801.9,908.11,9,20,558,320,1973,,"Garcia's 74-inch reach forces Torres to respect distance, limiting early engagement."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,26,1,737.75,848.61,10,21,553,320,1972,,"Torres hunts the body, targeting Garcia’s known vulnerability with 100% body focus."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,28,1,832.74,936.49,7,19,561,320,2010,,Torres's 60% accuracy signals he’s closing the gap to overwhelm Garcia.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,35,1,813.44,814.57,9,23,557,320,1977,,Garcia’s 100% accuracy signals he’s establishing range against Torres’s heavy body work.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,38,1,994.85,1098.8,7,19,549,320,1987,,Torres’s 66.7% body ratio threatens Garcia’s known vulnerability early.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,40,1,846.83,961.13,8,21,551,320,1972,,Garcia’s 74-inch reach currently neutralizes Torres’s short-range swarming strategy.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,41,1,760.11,795.68,6,18,555,320,2005,,Garcia’s 74-inch reach forces Torres into ineffective long-range exchanges.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,43,1,798.61,920.51,9,23,574,320,2066,,Torres’s 50% accuracy hints he’s cutting through Garcia’s elite 61% defense.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,47,1,793.2,917.86,9,22,550,320,1955,,Torres’s 25% accuracy here is well below his usual 42% career average.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,50,1,825.51,933.79,7,23,548,320,1953,,Garcia’s 66.7% accuracy over the last ten seconds is a sharp tactical edge.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,52,1,764.87,877.3,7,16,571,320,2003,,"Torres lands a heavy uppercut, exploiting Garcia’s porous body defense."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,53,1,781.9,897.91,9,22,550,320,1975,,Torres’ 66.7% body targeting exploits Garcia’s known vulnerability to lower-level attacks.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,54,1,539.52,656.28,9,21,548,320,1963,,Garcia’s 74-inch reach advantage is currently neutralized by Torres’ aggressive pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,56,1,842.52,956.65,9,22,546,320,1966,,"Garcia’s 51% accuracy dominates this slow pace, outworking Torres’ low volume."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,58,1,620.22,727.44,11,24,546,320,1958,,Torres' 42% accuracy struggles against Garcia's superior 51% precision in this slow opening.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,59,1,816.63,949.13,8,20,554,384,1965,,Torres risks getting hit by Garcia's 85% KO rate at this slow pace.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,60,1,863.68,979.86,7,22,545,320,1956,,Garcia’s 74-inch reach neutralizes Torres’ high-volume short-range combinations early on.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,62,1,1053.37,1162.03,9,18,566,320,2036,,"Garcia targets the body, exploiting a vulnerability where he has previously stopped opponents."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,65,1,881.91,1011.89,9,20,565,320,2040,,Garcia’s perfect accuracy on body hooks is currently stalling Torres’ swarming pace.
+baseline-27b,nebius-27b,0,fight-1008,B,nebius-27b,knockdown,66,1,578.39,679.7,9,17,113,,399,,WAIT! GARCIA HITS THE HOOK! TORRES IS DOWN!
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,67,1,765.6,878.1,7,25,559,320,1991,,Garcia’s 51% accuracy and superior 74-inch reach neutralize Torres’ close-range pressure.
+baseline-27b,nebius-27b,0,fight-1008,B,nebius-27b,dominance_shift,71,1,774.48,888.22,9,14,103,,376,,BUT Garcia is absolutely DEMOLISHING Torres right now!
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,73,1,843.71,965.55,8,19,561,320,1995,,Garcia’s perfect six-for-six jab accuracy is completely silencing Torres right now.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,75,1,763.81,876.26,9,17,558,320,2015,,Torres’s zero landing rate against Garcia’s perfect jabs shows total silence.
+baseline-27b,nebius-27b,0,fight-1008,B,nebius-27b,knockdown,82,1,748.34,863.97,8,19,115,,416,,WAIT! TORRES IS DOWN! GARCIA’S HOOK IS DEVASTATING!
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,83,1,797.37,941.06,7,21,548,320,1953,,Garcia’s 66.7% accuracy in this burst highlights his superior technical precision.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,89,1,949.94,1060.89,10,23,549,320,1944,,Garcia’s 61% defense rate is neutralizing Torres’s high-volume swarming strategy effectively.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,narrative_tension,91,1,798.67,905.1,9,26,584,320,2104,33,Garcia’s 100% accuracy and 33% body shot ratio are exposing Torres’s porous defense.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,93,1,531.98,637.98,8,19,570,320,2040,,Torres struggles to penetrate Garcia’s elite 61% defense in this slow phase.
+baseline-27b,nebius-27b,0,fight-1008,B,nebius-27b,dominance_shift,104,1,816.87,922.13,7,14,108,,388,,BUT GARCIA IS EXPLODING WITH POWER!
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,107,1,763.1,869.06,11,23,545,320,1961,,"Garcia's 74-inch reach controls distance, neutralizing Torres's high-volume swarming attempts."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,110,1,770.71,876.33,9,21,540,320,1914,,Garcia’s 74-inch reach is already dictating the early pace of this bout.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,123,1,762.19,866.53,9,19,552,320,1968,,"Torres lands 80% on the body, threatening Garcia’s known vulnerability early."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,126,1,743.78,846.95,10,16,540,320,1938,,"Torres struggles at range, currently missing three of four shots against Garcia."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,128,1,822.48,929.46,6,18,543,320,1983,,"Torres lands 40% on the body, targeting Garcia’s known vulnerability."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,135,1,830.23,932.8,7,17,547,320,1992,,Garcia’s 74-inch reach advantage dictates the early range war.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,137,1,771.71,813.88,7,20,555,320,1989,,Garcia’s 74-inch reach currently neutralizes Torres’s high-volume pressure strategy.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,138,1,761.79,876.43,9,15,546,320,1980,,"Torres throws hooks into Garcia’s range, risking porous defense exposure."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,139,1,804.1,842.48,7,19,538,320,1953,,"At eighteen punches per minute, the slow pace favors Garcia’s 51% accuracy."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,141,1,743.1,846.53,9,23,542,384,1952,,"Garcia’s 61% defense effectively neutralizes Torres’s high-volume, porous swarming approach."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,143,1,763.16,870.38,7,20,549,384,1965,,"Garcia’s 100% accuracy lands body shots, exploiting his known vulnerability."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,148,1,750.59,854.18,10,22,553,320,1997,,Garcia’s 80% accuracy and body focus threaten to exploit Torres’s porous defense early.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,151,1,745.44,787.41,6,24,564,320,2034,,Garcia’s 75% accuracy currently outpaces Torres’s 50% in this early exchange.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,154,1,730.94,766.17,6,20,572,320,2038,,Torres’s 42.9% accuracy is currently overwhelming Garcia’s zero landed punches.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,155,1,808.25,916.08,8,17,562,320,2009,,"Torres lands a hook, but Garcia’s zero punches keep the pace slow."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,156,1,772.52,889.66,9,16,548,320,1968,,Torres leverages his six-inch reach deficit to close the distance effectively.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,159,1,823.96,933.98,8,19,548,320,1982,,Garcia’s 74-inch reach is forcing Torres into ineffective short-range swings.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,162,1,792.65,896.56,8,22,561,320,2028,,Torres’s 100% body shot accuracy is neutralizing Garcia’s reach advantage right now.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,171,1,808.58,816.73,6,24,554,320,1974,,Garcia’s 16.7% accuracy proves he is being completely overwhelmed by Torres’s relentless pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,186,1,738.62,857.66,7,22,563,320,2030,,Garcia’s 44.4% accuracy signals he is finding range against Torres’s pressure.
+baseline-27b,nebius-27b,0,fight-1008,B,nebius-27b,excitement_peak,190,1,587.39,682.75,7,14,110,,396,,AND NOW TORRES THROWS A PUNCH OF FURY!
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,192,1,882.42,987.46,7,20,562,320,1971,,Garcia’s 50% accuracy highlights his superior hand speed against Torres’s volume.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,200,1,775.19,893.43,10,21,555,320,1954,,Garcia’s 74-inch reach helps him slip Torres’s high-volume short-range combinations.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,210,1,786.29,822.27,6,19,551,320,1978,,Torres’s 50% body shot ratio is currently exposing Garcia’s known vulnerability.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,218,1,782.76,891.41,7,22,559,320,1987,,Garcia’s 27.3% accuracy is crumbling against Torres’s relentless close-range pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,224,1,845.65,946.91,8,27,547,320,1973,,Torres’s 44.4% accuracy outshines Garcia’s 28.6% in this fast pace.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,228,1,768.93,784.25,4,17,557,320,1945,,"Torres lands 80% body shots, exploiting Garcia’s known vulnerability."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,235,1,760.86,887.65,9,24,562,320,1970,,"Garcia’s 50% accuracy outpaces Torres, halting the swarmer’s relentless pressure."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,251,1,804.86,908.32,9,17,554,320,1984,,Garcia's low reach limits his jab against the closing swarmer.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,252,1,808.84,924.57,7,17,555,320,1963,,"Torres targets the body at 50%, exploiting Garcia’s known vulnerability."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,254,1,791.35,898.19,12,21,550,320,1979,,Garcia’s perfect two-punch burst highlights superior accuracy compared to Torres’s single landed hook.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,256,1,824.74,935.68,11,23,546,320,1981,,Garcia’s 51% accuracy dominates this 18-punch-per-minute tactical stalemate.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,262,1,795.66,902.09,8,20,552,320,1991,,Torres’s 100% body attack exploits Garcia’s documented vulnerability with relentless pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,266,1,630.19,734.25,9,17,558,320,2021,,Garcia’s reach advantage forces Torres into low-percentage short-range combinations.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,270,1,627.79,737.0,7,23,541,320,1971,,Garcia’s 28.6% accuracy signals he is struggling to counter Torres’s relentless pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,277,1,790.31,935.75,7,20,555,320,2001,,Torres’s 58.3% accuracy confirms he is dominating Garcia in close quarters.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,294,1,768.94,873.81,8,22,554,320,1987,,"Garcia’s body shots are landing at 66.7%, exploiting Torres’s porous defense."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,295,1,740.16,843.35,7,20,564,320,2000,,Garcia’s 100% body shot accuracy targets Torres’s known vulnerability effectively.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,304,1,769.32,876.49,8,19,559,320,1991,,Garcia’s 74-inch reach is already stifling Torres’s early pace.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,excitement_change,306,1,752.54,859.74,10,22,546,320,1965,,"Garcia’s superior 51% accuracy currently dictates the slow, technical pace of this round."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,307,1,980.31,1083.93,8,17,543,320,1943,,Torres must close the six-inch reach gap to survive this slow technical exchange.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,309,1,593.26,688.1,8,21,542,320,1951,,Torres’s 100% body landing rate targets Garcia’s documented vulnerability to body shots.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,314,1,555.47,653.61,6,18,548,320,1994,,Garcia’s thirty-three percent accuracy highlights his struggles against Torres’s relentless pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,321,1,858.59,967.43,8,16,543,320,1985,,Torres’s relentless body pressure threatens to exploit Garcia’s documented vulnerability early.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,323,1,596.85,644.93,6,21,543,320,2011,,Garcia’s 100% accuracy on the cross neutralizes Torres’s immediate pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,336,1,758.72,862.22,9,15,548,320,1984,,"Torres throws four straight body shots, aiming to fatigue Garcia early."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,337,1,563.78,657.69,8,20,562,320,2033,,Garcia’s seven-inch reach advantage is currently stifling Torres’s high-volume body attacks.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,338,1,783.69,891.85,11,24,542,320,1976,,Garcia's 74-inch reach keeps Torres's 66.7% accuracy ineffective at distance.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,340,1,748.55,857.77,11,19,548,320,1971,,"Torres lands zero punches, proving his swarming style ineffective against Garcia's long jab."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,345,1,804.17,954.11,10,25,549,320,1980,,Garcia’s perfect 100% accuracy on the cross is silencing Torres’s high-volume pressure early.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,348,1,731.5,833.65,9,21,555,320,2013,,Garcia’s elite 61% defense is neutralizing Torres’s relentless swarming pressure.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,357,1,819.32,861.05,6,25,557,320,1987,,Garcia’s 83.3% accuracy on the cross is shutting down Torres’s high-volume swarming.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,367,1,673.34,826.43,6,18,560,320,2004,,"Torres is landing 75% body shots, targeting Garcia’s known vulnerability."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,pace_change,376,1,755.11,862.23,8,20,567,320,2023,,"Torres targets the body, but Garcia’s 61% defense neutralizes the pressure."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,377,1,736.17,794.4,6,20,547,320,1957,,Garcia’s 74-inch reach neutralizes Torres’s pressure at this slow pace.
+baseline-27b,nebius-27b,0,fight-1008,B,nebius-27b,knockdown,379,1,741.11,797.91,6,12,107,,377,,WAIT! Torrance's cross DROPS Garcia!
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,dominance_shift,380,1,749.51,855.14,9,21,553,320,1959,33,"Torres lands a cross, exploiting Garcia's 33% accuracy in this slow-paced round."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,385,1,741.55,847.67,11,23,551,320,1947,,"Torres is outpunching Garcia right now, landing 4 of 5 shots in the pocket."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,target_zone_shift,389,1,549.72,682.46,13,18,553,320,1949,,"Torres floods the pocket, landing five of seven shots against Garcia's struggling defense."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,394,1,741.65,846.28,8,18,549,320,1963,44,Torres's 44% body shots are exploiting Garcia's known vulnerability effectively.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_reversal,396,1,768.01,896.03,9,22,559,320,2023,,Garcia’s 75% accuracy in the last ten seconds signals a dangerous counter-attack.
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,momentum_stable,397,1,569.33,704.31,10,14,557,320,2014,,"Both fighters show zero accuracy, confirming the current tactical patience phase."
+baseline-27b,nebius-27b,0,fight-1008,A,nebius-27b,idle_timeout,399,1,983.13,1097.3,11,20,548,320,1975,,"Garcia’s recent body shot targets Torres’s vulnerability, threatening to end the fight early."
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,excitement_change,1,1,680.38,789.82,7,18,515,,1871,,"Garcia lands a clean hook, leveraging his reach advantage against the slow pace."
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,idle_timeout,3,1,849.01,1024.75,9,21,524,,1931,,"Alvarez’s 67% defense neutralizes Garcia’s early output, keeping the pace slow."
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,target_zone_shift,5,1,531.49,623.43,7,18,557,320,2036,,Alvarez’s superior 58% accuracy counters Garcia’s early jab attempts effectively.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,pace_change,10,1,809.82,934.22,8,18,551,320,2037,,Garcia's 74-inch reach edge allows him to control distance early.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,dominance_shift,16,1,898.44,1007.8,9,23,558,320,2039,17,"Garcia lands 60% of early punches, far outpacing Alvarez's 17%."
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,pace_change,18,1,726.64,852.77,10,22,553,320,2000,,Alvarez’s 34% body shot ratio signals an early attempt to wear down Garcia’s guard.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,dominance_shift,19,1,900.04,1013.3,11,20,571,320,2045,,"Garcia’s elite 51% accuracy is dictating the slow, tactical pace."
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,idle_timeout,20,1,822.07,930.64,7,19,559,320,2016,,Garcia’s 74-inch reach advantage neutralizes Alvarez’s early pressure tactics.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_reversal,22,1,873.21,1052.65,9,23,570,320,2068,,"Garcia’s early cross is finding the body, exploiting Alvarez’s 34% body shot vulnerability."
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,dominance_shift,24,1,604.86,721.79,8,22,570,320,2093,33,Alvarez’s 33% accuracy exposes his struggle against Garcia’s superior 74-inch reach.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,dominance_shift,25,1,861.24,988.65,9,27,558,320,2049,3.5,Alvarez’s 58% accuracy outclasses Garcia’s 51% despite the 3.5-inch reach deficit.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,idle_timeout,26,1,823.67,856.34,5,20,561,320,2018,,Garcia’s 74-inch reach currently neutralizes Alvarez’s aggressive early pressure tactics.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_reversal,27,1,706.82,806.03,7,19,570,320,2068,,Alvarez’s early 66.7% accuracy signals a relentless body-focused surge.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_stable,28,1,906.17,923.61,6,20,554,320,2037,,Garcia’s 74-inch reach is effectively controlling the early pace of the fight.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,pace_change,33,1,949.03,1052.93,8,19,556,320,2029,,Alvarez’s 75% body shot ratio is already exposing Garcia’s known vulnerability.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_reversal,36,1,631.99,686.92,5,19,566,320,2062,,Alvarez’s 34% body ratio is now visibly exploiting Garcia’s documented weakness.
+baseline-27b,nebius-27b,0,fight-1009,B,nebius-27b,knockdown,38,1,779.37,989.72,10,22,117,,413,,WAIT! GARCIA DROPS! ALVAREZ LANDS THE UPPERCUT!
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_reversal,39,1,787.43,890.39,6,18,575,320,2080,,Alvarez’s 67% defense effectively neutralizes Garcia’s high hand speed.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_stable,40,1,764.45,868.97,8,21,565,320,2021,,Alvarez’s 58% accuracy contrasts sharply with Garcia’s struggling 0% landing rate.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_reversal,50,1,775.49,877.56,7,18,557,320,2025,,Alvarez’s 80% accuracy in this burst exposes Garcia’s defensive gaps.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,idle_timeout,52,1,732.8,785.92,6,27,550,320,2015,,Alvarez's 83.3% accuracy currently dominates Garcia's 40.0% in this mid-round exchange.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,target_zone_shift,53,1,766.76,983.49,10,23,559,320,2017,,Garcia’s 100% body shot volume signals a desperate attempt to disrupt Alvarez’s rhythm.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_reversal,54,1,768.52,882.9,7,21,580,320,2099,,Garcia’s 33.3% accuracy contrasts sharply with Alvarez’s zero landed punches.
+baseline-27b,nebius-27b,0,fight-1009,A,nebius-27b,momentum_stable,55,1,836.94,897.64,7,19,565,320,2055,33,"Alvarez’s single body hook lands, exploiting Garcia’s current 33% accuracy."

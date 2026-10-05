@@ -5,6 +5,7 @@ Context Builder - Packages events and fight state into narrative context.
 from typing import List, Dict, Any, Optional
 from src.core.events import Event
 from src.core.action_buffer.buffer import ActionBuffer
+from src.retrieval.stats.fighter_stats import SAMPLE_FIGHTERS
 
 try:
     from src.retrieval.fight_memory.store import FightMemoryStore
@@ -21,13 +22,29 @@ class ContextBuilder:
     Optionally enriches prompts with RAG-retrieved fighter stats and history.
     """
 
-    def __init__(self):
+    HISTORY_MODES = ("recent", "full", "capped")
+
+    def __init__(self, history_mode: str = "recent", history_cap: int = 8):
+        """
+        history_mode controls how much past commentary goes into Track A prompts:
+          recent - only the last 2 lines (default; prompt size is constant)
+          full   - the whole fight transcript (append-only, so its prefix is cacheable)
+          capped - the last `history_cap` lines (bounded size, but the window slides so
+                   the prefix beyond the profiles changes on every request)
+        """
+        if history_mode not in self.HISTORY_MODES:
+            raise ValueError(f"history_mode must be one of {self.HISTORY_MODES}")
+        self.history_mode = history_mode
+        self.history_cap = history_cap
+
         # Track last N outputs for narrative coherence
         self.recent_commentary = []
         self.max_history = 3
+        self.transcript: List[str] = []   # every line this fight, in order
 
         # Fighter names (set by orchestrator)
         self.fighter_names = {1: "Fighter 1", 2: "Fighter 2"}
+        self.fighter_profiles = ""
 
         # RAG components (None when unavailable — degrades gracefully)
         self._fight_memory: Optional["FightMemoryStore"] = None
@@ -43,11 +60,32 @@ class ContextBuilder:
         """Wire up RAG components. Called by orchestrator after setup."""
         self._fight_memory = fight_memory
         self._history = history
+        self.attach_window_analyzer(action_buffer)
+
+    def attach_window_analyzer(self, action_buffer: "ActionBuffer"):
+        """Live stats are computed from the buffer (no database), so they work without RAG."""
         self._window_analyzer = SlidingWindowAnalyzer(action_buffer) if _RETRIEVAL_AVAILABLE else None
 
     def set_fighter_names(self, p1: str, p2: str):
-        """Set fighter names for context"""
+        """Set fighter names and build the per-fight profile block."""
         self.fighter_names = {1: p1, 2: p2}
+        self.fighter_profiles = self._build_profiles(p1, p2)
+        self.transcript = []
+        self.recent_commentary = []
+
+    @staticmethod
+    def _build_profiles(p1: str, p2: str) -> str:
+        """
+        Stable, per-fight fighter profiles (looked up by name, not by similarity).
+        Identical text on every request for this fight, so it sits at the front of
+        the prompt and the LLM server can reuse its cached prefix.
+        """
+        lines = []
+        for name in (p1, p2):
+            profile = SAMPLE_FIGHTERS.get(name)
+            if profile is not None:
+                lines.append(f"- {profile.to_document()}")
+        return "\n".join(lines)
     
     def build(
         self,
@@ -94,7 +132,9 @@ class ContextBuilder:
         rag_history = ""
         live_stats = ""
 
-        if self._fight_memory is not None:
+        # Fighter stats come from the stable profile block when we know both
+        # fighters; similarity search is only the fallback for unknown names.
+        if self._fight_memory is not None and not self.fighter_profiles:
             rag_fighter_stats = self._fight_memory.format_for_prompt(event_focus, k=2)
 
         if self._history is not None:
@@ -132,6 +172,8 @@ class ContextBuilder:
                 'phase': self._get_round_phase(round_elapsed)
             },
             'fighter_names': self.fighter_names,
+            'fighter_profiles': self.fighter_profiles,
+            'transcript': self._transcript_for_prompt(),
             'recent_commentary': self.recent_commentary[-self.max_history:],
             'tone': tone,
             # RAG fields — may be empty strings if retrieval unavailable
@@ -142,8 +184,17 @@ class ContextBuilder:
 
         return context
     
+    def _transcript_for_prompt(self) -> List[str]:
+        if self.history_mode == "full":
+            return list(self.transcript)
+        if self.history_mode == "capped":
+            return self.transcript[-self.history_cap:]
+        return []
+
     def add_commentary(self, commentary: str):
         """Record generated commentary for narrative coherence"""
+        if commentary:
+            self.transcript.append(commentary)
         self.recent_commentary.append(commentary)
         
         # Keep only recent history

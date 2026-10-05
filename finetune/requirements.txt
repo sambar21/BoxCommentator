@@ -1,0 +1,4 @@
+# Installed in the Kaggle notebook (torch is already there). Pin versions you verified.
+transformers
+peft
+accelerate

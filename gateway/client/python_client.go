@@ -15,6 +15,8 @@ type PunchRequest struct {
 	Target        string `json:"target"`
 	Outcome       string `json:"outcome"`
 	Damage        int    `json:"damage"`
+	Knockdown     bool   `json:"knockdown"`
+	FightID       string `json:"fight_id"`
 	Fighter1Name  string `json:"fighter1_name"`
 	Fighter2Name  string `json:"fighter2_name"`
 	RoundNum      int    `json:"round_num"`

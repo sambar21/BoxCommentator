@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-service
+  labels: {app: python-service}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: python-service}
+  template:
+    metadata:
+      labels: {app: python-service}
+    spec:
+      containers:
+        - name: python-service
+          image: boxio-python:dev
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            # which entry of config/backends.yaml (or legacy provider) generates commentary
+            - name: COMMENTARY_BACKEND
+              value: groq
+          envFrom:
+            - secretRef:
+                name: boxio-secrets   # kubectl create secret generic boxio-secrets --from-env-file=.env
+                optional: true
+          readinessProbe:
+            httpGet: {path: /health, port: 8000}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: {path: /health, port: 8000}
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests: {cpu: 100m, memory: 256Mi}
+            limits: {memory: 1Gi}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-service
+spec:
+  selector: {app: python-service}
+  ports:
+    - port: 8000
+      targetPort: 8000

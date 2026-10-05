@@ -1,0 +1,15 @@
+venv/
+.git/
+.env
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+bench/results/
+serving/logs/
+finetune/data/
+voice/results/
+gateway/
+k8s/
+docs/

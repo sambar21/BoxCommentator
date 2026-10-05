@@ -1,4 +1,5 @@
 import time
+from src.core import clock
 import math
 from typing import List, Optional
 from src.core.events import Event
@@ -89,7 +90,7 @@ class PriorityQueue:
         """
         Called every cycle - remove stale events.
         """
-        current_time = time.time()
+        current_time = clock.now()
         
         # Remove events older than threshold
         self.queue = [
@@ -110,7 +111,7 @@ class PriorityQueue:
         Calculate event priority score.
         Score = base_priority × recency_multiplier
         """
-        age = time.time() - event.timestamp
+        age = clock.now() - event.timestamp
         
         # Recency multiplier: 2^(-age / half_life)
         # Fresh event (age=0): multiplier = 1.0

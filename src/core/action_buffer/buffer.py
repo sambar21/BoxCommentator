@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from collections import deque
 from typing import List, Optional
 import time
+from src.core import clock
 
 @dataclass
 class Punch:
@@ -11,6 +12,9 @@ class Punch:
     outcome: str         # landed, missed, blocked
     timestamp: float     # time punch happened
     damage: int = 0      # optional damage value
+    knockdown: bool = False  # this punch put the defender on the canvas
+
+
 class ActionBuffer:
     """
     Circular buffer storing recent punches.
@@ -35,7 +39,7 @@ class ActionBuffer:
         if not self.buffer:
             return []
         
-        current_time = time.time()
+        current_time = clock.now()
         cutoff_time = current_time - seconds
         
         return [p for p in self.buffer if p.timestamp >= cutoff_time]

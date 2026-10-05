@@ -1,0 +1,89 @@
+# LLM backends for commentary and benchmarking.
+# Every entry is OpenAI-compatible: just a base_url + model (+ key + prices).
+#
+#   base_url / api_key support ${VAR} and ${VAR:-default} expansion from the environment.
+#   price_in / price_out   USD per 1M tokens (hosted APIs). Fill from each provider's pricing page.
+#   gpu_hour_usd           USD per GPU-hour equivalent for self-hosted entries (Kaggle itself is $0,
+#                          so cost is reported at the price of a comparable rented GPU).
+#
+# Values marked VERIFY are placeholders to confirm against the provider before benchmarking.
+
+backends:
+  # ── Self-hosted vLLM (Kaggle T4). VLLM_BASE_URL is the tunnel URL, or localhost
+  #    when bench.py runs inside the Kaggle notebook itself.
+  vllm-3b:
+    base_url: ${VLLM_BASE_URL:-http://localhost:8000/v1}
+    model: Qwen/Qwen2.5-3B-Instruct
+    api_key: ${VLLM_API_KEY:-EMPTY}
+    gpu_hour_usd: 0.35        # VERIFY: comparable cloud T4 price
+  vllm-3b-awq:
+    base_url: ${VLLM_BASE_URL:-http://localhost:8000/v1}
+    model: Qwen/Qwen2.5-3B-Instruct-AWQ
+    api_key: ${VLLM_API_KEY:-EMPTY}
+    gpu_hour_usd: 0.35
+  vllm-7b-awq:
+    base_url: ${VLLM_BASE_URL:-http://localhost:8000/v1}
+    model: Qwen/Qwen2.5-7B-Instruct-AWQ
+    api_key: ${VLLM_API_KEY:-EMPTY}
+    gpu_hour_usd: 0.35
+  vllm-7b:                      # only if you have 2 GPUs (tensor parallel); fp16 7B does not fit one T4
+    base_url: ${VLLM_BASE_URL:-http://localhost:8000/v1}
+    model: Qwen/Qwen2.5-7B-Instruct
+    api_key: ${VLLM_API_KEY:-EMPTY}
+    gpu_hour_usd: 0.70
+  vllm-1.5b:
+    base_url: ${VLLM_BASE_URL:-http://localhost:8000/v1}
+    model: Qwen/Qwen2.5-1.5B-Instruct
+    api_key: ${VLLM_API_KEY:-EMPTY}
+    gpu_hour_usd: 0.35
+  vllm-1.5b-lora:
+    base_url: ${VLLM_BASE_URL:-http://localhost:8000/v1}
+    model: boxer                # name given to --lora-modules
+    api_key: ${VLLM_API_KEY:-EMPTY}
+    gpu_hour_usd: 0.35
+
+  # ── Hosted APIs
+  nebius:
+    base_url: ${NEBIUS_BASE_URL:-https://api.tokenfactory.nebius.com/v1/}
+    model: ${NEBIUS_MODEL:-}                # VERIFY: model id from the Token Factory catalog
+    api_key: ${NEBIUS_API_KEY:-}
+    price_in: 0.10                          # VERIFY vs Nebius pricing page (estimate, not confirmed)
+    price_out: 0.30                         # VERIFY
+  # Larger model used ONLY to write fine-tuning examples (finetune/gen_data.py), not benchmarked.
+  nebius-teacher:
+    base_url: ${NEBIUS_BASE_URL:-https://api.tokenfactory.nebius.com/v1/}
+    model: ${NEBIUS_TEACHER_MODEL:-}
+    api_key: ${NEBIUS_API_KEY:-}
+    price_in: 0.20                          # VERIFY vs Nebius pricing page (aggregator figure)
+    price_out: 0.60                         # VERIFY
+  # Same model on both providers => clean provider comparison (Llama 3.3 70B is gone from both catalogs).
+  nebius-27b:
+    base_url: ${NEBIUS_BASE_URL:-https://api.tokenfactory.nebius.com/v1/}
+    model: Qwen/Qwen3.8-27B
+    api_key: ${NEBIUS_API_KEY:-}
+    price_in: 0.10                          # VERIFY: placeholder estimate, not confirmed
+    price_out: 0.30                         # VERIFY
+    extra_body:                             # model reasons by default and burns the token budget
+      chat_template_kwargs: {enable_thinking: false}
+  groq-qwen27b:
+    base_url: https://api.groq.com/openai/v1
+    model: qwen/qwen3.8-27b
+    api_key: ${GROQ_API_KEY:-}
+    price_in: 0.0                           # VERIFY: free tier; fill paid price to report cost
+    price_out: 0.0
+    min_interval_s: 0.0
+  groq-70b:                                 # STALE: model no longer served by Groq (404)
+    base_url: https://api.groq.com/openai/v1
+    model: llama-3.3-70b-versatile
+    api_key: ${GROQ_API_KEY:-}
+    price_in: 0.59                          # VERIFY: current Groq pricing
+    price_out: 0.79                         # VERIFY
+    # min seconds between requests; free tier is rate limited (VERIFY limits)
+    min_interval_s: 0.0
+
+# Which backend handles which kind of event (used by src/generation/router.py).
+# Unset = use the single default backend.
+routing:
+  default: groq-70b
+  # track_b: vllm-3b      # knockdowns and urgent calls -> fastest
+  # track_a: groq-70b        # analysis / quiet stretches -> smartest

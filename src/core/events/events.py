@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Dict, Any
 import time
+from src.core import clock
 
 @dataclass
 class Event:
@@ -19,7 +20,7 @@ class Event:
     def __post_init__(self):
         """Auto-set timestamp if not provided"""
         if self.timestamp is None:
-            self.timestamp = time.time()
+            self.timestamp = clock.now()
     
     def __str__(self):
         """Nice string representation for debugging"""

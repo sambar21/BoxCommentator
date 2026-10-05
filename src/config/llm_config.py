@@ -2,13 +2,17 @@
 LLM Configuration - Switch providers easily
 """
 
+import os
+
 class LLMConfig:
     """
     Central config for LLM provider selection.
     Change PROVIDER to switch between Ollama, Claude, OpenAI, or Groq.
     """
     
-    PROVIDER = "groq"  # Options: "ollama", "claude", "openai", "groq"
+    # Options: "ollama", "claude", "openai", "groq", or any backend name from config/backends.yaml
+    # (e.g. "vllm-3b"). COMMENTARY_BACKEND overrides it, so containers can pick a backend without code changes.
+    PROVIDER = os.getenv("COMMENTARY_BACKEND", "groq")
 
     # Ollama config
     OLLAMA_BASE_URL = "http://localhost:11434"

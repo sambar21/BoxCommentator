@@ -19,6 +19,7 @@ VERIFY on the machine you run this on: vLLM's current flag names (--enable-prefi
 import argparse
 import os
 import signal
+import socket
 import subprocess
 import sys
 import time
@@ -146,6 +147,13 @@ class Server:
         self.base_url = f"http://localhost:{port}/v1"
 
     def __enter__(self):
+        # A leftover server (e.g. after an interrupted run) would answer wait_ready() and serve the
+        # wrong model, so refuse to start rather than benchmark it by mistake.
+        with socket.socket() as s:
+            s.settimeout(1)
+            if s.connect_ex(("127.0.0.1", self.port)) == 0:
+                raise RuntimeError(f"port {self.port} is already in use (stale vLLM server?). "
+                                   "Stop it first: pkill -f 'vllm serve'")
         LOG_DIR.mkdir(parents=True, exist_ok=True)
         log = open(LOG_DIR / f"vllm-{self.variant}.log", "w")
         cmd = vllm_command(self.variant, self.port, self.adapter)
@@ -191,6 +199,8 @@ def main(argv=None) -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--plan", choices=list(PLANS), default="core")
     p.add_argument("--variants", nargs="*", help="only these variants from the plan")
+    p.add_argument("--skip-tags", nargs="*", default=[],
+                   help="skip benchmark steps with these tags (e.g. capping: the slow long-fight runs)")
     p.add_argument("--fights", type=int, default=10)
     p.add_argument("--repeats", type=int, default=1)
     p.add_argument("--port", type=int, default=8000)
@@ -208,7 +218,9 @@ def main(argv=None) -> int:
                 pass
         return 0
 
-    plan = {k: v for k, v in PLANS[a.plan].items() if not a.variants or k in a.variants}
+    plan = {k: [s for s in v if s.tag not in a.skip_tags]
+            for k, v in PLANS[a.plan].items() if not a.variants or k in a.variants}
+    plan = {k: v for k, v in plan.items() if v}
     total_steps = sum(len(v) for v in plan.values())
     print(f"plan '{a.plan}': {len(plan)} servers, {total_steps} benchmark runs, "
           f"{a.fights} fights, {a.repeats} repeat(s)")

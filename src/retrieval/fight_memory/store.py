@@ -1,5 +1,5 @@
 """
-PGVector store — stores fighter profiles and fight history as embeddings.
+PGVector store: stores fighter profiles and fight history as embeddings.
 Uses LangChain's PGVector integration for similarity search.
 
 Fallback: if pgvector / psycopg2 unavailable, returns empty docs so the
@@ -41,7 +41,7 @@ def _make_embeddings():
     """Pick embeddings: OpenAI if key available, else deterministic fakes."""
     if _OPENAI_EMB and os.getenv("OPENAI_API_KEY"):
         return OpenAIEmbeddings(model="text-embedding-3-small")
-    # FakeEmbeddings produces consistent-length vectors — good enough for
+    # FakeEmbeddings produces consistent-length vectors, good enough for
     # local dev / tests where exact semantic quality doesn't matter.
     return FakeEmbeddings(size=1536)
 
@@ -61,7 +61,7 @@ class FightMemoryStore:
         self._available = _LANGCHAIN_AVAILABLE
         if not self._available:
             print(
-                "WARNING: langchain-community not installed — "
+                "WARNING: langchain-community not installed, "
                 "RAG retrieval disabled. pip install langchain-community langchain-openai"
             )
 
@@ -76,7 +76,7 @@ class FightMemoryStore:
                     embedding_function=_make_embeddings(),
                 )
             except Exception as e:
-                print(f"WARNING: PGVector connection failed ({e}) — RAG disabled")
+                print(f"WARNING: PGVector connection failed ({e}), RAG disabled")
                 self._available = False
                 return None
         return self._store
@@ -121,7 +121,7 @@ class FightMemoryStore:
     def retrieve(self, query: str, k: int = 3) -> list:
         """
         Retrieve top-k fighter documents most semantically similar to query.
-        Returns empty list on failure — callers must handle gracefully.
+        Returns empty list on failure, callers must handle gracefully.
         """
         store = self._get_store()
         if store is None:
@@ -140,7 +140,7 @@ class FightMemoryStore:
         docs = self.retrieve(query, k=k)
         if not docs:
             return ""
-        parts = [f"[Fighter Stats — retrieved for context]\n"]
+        parts = [f"[Fighter Stats: retrieved for context]\n"]
         for doc in docs:
             parts.append(f"• {doc.page_content}")
         return "\n".join(parts)

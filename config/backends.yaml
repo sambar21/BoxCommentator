@@ -86,4 +86,4 @@ backends:
 routing:
   default: groq-qwen27b
   # track_b: vllm-3b      # knockdowns and urgent calls -> fastest
-  # track_a: groq-70b        # analysis / quiet stretches -> smartest
+  # track_a: groq-qwen27b        # analysis / quiet stretches -> smartest

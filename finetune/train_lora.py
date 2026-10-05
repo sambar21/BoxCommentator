@@ -91,13 +91,18 @@ def train(args) -> dict:
         target_modules=TARGET_MODULES, task_type="CAUSAL_LM"))
     model.print_trainable_parameters()
 
+    # warmup_ratio was removed in transformers 5; warmup_steps works in old and new versions.
+    steps_per_epoch = -(-len(train_ds) // (args.batch_size * args.grad_accum))
+    warmup_steps = max(1, round(0.05 * steps_per_epoch * args.epochs))
+
     targs = TrainingArguments(
         output_dir=str(Path(args.out) / "checkpoints"),
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
         gradient_accumulation_steps=args.grad_accum,
-        learning_rate=args.lr, lr_scheduler_type="cosine", warmup_ratio=0.05,
+        learning_rate=args.lr, lr_scheduler_type="cosine", warmup_steps=warmup_steps,
         fp16=torch.cuda.is_available(), logging_steps=5,
+        per_device_eval_batch_size=1, prediction_loss_only=True,  # 151k-vocab logits OOM a T4 at eval batch 8
         eval_strategy="epoch", save_strategy="no", report_to="none",
         remove_unused_columns=False, seed=args.seed)
     trainer = Trainer(model=model, args=targs, train_dataset=train_ds, eval_dataset=eval_ds,

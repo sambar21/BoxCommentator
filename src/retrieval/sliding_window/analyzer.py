@@ -1,7 +1,7 @@
 """
-Sliding window analyzer — computes live per-round stats from the ActionBuffer.
+Sliding window analyzer: computes live per-round stats from the ActionBuffer.
 
-These stats are injected directly into the LLM prompt (no embedding needed —
+These stats are injected directly into the LLM prompt (no embedding needed:
 they're computed, not retrieved). Gives the LLM real numbers to work with.
 """
 
@@ -95,7 +95,7 @@ class SlidingWindowAnalyzer:
         s = self.compute(window_seconds)
         r = s["recent"]
         return (
-            f"[Live Stats — last {window_seconds:.0f}s]\n"
+            f"[Live Stats: last {window_seconds:.0f}s]\n"
             f"{p1_name}: {r['p1']['landed']}/{r['p1']['thrown']} landed "
             f"({r['p1']['accuracy']}% acc), "
             f"body {r['p1']['body_ratio']}%, top punch: {r['p1']['top_punch_type']}\n"

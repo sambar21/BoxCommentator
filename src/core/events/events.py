@@ -8,7 +8,7 @@ class Event:
     """
     Represents a fight event that trackers emit.
     
-    Events flow: Tracker → Priority Queue → Commentary Generator
+    Events flow: Tracker -> Priority Queue -> Commentary Generator
     """
     type: str                    # "dominance_shift", "pace_change", etc.
     priority: float              # 0-10 scale (higher = more urgent)

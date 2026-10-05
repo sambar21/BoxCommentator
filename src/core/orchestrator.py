@@ -38,8 +38,8 @@ class CommentaryOrchestrator:
     Main orchestrator - coordinates entire commentary pipeline.
 
     Flow:
-    Punch → Buffer → Trackers → Events → Priority Queue →
-    Consumer → Context Builder → Track A/B Generator → Commentary
+    Punch -> Buffer -> Trackers -> Events -> Priority Queue ->
+    Consumer -> Context Builder -> Track A/B Generator -> Commentary
     """
 
     def __init__(

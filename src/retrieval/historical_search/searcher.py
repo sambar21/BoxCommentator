@@ -1,5 +1,5 @@
 """
-Historical searcher — semantic search over fight summaries stored in pgvector.
+Historical searcher: semantic search over fight summaries stored in pgvector.
 
 Stores prose summaries of past rounds/fights and retrieves the most relevant
 ones given a live event query (e.g. "body shot pressure in late rounds").
@@ -41,19 +41,19 @@ SAMPLE_FIGHT_SUMMARIES = [
     {
         "id": "canelo_ggg_i_r4",
         "text": (
-            "Round 4 — Alvarez began targeting the body relentlessly. Six body shots landed "
+            "Round 4: Alvarez began targeting the body relentlessly. Six body shots landed "
             "in 90 seconds, visibly slowing Golovkin's footwork. Golovkin's jab count dropped "
             "from 18/round average to 9 this round. Alvarez's left hook to the liver in the "
-            "final 30 seconds was the defining moment — Golovkin winced and stepped back."
+            "final 30 seconds was the defining moment, Golovkin winced and stepped back."
         ),
         "tags": ["body_work", "pressure", "late_round_shift"],
     },
     {
         "id": "canelo_ggg_i_r7",
         "text": (
-            "Round 7 — The momentum pendulum swung. Golovkin's straight rights started finding "
+            "Round 7: The momentum pendulum swung. Golovkin's straight rights started finding "
             "the target at a 55% clip. Alvarez's head movement that had been so effective "
-            "earlier began slipping — he absorbed 14 punches, his highest of the fight. "
+            "earlier began slipping, he absorbed 14 punches, his highest of the fight. "
             "Golovkin's punch output surged to 68, suggesting a second-wind response to the body work."
         ),
         "tags": ["momentum_reversal", "counter_punching", "surge"],
@@ -61,7 +61,7 @@ SAMPLE_FIGHT_SUMMARIES = [
     {
         "id": "garcia_campbell_r3",
         "text": (
-            "Round 3 — Garcia's jab volume spiked to 34, establishing distance against the "
+            "Round 3: Garcia's jab volume spiked to 34, establishing distance against the "
             "taller Campbell. The right hand behind the jab landed 7 times, opening a cut "
             "over Campbell's left eye. Garcia's footwork kept him on the outside, negating "
             "Campbell's natural size and reach advantage."
@@ -71,8 +71,8 @@ SAMPLE_FIGHT_SUMMARIES = [
     {
         "id": "canelo_saunders_r8",
         "text": (
-            "Round 8 — Alvarez landed an uppercut that fractured Saunders' orbital bone, "
-            "ending the fight. The shot came off a double jab setup — Saunders reached for "
+            "Round 8: Alvarez landed an uppercut that fractured Saunders' orbital bone, "
+            "ending the fight. The shot came off a double jab setup, Saunders reached for "
             "a right hand and left himself exposed inside. Alvarez's punch accuracy peaked "
             "at 72% in this round, a career high for a 3-minute frame."
         ),
@@ -81,7 +81,7 @@ SAMPLE_FIGHT_SUMMARIES = [
     {
         "id": "generic_pressure_r10",
         "text": (
-            "Championship rounds — pressure fighters tend to take over after round 8. "
+            "Championship rounds: pressure fighters tend to take over after round 8. "
             "The cumulative effect of body work slows leg movement; boxers cannot maintain "
             "lateral footwork when the liver area is sore. Counter-punchers who survive "
             "early pressure often find their timing disrupted by accumulated fatigue."
@@ -105,7 +105,7 @@ class HistoricalSearcher:
         self._store: Optional["PGVector"] = None
         self._available = _LANGCHAIN_AVAILABLE
         if not self._available:
-            print("WARNING: langchain not available — historical search disabled")
+            print("WARNING: langchain not available, historical search disabled")
 
     def _get_store(self) -> Optional["PGVector"]:
         if not self._available:
@@ -163,7 +163,7 @@ class HistoricalSearcher:
         results = self.search(query, k=k)
         if not results:
             return ""
-        parts = ["[Historical Precedents — retrieved for context]"]
+        parts = ["[Historical Precedents: retrieved for context]"]
         for r in results:
             parts.append(f"• {r}")
         return "\n".join(parts)

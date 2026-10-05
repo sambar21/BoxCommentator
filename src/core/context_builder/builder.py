@@ -46,7 +46,7 @@ class ContextBuilder:
         self.fighter_names = {1: "Fighter 1", 2: "Fighter 2"}
         self.fighter_profiles = ""
 
-        # RAG components (None when unavailable — degrades gracefully)
+        # RAG components (None when unavailable, degrades gracefully)
         self._fight_memory: Optional["FightMemoryStore"] = None
         self._history: Optional["HistoricalSearcher"] = None
         self._window_analyzer: Optional["SlidingWindowAnalyzer"] = None
@@ -127,7 +127,7 @@ class ContextBuilder:
         # Determine tone based on track and excitement
         tone = self._determine_tone(track, tracker_states.get('excitement', 'MODERATE'))
         
-        # RAG enrichment — retrieved fighter stats + historical precedents
+        # RAG enrichment, retrieved fighter stats + historical precedents
         rag_fighter_stats = ""
         rag_history = ""
         live_stats = ""
@@ -176,7 +176,7 @@ class ContextBuilder:
             'transcript': self._transcript_for_prompt(),
             'recent_commentary': self.recent_commentary[-self.max_history:],
             'tone': tone,
-            # RAG fields — may be empty strings if retrieval unavailable
+            # RAG fields, may be empty strings if retrieval unavailable
             'rag_fighter_stats': rag_fighter_stats,
             'rag_history': rag_history,
             'live_stats': live_stats,

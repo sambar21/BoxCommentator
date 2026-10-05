@@ -1,6 +1,7 @@
 # Running the benchmark, fine-tune and voice
 
-Everything below is built and tested with a stub model; **none of it has been run against real backends yet.**
+Everything below was built and tested with a stub model first. The Kaggle and hosted runs have since been done, and
+the results are in `bench/results/`.
 Commands are ordered cheapest and safest first. Do not skip the dry runs.
 
 ## 0. Setup (local)
@@ -39,7 +40,7 @@ python -m serving.run_matrix --plan core --dry-plan
 ## 3. First real call (tiny)
 
 ```bash
-python -m bench.bench --backend groq-70b --fights 1 --kind short --max-requests 20 --rpm 20 --tag smoke
+python -m bench.bench --backend groq-qwen27b --fights 1 --kind short --max-requests 20 --rpm 20 --tag smoke
 ```
 
 ## 4. Self-hosted experiments (Kaggle)
@@ -74,7 +75,7 @@ adapter on identical fights.
 
 ```bash
 pip install -r voice/requirements.txt          # plus the espeak-ng system package
-python -m voice.speak_fight --backend groq-70b --fights 1 --max-lines 30 --play
+python -m voice.speak_fight --backend groq-qwen27b --fights 1 --max-lines 30 --play
 ```
 Reports time-to-first-audio (TTS only) and end-to-end first-audio (LLM + TTS).
 

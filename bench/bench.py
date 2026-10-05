@@ -5,9 +5,9 @@ with streaming responses and log latency, throughput, cost and quality.
 Examples
   python -m bench.bench --list
   python -m bench.bench --dry-run --fights 3                       # no network, validates the harness
-  python -m bench.bench --backend groq-70b --fights 3 --max-requests 120 --rpm 25 --tag baseline
+  python -m bench.bench --backend groq-qwen27b --fights 3 --max-requests 120 --rpm 25 --tag baseline
   python -m bench.bench --backend vllm-3b --fights 10 --concurrency 4 --tag batching
-  python -m bench.bench --routing --track-a groq-70b --track-b vllm-3b --tag routing
+  python -m bench.bench --routing --track-a groq-qwen27b --track-b vllm-3b --tag routing
 
 Safety: --max-requests and --max-usd stop a run cleanly (partial results are
 still written). --rpm paces requests for rate-limited free tiers.

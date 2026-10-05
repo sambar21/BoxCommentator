@@ -31,7 +31,7 @@ BoxCommentator, AI Sports Commentator | Python, vLLM, Transformers, FastAPI, Doc
 
 And four bullets:
 
-Self-hosted Qwen2.5 with vLLM and benchmarked it against Nebius Token Factory and Groq on 30 simulated fights: time-to-first-token, throughput, cost and accuracy.
-Prefix caching cut p50 time-to-first-token [X→Y] ms; AWQ quantization cut [Z]% latency with no missed knockdowns; routing sent knockdowns to the fastest model.
-LoRA-tuned a 1.5B model (Transformers + PEFT) that matched 7B quality at [N]% lower latency.
-Added live voice (Kokoro text-to-speech) with [M] ms time-to-first-audio.
+Self-hosted Qwen2.5 with vLLM and benchmarked it against Nebius Token Factory and Groq on 10 seeded simulated fights: time-to-first-token, throughput and knockdown accuracy.
+Prefix caching cut p50 time-to-first-token from 253 to 141 ms on the normal prompt; AWQ quantization cut p95 latency 54% and more than doubled decode speed on the 3B model.
+LoRA-tuned a 1.5B model (Transformers + PEFT) on 300 teacher-written examples. It called every knockdown, as the 7B AWQ did, with 26% lower time-to-first-token (160 vs 216 ms) in my runs.
+(Voice bullet dropped. Kokoro and time-to-first-audio were cut from scope.)

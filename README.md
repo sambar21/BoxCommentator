@@ -1,437 +1,140 @@
 # Box.IO AI Commentator
 
-**Real-time AI boxing commentary engine, punch by punch play by play. Latency and quality numbers are being measured across self-hosted vLLM and hosted APIs; see [Status](#status).**
+A real-time boxing commentator. You feed it punches as they happen, it keeps track of how the fight is going, and it talks about it, with a fast reaction when something big lands and a calmer read when a pattern is building.
 
-Feed it raw fight data. Six statistical trackers build a living model of the fight. A priority queue with exponential time decay surfaces the most interesting events. A dual track LLM generator produces commentary, analytical breakdowns for evolving patterns, instant reactions for explosive moments, grounded by a pgvector RAG pipeline that retrieves live fighter stats and historical match data. A Go API gateway runs LLM inference and event telemetry concurrently and cuts off requests that exceed a 550ms budget.
+I started this as a pipeline project and later turned it into a study of how to serve the language model behind it. The second half is where most of the measured results are, so they come first.
 
+## What I measured
 
-## Status
+Same simulated fights for every backend: 10 seeded fights, about 470 generations per run, one fight at a time unless stated. The simulator knows where every knockdown is, so I can check whether the commentary actually called it. Raw runs are in `bench/results/`, and the table below is `bench/results/results_table.md`.
 
-Turning this into a measured LLM-serving project: self-hosted Qwen2.5 on vLLM vs Nebius Token Factory vs Groq. Full plan: [`docs/BUILD_PLAN.md`](docs/BUILD_PLAN.md). Run guide: [`docs/RUNNING.md`](docs/RUNNING.md).
+| Backend | TTFT p50 | TTFT p95 | Tokens/s | Knockdowns described | Invented stats per 100 | Errors |
+|---|---|---|---|---|---|---|
+| Qwen2.5 1.5B (vLLM) | 96 ms | 106 ms | 64 | 84% | 0.4 | 0% |
+| Qwen2.5 3B AWQ (vLLM) | 114 ms | 125 ms | 84 | 32% | 0.0 | 0% |
+| Qwen2.5 3B fp16 (vLLM) | 141 ms | 156 ms | 37 | 32% | 0.0 | 0% |
+| Qwen2.5 1.5B + my LoRA (vLLM) | 160 ms | 169 ms | 28 | 100% | 0.8 | 0% |
+| Qwen2.5 7B AWQ (vLLM) | 216 ms | 246 ms | 43 | 100% | 0.2 | 0% |
+| Nebius, Qwen3-30B-A3B | 515 ms | 667 ms | 144 | 95% | 2.5 | 0% |
+| Nebius, Qwen3.8 27B | 769 ms | 900 ms | 404 | 95% | 4.9 | 0% |
+| Groq, Qwen3.8 27B | 2,436 ms | 3,359 ms | 429 | 83% | 5.0 | 33% |
 
-**Built (all unit-tested; no real benchmark has been run yet)**
-- Knockdown events and a seeded 30-fight simulator with ground-truth knockdowns (`bench/fights.py`)
-- Benchmark runner with spend/request caps and rate pacing (`bench/bench.py`), knockdown-recall and invented-stat checks (`bench/quality.py`), charts and results table (`bench/charts.py`)
-- Per-generation timing (time to first token, total, tokens, cache hits) and prompts laid out for prefix caching
-- OpenAI-compatible backends config (vLLM, Nebius, Groq) and per-track routing with fallback
-- vLLM serving variants and experiment plan (`serving/`) and a Kaggle notebook
-- LoRA data generation (teacher distillation) and training (`finetune/`), Kokoro voice with time-to-first-audio (`voice/`), kind manifests (`k8s/`)
+The self-hosted models ran on a free Kaggle T4. TTFT is time to first token, which is what decides how soon a line of commentary can start. For a live commentator that matters more than raw throughput.
 
-**Results:** none yet. Nothing in this README claims a measured number until it appears in `bench/results/`.
+A few things I'd stand behind:
 
-## Architecture
+- **Quantization helped on every speed measure.** AWQ on the 3B model cut TTFT p50 from 141 to 114 ms, total p95 from 780 to 357 ms, and more than doubled decode speed (37 to 84 tokens/s). Knockdown coverage didn't change, though it was only 32% either way.
+- **Prefix caching helped a lot.** With caching off, TTFT p50 went from 141 ms to 253 ms on the normal prompt. With the whole fight transcript in the prompt, it went from 198 ms (cache on) to 477 ms (off), and p95 from 313 ms to 1,590 ms. These are single runs and the cache-on server may have been warm from earlier work, so read the exact percentages loosely. The direction is not in doubt.
+- **Batching trades latency for throughput.** One fight at a time gave 29 tokens/s. Four at once gave 66, sixteen gave 89, and p95 TTFT went from 156 ms to 331 ms.
+- **Model size matters for quality more than I expected.** The 3B models only described 32% of knockdowns. The 7B described all of them. The plain 1.5B landed at 84%, which surprised me (more on that below).
+- **The fine-tune worked on coverage, not on speed.** I trained a LoRA adapter on 300 examples written by a much bigger model. The 1.5B with the adapter described 100% of knockdowns, same as the 7B, with a lower TTFT (160 ms vs 216 ms). But it decoded at 28 tokens/s against 64 for the plain 1.5B. I served the adapter unmerged, which costs speed, so that number is probably worse than it needs to be. I haven't tested a merged adapter. It also invented slightly more stats than the base model (0.8 vs 0.4 per 100), so it isn't strictly better.
 
-```
-                         ┌─────────────────────────────────┐
-  POST /api/v1/punch     │         Go API Gateway          │
-  (fight event) ────────>│            :8080                │
-                         │                                  │
-                         │  punch_handler.go                │
-                         │        │                         │
-                         │   dispatcher.go (Goroutines)     │
-                         │   ┌────┴────────┐               │
-                         │   │             │               │
-                         │ goroutine     goroutine         │
-                         │ commentary    telemetry         │
-                         │ (550ms max)   (fire & forget)   │
-                         │   │                             │
-                         │ metrics.go (p95 histogram)      │
-                         └───┼─────────────────────────────┘
-                             │ HTTP POST /internal/punch
-                             ▼
-                    ┌──────────────────────────┐
-                    │   Python FastAPI Service  │
-                    │          :8000            │
-                    │                           │
-                    │  CommentaryOrchestrator   │
-                    │         │                 │
-                    │    ┌────┴────┐            │
-                    │  Buffer  Trackers (6x)    │
-                    │    └────┬────┘            │
-                    │      Events               │
-                    │         │                 │
-                    │   PriorityQueue           │
-                    │  (score=p×2^(-age/5s))    │
-                    │         │                 │
-                    │  QueueConsumer (60/40)    │
-                    │   ┌─────┴──────┐         │
-                    │ Track A     Track B       │
-                    │ (streaming) (urgent)      │
-                    │   └─────┬──────┘         │
-                    │  ContextBuilder           │
-                    │         │                 │
-                    │   RAG Retriever ─────────>│──> pgvector
-                    │  (LangChain chain)        │    (PostgreSQL)
-                    │         │                 │
-                    │    Claude / Groq          │
-                    │         │                 │
-                    │    Commentary             │
-                    └──────────────────────────┘
-```
+Things I'd be careful about:
 
-### Request flow (one punch event):
+- Each number comes from 10 fights and one run. Knockdown rates rest on about 19 events per run. Treat differences of a few points as noise.
+- The 1.5B beating the 3B on knockdown coverage is odd. I haven't dug into why, and it may partly be how the checker matches wording.
+- Groq's free tier returned errors on a third of requests. I think it's rate limiting but I never logged the error text, so that's a guess. Its latency numbers come from the requests that did succeed.
+- Hosted prices in `config/backends.yaml` are estimates I haven't verified, so the cost-per-fight column isn't something to quote.
 
-```
-1. Client → Go gateway  POST /api/v1/punch  {attacker, punch_type, target, outcome}
-2. Go spawns goroutine A → POST Python FastAPI /internal/punch
-3. Go spawns goroutine B → logs telemetry (timestamp, fight_id, event_type)
-4. Python: adds punch to ActionBuffer
-5. Python: 6 trackers independently update → emit typed Events
-6. Python: ContradictionDetector cross-checks tracker states
-7. Python: CooldownManager deduplicates per-type
-8. Python: PriorityQueue scores each event: score = priority × 2^(-age / 5s)
-9. Python: QueueConsumer routes to Track A or Track B
-10. Python: ContextBuilder assembles LLM prompt + RAG-retrieved fighter stats
-11. Python: LLM generates commentary (streaming for Track A, direct for Track B)
-12. Go goroutine A returns commentary → gateway responds to client
-13. Go metrics.go records latency; requests slower than 550ms are cut off with a 504
-```
+### Recommendation
 
-## What's Built
+If you need to run this yourself on one small GPU, use the 7B AWQ model with prefix caching on. It gets every knockdown, stays under 250 ms to first token, and fits on a T4. If first-token speed matters more than coverage, the LoRA-tuned 1.5B is the one to look at, ideally merged into the base weights first. I wouldn't use the plain 3B models for this task at all. And if you don't want to run a GPU, Nebius worked fine, but its first token took roughly 2.5 to 3.5 times longer than the local 7B AWQ (515 to 769 ms against 216 ms).
 
-### Core Pipeline (Python)
+Charts: `bench/results/ttft_by_backend.png`, `quantization.png`, `caching.png`, `batching.png`.
 
-| Component | File | What it does |
-|---|---|---|
-| ActionBuffer | `src/core/action_buffer/buffer.py` | Circular `deque` (last 20 punches, O(1) append) |
-| Event | `src/core/events/events.py` | Typed event dataclass, type, priority, message, context |
-| PriorityQueue | `src/core/priority_queue/hot_queue.py` | Scored queue, `score = priority × 2^(-age/5s)`, staleness pruning |
-| CooldownManager | `src/core/cooldown/manager.py` | Per type cooldown timers, priority override bypass |
-| QueueConsumer | `src/core/queue_consumer/consumer.py` | 60/40 Track A/B balance routing |
-| ContextBuilder | `src/core/context_builder/builder.py` | Assembles LLM prompt from tracker states + recent actions |
-| Orchestrator | `src/core/orchestrator.py` | Central coordinator, punches in, commentary out |
+## How the commentator works
 
-### Six Trackers
+Each punch goes into a short rolling buffer, and six small trackers watch it:
 
-| Tracker | File | Algorithm |
-|---|---|---|
-| Dominance | `src/trackers/dominance/tracker.py` | Pendulum state machine over a doubly linked list of 5 nodes (`P2_DOM ↔ P2_EDGE ↔ EVEN ↔ P1_EDGE ↔ P1_DOM`) |
-| Pace | `src/trackers/pace/tracker.py` | Punch frequency with hysteresis (separate entry/exit thresholds, prevents oscillation) |
-| Momentum | `src/trackers/momentum/tracker.py` | Sliding window comparison: recent 10 punches vs prior 10 punches |
-| Excitement | `src/trackers/excitement/tracker.py` | Action density + idle timeout detection (4s lull → filler commentary) |
-| Targets | `src/trackers/targets/tracker.py` | Head/body landing ratio to detect strategic shifts |
-| Round Context | `src/trackers/round_context/tracker.py` | Early/mid/late narrative framing per round phase |
+| Tracker | What it watches |
+|---|---|
+| Dominance | Who is controlling the fight. A five-state machine (`P2_DOM`, `P2_EDGE`, `EVEN`, `P1_EDGE`, `P1_DOM`), so it can't jump from even to dominant without passing through edge. |
+| Pace | Punch rate, with separate thresholds for entering and leaving a state so it doesn't flicker around a boundary. |
+| Momentum | The last 10 punches against the 10 before them. |
+| Excitement | How dense the action is, plus a 4 second lull detector for filler commentary. |
+| Targets | Head versus body landing ratio, to spot a change in plan. |
+| Round context | Early, middle or late in the round. |
 
-### Dual Track LLM Generation
+Plus a knockdown tracker that fires a top-priority event once per knockdown and ignores cooldowns.
+
+Trackers emit events, and events go into a priority queue where the score decays with age (`priority * 2^(-age/5s)`), so a stale event loses to a fresh one. A cooldown manager stops the commentator repeating itself, except for knockdowns, which always get through.
+
+Two generators pick events off the queue:
+
+- **Track A** is the analyst. It streams a line about a pattern, and can be cut off.
+- **Track B** is the reaction. It's for knockdowns and big combinations, and it can't be interrupted. If a high priority event (9.0 or above) arrives while Track A is mid-sentence, Track A is told to stop and Track B takes over.
+
+Prompts are laid out with the stable parts first (rules, fighter profiles) and the live situation last. That's what lets the server reuse its prefix cache.
+
+If the model is down, a template based fallback keeps commentary going instead of crashing.
+
+### Grounding
+
+The model used to make up stats ("Garcia has a 70% KO rate", with nothing behind it). Fighter profiles and past fight summaries now live in pgvector, and each request pulls the few most relevant ones into the prompt. The benchmark checks this too: any number in the output that wasn't in the prompt counts as an invented stat.
+
+### Backends
+
+Every model is an entry in `config/backends.yaml` with a base URL and a model name. vLLM, Nebius and Groq all speak the OpenAI API, so switching is a config change. Set `COMMENTARY_BACKEND` to pick one. Claude, OpenAI and Ollama clients also exist from the original version. A router can send Track B to the fastest backend and Track A to the best one, with fallback if one fails. I built it and tested it with stubs, but I never ran the routed benchmark.
+
+### The Go gateway
+
+A small Go service sits in front of the Python one. It sends each punch to the Python service, logs telemetry in a separate goroutine, and gives up on commentary after 550 ms, returning a 504. It also keeps a rolling p95 of the last 1000 requests.
+
+I haven't benchmarked the gateway, so I'm not claiming a latency win from it. The telemetry goroutine is a log write, so it saves very little. The timeout is the part that matters, because it caps the worst case.
+
+## Layout
 
 ```
-Track A (Analytical)                    Track B (Urgent)
-────────────────────                    ────────────────
-For: strategy, patterns, technique      For: knockdowns, big combos, hurt fighters
-Pace: conversational                    Pace: explosive, immediate
-Generation: streaming (300ms)           Generation: direct (200ms)
-Interruptible: yes                      Interruptible: no
-Temperature: 0.7                        Temperature: 0.9
-Max tokens: 40                          Max tokens: 50
-
-Interrupt protocol:
-  If Track A is streaming and a Track B event (priority ≥ 9.0) fires →
-  TrackAGenerator.interrupt() sets flag → generator yields stop → Track B takes over
+mock_fight.py        Python only demo, simulates a round
+bench/               simulator, benchmark runner, quality checks, charts, results
+serving/             vLLM variants and the Kaggle notebook that runs them
+finetune/            training data generation and LoRA training
+voice/               Kokoro text to speech (written, not part of the results)
+k8s/                 kind manifests (written, never deployed)
+config/              backends.yaml
+gateway/             Go gateway (main.go, handlers, parallel, telemetry, client)
+docs/                build plan, progress notes, how to run things
+src/
+  api/               FastAPI service, one orchestrator per fight id
+  core/              buffer, events, priority queue, cooldowns, consumer, context builder, orchestrator
+  generation/        LLM clients, Track A and B, timing, router, speech
+  retrieval/         pgvector store, fighter stats, historical search, live stats
+  synthesis/         template fallback, contradiction detector
+  trackers/          the trackers above
+tests/unit/
 ```
 
-### LLM Provider Abstraction
+## Running it
 
-```python
-PROVIDER = "groq"   # → GroqClient (free, ~200ms, llama-3.3-70b)
-PROVIDER = "claude" # → ClaudeClient (~500ms, claude-sonnet-4-5)
-PROVIDER = "openai" # → OpenAIClient (~400ms, gpt-4o-mini)
-PROVIDER = "ollama" # → OllamaClient (free, local, variable)
-```
-
-All behind `BaseLLMClient`, swap one line in `src/config/llm_config.py`, zero code changes.
-
-## What's Being Built
-
-### Phase 1, RAG Pipeline (pgvector + LangChain)
-
-**Problem:** Commentary is ungrounded, the LLM hallucinates stats ("Garcia has a 70% KO rate!", wrong). Need real fighter data retrieved at inference time.
-
-**Solution:** pgvector stores fighter profiles + historical fight summaries as embeddings. At fight start, seed fighter data. On every commentary request, retrieve top-k relevant stats and inject into prompt.
-
-```
-src/retrieval/
-├── stats/
-│   ├── fighter_stats.py          # FighterStats dataclass: name, record, style, KO%, reach, stance
-│   └── seeder.py                 # Seeds sample fighters + fight histories into pgvector
-├── fight_memory/
-│   └── store.py                  # LangChain PGVector store — upsert + retrieve fight memory
-├── historical_search/
-│   └── searcher.py               # Semantic search: embed query → cosine similarity → top-k results
-└── sliding_window/
-    └── analyzer.py               # Live stats computed from ActionBuffer (landing%, combo rate)
-```
-
-**LangChain RAG chain:**
-```python
-# At fight start:
-seeder.seed_fighters("Alvarez", "Garcia")  # embeds + stores fighter profiles
-
-# On every commentary request:
-retriever = store.as_retriever(search_kwargs={"k": 3})
-relevant_stats = retriever.get_relevant_documents(query=event_focus)
-# → injects "Alvarez: 60-1, orthodox, 78% KO rate, 70.5in reach" into prompt
-```
-
-**Why pgvector over a regular DB:**
-
-Fighter profiles are unstructured text, "aggressive pressure fighter with a high guard, tends to walk opponents down"
-Semantic search finds *conceptually relevant* stats, not just exact matches
-Real-time query: "who lands body shots effectively?" → embedding → nearest neighbors → Canelo stats returned
-
-### Phase 2, Python FastAPI Service
-
-Wraps the orchestrator in an HTTP API so the Go gateway can call it.
-
-```
-src/api/
-├── server.py       # FastAPI app, uvicorn runner
-└── routes.py       # POST /internal/punch → orchestrator → {commentary, latency_ms}
-                    # GET  /health         → {"status": "ok", "provider": "groq"}
-```
-
-**Punch endpoint:**
-```python
-@app.post("/internal/punch")
-async def process_punch(punch: PunchRequest) -> CommentaryResponse:
-    t0 = time.perf_counter()
-    commentary = orchestrator.process_punch(punch.to_domain())
-    return CommentaryResponse(
-        commentary=commentary,
-        latency_ms=(time.perf_counter() - t0) * 1000
-    )
-```
-
-### Phase 3, Go API Gateway
-
-High-concurrency HTTP server. Main job: parallelize LLM inference with event telemetry so neither blocks the other.
-
-```
-gateway/
-├── main.go                     # HTTP server :8080, router, graceful shutdown
-├── go.mod
-├── handlers/
-│   └── punch_handler.go        # POST /api/v1/punch, validates, dispatches
-├── parallel/
-│   └── dispatcher.go           # Fan-out goroutines: commentary + telemetry
-├── telemetry/
-│   └── metrics.go              # Rolling p95 latency histogram, event counters
-└── client/
-    └── python_client.go        # HTTP client to Python FastAPI service
-```
-
-**The goroutine fan-out (this is the core latency win):**
-```go
-// dispatcher.go
-func Dispatch(punch PunchEvent) (string, error) {
-    commentaryCh := make(chan CommentaryResult, 1)
-    
-    // Goroutine 1: call Python service for commentary
-    go func() {
-        result, err := pythonClient.PostPunch(punch)
-        commentaryCh <- CommentaryResult{result, err}
-    }()
-    
-    // Goroutine 2: fire-and-forget telemetry (doesn't block response)
-    go func() {
-        telemetry.Record(punch, time.Now())
-    }()
-    
-    // Wait on commentary with hard timeout
-    select {
-    case result := <-commentaryCh:
-        return result.Commentary, result.Err
-    case <-time.After(550 * time.Millisecond):
-        return "", ErrTimeout  // bounds worst-case wait at 550ms
-    }
-}
-```
-
-**What the fan-out buys (illustrative, not yet measured):**
-
-Without goroutines: commentary call (400ms) + telemetry logging (80ms) = 480ms sequential
-With goroutines: max(400ms commentary, 80ms telemetry) = 400ms parallel
-The telemetry goroutine is a log write, so the saving is small; the timeout is the more important guarantee. Real numbers will come from `bench/` and replace the example figures above.
-
-**p95 latency tracking:**
-```go
-// metrics.go — rolling histogram of last 1000 requests
-func (m *Metrics) Record(latencyMs float64) {
-    m.mu.Lock()
-    m.samples = append(m.samples, latencyMs)
-    if len(m.samples) > 1000 { m.samples = m.samples[1:] }
-    m.mu.Unlock()
-}
-
-func (m *Metrics) P95() float64 {
-    sorted := sorted(m.samples)
-    return sorted[int(float64(len(sorted))*0.95)]
-}
-```
-
-### Phase 4, Docker Compose
-
-```yaml
-# docker-compose.yml
-services:
-  postgres:
-    image: pgvector/pgvector:pg16
-    environment:
-      POSTGRES_DB: boxio
-      POSTGRES_PASSWORD: boxio
-    volumes:
-      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-
-  python-service:
-    build: .
-    command: uvicorn src.api.server:app --host 0.0.0.0 --port 8000
-    depends_on: [postgres]
-    environment:
-      DATABASE_URL: postgresql://postgres:boxio@postgres:5432/boxio
-      GROQ_API_KEY: ${GROQ_API_KEY}
-
-  go-gateway:
-    build: ./gateway
-    ports: ["8080:8080"]
-    depends_on: [python-service]
-    environment:
-      PYTHON_SERVICE_URL: http://python-service:8000
-```
-
-One command to run the full stack: `docker compose up`
-
-## Design Decisions
-
-| Problem | Solution | Why |
-|---|---|---|
-| Dominance isn't binary, fighters drift in and out of control | Pendulum state machine (5 node doubly linked list) | Enforces ordered transitions; can't jump "even" → "dominating" without passing "edge" |
-| Pace tracker oscillates near thresholds | Hysteresis, different entry/exit thresholds per state | Standard signal processing technique; eliminates flip flopping at boundary values |
-| Old events clog the queue and produce stale commentary | Exponential half life decay `2^(-age/5s)` | A 10s old event scores at 25% of a fresh one; freshness always wins |
-| Commentator repeats itself every 2 seconds | Per type cooldown timers with priority override | Blocks repeats; but a 9.5+ priority event (knockdown) always bypasses, because knockdowns always get called |
-| Need both thoughtful analysis and instant reactions | Dual track generation with interrupt protocol | Track A streams for 300ms; if Track B event fires, cancels mid stream and takes over |
-| LLM hallucinates fighter stats during live streams | pgvector RAG, real stats retrieved at inference time | Grounds every commentary line to real data; retrieval is semantic so "aggressive style" query returns stylistically relevant fighters |
-| Tracker states can contradict each other | ContradictionDetector synthesizes tension events | "P1 dominating but P2 building momentum" becomes its own high priority narrative event |
-| Switching LLM providers shouldn't break anything | Abstract `BaseLLMClient` + factory pattern | Swap `PROVIDER = "groq"` to `"claude"`, zero code changes |
-| LLM goes down mid fight | Template based `EventSynthesizer` fallback | Graceful degradation, commentary quality drops but system never crashes |
-| Go gateway and Python LLM call can't both block response time | Goroutine fan out with 550ms hard timeout | Telemetry never waits on the LLM call; the timeout bounds the worst-case wait (measured p95 will be reported in Status) |
-
-## Project Structure
-
-```
-.
-├── mock_fight.py                          # Python-only demo — simulates 60s round
-├── requirements.txt
-├── docker-compose.yml                     # Full stack: postgres + python + go
-├── Dockerfile                             # Python service image
-│
-├── gateway/                               # Go API Gateway
-│   ├── main.go                            # HTTP server :8080
-│   ├── go.mod
-│   ├── handlers/
-│   │   └── punch_handler.go               # POST /api/v1/punch
-│   ├── parallel/
-│   │   └── dispatcher.go                  # Goroutine fan-out (commentary + telemetry)
-│   ├── telemetry/
-│   │   └── metrics.go                     # p95 latency histogram
-│   └── client/
-│       └── python_client.go               # HTTP client to Python service
-│
-├── scripts/
-│   └── init.sql                           # CREATE EXTENSION vector; schema setup
-│
-└── src/
-    ├── api/                               # Python FastAPI service
-    │   ├── server.py                      # FastAPI app + uvicorn
-    │   └── routes.py                      # POST /internal/punch, GET /health
-    │
-    ├── config/
-    │   ├── llm_config.py                  # Provider selection + model params
-    │   └── tts_config.py                  # ElevenLabs voice settings
-    │
-    ├── core/
-    │   ├── orchestrator.py                # Central pipeline coordinator
-    │   ├── action_buffer/buffer.py        # Circular deque (last 20 punches)
-    │   ├── context_builder/builder.py     # Assembles LLM prompt from state + RAG
-    │   ├── cooldown/manager.py            # Per-type cooldown with override
-    │   ├── events/events.py               # Event dataclass
-    │   ├── priority_queue/hot_queue.py    # Scored queue with decay + staleness pruning
-    │   └── queue_consumer/consumer.py     # Track A/B routing + balance
-    │
-    ├── generation/
-    │   ├── llm_interface/                 # BaseLLMClient, 4 providers, factory
-    │   ├── speech_synthesis/              # TTS engine + pygame audio pipeline
-    │   ├── track_a/generator.py           # Analytical (streaming, interruptible)
-    │   └── track_b/generator.py           # Urgent (direct, fast)
-    │
-    ├── retrieval/                         # RAG Pipeline (pgvector + LangChain)
-    │   ├── stats/
-    │   │   ├── fighter_stats.py           # FighterStats dataclass
-    │   │   └── seeder.py                  # Seeds fighter data + embeddings
-    │   ├── fight_memory/
-    │   │   └── store.py                   # LangChain PGVector store
-    │   ├── historical_search/
-    │   │   └── searcher.py                # Semantic search over fight history
-    │   └── sliding_window/
-    │       └── analyzer.py                # Live per-round stats from ActionBuffer
-    │
-    ├── synthesis/
-    │   ├── aggregator/event_synthesizer.py  # Template fallback when LLM unavailable
-    │   └── contradiction_detector/          # Cross-tracker narrative tension
-    │
-    └── trackers/
-        ├── dominance/                     # Pendulum state machine
-        ├── excitement/                    # Action density + idle timeout
-        ├── momentum/                      # Sliding-window comparison
-        ├── pace/                          # Tempo with hysteresis
-        ├── round_context/                 # Phase-aware narrative framing
-        └── targets/                       # Head/body targeting patterns
-```
-
-## Quick Start
-
-### Python only (no Docker required):
+Python only:
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env
-# Add GROQ_API_KEY (free at console.groq.com)
+cp .env.example .env     # add GROQ_API_KEY (console.groq.com)
 python mock_fight.py
 ```
 
-### Full stack (Go gateway + RAG):
+Full stack with the gateway and pgvector:
 
 ```bash
 cp .env.example .env
-# Fill in GROQ_API_KEY and optionally ANTHROPIC_API_KEY
-
 docker compose up
-# Starts PostgreSQL+pgvector, Python FastAPI service, Go gateway
-
-# In another terminal — send a punch event:
 curl -X POST http://localhost:8080/api/v1/punch \
   -H "Content-Type: application/json" \
   -d '{"attacker":1,"punch_type":"hook","target":"head","outcome":"landed","damage":20}'
-
-# Response:
-# {"commentary": "Alvarez lands a sharp hook — Garcia needs to tighten that guard.", "latency_ms": 412}
 ```
 
-### LLM Providers
+To repeat the benchmarks, see [`docs/RUNNING.md`](docs/RUNNING.md). The tool is `python -m bench.bench`, and `python -m serving.run_matrix` starts the vLLM servers on Kaggle. Both have a dry run mode that needs no network. Put real keys in `.env` only, which is gitignored.
 
-| Provider | Cost | Latency | Setup |
-|---|---|---|---|
-| **Groq** (default) | Free tier | ~200ms | `GROQ_API_KEY` from console.groq.com |
-| OpenAI | Paid | ~400ms | `OPENAI_API_KEY` |
-| Claude | Paid | ~500ms | `ANTHROPIC_API_KEY` |
-| Ollama | Free (local) | Varies | `ollama pull qwen2.5:7b` |
+Tests: `python -m pytest tests/unit -q`. That's 99 tests (98 pass, 1 skipped because Kokoro isn't installed). They cover the event lifecycle, queue decay, cooldowns, the trackers, the knockdown path, the benchmark tooling and the API.
 
-## Tests
+## What's not done
 
-```bash
-python -m pytest tests/unit/ -v   # 27 tests — event lifecycle, queue scoring/decay,
-                                   # cooldown timing + override, dominance pendulum,
-                                   # pace hysteresis
-```
+- Kokoro voice and time to first audio exist as code but I dropped them from the project, so there are no results for them.
+- The kind deployment was never run.
+- The routing and context capping experiments were never run.
+- I haven't tested a merged LoRA adapter, which is the obvious next step for speed.
 
-## Tech Stack
+## Stack
 
-Python 3.10+ | Go 1.22+ | PostgreSQL 16 + pgvector | LangChain | Groq / OpenAI / Claude / Ollama | FastAPI | ElevenLabs | pygame | Docker
+Python, Go, FastAPI, PostgreSQL with pgvector, LangChain, vLLM, Transformers and PEFT, Docker. Self-hosted runs were on a Kaggle T4.

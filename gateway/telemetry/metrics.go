@@ -80,11 +80,11 @@ type EventTelemetry struct {
 	ReceivedAt time.Time
 }
 
-// LogEvent is fire-and-forget — records a fight event to stdout.
+// LogEvent is fire-and-forget, records a fight event to stdout.
 // In production this would write to a time-series store (e.g. InfluxDB, Datadog).
 func LogEvent(e EventTelemetry) {
 	fmt.Printf(
-		"[TELEMETRY] fight=%s at=%s attacker=%d %s→%s (%s)\n",
+		"[TELEMETRY] fight=%s at=%s attacker=%d %s->%s (%s)\n",
 		e.FightID,
 		e.ReceivedAt.Format(time.RFC3339Nano),
 		e.Attacker,

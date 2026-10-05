@@ -1,6 +1,6 @@
 """
 Demo: AI Commentary with VOICE OUTPUT
-Shows complete integration: Trackers → Priority Queue → Consumer → LLM → TTS → Audio
+Shows complete integration: Trackers -> Priority Queue -> Consumer -> LLM -> TTS -> Audio
 """
 
 import time

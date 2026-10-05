@@ -2,7 +2,7 @@
 Commentate a simulated fight out loud and log time-to-first-audio.
 
   python -m voice.speak_fight --dry-run                    # stub LLM + fake voice, no models
-  python -m voice.speak_fight --backend groq-70b --fights 1 --play
+  python -m voice.speak_fight --backend groq-qwen27b --fights 1 --play
   python -m voice.speak_fight --backend vllm-3b --fights 2 --max-lines 40
 
 Each commentary line from the orchestrator is rendered with Kokoro; the CSV has one row per line:

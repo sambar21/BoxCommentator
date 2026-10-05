@@ -56,7 +56,7 @@ class LLMFactory:
         if backend is not None:
             if not backend.configured:
                 raise ValueError(
-                    f"Backend '{provider}' is missing base_url/model — "
+                    f"Backend '{provider}' is missing base_url/model, "
                     f"set its environment variables (see config/backends.yaml)"
                 )
             return OpenAICompatClient(backend)

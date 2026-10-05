@@ -35,7 +35,7 @@ func main() {
 	}
 
 	pythonURL := pythonServiceURL()
-	log.Printf("Go gateway starting on :%s — Python service: %s", port, pythonURL)
+	log.Printf("Go gateway starting on :%s, Python service: %s", port, pythonURL)
 
 	// Wire up dependencies
 	metrics := telemetry.NewMetrics()
@@ -51,7 +51,7 @@ func main() {
 	// Fight event endpoint
 	mux.Handle("/api/v1/punch", punchHandler)
 
-	// Metrics endpoint — shows p50/p95/p99
+	// Metrics endpoint: shows p50/p95/p99
 	mux.HandleFunc("/metrics", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, metrics.Summary())
 	})
@@ -92,5 +92,5 @@ func waitForPython(c *client.PythonClient) {
 		log.Printf("Waiting for Python service... (%d/30)", i+1)
 		time.Sleep(2 * time.Second)
 	}
-	log.Println("WARNING: Python service did not respond — proceeding anyway")
+	log.Println("WARNING: Python service did not respond, proceeding anyway")
 }

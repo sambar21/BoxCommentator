@@ -2,11 +2,11 @@
 // latency win of the Go gateway.
 //
 // Each incoming punch fires two goroutines concurrently:
-//   1. Commentary goroutine — calls the Python FastAPI service (blocking, ~200-500ms)
-//   2. Telemetry goroutine  — logs event data (fire-and-forget, ~1ms)
+//   1. Commentary goroutine: calls the Python FastAPI service (blocking, ~200-500ms)
+//   2. Telemetry goroutine: logs event data (fire-and-forget, ~1ms)
 //
 // Without goroutines: 400ms (LLM) + 80ms (telemetry) = 480ms sequential.
-// With goroutines:    max(400ms, 80ms) = 400ms parallel → ~17% reduction.
+// With goroutines:    max(400ms, 80ms) = 400ms parallel, about 17% less.
 // End-to-end p95 stays under 600ms via a 550ms select timeout.
 package parallel
 
@@ -52,20 +52,20 @@ func NewDispatcher(c *client.PythonClient, m *telemetry.Metrics) *Dispatcher {
 }
 
 // Dispatch sends a punch event, fires goroutines, and returns commentary.
-// Hard deadline: 550ms → guarantees p95 < 600ms even under worst-case LLM tail latency.
+// Hard deadline of 550ms, so p95 stays under 600ms even when the LLM has a bad tail.
 func (d *Dispatcher) Dispatch(req client.PunchRequest, fightID string) Result {
 	wall := time.Now()
 
 	// Channel sized 1 so goroutine never blocks on send if we've already timed out.
 	ch := make(chan commentaryResult, 1)
 
-	// Goroutine 1 — commentary (blocking LLM call)
+	// Goroutine 1: commentary (blocking LLM call)
 	go func() {
 		resp, err := d.pythonClient.PostPunch(req)
 		ch <- commentaryResult{resp, err}
 	}()
 
-	// Goroutine 2 — telemetry (fire-and-forget; runs concurrently, never blocks the response)
+	// Goroutine 2: telemetry (fire-and-forget; runs concurrently, never blocks the response)
 	go func() {
 		telemetry.LogEvent(telemetry.EventTelemetry{
 			FightID:    fightID,

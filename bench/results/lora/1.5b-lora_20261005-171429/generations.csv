@@ -1,0 +1,471 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,excitement_change,1,1,283.86,841.65,15,16,506,,1778,,Johnson's reach advantage shines early as he lands clean jabs without pressure.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,dominance_shift,5,1,144.6,668.11,14,15,527,,1867,,Johnson's superior reach and jab precision exploit Torres' low volume early.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,pace_change,18,1,162.07,761.6,16,17,552,,1991,,Johnson's elite accuracy and southpaw jab exploit Torres' low output early.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,momentum_reversal,23,1,165.47,916.08,20,21,557,,1981,,Johnson's 64% KO rate shines as he lands every jab against Torres' low defense.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,dominance_shift,27,1,149.33,1242.07,29,30,554,,1950,,"Johnson's 64% KO rate showcases his precision, while Torres' 55% defense highlights the difference in reach and volume early."
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,momentum_reversal,30,1,169.43,961.9,21,22,573,,2041,,"Johnson's higher accuracy and reach advantage show as he closes distance, landing hooks despite Torres' low defense."
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,excitement_change,34,1,166.97,846.31,18,19,561,,2019,,Johnson's reach edge and 64% KO rate highlight his control over distance early.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,target_zone_shift,36,1,163.82,880.56,19,20,549,,1981,,Johnson's 64% KO rate showcases his superior discipline against Torres' porous defense early.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,momentum_reversal,39,1,167.63,847.58,18,19,557,,1983,,Johnson’s 64% KO rate shines as he counters Torres’ low defense early.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,dominance_shift,46,1,149.36,944.93,21,22,541,,1911,,"Johnson's precision jab exploits Torres' low defense, landing at 87.5% efficiency early."
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,idle_timeout,47,1,150.38,719.05,15,16,542,,1923,,Johnson’s reach advantage and higher volume edge exploit Torres’ low defense early.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,excitement_change,50,1,145.69,676.28,14,15,536,,1921,,Johnson's jab-heavy attack capitalizes on Torres' low defense early.
+lora,1.5b-lora,0,fight-1000,B,vllm-1.5b-lora,knockdown,55,1,124.91,687.41,15,16,122,,364,,WAIT—TORRES HITS HARD! JOHNSON IS DOWN!
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,excitement_change,56,1,148.63,834.54,18,19,534,,1890,,Torres lands a heavy body-shot uppercut as Johnson recovers from his earlier stumble.
+lora,1.5b-lora,0,fight-1000,A,vllm-1.5b-lora,momentum_reversal,58,1,164.39,735.64,15,16,546,,1924,,"Torres surges early, landing hard hooks while Johnson misses countering."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,excitement_change,1,1,272.55,958.37,18,19,525,,1870,,Garcia's high accuracy and reach advantage evident early as he lands jabs cleanly.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,13,1,153.2,1031.01,23,24,555,,1986,,"Garcia's sharp hooks exploit Alvarez's low defense at close range, capitalizing on his body shot vulnerability."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,pace_change,14,1,170.34,1126.03,25,26,572,,2100,,"Garcia's sharp cross work exploits Alvarez's low defense, but the latter's elite counters could find an opening soon."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,15,1,168.12,894.74,19,20,569,,2082,,"Alvarez lands efficiently early, targeting the body with precision as Garcia struggles to close distance."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,18,1,168.11,817.23,17,18,583,,2147,,Alvarez’s precise body attacks exploit Garcia’s reach disadvantage early in round one.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,21,1,165.6,929.28,20,21,562,,2072,,Alvarez’s elite accuracy and body focus edge Garcia’s high-volume but low-accuracy jab.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,target_zone_shift,27,1,154.02,992.64,22,23,557,,2036,,"Alvarez’s precision keeps Garcia at bay early, capitalizing on his 58% accuracy edge."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,29,1,151.2,912.62,20,21,558,,2019,,"Alvarez’s sharp jabs exploit Garcia’s lower output, targeting the body while landing efficiently."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,pace_change,31,1,165.91,734.9,15,16,566,,2076,,Alvarez’s precision edges him ahead early despite Garcia’s higher volume.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,33,1,164.43,807.99,17,18,562,,2075,,Garcia’s high-volume attack struggles against Alvarez’s elite defense and precise counters.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,target_zone_shift,35,1,152.02,1061.43,24,25,553,,2024,,"Garcia's high-volume attack clashes with Alvarez's elite defense, but body shots remain his Achilles' heel early."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,36,1,144.45,1279.48,30,31,559,,2052,,"Garcia’s reach advantage and higher volume mask his body-shot vulnerability early, but Alvarez’s precision counters could exploit this gap as the fight progresses."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,37,1,170.36,999.22,22,23,583,,2168,,"Alvarez's low output contrasts Garcia's high volume early, exploiting the latter's body-shooting weakness."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,38,1,169.88,1149.94,26,27,583,,2177,,"Alvarez’s sharp counters align with his elite 58% accuracy, capitalizing on Garcia’s early body-shot vulnerability."
+lora,1.5b-lora,0,fight-1001,B,vllm-1.5b-lora,knockdown,39,1,118.5,785.97,18,19,128,,416,,WAIT — GARCIA LANDS A HUGE CROSS! ALVAREZ IS DOWN!
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,40,1,165.21,1141.17,26,27,584,,2088,,"Garcia’s high-volume attack exploits Alvarez’s low defense, but the latter’s 58% accuracy keeps him alive."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,41,1,165.72,876.89,19,20,567,,2022,,"Garcia’s higher volume exploits Alvarez’s low defense early, but accuracy remains an issue."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,pace_change,47,1,165.88,1288.8,30,31,572,,2079,,"Garcia’s reach advantage shines as he closes distance, landing jabs at 51% accuracy—exploiting Alvarez’s lower defense early."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,53,1,166.71,1101.81,25,26,584,,2117,,"Garcia’s sharp jabs exploit Alvarez’s low defense, capitalizing on his 22% body shot vulnerability."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_stable,54,1,167.71,1137.96,26,27,578,,2084,,"Garcia’s higher volume and sharper jabs target Alvarez’s 22% body shot weakness, exploiting the reach edge."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,pace_change,56,1,168.54,1100.53,25,26,585,,2109,,Garcia’s high-volume jab exploits Alvarez’s 22% body shot vulnerability at 74-inch reach advantage.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,61,1,166.25,910.09,20,21,584,,2096,,"Alvarez capitalizes on Garcia's low output, landing precise jabs as he closes distance."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,66,1,161.03,679.77,14,15,569,,2084,,Alvarez’s sharp jabs exploit Garcia’s lower output early.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,70,1,148.62,778.62,17,18,558,,2001,,Alvarez’s precision jabs find mark as Garcia struggles to close the distance.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,excitement_change,71,1,148.76,817.6,18,19,558,,2009,,Alvarez’s sharper jabs and precise hooks land cleanly as Garcia’s output drops.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_stable,73,1,148.76,1074.07,25,26,559,,2030,,"Alvarez’s sharp jabs exploit Garcia’s low output, landing at 100% accuracy despite slow pace."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,75,1,167.69,1128.62,26,27,586,,2100,,"Alvarez capitalizes on Garcia’s low output with sharp jabs, exploiting his 66.7% accuracy advantage."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,76,1,163.77,1162.62,27,28,571,,2045,,Garcia's high output masks his low defense; Alvarez targets the body early as he lands 58% of his attacks.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,77,1,164.89,865.91,19,20,576,,2062,,Alvarez’s precision counters exploit Garcia’s high-volume but low-accuracy jab-heavy style.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,78,1,165.99,942.09,21,22,582,,2095,,"Alvarez capitalizes on Garcia’s drop in volume, landing precise jabs while targeting the body."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,80,1,136.97,948.42,22,23,557,,2032,,"Alvarez’s 58% accuracy contrasts Garcia’s 51%, exploiting his lower output early."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,82,1,163.16,900.41,20,21,572,,2093,,Garcia’s high output masks his low defense as he closes distance against Alvarez’s elite counters.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,83,1,149.93,1109.92,26,27,571,,2049,,"Garcia’s sharp jabs exploit Alvarez’s low output late, but the latter’s precision counters will close the gap soon."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,84,1,139.13,1060.37,25,26,576,,2088,,"Alvarez’s lower output exploits Garcia’s higher accuracy early, but both need to find their rhythm as round two unfolds."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_stable,86,1,164.59,827.0,18,19,577,,2109,,Alvarez’s sharper counters could exploit Garcia’s high accuracy if he finds his stride.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,88,1,162.35,1119.37,26,27,580,,2108,,"Alvarez’s sharp counters might exploit Garcia’s high accuracy late, but both need to find their rhythm as round two unfolds."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_stable,89,1,163.12,972.52,22,23,573,,2121,,"Garcia’s precision keeps him alive early, while Alvarez needs to close distance to target his left hook."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,95,1,164.82,827.87,18,19,578,,2106,,Alvarez’s sharp counters could exploit Garcia’s late accuracy if he closes distance sooner.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,105,1,161.06,823.93,18,19,567,,2093,,Alvarez’s sharp counters threaten to exploit Garcia’s low output late in round two.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,excitement_change,107,1,159.68,748.16,16,17,562,,2070,,Alvarez's precision lower-body attack could exploit Garcia's declining output early.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,109,1,161.24,935.31,21,22,571,,2092,,"Alvarez landing precise hooks as Garcia's output tapers, capitalizing on his superior defense early."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,idle_timeout,110,1,160.92,1044.43,24,25,566,,2080,,"Alvarez's precision uppercuts align with his 58% accuracy edge, targeting Garcia's vulnerable body early."
+lora,1.5b-lora,0,fight-1001,B,vllm-1.5b-lora,knockdown,112,1,95.44,748.47,18,19,121,,385,,WAIT—GARCIA LANDS A HUGE CROSS! ALVAREZ IS DOWN!
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,target_zone_shift,113,1,163.44,863.2,19,20,576,,2073,,Garcia's sharp cross lands cleanly as Alvarez's accuracy edges close on 58%.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,116,1,147.27,586.47,12,13,559,,1990,,Garcia’s higher volume and accuracy edge show early.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,123,1,147.28,624.43,13,14,559,,2010,,Garcia's sharper counters exploit Alvarez's lower defense early.
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,momentum_reversal,137,1,147.23,772.65,17,18,558,,2016,,"Alvarez pressing forward but missing mark, Garcia finding range with sharp jabs."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,dominance_shift,146,1,146.2,845.05,19,20,558,,2008,,"Garcia's reach advantage shines as he closes distance early, exploiting Alvarez's low defense."
+lora,1.5b-lora,0,fight-1001,A,vllm-1.5b-lora,target_zone_shift,149,1,145.57,881.12,20,21,557,,2031,,"Garcia's superior reach and accuracy edge evident early, capitalizing on Alvarez's low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,1,1,256.9,844.77,16,17,511,,1811,,Alvarez's reach advantage shows early as Torres misses clean at close distance.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,3,1,135.65,981.46,23,24,521,,1880,,"Alvarez's higher reach allows him to control distance early, testing Torres' low-defense style without landing hard."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,5,1,145.92,845.91,19,20,551,,2009,,"Alvarez's superior reach keeps Torres at bay early, controlling distance with precision jabs."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,18,1,145.15,880.76,20,21,549,,2023,,Alvarez's higher reach and 58% accuracy edge exploit Torres' low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,19,1,146.16,919.19,21,22,550,,1988,,Alvarez’s 70.5-inch reach advantage neutralizes Torres’ high-volume assault early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,20,1,161.68,788.21,17,18,563,,2007,,"Alvarez’s superior reach exploits Torres’ low defense early, closing distance quickly."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,21,1,148.49,772.2,17,18,551,,1989,,"Alvarez’s elite reach advantage neutralizing Torres early, exploiting his low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,23,1,158.75,747.71,16,17,561,,2029,,Alvarez’s higher reach and accuracy edge exploit Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,25,1,146.54,955.61,22,23,547,,1989,,"Alvarez’s reach and accuracy advantage neutralize Torres early, capitalizing on the latter’s low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,29,1,149.55,848.88,19,20,556,,2014,,"Alvarez’s higher reach and accuracy edge neutralize Torres early, exploiting his low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,30,1,147.62,1070.36,25,26,559,,2042,,Alvarez’s 70.5-inch reach and 58% accuracy edge exploit Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,40,1,159.71,1452.23,35,36,566,,2038,,"Alvarez’s 70.5-inch reach and 58% accuracy edge exploit Torres’ low defense early, neutralizing his 68-inch reach advantage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,41,1,169.84,1277.05,30,31,578,,2036,,"Alvarez’s superior reach and 58% accuracy edge exploit Torres’ low defense early, neutralizing his 68-inch reach advantage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,43,1,167.11,831.08,18,19,586,,2103,,Alvarez’s higher reach and accuracy edge neutralize Torres’ low-defense disadvantage early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,45,1,160.02,823.62,18,19,562,,2036,,"Alvarez’s reach and precision edge control distance early, exploiting Torres’ lower defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,47,1,160.0,714.2,15,16,564,,2042,,Alvarez’s higher reach and accuracy exploit Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,B,vllm-1.5b-lora,dominance_shift,49,1,115.8,772.01,18,19,123,,385,,BUT ALVAREZ IS TAKING OVER—DOMINATING EVERY ROUND!
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,50,1,147.57,885.03,20,21,560,,1998,,"Alvarez’s superior reach and accuracy edge show early, capitalizing on Torres’ low defense."
+lora,1.5b-lora,0,fight-1002,B,vllm-1.5b-lora,dominance_shift,60,1,94.39,713.89,17,18,121,,397,,BUT ALVAREZ IS IN TOTAL CONTROL — DOMINATING EVERY ROUND!
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,61,1,159.53,1119.79,26,27,563,,2027,,"Alvarez’s 78% accuracy and 68-inch reach advantage showing early, controlling distance and landing precise counters."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,62,1,161.75,754.95,16,17,567,,2021,,Alvarez’s elite reach and accuracy edge exploiting Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,64,1,137.76,1174.29,28,29,560,,2014,,Alvarez’s 68-inch reach and 58% accuracy edge neutralizing Torres’ 42% attack efficiency early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,67,1,147.46,962.74,22,23,559,,1998,,Alvarez’s superior reach and 58% accuracy edge finding success early despite Torres’ low defense.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,70,1,161.05,1088.69,25,26,567,,2013,,Alvarez’s higher volume and 58% accuracy advantage showing early as Torres presses forward but lands few jabs.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,79,1,147.23,999.7,23,24,553,,2001,,"Alvarez’s precision and volume edge show early, capitalizing on his reach advantage while Torres counters with hooks."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,82,1,167.7,834.83,18,19,573,,2081,,Alvarez’s elite accuracy and pressure edge evident as he closes distance with sharp crosses.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,83,1,165.86,1094.45,25,26,578,,2109,,Alvarez’s 58% accuracy and 70.5-inch reach edge exploit Torres’ low defense late.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,84,1,159.15,1013.97,23,24,565,,2026,,"Alvarez’s 58% accuracy shines late, capitalizing on Torres’ low defense with precise counters."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,87,1,166.19,1020.33,23,24,578,,2043,,"Alvarez’s precision jab exploits Torres’ low defense, leveraging his 70.5-inch reach advantage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,89,1,163.26,945.6,21,22,582,,2067,,Alvarez’s elite 58% accuracy showcases his sharp counters as Torres struggles to close distance.
+lora,1.5b-lora,0,fight-1002,B,vllm-1.5b-lora,dominance_shift,90,1,114.88,777.02,18,19,130,,407,,BUT ALVAREZ IS TAKING OVER—DOMINATING EVERY ROUND!
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,91,1,149.17,855.85,19,20,559,,2004,,Alvarez's higher volume and accuracy edge exploit Torres' low defense early in round one.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,92,1,148.24,931.56,21,22,552,,1972,,Alvarez's 58% accuracy advantage exploits Torres' low defense as the fight slows down.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,94,1,167.99,1211.83,28,29,579,,2079,,"Alvarez's 58% accuracy shines as he counters with precise jabs, exploiting Torres' low defense late in round one."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,97,1,164.26,1024.16,23,24,570,,2027,,"Alvarez's higher volume and accuracy edge show as they close distance, capitalizing on Torres' low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,108,1,161.47,1280.62,30,31,561,,2044,,"Alvarez's elite 58% accuracy shines as he closes distance and lands precise jabs, capitalizing on Torres' low defense late."
+lora,1.5b-lora,0,fight-1002,B,vllm-1.5b-lora,knockdown,114,1,114.37,778.66,18,19,125,,394,,"WAIT — TORRES LANDS A HUGE HOOK, ALVAREZ IS DOWN!"
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,115,1,167.58,1063.82,24,25,573,,2044,,"Torres finds home with a massive hook early, exploiting Alvarez’s low defense and 0% accuracy at this stage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,120,1,162.42,1284.22,30,31,565,,1999,,"Torres capitalizes on Alvarez's low defense with a huge hook, landing 100% of his shots—dominating the exchange early."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,135,1,165.64,723.29,15,16,575,,2060,,Torres’ overwhelming volume and body focus exploit Alvarez’s low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,136,1,149.95,709.02,15,16,555,,2005,,Alvarez's reach advantage neutralizing Torres' high-volume assault early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,137,1,161.64,796.05,17,18,567,,2059,,Alvarez's higher accuracy and body shot emphasis exploiting Torres' low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,145,1,162.6,720.24,15,16,563,,2042,,Alvarez's precision counters aligning as Torres misses at close range.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,155,1,148.21,931.56,21,22,550,,1992,,"Alvarez’s elite accuracy and body focus finding home early, capitalizing on Torres’ low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,157,1,162.32,757.56,16,17,564,,2023,,Alvarez's reach advantage and body focus exploiting Torres' low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,162,1,148.2,780.65,17,18,548,,2000,,Alvarez’s sharp accuracy and body work neutralize Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,166,1,146.38,856.9,19,20,541,,1944,,Alvarez's higher reach and sharper accuracy edge show as Torres struggles to close distance early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,170,1,149.74,743.41,16,17,550,,2004,,Alvarez’s precision hooks exploit Torres’ low defense early in round two.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,174,1,147.77,1040.77,24,25,540,,1955,,Alvarez’s sharp hooks target the body at 33.3%—exploiting Torres’ low defense.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,181,1,165.29,909.81,20,21,566,,2053,,"Alvarez’s higher volume and sharper hooks target the body, exploiting Torres’ low defense early."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,182,1,147.73,1341.72,32,33,558,,1993,,"Alvarez’s sharp jabs exploit Torres’ low defense, landing at 66.7% of his shots against a 55% defense."
+lora,1.5b-lora,0,fight-1002,B,vllm-1.5b-lora,knockdown,183,1,116.29,740.59,17,18,126,,399,,WAIT—TORRES LANDS A HUGE CROSS! ALVAREZ IS DOWN!
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,184,1,147.02,779.26,17,18,555,,1952,,"Torres lands a huge cross, exploiting Alvarez's low defense early in round two."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,185,1,148.56,1264.76,30,31,559,,1982,,"Torres' big cross capitalizes on Alvarez's low defense, landing at 50% accuracy against his 100% jab control."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,187,1,150.15,856.1,19,20,560,,2013,,Alvarez's elite jab and body work exploit Torres' lower defense early in round two.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,188,1,166.75,1096.05,25,26,579,,2045,,Alvarez's higher volume and jab accuracy exploit Torres' lower defense as both fighters battle for control early in round two.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,193,1,163.34,1093.47,25,26,566,,2058,,"Alvarez's superior reach and accuracy edge exploited early, landing jabs and uppercuts as Torres struggles to keep distance."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,197,1,149.72,856.13,19,20,560,,2070,,Alvarez’s higher volume and jab precision exploiting Torres’ low defense early in round two.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,202,1,147.78,1150.92,27,28,557,,2020,,"Alvarez's 85.7% accuracy and elite reach advantage show as he closes the distance, finding home every time."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,208,1,166.97,1171.18,27,28,577,,2061,,"Alvarez's superior accuracy and reach edge exploit Torres' low defense early, capitalizing on his 78% KO rate."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,212,1,163.97,980.93,22,23,571,,2047,,"Alvarez's 75% accuracy shines as he presses forward, exploiting Torres' low defense early."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,218,1,169.45,835.62,18,19,584,,2075,,Alvarez's higher volume and sharper hooks are finding mark against Torres' lower defense.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,220,1,149.16,965.58,22,23,559,,2017,,Alvarez’s sharp hooks find home as his 75% accuracy edges Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,223,1,147.66,1001.68,23,24,558,,1996,,"Alvarez's 58% accuracy edge exploits Torres' low defense, capitalizing on volume over precision."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,229,1,163.81,869.94,19,20,563,,2025,,"Alvarez’s higher volume and accuracy exploit Torres’ low defense, closing the distance late."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,230,1,147.9,1039.37,24,25,550,,1996,70,Alvarez's 60% accuracy edge and 70-inch reach advantage exploit Torres' low defense late.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,231,1,148.34,739.77,16,17,558,,2001,,Alvarez’s precision and reach edge shine as Torres struggles to close distance.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,232,1,148.81,1038.23,24,25,560,,2013,,"Alvarez's elite 58% accuracy exploits Torres' low defense late, capitalizing on his reach advantage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,243,1,147.97,741.59,16,17,557,,2027,,Alvarez's higher volume and sharper accuracy exploit Torres' low defense late.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,247,1,147.99,777.92,17,18,558,,2028,,Alvarez’s precision jab exploits Torres’ low defense as they trade uppercuts.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,248,1,147.02,962.41,22,23,549,,1988,,"Alvarez's sharp jabs land cleanly, exploiting Torres' low defense at the end of round two."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,249,1,147.96,1000.3,23,24,550,,1998,,"Alvarez’s precision jab exploits Torres’ low defense as they trade uppercuts, showcasing his elite reach advantage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,251,1,168.2,1054.21,24,25,572,,2054,,"Alvarez's precision jabs exploit Torres' low defense, capitalizing on the reach gap early in round two."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,253,1,161.71,1385.25,33,34,565,,2059,,Alvarez’s sharp jabs target Torres’ body—exploiting their 40% body shot ratio—and landing at 66.7% accuracy.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,255,1,161.68,941.7,21,22,567,,2011,,Alvarez's higher volume and precise jabs are exploiting Torres' low defense and body shot vulnerability.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,256,1,164.52,943.57,21,22,567,,2051,,Alvarez’s precision hooks exploit Torres’ 40% body shot ratio early in round three.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,257,1,146.19,961.24,22,23,548,,1989,,Alvarez’s 58% accuracy and 70.5-inch reach edge over Torres early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,259,1,148.03,964.14,22,23,558,,1959,,"Alvarez’s elite accuracy shines as he closes distance with precise hooks, exploiting Torres' low defense early."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,261,1,147.5,1000.06,23,24,557,,1981,,"Alvarez’s higher volume and sharper accuracy exploit Torres’ low defense early, closing the distance with precise hooks."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,264,1,161.27,1087.98,25,26,565,,2066,,"Alvarez’s sharp jabs and body work target Torres’ vulnerable lower half early, capitalizing on his low defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,round_context,271,1,161.86,1088.57,25,26,566,,2100,,"Alvarez’s higher volume exploits Torres’ low defense early, landing jabs and body shots as he closes the distance."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,excitement_change,273,1,148.31,1075.37,25,26,559,,2015,,Alvarez’s 58% accuracy and 70.5-inch reach edge exploit Torres’s low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,285,1,162.31,978.29,22,23,570,,2046,,"Alvarez’s elite accuracy and reach edge capitalizing early, closing gap with jabs and body hooks."
+lora,1.5b-lora,0,fight-1002,B,vllm-1.5b-lora,knockdown,288,1,115.64,736.43,17,18,129,,416,,WAIT — ALVAREZ LANDS A HUGE CROSS! TORRES IS DOWN!
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,289,1,147.38,664.57,14,15,555,,1999,,Alvarez’s precision and volume exploiting Torres’ low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,291,1,146.99,739.22,16,17,551,,1957,,Alvarez’s sharp jabs finding mark as Torres struggles to close distance.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,305,1,145.86,812.95,18,19,547,,1974,,Alvarez’s higher accuracy and reach advantage neutralizing Torres’ low-defense attack early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,320,1,145.78,775.87,17,18,550,,1971,,Alvarez’s sharper jabs and higher volume exploit Torres’s low defense early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,324,1,149.0,1039.82,24,25,556,,2008,,"Alvarez’s sharp jabs and higher volume exploit Torres’s low defense early, capitalizing on his reach edge."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,333,1,162.91,830.01,18,19,559,,2013,,Alvarez’s sharper jabs finding mark as Torres’s defense wanes under pressure.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,340,1,147.6,888.08,20,21,560,,2010,,"Alvarez’s sharp jabs find mark, exploiting Torres’s low defense as he presses forward."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,349,1,162.03,940.59,21,22,570,,2043,,"Alvarez landing at 72.7% accuracy, capitalizing on Torres’s declining defense."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,359,1,148.21,1073.96,25,26,555,,1989,,"Alvarez’s precision crosses exploit Torres’s low defense, capitalizing on his 25% body shot ratio advantage."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,idle_timeout,360,1,147.45,1037.05,24,25,556,,1996,,Alvarez’s higher volume and accuracy edge show as he counters with precise jabs while exploiting Torres’s low defense.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,target_zone_shift,361,1,148.06,776.76,17,18,559,,2031,,Alvarez’s higher volume and precision cross exploitation showcases his reach advantage over Torres.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,364,1,163.67,756.7,16,17,573,,2094,,Alvarez’s sharper accuracy and reach edge neutralize Torres’s volume early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,367,1,146.45,1295.79,31,32,547,,1994,70,"Alvarez’s 70-inch reach edges Torres early, but both land jabs—neatly exploiting their 42% accuracy overlap."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,pace_change,379,1,159.79,975.39,22,23,562,,2005,,"Alvarez’s higher accuracy and reach advantage show, landing sharp jabs as Torres struggles to close distance."
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,386,1,166.6,870.94,19,20,578,,2055,,Alvarez’s precision jab exploits Torres’ low defense at 68-inch reach disadvantage.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,dominance_shift,387,1,149.17,816.42,18,19,558,,2053,,Alvarez’s sharper jabs exploit Torres’ 68-inch reach disadvantage early.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_reversal,388,1,147.79,1112.32,26,27,560,,2016,,Alvarez’s sharp jabs find home as Torres’ defense crumbles against his 70.5-inch reach advantage.
+lora,1.5b-lora,0,fight-1002,A,vllm-1.5b-lora,momentum_stable,399,1,165.64,1351.36,32,33,565,,2016,,Alvarez’s precision uppercuts target Torres’ vulnerable body at 66.7% accuracy—using his 70.5-inch reach advantage.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,excitement_change,1,1,86.55,638.41,15,16,506,,1778,,Johnson's reach advantage evident early as he lands cleanly with precise jabs.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,idle_timeout,2,1,143.15,884.67,20,21,513,,1837,,Johnson's 76-inch reach and jab precision exploit Torres' low volume and porous defense early.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,idle_timeout,4,1,147.26,963.02,22,23,539,,1932,,"Johnson's 76-inch reach and jab accuracy edge exploited early, closing distance despite Torres' low volume."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,target_zone_shift,5,1,160.28,975.68,22,23,547,,1975,,"Johnson's higher reach and jab accuracy edge exploited early, closing distance despite Torres' low volume and porous defense."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,pace_change,10,1,158.9,899.86,20,21,546,,2012,,"Johnson’s reach and jab precision exploit Torres’ low volume early, closing distance despite his defensive shortcomings."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,dominance_shift,16,1,160.53,827.74,18,19,550,,2037,,"Johnson's jab accuracy shines as he closes the distance early, exploiting Torres' low output."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,excitement_change,18,1,143.31,885.1,20,21,546,,1990,,"Johnson’s elite jab exploits Torres’ low output early, closing distance despite the latter’s porous defense."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,dominance_shift,19,1,163.4,681.98,14,15,561,,2045,,Johnson's reach advantage and jab precision exploit Torres' low output early.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,idle_timeout,21,1,144.54,774.41,17,18,542,,1969,,"Johnson’s jab exploits Torres’ low volume early, leveraging his reach and accuracy advantage."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,dominance_shift,24,1,147.2,851.05,19,20,537,,1931,,"Johnson's jab accuracy shines as he closes distance early, capitalizing on Torres' low output."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,momentum_reversal,27,1,147.92,553.93,11,12,554,,2031,,Johnson’s jab precision edges Torres early despite lower output.
+lora,1.5b-lora,0,fight-1003,B,vllm-1.5b-lora,knockdown,30,1,115.62,664.48,15,16,139,,459,,WAIT — TORRES HITS HARD! JOHNSON IS DOWN!
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,dominance_shift,31,1,142.31,809.45,18,19,535,,1900,,"Torres’ hard hooks exploit Johnson’s low defense early, capitalizing on reach advantage."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,idle_timeout,32,1,141.42,845.39,19,20,530,,1895,,"Torres’ sharp hooks take advantage of Johnson’s low defense early, exploiting his reach advantage."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,idle_timeout,37,1,146.89,738.62,16,17,544,,1961,,Torres lands precise uppercuts despite lower volume compared to Johnson’s higher accuracy.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,momentum_reversal,38,1,159.2,826.16,18,19,548,,1983,,Torres finding rhythm with precision uppercuts as Johnson’s counters struggle against his superior reach.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,momentum_stable,42,1,145.61,998.79,23,24,534,,1949,,"Johnson’s 100% accuracy shines early, capitalizing on Toreros’ low defense and reach disadvantage."
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,target_zone_shift,44,1,147.5,813.45,18,19,542,,1961,,Johnson’s 100% accuracy exploits Torres’s lower defense and reach disparity early.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,dominance_shift,49,1,148.3,962.83,22,23,544,,1932,,Johnson’s 100% accuracy highlights his precision advantage over Torres’s lower defense and reach disadvantage early.
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,momentum_reversal,53,1,162.37,793.08,17,18,550,,2003,,Johnson’s 63% accuracy shines as he counters Torres’s low defense early.
+lora,1.5b-lora,0,fight-1003,B,vllm-1.5b-lora,excitement_peak,57,1,114.06,663.76,15,16,121,,384,,AND NOW—TORRES IS ON FIRE! DOMINATING EVERY ROUND!
+lora,1.5b-lora,0,fight-1003,A,vllm-1.5b-lora,pace_change,58,1,146.96,887.83,20,21,541,,1897,,"Torres surging with high volume, landing at 42% accuracy despite being caught early."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,excitement_change,1,1,140.78,620.66,13,14,513,,1821,,Alvarez’s precision hooks exploit Torres’ low defense early.
+lora,1.5b-lora,0,fight-1004,B,vllm-1.5b-lora,excitement_peak,12,1,114.39,698.89,16,17,117,,365,,AND NOW — HIGHSPEED CHARGE! BOTH ON THE ATTACK!
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,target_zone_shift,13,1,143.82,697.84,15,16,540,,1928,,"Alvarez closing distance with sharp hooks, exploiting Torres' low defense."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,pace_change,18,1,147.94,924.99,21,22,552,,1980,,Alvarez finding home at 70.5-inch reach—landing hooks as he closes fast.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,dominance_shift,26,1,146.96,849.94,19,20,547,,1942,,"Alvarez's higher volume and accuracy edge show early, capitalizing on his reach advantage."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,30,1,149.41,1000.28,23,24,555,,1984,,"Alvarez's higher volume and accuracy edge show early, landing precise jabs while Torres struggles to close distance."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,target_zone_shift,42,1,146.02,924.83,21,22,550,,1993,,"Alvarez's higher volume exploits Torres' low defense early, landing precise jabs despite lower accuracy."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,46,1,160.51,974.91,22,23,564,,2060,,Alvarez's reach advantage shines early as he lands precision jabs despite lower overall accuracy compared to Torres.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,57,1,147.49,998.01,23,24,560,,2054,,"Alvarez's 70.5-inch reach edge shows early, capitalizing on Torres' low defense."
+lora,1.5b-lora,0,fight-1004,B,vllm-1.5b-lora,knockdown,64,1,115.77,882.37,21,22,130,,412,,WAIT — ALVAREZ LANDS A HUGE BODY UPPERCUT! TORRES IS DOWN!
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,dominance_shift,65,1,164.05,904.7,20,21,577,,2029,,"Alvarez lands a massive body uppercut, exploiting Torres' low defense and reach advantage early."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,excitement_change,66,1,161.4,975.69,22,23,567,,2014,,"Alvarez capitalizes on Torres’ low defense and reach edge, landing a brutal body uppercut early."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,68,1,147.19,1037.3,24,25,554,,2013,,"Alvarez’s elite accuracy and reach advantage exploited early, landing a punishing body uppercut as Torres struggles to defend."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,70,1,147.79,925.43,21,22,559,,2043,,"Alvarez's 75% accuracy shines early, exploiting Torres' low defense and reach gap."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,71,1,163.7,757.51,16,17,575,,2079,,Alvarez’s precision jab exploits Torres’ low defense and reach deficit early.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,73,1,162.86,903.22,20,21,563,,2004,,Alvarez's sharp jabs find home as Torres struggles to land counters against his superior accuracy.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,74,1,145.12,921.36,21,22,557,,2017,,Alvarez’s 58% accuracy edge shines as he closes distance and lands precise jabs.
+lora,1.5b-lora,0,fight-1004,B,vllm-1.5b-lora,dominance_shift,77,1,113.93,771.63,18,19,115,,351,,BUT ALVAREZ IS TAKING OVER — DOMINATING RIGHT NOW!
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_stable,80,1,148.05,889.37,20,21,560,,2004,,Alvarez's elite 58% accuracy and body focus exploit Torres' low defense early.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,narrative_tension,88,1,162.29,754.18,16,17,572,,2008,,Alvarez's higher volume and precision edge exploiting Torres' low defense early.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,dominance_shift,91,1,159.31,936.95,21,22,567,,2031,,Alvarez's higher volume and 58% accuracy edge show as he targets Torres with hooks.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,excitement_change,92,1,159.53,974.04,22,23,562,,2021,,"Alvarez's sharp jabs exploit Torres' low defense, capitalizing on his lower accuracy advantage early."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,94,1,147.51,852.2,19,20,564,,2029,,Alvarez's sharper jabs take advantage of Torres's lower accuracy early in round one.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,95,1,147.58,813.25,18,19,568,,2026,,Alvarez's reach and higher volume edge neutralize Torres's low-defense disadvantage early.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,idle_timeout,97,1,147.94,1038.24,24,25,563,,2022,,"Alvarez's higher volume and reach exploit Torres's low defense early, showcasing his elite counter-punching instincts."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_stable,99,1,162.89,1055.29,24,25,566,,2057,70,Alvarez's 70-inch reach and 58% accuracy advantage show how distance can be exploited early.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,104,1,168.44,870.88,19,20,582,,2097,,Alvarez's precision jabs and body hooks target Torres's vulnerable high-volume style early.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,115,1,163.47,1129.31,26,27,573,,2047,,"Alvarez's elite accuracy shines as he closes the distance with precise jabs and hooks, exploiting Torres's high-volume approach."
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,dominance_shift,123,1,162.2,865.33,19,20,561,,2041,,Alvarez's reach advantage and sharp hooks exploit Torres's low defense late in round one.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,134,1,148.71,777.06,17,18,560,,2025,,Alvarez's sharper hooks and higher accuracy edge him ahead late in round one.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,144,1,160.2,1012.03,23,24,568,,2044,,"Alvarez's superior accuracy and body attack profile shine as he closes the distance, exploiting Torres's low defense."
+lora,1.5b-lora,0,fight-1004,B,vllm-1.5b-lora,knockdown,146,1,115.99,775.6,18,19,131,,411,,"WAIT—ALVAREZ LANDS A HUGE HOOK, TORRES IS DOWN!"
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,excitement_change,147,1,163.02,1128.43,26,27,569,,2031,98,Alvarez's 98-inch reach and precision left hook exploit Torres's 68-inch frame early in round one.
+lora,1.5b-lora,0,fight-1004,A,vllm-1.5b-lora,momentum_reversal,150,1,161.37,866.6,19,20,566,,1981,,Alvarez's 98-inch reach and precise hooks target Torres's vulnerable body early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,excitement_change,1,1,262.87,1118.04,23,24,522,,1828,,"Garcia's superior accuracy and reach advantage evident early, capitalizing on Torres' low volume and defensive positioning."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,12,1,145.76,1036.57,24,25,544,,1945,,"Garcia's jab-heavy attack aligns with his 74-inch reach, exploiting Torres' low defense early."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,18,1,161.03,717.04,15,16,564,,2028,,Garcia's jab-heavy approach counters Torres' low-defense strategy early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,excitement_change,19,1,148.24,1076.25,25,26,554,,1978,,"Garcia's jab-heavy style exploits Torres' low defense early, capitalizing on his 74-inch reach advantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,28,1,159.4,1088.8,25,26,563,,2028,,"Garcia's jab-heavy start aligns with his 74-inch reach edge, exploiting Torres' low defense early."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,36,1,168.89,726.69,15,16,590,,2099,,Garcia's jab-heavy approach targets Torres' vulnerable lower half early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,37,1,161.12,755.61,16,17,561,,1981,,Garcia's higher volume and reach advantage exploit Torres' low defense early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,45,1,149.32,1117.14,26,27,571,,2016,,"Garcia’s jab-heavy attack capitalizes on Torres’ low defense early, exploiting his 40% body shot ratio."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,round_context,55,1,168.77,834.37,18,19,580,,2087,,Garcia's jab-heavy assault exploits Torres' low defense and body shot vulnerability early.
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,dominance_shift,60,1,116.97,742.1,17,18,127,,427,,BUT GARCIA IS TAKING OVER—DOMINATING RIGHT NOW!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,narrative_tension,62,1,168.44,1136.22,26,27,592,,2075,,"Garcia's jab-heavy attack capitalizes on Torres' lower defense early, exploiting his 40% body shot ratio."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,65,1,164.39,1170.03,27,28,571,,2006,,"Garcia's jab-heavy assault exploits Torres' low defense, capitalizing on the latter's 40% body shot ratio."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,67,1,163.83,1095.2,25,26,576,,2049,,"Garcia's jab is finding home early, capitalizing on Torres' low defense despite the latter's higher accuracy overall."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,71,1,166.97,838.95,18,19,579,,2069,,"Torres pressing forward despite Garcia's jab control, exploiting his lower defense against body shots."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,82,1,159.73,904.17,20,21,562,,2029,,Torres missing big time—only landing 37.5% of his shots thus far.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,87,1,161.92,831.79,18,19,564,,2008,,Garcia's reach and accuracy edge show as he lands hooks while Torres misses big.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,99,1,150.69,818.26,18,19,573,,2017,,Garcia's superior reach and accuracy are neutralizing Torres' high-volume assault early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,target_zone_shift,106,1,147.58,967.14,22,23,552,,1961,,Garcia's 74-inch reach is closing distance quickly against Torres' 68-inch style.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,108,1,149.59,1117.51,26,27,558,,1997,,"Garcia's reach and higher accuracy edge exploit Torres' low volume early, capitalizing on his 68-inch disadvantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,110,1,163.25,1019.66,23,24,569,,2016,,Garcia’s 74-inch reach and 51% accuracy edge exploit Torres’ low volume early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,111,1,166.29,1133.69,26,27,577,,2046,,"Garcia’s superior reach and accuracy advantage exploited Torres’ low output early, capitalizing on his 68-inch disadvantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,113,1,162.51,1018.05,23,24,563,,2021,,Garcia’s higher reach and accuracy edge neutralize Torres’ late-round pressure despite the former’s lower volume.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,115,1,162.39,1279.36,30,31,566,,2035,,"Garcia’s 74-inch reach and 51% accuracy exploit Torres’ low output early, closing the distance to land jabs."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,121,1,166.64,1057.01,24,25,570,,2032,,"Garcia’s superior reach and accuracy edge exploited early, closing distance with jabs as Torres struggles to maintain output."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,130,1,168.56,1136.66,26,27,585,,2096,,"Garcia’s elite reach and 51% accuracy shine late in round one, capitalizing on Torres’ low volume."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,134,1,168.13,798.81,17,18,578,,2089,,Garcia’s jab-heavy attack finds mark as Torres struggles to match his volume.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,target_zone_shift,135,1,163.22,757.0,16,17,563,,1981,,Garcia’s higher volume and accuracy edge exploit Torres’ lower output early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,137,1,148.5,855.46,19,20,557,,1979,,Garcia’s jab-heavy approach capitalizes on Torres’ low output late in round one.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,142,1,162.55,681.25,14,15,568,,2008,,Garcia’s jab-heavy strategy exploiting Torres’ low output late.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,143,1,147.11,891.29,20,21,551,,1955,,Garcia’s jab-heavy attack is finding mark as Torres struggles to land despite his high volume.
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,dominance_shift,145,1,115.4,667.07,15,16,120,,380,,BUT TORRES IS IN TOTAL CONTROL—DOMINATING EVERY ROUND!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,157,1,163.4,1279.04,30,31,572,,2010,,"Torres’ high-volume assault finds mark early, landing 42% of his strikes—exploiting Garcia’s lower output late in round one."
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,dominance_shift,170,1,96.18,1049.11,26,27,123,,382,,BUT GARCIA IS UNLEASHING A HELL BLOW — DOMINATING EVERY FLYING HOOK!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,171,1,165.77,984.13,22,23,579,,2020,,Garcia’s elite reach and accuracy edge exploit Torres’ low volume as both box out at full throttle.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,181,1,165.19,833.0,18,19,575,,2001,,Garcia's reach and accuracy advantage exploiting Torres' low volume late in round one.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,191,1,164.71,833.92,18,19,575,,2064,,Garcia’s higher accuracy and reach advantage finding play early despite Torres’ low output.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,199,1,160.56,903.43,20,21,562,,2011,,"Garcia’s sharp jabs exploit Torres’ low output, capitalizing on his reach edge."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,213,1,162.22,867.36,19,20,566,,1996,,Garcia’s jab is finding mark as Torres struggles to keep pace with the fast counter.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,227,1,161.35,755.59,16,17,563,,2020,,Garcia’s sharper jabs and reach advantage keeping Torres at bay early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,excitement_change,228,1,148.51,852.63,19,20,550,,1980,,"Garcia’s jab accuracy shines early, exploiting Torres’ low output despite his reach edge."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,230,1,146.94,889.29,20,21,549,,1951,,Garcia’s sharp jabs and 51% accuracy exploit Torres’ low volume early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,231,1,147.57,925.83,21,22,552,,1961,,"Garcia’s jab accuracy shines as he exploits Torres’ low volume early, leveraging his reach advantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,235,1,163.53,980.41,22,23,571,,2008,,"Garcia’s jab precision shines early, capitalizing on Torres’ low output despite the larger reach gap."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,target_zone_shift,249,1,159.71,864.83,19,20,568,,2029,,"Garcia’s jab accuracy edges Torres early despite lower volume, exploiting reach and higher defense."
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,knockdown,251,1,116.13,775.9,18,19,130,,406,,WAIT—TORRES LANDS A HUGE HEAD SHOT! GARCIA IS DOWN!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,252,1,163.53,757.39,16,17,569,,2038,,Torres’ huge head shot exploited Garcia’s low defense and reach advantage early.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,target_zone_shift,260,1,148.1,963.52,22,23,555,,1954,,"Torres capitalized on Garcia's low defense and reach edge, landing a massive head shot that knocked him down."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,261,1,163.76,831.1,18,19,569,,2042,,"Torres finding his mark early, capitalizing on Garcia's low defense with big hooks."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,263,1,148.78,963.0,22,23,560,,2021,,Torres exploiting Garcia's low defense with sharp hooks as the fight remains tight at 48 pps.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,270,1,163.18,791.86,17,18,564,,2000,,"Garcia’s reach advantage shines early, landing jabs despite Torres’ counters."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,274,1,148.1,775.91,17,18,556,,1986,,Garcia’s higher accuracy and jab control edge evident early despite Torres pressing forward.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,283,1,161.21,827.21,18,19,569,,2028,,"Torres missing early, but Garcia’s jab-heavy attack exploiting his reach and accuracy advantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,290,1,147.44,1258.73,30,31,555,,2003,,"Garcia’s jab-heavy start capitalizes on his reach, landing at 42.9% accuracy—using precision where Torres lacks volume."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,295,1,165.33,794.21,17,18,576,,2047,,Garcia’s sharp jabs exploit Torres’ low defense early in round two.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,304,1,159.94,825.89,18,19,563,,1985,,"Garcia’s higher accuracy and jab dominance edge Torres late, despite the fast pace."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,308,1,160.02,826.38,18,19,561,,2009,,Torres pressing forward but Garcia’s jab is finding mark early—using reach advantage effectively.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,311,1,158.68,825.78,18,19,562,,2012,,"Garcia’s jab finds mark as Torres presses forward, exploiting his reach advantage early."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,312,1,150.71,926.86,21,22,557,,2007,,"Garcia’s jab is finding home despite Torres’ low output, capitalizing on reach advantage early."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,313,1,148.12,1146.37,27,28,560,,2019,,"Garcia’s jab accuracy shines early, landing both of his 2 counters while Torres remains quiet at 42% overall."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,315,1,159.84,1120.78,26,27,561,,1992,,"Garcia’s jab exploits reach early, landing 66.7% as Torres struggles with 42% overall."
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,knockdown,316,1,96.15,753.04,18,19,123,,380,,WAIT — TORRES LANDS A HUGE UPPER-CUT! GARCIA IS DOWN!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,317,1,164.63,939.6,21,22,580,,2028,,"Torres lands a huge upper-cut, exploiting Garcia's low defense and reach advantage late in round two."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,pace_change,322,1,159.06,973.0,22,23,562,,1983,,"Torres capitalizes on Garcia’s low defense and reach, landing a massive upper-cut early in round two."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,329,1,159.7,934.19,21,22,566,,2021,,Torres' higher volume and accuracy edge shines as he counters Garcia's drop with jabs and hooks.
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,knockdown,334,1,115.33,845.24,20,21,129,,393,,WAIT — GARCIA LANDS A HUGE BODY UPPERCUT! TORRES IS DOWN!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,excitement_change,335,1,164.55,976.81,22,23,582,,2039,,"Garcia's uppercut exploited Torres' low defense early, showcasing his reach advantage late in round two."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,336,1,163.86,1310.19,31,32,576,,2010,,"Garcia’s higher accuracy and body-shot focus neutralized Torres’ volume early, exploiting the latter’s porous defense and reliance on high-volume swarming."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,idle_timeout,338,1,169.64,1051.73,24,25,579,,2096,,"Garcia's jab is finding mark as Torres retreats deeper into the circle, capitalizing on the distance advantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,340,1,164.8,866.42,19,20,579,,2113,,"Garcia’s jab finds home despite low output, capitalizing on Torres’ reach disadvantage."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,343,1,163.11,829.02,18,19,571,,2046,,"Torres pressing forward but Garcia's jab accuracy shines late, landing cleanly despite low volume."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,349,1,147.5,1070.33,25,26,559,,2001,,Garcia’s jab accuracy edges out Torres’ 60% as they mix up their attacks late in round two.
+lora,1.5b-lora,0,fight-1005,B,vllm-1.5b-lora,excitement_peak,352,1,113.59,841.17,20,21,119,,361,,AND NOW—BUTTERFLY FLYING! —TERRIBLE TACTICS!
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_stable,358,1,162.58,789.25,17,18,572,,1969,,"Torres pressing forward despite low accuracy, targeting Garcia's body early in round two."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,371,1,162.72,1048.81,24,25,576,,2007,,Garcia's higher volume and accuracy edge evident late in round two as he lands jabs and hooks with precision.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,382,1,164.14,755.21,16,17,578,,2071,,"Torres missing early, but Garcia's jab-heavy attack keeps him at bay."
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,dominance_shift,395,1,163.16,1014.94,23,24,572,,2037,,Garcia's jab-heavy assault exploits Torres' low defense—landing precise counters despite the latter’s higher output.
+lora,1.5b-lora,0,fight-1005,A,vllm-1.5b-lora,momentum_reversal,400,1,161.75,975.7,22,23,570,,2023,,"Torres pressing forward, but Garcia's reach advantage and jab control edge show as he lands precise counters late."
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,excitement_change,1,1,258.66,738.66,13,14,509,,1829,,Alvarez's precision crosses exploit Johnson's low defense early.
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,dominance_shift,7,1,148.13,625.07,13,14,530,,1914,,Alvarez's higher volume exploits Johnson's lower defense early.
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,pace_change,18,1,160.56,751.64,16,17,551,,2015,,Alvarez's higher volume and body work exploiting Johnson's lower defense early.
+lora,1.5b-lora,0,fight-1006,B,vllm-1.5b-lora,knockdown,21,1,123.34,817.39,19,20,134,,435,,WAIT — ALVAREZ LANDS A HUGE CROSS! JOHNSON IS DOWN!
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,momentum_stable,22,1,159.18,750.93,16,17,552,,2003,,Alvarez's high-volume attack capitalizing on Johnson's low defense early.
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,idle_timeout,23,1,146.88,886.72,20,21,541,,1940,,"Alvarez's higher volume exploits Johnson's lower defense early, targeting his body with precision hooks."
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,momentum_reversal,37,1,160.82,1197.96,28,29,554,,2020,,"Alvarez’s 34% body shot ratio aligns with his aggressive style, but Johnson’s elite defense keeps him at bay."
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,pace_change,39,1,163.64,904.51,20,21,565,,2060,,"Alvarez’s high-volume attack lands on target, capitalizing on Johnson’s low defense early."
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,momentum_reversal,49,1,164.32,904.84,20,21,575,,2075,,"Alvarez pressing forward, but Johnson’s 72% defense keeps him at bay early."
+lora,1.5b-lora,0,fight-1006,B,vllm-1.5b-lora,dominance_shift,59,1,113.66,917.3,22,23,121,,372,,BUT JOHNSON IS UNLEASHING HELL—DOMINANCE EXPLODING!
+lora,1.5b-lora,0,fight-1006,A,vllm-1.5b-lora,round_context,60,1,163.32,1016.24,23,24,568,,2025,,"Johnson’s elite 63% accuracy shines as he counters with precision jabs, exploiting Alvarez’s forward pressure."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,excitement_change,1,1,260.91,743.48,13,14,516,,1824,,Alvarez's precision jab exploits Torres' low defense early.
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,dominance_shift,5,1,143.7,959.64,22,23,535,,1900,,"Alvarez’s elite accuracy shines as he lands precise hooks early, capitalizing on Torres’ low defense."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,pace_change,18,1,148.0,1038.29,24,25,556,,2017,,"Alvarez's sharp jab finds home early, exploiting Torres' low defense with 66.7% accuracy."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,dominance_shift,24,1,168.7,724.18,15,16,587,,2106,,"Torres increasing volume early, but Alvarez’s precision keeps him in control."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_stable,26,1,147.98,1114.15,26,27,553,,2022,,"Alvarez's sharp jabs find mark early, capitalizing on Torres' low defense despite 20% lower accuracy."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,27,1,147.51,1078.74,25,26,555,,1996,,"Alvarez’s sharp jabs exploit Torres’ low defense, landing at 75% efficiency despite lower overall accuracy."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,pace_change,28,1,166.26,906.46,20,21,574,,2059,,"Alvarez's precision jabs exploit Torres' low defense early, showcasing elite control over distance."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,idle_timeout,29,1,149.37,780.28,17,18,558,,2021,,Alvarez’s sharp jabs find home as Torres struggles to close distance early.
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_stable,36,1,150.17,779.63,17,18,548,,2009,,Alvarez's 58% accuracy shines early against Torres' lower volume.
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,idle_timeout,38,1,146.32,1037.81,24,25,539,,1938,,"Alvarez’s sharp jabs exploit Torres’ low output early, landing at 66.7% accuracy."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,39,1,165.08,835.96,18,19,574,,2036,,"Alvarez's precision hooks contrast Torres' higher volume, exploiting his low defense early."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_stable,40,1,164.31,757.74,16,17,567,,2039,,Alvarez’s precise uppercuts find home as Torres lacks consistent output early.
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,idle_timeout,41,1,149.88,1567.38,38,39,555,,1992,,"Alvarez's sharp hooks exploit Torres's low defense early, landing at 33.3% accuracy—dramatically outpacing his opponent's 42% overall."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,46,1,165.97,1210.17,28,29,580,,2074,,"Alvarez capitalizes on Torres's low defense with precision hooks, exploiting his 66.7% body shot ratio advantage early."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,56,1,169.32,915.34,20,21,590,,2108,,Alvarez's sharper hooks and higher body shot accuracy edge Torres as they trade jabs early.
+lora,1.5b-lora,0,fight-1007,B,vllm-1.5b-lora,knockdown,60,1,116.76,779.57,18,19,127,,400,,WAIT — ALVAREZ LANDS A HUGE HOOK! TORRES IS DOWN!
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,target_zone_shift,61,1,159.22,978.79,22,23,550,,1947,,"Alvarez’s sharp hooks exploit Torres’s low defense early, landing a massive uppercut that lands cleanly."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,idle_timeout,62,1,147.85,891.72,20,21,550,,1959,,"Alvarez’s precision and reach advantage exploited early, landing a huge uppercut that stunned Torres."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,66,1,164.0,647.34,13,14,564,,2057,,Alvarez’s precision counters exploiting Torres’s low defense early.
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,excitement_change,68,1,147.79,968.75,22,23,548,,1989,,Alvarez’s elite accuracy and pressure edge show as he lands a big cross—58% overall!
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,dominance_shift,73,1,147.5,967.94,22,23,550,,1995,,"Alvarez's sharp counters exploit Torres's low defense early, showcasing his 60% accuracy advantage."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,target_zone_shift,78,1,149.7,820.63,18,19,553,,1972,,"Alvarez’s precision hooks find home early, capitalizing on Torres’s low defense."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,83,1,161.53,982.14,22,23,565,,2042,,"Alvarez's sharp counters exploit Torres's low defense, landing 60% of his shots early."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,92,1,165.81,759.87,16,17,572,,2028,,Alvarez’s precise jabs and body attacks exploiting Torres’s low defense.
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,target_zone_shift,94,1,149.61,1268.22,30,31,558,,1996,,Alvarez's precision jabs and body work capitalizing on Torres's low defense—landed 58% of his shots thus far.
+lora,1.5b-lora,0,fight-1007,B,vllm-1.5b-lora,knockdown,95,1,114.9,740.34,17,18,126,,393,,"WAIT — TORRES LANDS A HUGE CROSS, ALVAREZ IS DOWN!"
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,excitement_change,96,1,165.67,949.57,21,22,577,,2049,,"Torres's massive cross exploited Alvarez's low defense early, showcasing his high-volume attack at full throttle."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,target_zone_shift,101,1,148.92,893.65,20,21,549,,1979,,"Torres’s high volume shines early, landing crosses despite low accuracy, exploiting Alvarez’s low defense."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,dominance_shift,114,1,162.49,870.81,19,20,564,,2049,,"Alvarez counters with precision jabs as Torres presses forward, testing his reach advantage early."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,119,1,162.09,1096.18,25,26,568,,2076,,"Alvarez’s sharp jabs exploit Torres’s high-volume attack, keeping him at bay despite the latter’s reach advantage."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,dominance_shift,120,1,167.2,1061.82,24,25,571,,2100,,"Alvarez’s sharp jabs land cleanly as Torres pushes forward, exploiting his lower volume and accuracy compared to Alvarez."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,idle_timeout,121,1,163.41,946.54,21,22,563,,2063,,"Alvarez’s precision jab keeps Torres at bay early, showcasing elite counters against high-volume swarming."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_stable,123,1,151.15,894.63,20,21,553,,2033,,"Alvarez’s sharp jabs exploit Torres’ low volume early, controlling distance despite slow pace."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,momentum_reversal,128,1,159.55,903.03,20,21,562,,2065,,"Torres pressing forward despite low accuracy and reach disadvantage, missing crucial body shots as Alvarez controls distance."
+lora,1.5b-lora,0,fight-1007,A,vllm-1.5b-lora,dominance_shift,138,1,165.57,1244.41,29,30,563,,2062,,Alvarez’s sharp jabs land at 44.4% efficiency against Torres’ 25% accuracy early in round three.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,1,1,142.99,1114.67,26,27,517,,1815,,"Garcia's reach advantage allows him to control distance early, but Torres' accuracy could exploit his low volume at this pace."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,13,1,152.41,855.72,19,20,548,,1954,,"Torres landing jabs early despite Garcia's reach edge, testing his defenses without overwhelming output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,14,1,161.12,868.28,19,20,563,,2043,,Torres pressing forward but Garcia’s higher volume and jab precision could wear down his endurance early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,16,1,148.35,1002.71,23,24,552,,2007,,"Garcia's 50% body shot accuracy shines as Torres presses forward, exploiting his lower volume early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,17,1,146.93,1077.27,25,26,560,,2010,,"Garcia's reach advantage is evident early, capitalizing on Torres' low output with precise jabs and body attacks."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,19,1,147.35,999.84,23,24,564,,2012,,Torres lands a brutal uppercut—100% accuracy—taking control despite Garcia's reach edge early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,20,1,143.69,1109.77,26,27,564,,2004,,"Torres surges early, landing precision uppercuts despite Garcia’s reach edge, exploiting his 40% body shot vulnerability."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,22,1,167.15,948.09,21,22,582,,2080,,"Garcia's higher volume masks Torres' early precision, leveraging his 74-inch reach advantage."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,23,1,152.08,930.3,21,22,569,,2031,,Garcia's jab-heavy attack exploits Torres' low defense at 55% against body shots.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,26,1,161.11,717.97,15,16,561,,1982,,Garcia’s jab dominance edges Torres’ early accuracy despite low defense.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,28,1,149.37,1002.28,23,24,565,,1996,,"Torres pressing forward, but Garcia's reach advantage keeps him at bay—using jabs to control distance early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,35,1,161.1,867.93,19,20,564,,2003,,"Garcia’s jab accuracy shines as Torres presses, but the reach gap narrows late."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,38,1,146.67,702.95,15,16,558,,2015,,Torres' higher volume and body focus edge Garcia's reach disadvantage early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,40,1,147.49,815.61,18,19,552,,1968,,"Torres pressing forward, but Garcia’s jab precision edges the distance early despite lower volume."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,41,1,148.82,704.66,15,16,557,,2024,,"Torres missing early, Garcia's jab accuracy shines as he closes distance."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,43,1,163.35,793.88,17,18,577,,2078,,Garcia's jab accuracy could exploit Torres' low defense late in round one.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,47,1,148.9,741.36,16,17,550,,1951,,"Garcia’s jab is finding home, exploiting Torres’ lower defense early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,50,1,148.79,739.32,16,17,545,,1950,,Garcia’s jab is finding home as Torres’ defense edges down early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,52,1,163.25,938.22,21,22,567,,1992,,"Torres pressing forward despite low defense, landing precise uppercuts while Garcia keeps distance with sharp jabs."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,53,1,149.56,926.51,21,22,557,,2009,,"Torres’ precision uppercuts exploit Garcia’s jab-heavy defense early, capitalizing on his reach advantage."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,54,1,145.95,1032.62,24,25,561,,2023,,Torres’ 100% accuracy shines early as he exploits Garcia’s jab-deficit with precision uppercuts.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,56,1,149.2,702.2,15,16,557,,1989,,Garcia’s reach and jab control evident early despite Torres’ precision.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,58,1,139.31,1026.33,24,25,551,,1958,,"Torres presses forward but misses with his 0-for-2 jabs, undershooting his peak output early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,59,1,138.63,728.89,16,17,556,,1959,,Garcia’s jab is finding home early as Torres misses with low volume.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,60,1,149.13,1147.22,27,28,550,,1958,,"Garcia’s reach advantage showing early, but Torres missing with low volume—needs to find distance to exploit his high-output style."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,62,1,164.98,1052.23,24,25,576,,2079,,"Garcia’s 51% accuracy shines early, capitalizing on his reach edge despite Torres’ low output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,65,1,167.81,794.88,17,18,585,,2082,,Garcia’s precision and reach advantage exploited late as Torres struggled to close distance.
+lora,1.5b-lora,0,fight-1008,B,vllm-1.5b-lora,knockdown,66,1,115.78,478.75,10,11,128,,399,,WAIT — HOOK! TORRES IS DOWN!
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,67,1,148.34,997.76,23,24,558,,1984,,"Garcia capitalized on his reach and accuracy edge, landing three hooks early—exploiting Torres’ low defense."
+lora,1.5b-lora,0,fight-1008,B,vllm-1.5b-lora,dominance_shift,71,1,96.31,823.29,20,21,118,,376,,BUT TORRES IS ON FIRE — DOMINATING WITH HELL-BREATHING RIGHT!
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,73,1,164.27,939.26,21,22,574,,2021,,"Garcia’s sharp jabs exploit Torres’ poor defense, capitalizing on his lower volume late."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,75,1,166.23,867.0,19,20,575,,2027,,Garcia's reach and accuracy edge show as he closes distance with torrid jabs.
+lora,1.5b-lora,0,fight-1008,B,vllm-1.5b-lora,knockdown,82,1,114.71,989.01,24,25,130,,416,,WAIT — HOOK! GARCIA LANDS A HUGE HEAD FLYING HOOK! TORRES IS DOWN!
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,83,1,158.99,1230.94,29,30,564,,1968,,"Garcia’s 66.7% accuracy shines early despite Torres’ low output, capitalizing on his superior reach and hook precision."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,89,1,163.0,1272.0,30,31,571,,1996,,"Garcia’s sharp hooks exploit Torres’ low output, landing at 66.7% as he closes the distance late in round one."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,narrative_tension,91,1,174.78,689.4,14,15,608,,2158,,Garcia’s jab-heavy style exploiting Torres’ low volume early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,93,1,164.06,975.27,22,23,574,,2034,,"Garcia’s jab-heavy approach is neutralizing Torres’ lower output, capitalizing on his reach advantage."
+lora,1.5b-lora,0,fight-1008,B,vllm-1.5b-lora,dominance_shift,104,1,96.39,788.19,19,20,123,,388,,BUT GARCIA IS UNLEASHING HELL—DOMINATING EVERY ROUND!
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,107,1,160.27,1155.27,27,28,562,,2005,,"Garcia’s sharp jabs exploit Torres’ low volume early, but the latter’s heart could yet turn as he presses forward."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,110,1,148.2,737.78,16,17,558,,1952,,"Garcia’s jab is finding mark, exploiting Torres’ low output early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,123,1,147.36,886.95,20,21,560,,1982,,"Torres pressing forward despite low volume, but Garcia’s reach and accuracy could exploit his counter attack."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,126,1,147.09,846.72,19,20,545,,1964,,"Garcia’s jab finds home as Torres presses, but reach advantage keeps him at bay."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,128,1,148.33,1035.33,24,25,556,,2015,,"Garcia’s reach edge neutralizes Torres’ early surge, exploiting the welterweight’s lower volume and defense."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,135,1,162.3,937.18,21,22,565,,2031,,"Torres pressing forward despite Garcia’s reach edge, but low volume leaves him vulnerable to counter jabs."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,137,1,164.86,1014.43,23,24,574,,2072,,"Garcia’s superior reach and accuracy edge exploit Torres’ low-volume early surge, leveraging his late-round strength."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,138,1,160.76,1049.23,24,25,562,,2057,,"Garcia's 61-punch peak exploiting Torres' low volume early, capitalizing on reach and accuracy."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,139,1,139.5,879.48,20,21,559,,2008,,"Garcia’s reach advantage exploits Torres’ low output early, capitalizing on precision and timing."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,141,1,139.61,728.55,16,17,561,,1996,,Garcia's higher accuracy and reach edge exploit Torres' low output early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,143,1,136.82,950.83,22,23,552,,1968,,"Garcia’s 51% accuracy and superior reach edge capitalize early, exploiting Torres’ low output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,148,1,147.78,888.03,20,21,557,,1996,,"Garcia’s elite accuracy and reach advantage show early, capitalizing on Torres’ low volume."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,151,1,164.73,902.36,20,21,573,,2056,,"Garcia’s higher accuracy and reach edge show early, capitalizing on Torres’ lower output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,154,1,164.77,680.68,14,15,575,,2054,,"Torres pressing forward despite low volume, exploiting Garcia's reach disadvantage."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,155,1,162.1,791.91,17,18,561,,2025,,Garcia’s sharp jab and counter jabs exploit Torres' low volume early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,156,1,138.52,692.13,15,16,551,,1975,,Garcia's reach advantage neutralizing Torres' high-volume assault early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,159,1,149.16,741.56,16,17,556,,1979,,Garcia's jab is finding mark as Torres struggles to close distance early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,162,1,160.39,1087.02,25,26,566,,2018,,"Torres pressing forward despite Garcia’s reach edge, landing jabs while missing body shots—high volume contrasts low accuracy early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,171,1,158.51,751.95,16,17,563,,2018,,Torres' high-volume jabs contrast Garcia's lower accuracy despite superior reach.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,186,1,159.87,752.55,16,17,567,,2061,,Garcia's sharp hooks exploit Torres' porous defense late in round two.
+lora,1.5b-lora,0,fight-1008,B,vllm-1.5b-lora,excitement_peak,190,1,114.76,700.97,16,17,124,,396,,AND NOW—TORRES ON FIRE! HIGH INTENSITY UNLEASHED!
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,192,1,162.01,1126.67,26,27,567,,1974,,"Torres finding his mark early, landing jabs at 33.3% accuracy while Garcia presses forward with heavy hooks."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,200,1,165.0,683.64,14,15,572,,1992,,"Torres pressing forward with high volume, exploiting Garcia's reach disadvantage."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,210,1,149.58,892.6,20,21,559,,2002,,"Torres increasing output despite low accuracy, capitalizing on Garcia’s reach advantage late in round two."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,218,1,148.05,1001.7,23,24,562,,2010,,"Torres surging with 50% accuracy, landing heavy body attacks as Garcia struggles to control distance early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,224,1,140.49,995.3,23,24,558,,2020,,"Torres finding his mark with precision, landing body shots at 100% while Garcia hangs back early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,228,1,162.86,1317.01,31,32,563,,1996,,"Torres capitalizing on Garcia's early retreat, landing precise body shots at 100%—exploiting his reach advantage late in round two."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,235,1,167.42,611.22,12,13,581,,2062,,"Torres closing distance, exploiting Garcia's dropback early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,251,1,162.41,905.25,20,21,565,,2025,,"Torres finding the mark with precision jabs despite low volume, targeting Garcia’s vulnerable body early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,252,1,148.95,1080.32,25,26,555,,1985,,"Torres pressing forward, landing precise jabs at 42% accuracy—capitalizing on Garcia's reach deficit late."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,254,1,166.33,760.11,16,17,570,,2056,,Garcia’s sharp hooks exploit Torres’ low volume early in round two.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,256,1,150.31,932.29,21,22,558,,1980,,"Garcia’s elite reach advantage neutralizes Torres’ high-volume attack, exploiting his lower accuracy late."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,262,1,150.04,932.02,21,22,554,,1986,,"Garcia’s jab-heavy style counters Torres’ low-volume assault, capitalizing on reach advantage late."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,266,1,162.45,719.83,15,16,566,,2056,,"Torres missing early, Garcia using reach to control distance despite low output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,270,1,150.37,1229.74,29,30,549,,1972,,"Garcia’s jab-heavy attack exploits Torres’ low volume, but the latter’s 55% defense keeps him alive until late rounds."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,277,1,160.77,1017.25,23,24,568,,2026,,Garcia’s jab-heavy attack exploiting Torres’ low volume as both land at 120 p/m.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,294,1,164.48,1207.71,28,29,572,,2021,,"Garcia’s jab-heavy assault capitalizes on Torres’ low volume early, but the 55% defense keeps the fight close."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,295,1,168.88,986.54,22,23,582,,2038,,"Garcia’s jab-heavy attack exploits Torres’ low volume early, but defense holds tight despite high pace."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,304,1,167.11,1097.1,25,26,576,,2045,,"Garcia’s jab-heavy start capitalizes on Torres’ low volume, but defense keeps the fight close despite high pace."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,excitement_change,306,1,162.59,945.14,21,22,563,,2035,,"Garcia’s jab-heavy assault takes advantage of Torres’ low output early, exploiting his reach disadvantage."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,307,1,149.84,893.82,20,21,557,,2009,,"Garcia’s jab-heavy start capitalizes on Torres’ low volume, exploiting his reach disadvantage."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,309,1,150.59,931.98,21,22,553,,1981,,Garcia’s higher accuracy and reach edge allow him to control distance early despite Torres’ low output.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,314,1,149.77,820.49,18,19,560,,2022,,"Garcia’s jab is finding home early, capitalizing on Torres’ low output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,321,1,146.14,965.17,22,23,552,,1970,,"Garcia’s jab finds home early, exploiting Torres’ low volume despite the latter’s elite body attack."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,323,1,150.47,1004.3,23,24,558,,1986,,"Garcia’s superior accuracy and reach advantage exploited early, landing two jabs per minute while Torres remains inactive."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,336,1,163.77,910.1,20,21,565,,2035,,"Garcia’s sharp jab exploits Torres’ low volume early, capitalizing on his reach edge."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,337,1,169.27,913.11,20,21,578,,2093,,"Torres missing early—Garcia’s jab exploits reach, but volume isn’t there yet."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,338,1,149.96,893.77,20,21,556,,1975,,"Garcia’s jab is finding mark as Torres misses early, exploiting reach advantage despite low output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,340,1,150.0,820.08,18,19,553,,1978,,Garcia’s jab finds home as Torres’ low output keeps him at bay early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,345,1,149.9,856.49,19,20,553,,1979,,"Garcia’s sharp jabs find home early, capitalizing on Torres’ low output."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,348,1,150.29,1044.65,24,25,557,,1969,,"Garcia’s jab finding mark, landing 4 out of 4—exploiting Torres’ low volume early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,357,1,164.66,942.97,21,22,563,,1967,,Garcia’s jab accuracy at 83.3% is exploiting Torres’ low output early.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,367,1,164.57,1020.75,23,24,568,,1991,,Garcia’s reach and jab precision are neutralizing Torres’ initial surge despite the latter’s high-volume attack.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,pace_change,376,1,167.01,946.75,21,22,577,,2048,,"Garcia’s jab accuracy shines as he closes distance, capitalizing on Torres’ low volume early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,377,1,163.27,905.3,20,21,562,,2014,,"Garcia’s jab precision is evident as he closes distance, exploiting Torres’ low output early."
+lora,1.5b-lora,0,fight-1008,B,vllm-1.5b-lora,knockdown,379,1,116.08,702.66,16,17,122,,377,,WAIT — TORRES LANDS A HUGE CROSS! GARCIA IS DOWN!
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,dominance_shift,380,1,163.07,756.42,16,17,566,,1994,,"Torres lands a massive cross, showcasing his reach advantage while Garcia remains down."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,385,1,149.58,818.83,18,19,559,,1967,,"Torres capitalizes on his reach, landing a huge cross as Garcia is down early."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,target_zone_shift,389,1,149.39,892.86,20,21,552,,1959,,Torres’ 85.7% accuracy highlights his precision at close range despite low defense.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,394,1,149.68,965.24,22,23,555,,1959,,"Torres' sharp jabs exploit Garcia's reach deficit, showcasing elite accuracy even against late-round drop-off."
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_reversal,396,1,164.85,720.82,15,16,574,,2046,,Garcia’s higher volume and accuracy edge evident as he closes distance.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,momentum_stable,397,1,164.09,868.68,19,20,563,,2034,,Garcia's reach advantage is neutralizing Torres' high-volume attack early in round three.
+lora,1.5b-lora,0,fight-1008,A,vllm-1.5b-lora,idle_timeout,399,1,151.02,743.11,16,17,555,,1973,,Garcia’s superior reach and jab control exploiting Torres’ late-round aggression.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,excitement_change,1,1,264.23,820.81,15,16,525,,1871,,"Garcia's sharp hook lands cleanly early, showcasing his elite precision."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,idle_timeout,3,1,143.57,811.01,18,19,531,,1923,,"Garcia’s sharp hook exploits his reach advantage, landing cleanly early despite low output."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,target_zone_shift,5,1,159.42,939.43,21,22,561,,2040,,Alvarez presses forward but misses on body shots—his high-volume attack relies heavily on precise counters.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,pace_change,10,1,160.38,1013.71,23,24,561,,2075,,"Alvarez finding trouble with Garcia’s sharp hooks and precision jabs early, missing body shots despite higher volume."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,dominance_shift,16,1,164.75,1057.09,24,25,576,,2117,,Garcia’s sharp hooks and 61 peak output per round align with his elite accuracy and reach advantage early.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,pace_change,18,1,164.27,1016.3,23,24,569,,2095,,Alvarez pressing forward but missing key targets due to lower accuracy compared to Garcia's sharp hooks and high defense.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,dominance_shift,19,1,151.76,1040.0,24,25,583,,2126,,"Garcia’s jab exploits Alvarez’s low accuracy, targeting the body at 22%—a known vulnerability."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,idle_timeout,20,1,166.6,979.2,22,23,574,,2083,,"Garcia’s precision jab exploits Alvarez’s low accuracy early, landing both shots cleanly as they close distance."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_reversal,22,1,172.78,839.42,18,19,587,,2131,,"Garcia’s sharp jab finds mark, capitalizing on Alvarez’s low defense early."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,dominance_shift,24,1,162.6,1013.41,23,24,578,,2111,,"Garcia’s sharp jabs find home early, exploiting Alvarez’s low defense at 58% accuracy."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,dominance_shift,25,1,164.35,791.68,17,18,564,,2035,,"Alvarez landing hooks while Garcia struggles to close distance, showcasing his reach advantage."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,idle_timeout,26,1,161.13,1496.06,36,37,562,,2033,,"Alvarez’s high volume (52 punches/round) contrasts Garcia’s low output (0/0), but Garcia’s jab could exploit Alvarez’s body-shooting habit."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_reversal,27,1,167.91,870.9,19,20,586,,2131,,"Alvarez’s sharp hooks target Garcia’s body early, exploiting the former’s known vulnerability."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_stable,28,1,166.64,1389.0,33,34,580,,2110,,Alvarez’s body-focused attacks target Garcia’s known vulnerability—exploiting his 22% body shot ratio—but Garcia’s jab could close this gap early.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,pace_change,33,1,165.98,1274.85,30,31,579,,2120,,"Alvarez’s high volume and body focus exploit Garcia’s 22% body shot ratio, but Garcia’s jab could close the distance early."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_reversal,36,1,171.66,948.7,21,22,600,,2174,,"Garcia’s sharp jab could exploit Alvarez’s rising body attack, closing the distance before it spreads."
+lora,1.5b-lora,0,fight-1009,B,vllm-1.5b-lora,knockdown,38,1,123.38,562.34,12,13,132,,413,,WAIT — HUGE HOOK! GARCIA IS DOWN!
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_reversal,39,1,164.08,1088.86,25,26,577,,2088,,"Alvarez’s precision uppercuts exploited Garcia’s low defense early—now down, but with a high-volume surge ahead."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_stable,40,1,164.09,1051.61,24,25,572,,2048,,"Alvarez’s precise uppercuts capitalized on Garcia’s low defense early, exploiting his 61% accuracy edge."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_reversal,50,1,165.55,794.45,17,18,577,,2088,,Alvarez’s higher volume and sharper hooks capitalize on Garcia’s lower accuracy early.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,idle_timeout,52,1,160.73,1047.77,24,25,562,,2054,,Alvarez’s sharp jabs and body work exploit Garcia’s 61% accuracy drop late in round one.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,target_zone_shift,53,1,160.72,1048.86,24,25,565,,2035,,"Alvarez’s sharp jabs target Garcia’s 61% accuracy drop, exploiting his high-body-shot ratio."
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_reversal,54,1,169.22,835.31,18,19,588,,2105,,Alvarez’s sharper jabs and body work capitalize on Garcia’s declining accuracy early.
+lora,1.5b-lora,0,fight-1009,A,vllm-1.5b-lora,momentum_stable,55,1,163.65,939.94,21,22,573,,2068,,"Alvarez’s sharp hooks exploit Garcia’s low defense, capitalizing on his body-focused attack pattern."

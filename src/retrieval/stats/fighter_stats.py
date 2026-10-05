@@ -80,7 +80,7 @@ SAMPLE_FIGHTERS: dict[str, FighterStats] = {
             "High-output boxer-puncher with exceptional hand speed and a powerful straight right hand. "
             "Prefers to establish the jab and work behind it, creating openings for the overhand right. "
             "Elite footwork when fresh. Susceptible to pressure in later rounds when punch output drops. "
-            "Has been stopped twice by body shots — a known vulnerability."
+            "Has been stopped twice by body shots, a known vulnerability."
         ),
     ),
     "Johnson": FighterStats(
@@ -97,7 +97,7 @@ SAMPLE_FIGHTERS: dict[str, FighterStats] = {
         body_shot_percentage=0.18,
         notable_wins=["Martinez", "Williams"],
         biography=(
-            "Disciplined southpaw counter-puncher with elite accuracy. Patient, rarely leads — "
+            "Disciplined southpaw counter-puncher with elite accuracy. Patient, rarely leads, "
             "prefers to make opponents miss then land sharp counter left hands. "
             "Uses the southpaw right jab effectively to neutralize orthodox opponents. "
             "Excellent stamina; frequently outworks opponents in the championship rounds."
@@ -119,7 +119,7 @@ SAMPLE_FIGHTERS: dict[str, FighterStats] = {
         biography=(
             "High-volume swarmer who overwhelms opponents with output rather than power. "
             "Throws in high-quantity short-range combinations, targeting the body extensively. "
-            "Porous defense — gets hit — but relies on an iron chin and will. "
+            "Porous defense, gets hit, but relies on an iron chin and will. "
             "Best in close range; struggles when opponents tie up or use movement to stay outside."
         ),
     ),

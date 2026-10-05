@@ -1,5 +1,5 @@
 """
-FastAPI routes — HTTP wrapper around CommentaryOrchestrator.
+FastAPI routes: HTTP wrapper around CommentaryOrchestrator.
 Called by the Go gateway via HTTP.
 
 One orchestrator per fight_id, so concurrent fights never share tracker, queue

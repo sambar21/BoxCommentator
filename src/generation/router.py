@@ -85,7 +85,7 @@ def build_routed_clients(
 ) -> Tuple[BaseLLMClient, BaseLLMClient]:
     """
     Returns (track_a_llm, track_b_llm) from a routing dict like
-      {default: groq-70b, track_a: groq-70b, track_b: vllm-3b, fallback: [groq-70b]}
+      {default: groq-qwen27b, track_a: groq-qwen27b, track_b: vllm-3b, fallback: [groq-qwen27b]}
     `make(name)` builds a client for a backend name (so callers can wrap clients,
     e.g. with budget metering).
     """

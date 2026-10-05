@@ -1,10 +1,10 @@
 # Progress
 
-Last updated: 2026-10-04. Companion to [`BUILD_PLAN.md`](BUILD_PLAN.md) (the plan) and [`RUNNING.md`](RUNNING.md) (how to run it).
+Last updated: 2026-10-05. Companion to [`BUILD_PLAN.md`](BUILD_PLAN.md) (the plan) and [`RUNNING.md`](RUNNING.md) (how to run it).
 
-**One-line status:** every step of the plan is written and unit-tested against a stub model (99 tests pass, 1 skipped
-because Kokoro is not installed). **No benchmark, training or voice run has happened against a real backend or GPU, so
-there are no results and no resume numbers yet.** Nothing is committed to git.
+**One-line status:** the benchmarks, the quantization, caching and batching experiments, and the LoRA run are done and
+their results are in `bench/results/`. The README has the table and the recommendation. Section 1 below is the original
+checklist from before any run, so many `[~]` items there are now finished; section 5 is the current state.
 
 Legend: `[x]` done and verified, `[~]` built and unit-tested but never run for real, `[ ]` not done.
 
@@ -150,8 +150,8 @@ support; `config/backends.py`; `api/routes.py`; `config/llm_config.py` (`COMMENT
    `lora_results.zip` + `train_log.json`. Merge new rows into `bench/results/summary.csv` (append, do not overwrite),
    then `python -m bench.charts`.
 7. README results table, one chart and the Recommendation (plan 3.5).
-8. Fill the resume blanks only from `bench/results/`: prefix-cache TTFT, AWQ latency, LoRA vs 7B [N]%.
-9. Cleanup: stale `groq-70b` mentions in docs, verify prices, find the cause of Groq's errors (bench does not log
+8. Resume numbers are filled in `docs/reference.md`, all taken from `bench/results/`.
+9. Cleanup: run instructions now point at `groq-qwen27b`. Still open: verify prices, find the cause of Groq's errors (bench does not log
    error text yet).
 
 **Dropped (decision 2026-10-05):** Kokoro voice / time-to-first-audio, and the kind deployment. The `voice/` and

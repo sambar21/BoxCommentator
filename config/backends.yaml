@@ -84,6 +84,6 @@ backends:
 # Which backend handles which kind of event (used by src/generation/router.py).
 # Unset = use the single default backend.
 routing:
-  default: groq-70b
+  default: groq-qwen27b
   # track_b: vllm-3b      # knockdowns and urgent calls -> fastest
   # track_a: groq-70b        # analysis / quiet stretches -> smartest

@@ -126,21 +126,39 @@ support; `config/backends.py`; `api/routes.py`; `config/llm_config.py` (`COMMENT
 
 ---
 
-## 5. What is left, in order
+## 5. Status (updated 2026-10-05) and what is left
 
-1. **You:** set `NEBIUS_MODEL` and `NEBIUS_TEACHER_MODEL` in `.env`; fill `price_in`/`price_out` for `nebius`,
-   `nebius-teacher`, `groq-70b` in `config/backends.yaml`.
-2. **You:** push the repo to GitHub (private is fine) so Kaggle can clone it. Not pushed yet; I will not push without
-   your go-ahead.
-3. Free dry runs from RUNNING.md section 2, then the one-fight capped smoke tests (Groq, then Nebius).
-4. `python -m finetune.gen_data --max-usd 0.50` locally, commit `finetune/data/`.
-5. Run `serving/kaggle_vllm.ipynb` section by section; download `bench_results.zip` into `bench/results/`.
-6. Run `finetune/train_lora.ipynb`, then `--plan lora` in a fresh session.
-7. Install Kokoro and measure time-to-first-audio.
-8. `python -m bench.charts`, then write the README results table, one chart and the Recommendation (plan 3.5).
-9. Fill the resume blanks only from `bench/results/`: prefix-cache TTFT [X to Y], AWQ latency [Z]%, LoRA vs 7B [N]%,
-   time-to-first-audio [M] ms.
-10. Optional: deploy to kind.
+**Done**
+1. Model ids and prices set in `.env` / `config/backends.yaml`. Prices are estimates (VERIFY against the Nebius and
+   Groq pricing pages). Llama 3.3 70B is gone from both catalogs, so the hosted comparison uses Qwen3.8-27B
+   (`nebius-27b`, `groq-qwen27b`) plus a Qwen3-30B Nebius baseline.
+2. Repo pushed to GitHub (`sambar21/BoxCommentator`, main).
+3. Smoke tests and hosted baselines (Nebius clean; Groq 33% errors, cause not confirmed, likely rate limits).
+4. LoRA training data generated and committed (`finetune/data/`: 300 train, 60 eval, teacher Qwen3-235B).
+5. Kaggle T4 vLLM runs, results in `bench/results/`: 3B fp16, 3B-AWQ, 7B-AWQ, batching (c=4, 16), caching on/off.
+   Not run: `capping` (long fights, very slow) and `routing`.
+
+**Measured so far (10 fights each, 0% errors)**
+- AWQ vs fp16 (3B): TTFT p50 141 to 114 ms (-20%), total p95 780 to 357 ms (-54%), decode 36.7 to 83.7 tok/s.
+- Prefix cache on vs off (3B): TTFT p50 253 to 141 ms (-44%) on the short prompt; 477 to 198 ms (-59%) and p95
+  1590 to 313 ms (-80%) with the whole transcript. Single runs; the cache-on server may have been warm from earlier runs.
+- Batching: 28.7 to 66.4 (c=4) to 89.0 (c=16) tok/s; p95 TTFT 156 to 331 ms.
+- Quality: 7B-AWQ describes 100% of knockdowns vs 32% for the 3B (about 19 events per run).
+
+**Left**
+6. **You (Kaggle):** run `finetune/train_lora.ipynb` end to end (train, install vLLM, restart, `--plan lora`), download
+   `lora_results.zip` + `train_log.json`. Merge new rows into `bench/results/summary.csv` (append, do not overwrite),
+   then `python -m bench.charts`.
+7. README results table, one chart and the Recommendation (plan 3.5).
+8. Fill the resume blanks only from `bench/results/`: prefix-cache TTFT, AWQ latency, LoRA vs 7B [N]%.
+9. Cleanup: stale `groq-70b` mentions in docs, verify prices, find the cause of Groq's errors (bench does not log
+   error text yet).
+
+**Dropped (decision 2026-10-05):** Kokoro voice / time-to-first-audio, and the kind deployment. The `voice/` and
+`k8s/` code stays in the repo but is out of scope for the resume bullets.
+
+**Kaggle gotchas:** after `pip install vllm`, run `pip uninstall -y torchaudio` and restart the session. An interrupted
+run leaves a vLLM server on port 8000: `pkill -f "vllm serve"` (run_matrix now refuses an occupied port).
 
 ## 6. Decisions on record
 - Keep `src/` (not renamed to `app/`); keep the Go gateway in the repo but out of the resume bullets.

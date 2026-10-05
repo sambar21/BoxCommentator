@@ -311,7 +311,8 @@ TABLE_COLUMNS = [
 ]
 
 # "baseline" is the main matrix; "baseline-27b" is the same-model Groq vs Nebius comparison.
-TABLE_TAGS = ("baseline", "baseline-27b")
+# "lora" is the base 1.5B vs the same model + adapter, on identical fights.
+TABLE_TAGS = ("baseline", "baseline-27b", "lora")
 
 
 def results_table(rows: List[dict]) -> str:

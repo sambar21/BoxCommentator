@@ -39,9 +39,10 @@ def build_example(tokenizer, messages: List[dict], max_len: int = 1536) -> Dict[
     token are appended after it.
     """
     user_msgs, reply = messages[:-1], messages[-1]["content"]
-    prompt_ids = tokenizer.apply_chat_template(user_msgs, tokenize=True, add_generation_prompt=True)
-    if isinstance(prompt_ids, dict):               # newer transformers return a BatchEncoding
-        prompt_ids = prompt_ids["input_ids"]
+    # Render to text, then tokenize: apply_chat_template(tokenize=True) returns a list in older
+    # transformers and a BatchEncoding (not a dict) in newer ones.
+    prompt_text = tokenizer.apply_chat_template(user_msgs, tokenize=False, add_generation_prompt=True)
+    prompt_ids = tokenizer(prompt_text, add_special_tokens=False)["input_ids"]
     reply_ids = tokenizer(reply + tokenizer.eos_token, add_special_tokens=False)["input_ids"]
     input_ids = list(prompt_ids) + list(reply_ids)
     labels = [-100] * len(prompt_ids) + list(reply_ids)
@@ -77,7 +78,12 @@ def train(args) -> dict:
     print(f"train {len(train_ds)}  eval {len(eval_ds)}  "
           f"max tokens {max(len(x['input_ids']) for x in train_ds)}")
 
-    model = AutoModelForCausalLM.from_pretrained(args.base, torch_dtype=torch.float32)
+    # fp32 must be explicit: transformers 5 defaults to the checkpoint's bf16, which a T4 can't train in.
+    # The kwarg is `dtype` in new versions and `torch_dtype` in old ones.
+    try:
+        model = AutoModelForCausalLM.from_pretrained(args.base, dtype=torch.float32)
+    except TypeError:
+        model = AutoModelForCausalLM.from_pretrained(args.base, torch_dtype=torch.float32)
     model.gradient_checkpointing_enable()
     model.enable_input_require_grads()
     model = get_peft_model(model, LoraConfig(

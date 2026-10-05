@@ -5,6 +5,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 import csv
 import json
+import re
 from pathlib import Path
 
 import pytest
@@ -182,10 +183,19 @@ class FakeTok:
     pad_token_id = 0
 
     def apply_chat_template(self, msgs, tokenize=True, add_generation_prompt=True):
-        return [ord(c) % 200 + 1 for c in "".join(m["content"] for m in msgs)] + [900]   # 900 = assistant marker
+        assert not tokenize          # build_example must render text and tokenize it itself
+        return "".join(m["content"] for m in msgs) + "<A>"          # <A> = assistant marker
 
     def __call__(self, text, add_special_tokens=False):
-        return {"input_ids": [ord(c) % 200 + 1 for c in text.replace("<eos>", "")] + [999]}   # 999 = eos
+        ids = []
+        for part in re.split(r"(<A>|<eos>)", text):
+            if part == "<A>":
+                ids.append(900)
+            elif part == "<eos>":
+                ids.append(999)
+            else:
+                ids += [ord(c) % 200 + 1 for c in part]
+        return {"input_ids": ids}
 
 
 def test_loss_is_only_on_the_reply():

@@ -1,0 +1,70 @@
+{
+  "teacher": "nebius-teacher",
+  "train": {
+    "examples": 300,
+    "asked": 320,
+    "fights": [
+      5000,
+      5001,
+      5002,
+      5003,
+      5004,
+      5005,
+      5006,
+      5007,
+      5008,
+      5009,
+      5010,
+      5011,
+      5012,
+      5013,
+      5014,
+      5015,
+      5016,
+      5017,
+      5018,
+      5019,
+      5020,
+      5021,
+      5022,
+      5023
+    ],
+    "A": 237,
+    "B": 63,
+    "knockdown": 33
+  },
+  "eval": {
+    "examples": 60,
+    "asked": 64,
+    "fights": [
+      5024,
+      5025,
+      5026,
+      5027,
+      5028,
+      5029
+    ],
+    "A": 42,
+    "B": 18,
+    "knockdown": 8
+  },
+  "requests": 384,
+  "estimated_spend_usd": 0.0375,
+  "stopped": null,
+  "config": {
+    "teacher": "nebius-teacher",
+    "examples": 300,
+    "eval_examples": 60,
+    "b_share": 0.3,
+    "train_fights": 24,
+    "eval_fights": 6,
+    "oversample": 1.4,
+    "max_usd": 0.5,
+    "max_requests": null,
+    "rpm": null,
+    "workers": 4,
+    "seed": 7,
+    "out_dir": "C:\\Users\\Varun\\Documents\\Box.IO_AI_Commentator\\finetune\\data",
+    "dry_run": false
+  }
+}

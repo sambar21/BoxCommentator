@@ -1,0 +1,38 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+smoke,3b,0,fight-1000,A,vllm-3b,excitement_change,1,1,252.78,656.4,15,16,506,,1778,,Johnson's precise jab is keeping Torres at bay in this slow-paced round.
+smoke,3b,0,fight-1000,A,vllm-3b,dominance_shift,5,1,121.12,506.55,14,15,527,,1860,,"Johnson's jab continues to control the range, limiting Torres' offense."
+smoke,3b,0,fight-1000,A,vllm-3b,pace_change,18,1,129.71,571.3,16,17,552,,1979,,"Johnson's relentless jab dominates the range, stalling Torres' high-volume attacks."
+smoke,3b,0,fight-1000,A,vllm-3b,momentum_reversal,23,1,132.39,573.1,16,17,557,,1984,,"Johnson's precise jab keeps Torres at bay, stifling his high-volume assaults."
+smoke,3b,0,fight-1000,A,vllm-3b,dominance_shift,27,1,128.01,569.6,16,17,550,,1956,,"Johnson's jab continues to control the range, limiting Torres' high-volume assaults."
+smoke,3b,0,fight-1000,A,vllm-3b,momentum_reversal,30,1,133.19,603.16,17,18,556,,1998,,"Johnson's jab dominates the range, keeping Torres at bay despite his higher punch volume."
+smoke,3b,0,fight-1000,A,vllm-3b,excitement_change,34,1,126.2,567.77,16,17,544,,1951,,"Johnson's jab keeps Torres at bay with better accuracy, despite higher punch volume."
+smoke,3b,0,fight-1000,A,vllm-3b,target_zone_shift,36,1,128.77,459.53,12,13,543,,1959,,Johnson's jab maintains control as Torres struggles to find openings.
+smoke,3b,0,fight-1000,A,vllm-3b,momentum_reversal,39,1,130.39,544.74,15,16,548,,1964,,Johnson's jab continues to control the range while Torres struggles to land consistently.
+smoke,3b,0,fight-1000,A,vllm-3b,dominance_shift,46,1,121.04,507.44,14,15,531,,1906,,Johnson's precise jab keeps Torres at bay despite his higher punch volume.
+smoke,3b,0,fight-1000,A,vllm-3b,idle_timeout,47,1,124.68,455.77,12,13,532,,1928,,Johnson's jab is keeping Torres at bay despite higher volume.
+smoke,3b,0,fight-1000,A,vllm-3b,excitement_change,50,1,121.52,508.76,14,15,526,,1885,,"Johnson's jab dominates Torres, limiting his volume despite more punches thrown."
+smoke,3b,0,fight-1000,B,vllm-3b,knockdown,55,1,75.6,505.93,16,17,122,,364,,WAIT! TORRES KOSES JOHNSON WITH POWERFUL HOOK!
+smoke,3b,0,fight-1000,A,vllm-3b,excitement_change,56,1,128.84,682.63,20,21,535,,1909,,"Torres' decisive KO showcases his heavy body shots and hooks, countering Johnson's jab dominance."
+smoke,3b,0,fight-1000,A,vllm-3b,momentum_reversal,58,1,131.61,630.08,18,19,549,,1943,,Torres' body shots and hooks are key as he maintains a slight edge over Johnson.
+smoke,3b,0,fight-1003,A,vllm-3b,excitement_change,1,1,67.8,453.12,14,15,506,,1778,,"Johnson's precise jab dominates early exchanges, limiting Torres' volume attacks."
+smoke,3b,0,fight-1003,A,vllm-3b,idle_timeout,2,1,119.4,562.81,16,17,512,,1840,,"Johnson's jab continues to control the pace, limiting Torres' high-volume assaults."
+smoke,3b,0,fight-1003,A,vllm-3b,idle_timeout,4,1,126.84,598.03,17,18,534,,1924,,"Johnson's jab keeps Torres at bay, forcing him to reduce his high-volume assault."
+smoke,3b,0,fight-1003,A,vllm-3b,target_zone_shift,5,1,129.52,491.48,13,14,538,,1938,,"Johnson's jab maintains control, cutting down Torres' relentless assault."
+smoke,3b,0,fight-1003,A,vllm-3b,pace_change,10,1,125.6,542.44,15,16,532,,1934,,"Johnson's jab is keeping Torres at bay, reducing his high-volume assault."
+smoke,3b,0,fight-1003,A,vllm-3b,dominance_shift,16,1,127.34,572.13,16,17,536,,1938,,"Johnson's jab continues to control the action, limiting Torres' high-volume assaults."
+smoke,3b,0,fight-1003,A,vllm-3b,excitement_change,18,1,117.4,477.95,13,14,539,,1935,,"Johnson's jab maintains control, limiting Torres' high-volume assaults."
+smoke,3b,0,fight-1003,A,vllm-3b,dominance_shift,19,1,143.56,560.0,15,16,552,,2000,,"Johnson's jab dominates, keeping Torres at bay despite his higher punch volume."
+smoke,3b,0,fight-1003,A,vllm-3b,idle_timeout,21,1,122.78,510.89,14,15,536,,1934,,Johnson's jab continues to keep Torres at bay despite lower landing rate.
+smoke,3b,0,fight-1003,A,vllm-3b,dominance_shift,24,1,128.15,434.01,11,12,535,,1913,,Johnson's jab maintains distance as Torres struggles with accuracy.
+smoke,3b,0,fight-1003,A,vllm-3b,momentum_reversal,27,1,127.44,515.94,14,15,543,,1984,,"Johnson's jab keeps Torres at bay, maintaining distance despite lower accuracy."
+smoke,3b,0,fight-1003,B,vllm-3b,knockdown,30,1,76.24,345.39,10,11,139,,459,,WAIT! TORRES' KO SEIZES CONTROL!
+smoke,3b,0,fight-1003,A,vllm-3b,dominance_shift,31,1,125.68,542.68,15,16,533,,1906,,Torres' relentless body shots finally force Johnson into a perilous position.
+smoke,3b,0,fight-1003,A,vllm-3b,idle_timeout,32,1,121.16,565.81,16,17,522,,1875,,"Torres' heavy body shots put Johnson under pressure, matching his own precision."
+smoke,3b,0,fight-1003,A,vllm-3b,idle_timeout,37,1,130.86,520.79,14,15,538,,1932,,"Torres' body shots maintain pressure, countering Johnson's precision."
+smoke,3b,0,fight-1003,A,vllm-3b,momentum_reversal,38,1,128.33,547.17,15,16,543,,1944,,Torres' relentless body shots keep Johnson on the defensive despite his accuracy.
+smoke,3b,0,fight-1003,A,vllm-3b,momentum_stable,42,1,126.25,431.74,11,12,529,,1904,,Johnson's superior accuracy limits Torres' effective body shots.
+smoke,3b,0,fight-1003,A,vllm-3b,target_zone_shift,44,1,124.89,514.46,14,15,527,,1903,,Johnson's precision punches are keeping Torres' heavy body shots from connecting.
+smoke,3b,0,fight-1003,A,vllm-3b,dominance_shift,49,1,124.36,486.7,13,14,528,,1897,,Johnson's precise punches are nullifying Torres' heavy body shots.
+smoke,3b,0,fight-1003,A,vllm-3b,momentum_reversal,53,1,126.98,488.99,13,14,537,,1952,,Johnson's accurate punches are countering Torres' powerful body shots.
+smoke,3b,0,fight-1003,B,vllm-3b,excitement_peak,57,1,73.97,533.71,17,18,121,,384,,AND NOW TORRES SLAMS JOHNSON WITH A POWERFUL UPPER CUT!
+smoke,3b,0,fight-1003,A,vllm-3b,pace_change,58,1,129.11,575.13,16,17,539,,1900,,"Torres' upper cut hits Johnson, but Johnson's accuracy keeps him dangerous."

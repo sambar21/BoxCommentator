@@ -102,7 +102,7 @@ def _fmt(v, unit=""):
 def chart_ttft(rows, out: Path) -> bool:
     """Headline: time-to-first-token p50 and p95 per backend (baseline runs)."""
     base = [r for r in rows if r["tag"] == "baseline" and r["concurrency"] == 1
-            and r["context_mode"] == "recent" and complete(r)]
+            and r["context_mode"] == "recent" and complete(r) and (r.get("error_rate") or 0) < 1.0]
     latest: Dict[str, dict] = {}
     for r in base:
         latest[r["label"]] = r
@@ -306,14 +306,18 @@ CHARTS = {
 TABLE_COLUMNS = [
     ("label", "Backend"), ("ttft_p50_ms", "TTFT p50 (ms)"), ("ttft_p95_ms", "TTFT p95 (ms)"),
     ("ttft_b_p50_ms", "Knockdown TTFT p50 (ms)"), ("decode_tps", "Tokens/s"),
-    ("cost_per_fight_usd", "$/fight"), ("knockdown_recall_described", "Knockdowns called"),
-    ("invented_per_100", "Invented stats /100"),
+    ("cost_per_fight_usd", "$/fight"), ("knockdown_recall_described", "Knockdowns described"),
+    ("invented_per_100", "Invented stats /100"), ("error_rate", "Errors"),
 ]
+
+# "baseline" is the main matrix; "baseline-27b" is the same-model Groq vs Nebius comparison.
+TABLE_TAGS = ("baseline", "baseline-27b")
 
 
 def results_table(rows: List[dict]) -> str:
-    base = [r for r in rows if r["tag"] == "baseline" and r["concurrency"] == 1
-            and r["context_mode"] == "recent"]
+    # A run where every request failed (wrong model id, dead server, ...) measured nothing.
+    base = [r for r in rows if r["tag"] in TABLE_TAGS and r["concurrency"] == 1
+            and r["context_mode"] == "recent" and (r.get("error_rate") or 0) < 1.0]
     latest: Dict[str, dict] = {}
     for r in base:
         latest[r["label"]] = r
@@ -331,7 +335,7 @@ def results_table(rows: List[dict]) -> str:
                 cells.append(f"{v}" + (" *(partial)*" if r.get("stopped") else ""))
             elif v is None:
                 cells.append("n/a")
-            elif key == "knockdown_recall_described":
+            elif key in ("knockdown_recall_described", "error_rate"):
                 cells.append(f"{v:.0%}")
             elif key == "cost_per_fight_usd":
                 cells.append(f"{v:.4f}")

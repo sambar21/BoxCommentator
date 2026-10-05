@@ -1,0 +1,471 @@
+tag,label,rep,fight_id,track,backend,event_type,punch_index,ok,ttft_ms,total_ms,n_chunks,n_tokens,prompt_tokens,cached_tokens,prompt_chars,invented,text
+caching_full,3b,0,fight-1000,A,vllm-3b,excitement_change,1,1,61.86,458.49,14,15,506,,1778,,Johnson's disciplined jab is holding Torres at bay early in the round.
+caching_full,3b,0,fight-1000,A,vllm-3b,dominance_shift,5,1,145.39,603.17,16,17,546,,1951,,Johnson's precise jab continues to keep Torres on the back foot despite lower volume.
+caching_full,3b,0,fight-1000,A,vllm-3b,pace_change,18,1,157.14,614.88,16,17,590,,2172,,Torres' early aggression is being nullified by Johnson's pinpoint jab control.
+caching_full,3b,0,fight-1000,A,vllm-3b,momentum_reversal,23,1,161.93,564.13,14,15,612,,2255,,"Johnson's relentless jab keeps Torres pinned down, limiting his early aggression."
+caching_full,3b,0,fight-1000,A,vllm-3b,dominance_shift,27,1,160.04,529.98,13,14,616,,2301,,"Johnson's jab dominates Torres, keeping him on the back foot."
+caching_full,3b,0,fight-1000,A,vllm-3b,momentum_reversal,30,1,163.05,618.85,16,17,633,,2389,,"Johnson's precise jab continues to dominate Torres, forcing him into a defensive posture."
+caching_full,3b,0,fight-1000,A,vllm-3b,excitement_change,34,1,160.7,532.58,13,14,639,,2430,,"Johnson's jab maintains control, forcing Torres into defensive postures."
+caching_full,3b,0,fight-1000,A,vllm-3b,target_zone_shift,36,1,162.16,591.05,15,16,652,,2524,,"Johnson's jab consistently controls the action, pinning Torres in defensive positions."
+caching_full,3b,0,fight-1000,A,vllm-3b,momentum_reversal,39,1,162.69,623.99,16,17,677,,2635,,"Johnson's jab continues to dictate the pace, pinning Torres in defensive positions."
+caching_full,3b,0,fight-1000,A,vllm-3b,dominance_shift,46,1,163.23,739.7,20,21,681,,2669,,"Johnson's jab remains the key, consistently dictating the pace and pinning Torres in defensive positions."
+caching_full,3b,0,fight-1000,A,vllm-3b,idle_timeout,47,1,171.5,632.68,16,17,706,,2813,,"Johnson's jab holds Torres at bay, maintaining control and dictating the pace."
+caching_full,3b,0,fight-1000,A,vllm-3b,excitement_change,50,1,161.6,623.82,16,17,720,,2874,,Johnson's relentless jab continues to control the action and force Torres into defensive positions.
+caching_full,3b,0,fight-1000,B,vllm-3b,knockdown,55,1,65.42,501.49,15,16,122,,364,,WAIT! TORRES SLAMS JOHNSON TO THE GROUND!
+caching_full,3b,0,fight-1000,A,vllm-3b,excitement_change,56,1,182.02,581.49,14,15,753,,3010,,"Torres' powerful combination finally lands, sending Johnson to the canvas."
+caching_full,3b,0,fight-1000,A,vllm-3b,momentum_reversal,58,1,172.47,576.76,14,15,773,,3079,,Torres' heavy hook combination finally breaks through Johnson's jab defense.
+caching_full,3b,0,fight-1001,A,vllm-3b,excitement_change,1,1,70.75,786.84,25,26,525,,1870,,"Garcia's jab holds early advantage as he lands consistently, but Alvarez's heavy body shots could unsettle him soon."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,13,1,156.38,731.58,20,21,591,,2159,,"Alvarez's body shots threaten to unsettle Garcia, who struggles to maintain his high accuracy."
+caching_full,3b,0,fight-1001,A,vllm-3b,pace_change,14,1,164.58,798.07,22,23,624,,2353,,"Alvarez's body shots are putting pressure on Garcia, who continues to struggle with accuracy despite his jab."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,15,1,163.28,735.78,20,21,632,,2405,,"Alvarez's relentless body shots continue to pressure Garcia, who struggles to keep up with accuracy."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,18,1,169.47,686.16,18,19,669,,2585,,"Alvarez's body shots remain effective, while Garcia's accuracy wavers under pressure."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,21,1,163.24,771.11,21,22,669,,2605,,"Alvarez's body shots maintain pressure, while Garcia's accuracy continues to falter under the assault."
+caching_full,3b,0,fight-1001,A,vllm-3b,target_zone_shift,27,1,162.66,737.23,20,21,684,,2694,,"Alvarez's body shots still hold, but Garcia's accuracy starts to slip under the pressure."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,29,1,165.89,714.85,19,20,701,,2774,,"Alvarez's body shots continue to pressure Garcia, whose accuracy is slipping despite the jab."
+caching_full,3b,0,fight-1001,A,vllm-3b,pace_change,31,1,166.39,685.3,18,19,725,,2908,,Alvarez's body shots remain effective as Garcia's accuracy begins to slip under pressure.
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,33,1,172.78,717.35,19,20,743,,3011,,"Alvarez's body shots remain effective, while Garcia's accuracy continues to slip under pressure."
+caching_full,3b,0,fight-1001,A,vllm-3b,target_zone_shift,35,1,171.19,776.39,21,22,755,,3068,,"Alvarez's relentless body shots are significantly impacting Garcia's accuracy, which remains low despite the jab."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,36,1,173.47,695.45,18,19,775,,3196,,"Alvarez's body shots continue to wear down Garcia, who struggles to maintain accuracy."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,37,1,173.38,637.1,16,17,802,,3319,,Alvarez's body shots continue to erode Garcia's already poor accuracy.
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,38,1,174.18,785.08,21,22,814,,3365,,"Alvarez's relentless body shots are continuing to diminish Garcia's accuracy, despite the challenger's jab."
+caching_full,3b,0,fight-1001,B,vllm-3b,knockdown,39,1,75.0,367.07,10,11,128,,416,,WAIT ALVAREZ FALLING BACK HARD!
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,40,1,195.94,746.41,19,20,851,,3506,33,"Alvarez's body shots have severely impacted Garcia's accuracy, now at 33%."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,41,1,173.19,783.48,21,22,850,,3493,,"Alvarez's relentless body shots continue to decimate Garcia's accuracy, now just 33%."
+caching_full,3b,0,fight-1001,A,vllm-3b,pace_change,47,1,183.82,821.77,22,23,887,,3651,,"Alvarez's relentless body shots have reduced Garcia's accuracy to just 33%, a concerning drop."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,53,1,193.64,773.07,20,21,920,,3787,,"Alvarez's body shots have cut Garcia's accuracy to 33%, a significant drop."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_stable,54,1,186.75,708.1,18,19,925,,3814,,Alvarez's relentless body shots have sharply dropped Garcia's accuracy to 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,pace_change,56,1,191.53,770.94,20,21,949,,3922,,Alvarez's relentless body shots have nearly halved Garcia's accuracy to just 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,61,1,191.67,745.83,19,20,969,,3999,,Alvarez's body shots have nearly cut Garcia's accuracy in half to 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,66,1,193.16,861.24,23,24,980,,4072,,"Alvarez's relentless body shots have all but eliminated Garcia's accuracy, now at an alarming 33%."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,70,1,197.5,779.43,20,21,1006,,4149,,Alvarez's relentless body shots have nearly wiped out Garcia's accuracy to just 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,excitement_change,71,1,197.0,841.72,22,23,1030,,4268,,"Alvarez's body shots continue to devastate Garcia, dropping his accuracy to an alarming 33%."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_stable,73,1,199.93,906.03,24,25,1048,,4356,,"Alvarez's relentless body shots have cut Garcia's accuracy to a shocking 33%, nearly eliminating it entirely."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,75,1,240.07,829.11,20,21,1095,,4547,,Alvarez's relentless body shots have further slashed Garcia's accuracy to a concerning 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,76,1,203.27,760.92,19,20,1088,,4564,,Alvarez's relentless body shots have nearly eliminated Garcia's accuracy to just 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,77,1,203.84,762.39,19,20,1106,,4632,,Alvarez's body shots have nearly eliminated Garcia's accuracy to a concerning 33%.
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,78,1,213.18,861.32,22,23,1137,,4750,,"Alvarez's body shots have virtually eliminated Garcia's accuracy to 33%, a critical turning point."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,80,1,209.97,915.83,24,25,1143,,4813,,"Alvarez's relentless body shots have nearly eliminated Garcia's accuracy to just 33%, a critical turning point."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,82,1,213.28,861.16,22,23,1182,,5027,,"Alvarez's relentless body shots have nearly eliminated Garcia's accuracy to 33%, a pivotal moment."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,83,1,225.99,872.86,22,23,1203,,5080,,"Alvarez's relentless body shots have nearly eliminated Garcia's accuracy to 33%, a pivotal moment."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,84,1,230.27,877.87,22,23,1223,,5173,,"Garcia's accuracy has plummeted to 33%, nearly eliminated by Alvarez's relentless body shots."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_stable,86,1,218.44,865.62,22,23,1240,,5263,,"Alvarez's relentless body shots have reduced Garcia's accuracy to just 33%, a critical moment."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,88,1,232.57,912.4,23,24,1272,,5383,,"Alvarez's relentless body shots have decisively cut Garcia's accuracy to 33%, a pivotal moment."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_stable,89,1,232.35,916.62,23,24,1287,,5492,,"Garcia's accuracy drops to 33%, a critical moment as Alvarez's relentless body shots take effect."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,95,1,224.91,906.93,23,24,1311,,5563,,"Alvarez's relentless body shots have reduced Garcia's accuracy to a concerning 33%, nearly eliminating it."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,105,1,235.52,919.55,23,24,1330,,5703,,"Alvarez's relentless body shots have cut Garcia's accuracy to a concerning 33%, nearly eliminating it."
+caching_full,3b,0,fight-1001,A,vllm-3b,excitement_change,107,1,236.82,858.77,21,22,1351,,5811,,"Alvarez's relentless body shots continue to decimate Garcia's accuracy, now just 33%."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,109,1,242.37,925.25,23,24,1380,,5907,,"Alvarez's relentless body shots have nearly eliminated Garcia's accuracy to just 33%, a critical moment."
+caching_full,3b,0,fight-1001,A,vllm-3b,idle_timeout,110,1,242.41,922.89,23,24,1396,,5987,,"Alvarez's relentless body shots have nearly eliminated Garcia's accuracy to just 33%, a pivotal moment."
+caching_full,3b,0,fight-1001,B,vllm-3b,knockdown,112,1,65.62,536.63,16,17,121,,385,,WAIT! ALVAREZ COLLAPSES UNDER GARCIA'S CROSS!
+caching_full,3b,0,fight-1001,A,vllm-3b,target_zone_shift,113,1,258.94,762.29,17,18,1434,,6124,,"Garcia's cross breaks through Alvarez's nearly eliminated accuracy, threatening a comeback."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,116,1,228.01,823.43,20,21,1432,,6152,,"Garcia's cross finds gaps in Alvarez's nearly eliminated accuracy, setting up a potential comeback."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,123,1,237.57,801.15,19,20,1460,,6324,,"Garcia's cross exploits Alvarez's nearly eliminated accuracy, reigniting the fight's momentum."
+caching_full,3b,0,fight-1001,A,vllm-3b,momentum_reversal,137,1,238.92,924.74,23,24,1486,,6442,,"Garcia's cross capitalizes on Alvarez's nearly eliminated accuracy, reinvigorating the fight's momentum."
+caching_full,3b,0,fight-1001,A,vllm-3b,dominance_shift,146,1,252.26,906.47,22,23,1506,,6518,,"Garcia's cross hits Alvarez hard, sparking a potential comeback as his accuracy drops to 33%."
+caching_full,3b,0,fight-1001,A,vllm-3b,target_zone_shift,149,1,244.84,843.2,20,21,1523,,6606,,"Garcia's cross slices through Alvarez's nearly eliminated accuracy, reigniting the fight's momentum."
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,1,1,70.61,531.93,16,17,511,,1811,,Torres struggles to find rhythm as Alvarez maintains tight pressure with efficient body shots.
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,3,1,144.12,576.38,15,16,542,,2012,,Torres continues to struggle as Alvarez's body shots keep him at bay.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,5,1,152.94,612.64,16,17,579,,2166,,Torres' slow start continues as Alvarez's body shots keep him neutralized.
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,18,1,150.76,728.47,20,21,590,,2223,45,"Torres continues to struggle under Alvarez's relentless body shots, maintaining only 45% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,19,1,159.88,824.12,23,24,619,,2355,20,"Torres continues to struggle, landing just 2 out of 20 punches despite 45% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,20,1,167.53,684.59,18,19,660,,2482,,Torres' slow starts continue as Alvarez's body shots force him into a defensive shell.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,21,1,161.6,741.83,20,21,667,,2534,,Torres' 45% accuracy remains woeful as Alvarez's body shots dominate every exchange.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,23,1,170.15,602.48,15,16,698,,2657,,Torres' poor accuracy persists as Alvarez's body shots dominate every exchange.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,25,1,163.16,653.18,17,18,697,,2703,,Torres' poor accuracy continues as Alvarez's body shots maintain control over every exchange.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,29,1,168.12,659.61,17,18,715,,2814,,Torres' poor accuracy remains as Alvarez's body shots continue to dominate each exchange.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,30,1,167.21,715.49,19,20,734,,2926,,"Alvarez's body shots maintain complete control, forcing Torres to fight defensively with poor accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,40,1,174.43,1104.91,32,33,758,,3061,,"Alvarez's relentless body shots continue to dominate the exchanges, keeping Torres off balance with a 50% accuracy against his 66.7%."
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,41,1,180.14,938.2,26,27,800,,3208,,Alvarez's body shots keep Torres off balance with a dismal 50% accuracy while he lands twice as many punches.
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,43,1,213.45,910.41,24,25,837,,3352,,"Alvarez's body shots maintain control, forcing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,45,1,183.87,879.11,24,25,844,,3396,,Alvarez's relentless body shots have reduced Torres to a dismal 50% accuracy while he lands more punches.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,47,1,193.05,802.66,21,22,879,,3537,,Alvarez's relentless body shots keep Torres on the defensive with a dismal 50% accuracy.
+caching_full,3b,0,fight-1002,B,vllm-3b,dominance_shift,49,1,74.81,301.55,8,9,123,,385,,BUT PLAYER TWO RULES NOW!
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,50,1,192.7,1067.39,30,31,887,,3579,,"Alvarez's relentless body shots force Torres into a defensive shell with a dismal 50% accuracy, but momentum clearly favors P2 now."
+caching_full,3b,0,fight-1002,B,vllm-3b,dominance_shift,60,1,73.35,430.29,12,13,121,,397,,BUT ALVAREZ DOMINATES EVERY MOVE!
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,61,1,237.96,964.83,25,26,940,,3801,,"Alvarez's body shots continue to dominate, pushing Torres into a defensive shell with a mere 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,62,1,188.23,942.71,26,27,957,,3854,,"Alvarez's relentless body shots maintain complete control, pushing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,64,1,203.24,842.13,22,23,990,,4045,,Alvarez's relentless body shots keep Torres in a defensive shell with a 50% accuracy rate.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,67,1,197.78,926.98,25,26,1005,,4127,,"Alvarez's body shots maintain complete control, pushing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,70,1,204.91,911.16,24,25,1030,,4227,,Alvarez's relentless body shots continue to force Torres into a defensive shell with a dismal 50% accuracy.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,79,1,199.31,903.84,24,25,1044,,4327,,"Alvarez's relentless body shots continue to force Torres into a defensive shell, dropping his accuracy to 50%."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,82,1,215.12,980.71,26,27,1085,,4497,,"Alvarez's relentless body shots maintain complete control, pushing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,83,1,244.79,921.5,23,24,1126,,4687,,Alvarez's relentless body shots have pushed Torres into a defensive shell with a mere 50% accuracy.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,84,1,218.61,834.72,21,22,1131,,4731,,Alvarez's body shots keep Torres in a defensive shell with a dismal 50% accuracy.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,87,1,219.42,954.5,25,26,1154,,4787,,"Alvarez's body shots maintain complete control, pushing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,89,1,251.79,1018.33,26,27,1186,,4927,,"Alvarez's relentless body shots have dropped Torres to a mere 50% accuracy, keeping him in a defensive shell."
+caching_full,3b,0,fight-1002,B,vllm-3b,dominance_shift,90,1,78.35,368.65,10,11,130,,407,,BUT PLAYER 2 IS FULL CONTROL NOW!
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,91,1,228.01,963.77,25,26,1195,,5003,,"Alvarez's body shots maintain full control, pushing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,92,1,219.41,984.53,26,27,1213,,5090,,"Alvarez's relentless body shots continue to dominate, pushing Torres into a defensive shell with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,94,1,259.52,914.59,22,23,1278,,5369,,Alvarez's relentless body shots keep Torres in a defensive shell with a dismal 50% accuracy.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,97,1,224.77,902.89,23,24,1278,,5371,,"Alvarez's relentless body shots keep Torres in a defensive shell, matching his own 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,108,1,221.97,1023.03,27,28,1286,,5443,,"Alvarez's relentless body shots continue to dominate, keeping Torres in a defensive shell with both fighters at 50% accuracy."
+caching_full,3b,0,fight-1002,B,vllm-3b,knockdown,114,1,74.95,395.42,11,12,125,,394,,WAIT! ALVAREZ DROPPED!
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,115,1,274.42,866.21,20,21,1332,,5603,,"Alvarez's relentless body shots drop Torres again, maintaining their 50% accuracy dominance."
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,120,1,226.15,850.24,21,22,1342,,5635,,"Alvarez's relentless body shots continue to dominate, dropping Torres again with 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,135,1,229.82,883.66,22,23,1370,,5796,,"Alvarez's body shots maintain complete control, dropping Torres again with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,136,1,230.37,882.06,22,23,1382,,5875,,"Alvarez's body shots maintain complete control, dropping Torres again with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,137,1,276.57,959.36,23,24,1431,,6077,,"Alvarez's relentless body shots maintain complete control, dropping Torres again with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,145,1,244.89,925.94,23,24,1448,,6175,,"Alvarez's relentless body shots continue to dominate, dropping Torres again with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,155,1,247.34,869.05,21,22,1458,,6240,,Alvarez's relentless body shots keep Torres off-balance with a dismal 50% accuracy.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,157,1,253.68,965.54,24,25,1486,,6322,,"Alvarez's body shots maintain complete control, keeping Torres off-balance with a dismal 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,162,1,240.66,862.06,21,22,1493,,6395,,Alvarez's precise body shots keep Torres off-balance with a consistent 50% accuracy.
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,166,1,240.6,895.22,22,23,1510,,6447,,"Alvarez's body shots continue to dominate, leaving Torres with a dismal 50% accuracy rate."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,170,1,246.2,848.44,20,21,1535,,6568,,"Alvarez's body shots still control the action, keeping Torres at 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,174,1,243.5,843.61,20,21,1544,,6597,,"Alvarez's relentless body shots maintain complete control, keeping Torres at 50% accuracy."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,181,1,248.51,879.08,21,22,1582,,6808,,Alvarez's relentless body shots continue to hold Torres to a stubborn 50% accuracy rate.
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,182,1,251.85,885.2,21,22,1591,,6826,,"Alvarez's body shots maintain complete control, keeping Torres' accuracy stubbornly at 50%."
+caching_full,3b,0,fight-1002,B,vllm-3b,knockdown,183,1,76.14,519.12,15,16,126,,399,,WAIT! ALVAREZ DROPPED BY TORRES CROSS!
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,184,1,259.31,679.11,14,15,1616,,6895,,"Torres' cross connects, briefly breaking Alvarez's relentless body control."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,185,1,250.53,642.46,13,14,1641,,7010,,Torres' timely cross breaks Alvarez's relentless body control momentarily.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,187,1,229.21,618.93,13,14,1640,,7093,,Torres' cross finally breaks Alvarez's relentless body control momentarily.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,188,1,258.16,645.55,13,14,1669,,7199,,Torres' timely cross briefly breaks Alvarez's relentless body control.
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,193,1,254.22,670.78,14,15,1674,,7264,,Torres' timely cross briefly disrupts Alvarez's relentless body control.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,197,1,240.57,663.73,14,15,1677,,7307,,Torres' timely cross disrupts Alvarez's relentless body control momentarily.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,202,1,244.75,635.5,13,14,1695,,7376,,Torres' timely cross briefly cracks Alvarez's relentless body defense.
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,208,1,268.09,844.46,19,20,1725,,7505,,"Torres' timely cross briefly cracks Alvarez's relentless body defense, giving Torres a brief edge."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,212,1,264.09,686.23,14,15,1735,,7596,,Torres' timely cross forces Alvarez to crack under relentless body shots.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,218,1,263.74,841.45,19,20,1768,,7720,,"Torres' timely cross briefly cracks Alvarez's relentless body defense, regaining some control momentarily."
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,220,1,265.22,779.86,17,18,1771,,7800,,"Torres' timely cross briefly cracks Alvarez's defense, regaining some control momentarily."
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,223,1,270.26,842.26,19,20,1790,,7895,,Torres' timely cross slightly shifts momentum back to P1 with Alvarez momentarily off-balance.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,229,1,268.53,968.97,23,24,1809,,8002,,"Torres' timely cross briefly cracks Alvarez's defense, reasserting control and shifting momentum back to P1."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,230,1,268.97,910.82,21,22,1828,,8094,,"Torres' timely cross reasserts control, shifting momentum back to P1 despite Alvarez's resilience."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,231,1,289.48,928.73,21,22,1858,,8211,,"Torres' timely cross reasserts control, shifting momentum back to P1 despite Alvarez's resilience."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,232,1,278.45,885.85,20,21,1882,,8327,,"Torres' timely cross reasserts control, shifting momentum decisively back to Player 1."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,243,1,275.83,880.43,20,21,1898,,8407,,"Torres' timely cross shifts momentum decisively back to Player 1, despite Alvarez's resilience."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,247,1,279.8,888.38,20,21,1918,,8504,,"Torres' timely cross shifts momentum decisively back to Player 1, despite Alvarez's resilience."
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,248,1,285.56,924.23,21,22,1936,,8594,,"Torres' timely cross shifts momentum decisively back to Player 1, despite Alvarez's resilient defense."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,249,1,285.99,737.37,15,16,1953,,8704,,Torres' timely cross gains control back from Alvarez's relentless body shots.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,251,1,290.81,806.08,17,18,1979,,8784,,Torres' timely cross shifts momentum back to Player 1 despite Alvarez's resilience.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,253,1,288.82,865.69,19,20,1983,,8843,,Torres' timely cross shifts momentum decisively back to Player 1 despite Alvarez's resilience.
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,255,1,289.01,986.17,23,24,1998,,8916,,Torres' timely cross shifts momentum decisively back to Player 1 despite Alvarez's resilience and dominant body shots.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,256,1,288.92,1084.59,26,27,2030,,9111,,"Torres' timely cross gains control back, shifting momentum decisively to Player 1 despite Alvarez's resilience and heavy body shots."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,257,1,291.88,1063.85,25,26,2056,,9247,,"Torres' timely cross gains full control, shifting momentum decisively back to Player 1 despite Alvarez's heavy body shots."
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,259,1,312.04,972.75,21,22,2092,,9384,,Torres' timely cross shifts momentum decisively back to Player 1 despite Alvarez's heavy body shots.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,261,1,296.34,1072.92,25,26,2106,,9449,,"Torres' timely cross gains full control, shifting momentum decisively back to Player 1 despite Alvarez's heavy body shots."
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,264,1,315.98,1081.8,25,26,2138,,9605,,"Torres' timely cross gains full control, shifting momentum decisively back to Player 1 despite Alvarez's heavy body shots."
+caching_full,3b,0,fight-1002,A,vllm-3b,round_context,271,1,321.24,1087.99,25,26,2165,,9786,,"Torres' timely cross gains full control, shifting momentum decisively back to Player 1 despite Alvarez's heavy body shots."
+caching_full,3b,0,fight-1002,A,vllm-3b,excitement_change,273,1,320.95,1089.8,25,26,2181,,9832,,"Torres' timely cross gains full control, shifting momentum decisively back to Player 1 despite Alvarez's heavy body shots."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,285,1,325.08,971.86,21,22,2217,,10016,,Torres' timely cross shifts momentum decisively back to Player 1 despite Alvarez's heavy body shots.
+caching_full,3b,0,fight-1002,B,vllm-3b,knockdown,288,1,80.67,464.58,13,14,129,,416,,WAIT! ALVAREZ'S CROSS KOSES TORRES!
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,289,1,321.39,840.46,17,18,2232,,10051,,Alvarez's relentless body shots finally catch Torres off balance for a decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,291,1,301.61,766.32,15,16,2248,,10107,,Alvarez's relentless body shots finally overwhelmed Torres for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,305,1,297.21,817.38,17,18,2261,,10228,,Alvarez's relentless body shots finally caught Torres off guard for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,320,1,309.3,875.67,18,19,2276,,10289,,"Alvarez's relentless body shots finally landed the knockout, exploiting Torres' poor defense."
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,324,1,315.4,874.34,18,19,2301,,10432,,Alvarez's relentless body shots finally exploited Torres' poor defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,333,1,312.99,900.96,19,20,2316,,10524,,Torres' poor defense finally succumbed to Alvarez's relentless body shots for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,340,1,315.47,909.77,19,20,2336,,10618,,Alvarez's relentless body shots finally broke through Torres' porous defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,349,1,339.13,933.34,19,20,2369,,10777,,Alvarez's relentless body shots finally broke through Torres' porous defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,359,1,320.55,948.07,20,21,2369,,10825,,Alvarez's relentless body shots finally secured the decisive KO after breaking through Torres' porous defense.
+caching_full,3b,0,fight-1002,A,vllm-3b,idle_timeout,360,1,314.56,879.09,18,19,2385,,10936,,Alvarez's relentless body shots finally exploited Torres' poor defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,target_zone_shift,361,1,322.97,917.14,19,20,2401,,11019,,Alvarez's relentless body shots finally broke through Torres' porous defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,364,1,345.23,941.92,19,20,2440,,11178,,Alvarez's relentless body shots finally broke through Torres' porous defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,367,1,326.42,925.03,19,20,2441,,11227,,"Alvarez's relentless body shots finally secured the decisive KO, exploiting Torres' porous defense."
+caching_full,3b,0,fight-1002,A,vllm-3b,pace_change,379,1,335.37,889.79,18,19,2460,,11333,,Alvarez's body shots finally broke through Torres' porous defense for a decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,386,1,330.4,928.78,19,20,2486,,11423,,Alvarez's relentless body shots finally broke through Torres' porous defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,dominance_shift,387,1,326.76,918.18,19,20,2496,,11544,,Alvarez's relentless body shots finally broke through Torres' porous defense for a decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_reversal,388,1,338.86,867.47,17,18,2521,,11653,,Alvarez's body shots finally broke through Torres' defense for the decisive KO.
+caching_full,3b,0,fight-1002,A,vllm-3b,momentum_stable,399,1,338.59,931.76,19,20,2533,,11703,,"Alvarez's relentless body shots finally secured the decisive KO, exploiting Torres' porous defense."
+caching_full,3b,0,fight-1003,A,vllm-3b,excitement_change,1,1,70.09,500.2,15,16,506,,1778,,"Johnson's precise jab is keeping Torres at bay, maintaining his slow pace."
+caching_full,3b,0,fight-1003,A,vllm-3b,idle_timeout,2,1,140.7,597.95,16,17,534,,1930,,"Johnson's jab continues to control the range, frustrating Torres' high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,idle_timeout,4,1,145.81,545.5,14,15,573,,2106,,"Johnson's jab keeps Torres at bay, limiting his high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,target_zone_shift,5,1,149.83,633.97,17,18,588,,2185,,Johnson's jab remains the key to controlling the action and limiting Torres' volume attacks.
+caching_full,3b,0,fight-1003,A,vllm-3b,pace_change,10,1,149.1,607.59,16,17,604,,2292,,"Johnson’s jab continues to control the range, restraining Torres’ high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,dominance_shift,16,1,160.27,587.01,15,16,629,,2411,,"Johnson's jab dominates the range, severely restricting Torres' high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,excitement_change,18,1,159.69,618.84,16,17,643,,2475,,"Johnson’s relentless jab maintains complete control, severely limiting Torres’ high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,dominance_shift,19,1,161.46,589.94,15,16,675,,2657,,"Johnson's relentless jab controls range, severely limiting Torres' high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,idle_timeout,21,1,160.76,677.24,18,19,676,,2690,,"Johnson's relentless jab continues to dominate the range, severely limiting Torres' high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,dominance_shift,24,1,162.62,619.43,16,17,695,,2779,,"Johnson's relentless jab dominates range, nearly halting Torres' high-volume attacks."
+caching_full,3b,0,fight-1003,A,vllm-3b,momentum_reversal,27,1,167.38,654.4,17,18,725,,2948,,"Johnson's relentless jab continues to dominate the range, significantly reducing Torres' attack volume."
+caching_full,3b,0,fight-1003,B,vllm-3b,knockdown,30,1,79.49,508.46,15,16,139,,459,,WAIT! TORRES KO'S JOHNSON WITH POWER HOOK!
+caching_full,3b,0,fight-1003,A,vllm-3b,dominance_shift,31,1,173.0,779.05,21,22,748,,3006,,Torres lands a decisive power hook to score the KO as Johnson's jab finally fails to contain him.
+caching_full,3b,0,fight-1003,A,vllm-3b,idle_timeout,32,1,174.52,721.77,19,20,761,,3071,,"Torres' power hook capitalizes on Johnson's jab failure, ending the round decisively."
+caching_full,3b,0,fight-1003,A,vllm-3b,idle_timeout,37,1,178.38,640.15,16,17,794,,3211,,"Torres' decisive power hook exploited Johnson's jab failure, ending the round."
+caching_full,3b,0,fight-1003,A,vllm-3b,momentum_reversal,38,1,173.28,635.57,16,17,811,,3293,,"Torres' power hook exploits Johnson's jab failure, securing the decisive round."
+caching_full,3b,0,fight-1003,A,vllm-3b,momentum_stable,42,1,169.99,690.17,18,19,811,,3328,,"Torres' power hook capitalizes on Johnson's jab failures, securing the decisive round."
+caching_full,3b,0,fight-1003,A,vllm-3b,target_zone_shift,44,1,172.39,693.5,18,19,832,,3429,,"Torres' power hook takes advantage of Johnson's jab failures, securing the decisive round."
+caching_full,3b,0,fight-1003,A,vllm-3b,dominance_shift,49,1,175.72,607.95,15,16,854,,3527,,Torres' power hook exploits Johnson's jab failures for the decisive victory.
+caching_full,3b,0,fight-1003,A,vllm-3b,momentum_reversal,53,1,175.76,639.4,16,17,873,,3649,,Torres' power hook exploits Johnson's jab failures to secure the decisive round.
+caching_full,3b,0,fight-1003,B,vllm-3b,excitement_peak,57,1,77.71,586.26,17,18,121,,384,,AND NOW TORRES SHOTS POUND JOHNSON WITH ALL HIS POWER!
+caching_full,3b,0,fight-1003,A,vllm-3b,pace_change,58,1,198.05,777.64,20,21,906,,3727,,"Torres' relentless power hooks capitalize on Johnson's jab failures, dictating the pace and outcome."
+caching_full,3b,0,fight-1004,A,vllm-3b,excitement_change,1,1,60.49,604.93,19,20,513,,1821,,Alvarez's single body shot dominates early rounds as Torres struggles to land any significant punches.
+caching_full,3b,0,fight-1004,B,vllm-3b,excitement_peak,12,1,63.21,553.69,17,18,117,,365,,AND NOW THE BATTLE HEATS UP! ALVAREZ PUSHES FORWARD!
+caching_full,3b,0,fight-1004,A,vllm-3b,target_zone_shift,13,1,169.98,601.11,15,16,589,,2155,,Alvarez's relentless body shots continue to dominate early exchanges against Torres.
+caching_full,3b,0,fight-1004,A,vllm-3b,pace_change,18,1,159.08,733.82,20,21,609,,2262,,Alvarez's body shots keep Torres at bay as he lands more often and with better accuracy.
+caching_full,3b,0,fight-1004,A,vllm-3b,dominance_shift,26,1,159.96,643.42,17,18,620,,2326,,"Alvarez's body shots maintain control, keeping Torres pinned down despite lower accuracy."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,30,1,160.77,731.21,20,21,642,,2449,,"Alvarez's precise body shots control the action, limiting Torres' effectiveness despite higher landing accuracy."
+caching_full,3b,0,fight-1004,A,vllm-3b,target_zone_shift,42,1,162.01,735.88,20,21,654,,2553,,"Alvarez's body shots remain the key, pinning Torres down even as his accuracy improves."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,46,1,165.11,626.11,16,17,688,,2694,,"Alvarez's body shots maintain control, though Torres' accuracy improves slightly."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,57,1,161.04,676.11,18,19,696,,2741,,"Alvarez's body shots still hold sway, but Torres' accuracy is improving slightly."
+caching_full,3b,0,fight-1004,B,vllm-3b,knockdown,64,1,63.25,493.38,15,16,130,,412,,WAIT ALVAREZ UPPER CUT KNOCKS OUT TORRES!
+caching_full,3b,0,fight-1004,A,vllm-3b,dominance_shift,65,1,182.93,701.26,18,19,742,,2880,,Alvarez's relentless body shots finally caught Torres off balance with an uppercut KO.
+caching_full,3b,0,fight-1004,A,vllm-3b,excitement_change,66,1,172.28,744.86,20,21,752,,2943,,"Alvarez's precise body shots wore down Torres, culminating in a decisive uppercut KO."
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,68,1,167.24,657.5,17,18,762,,3036,,Alvarez's relentless body shots finally secured the KO with a devastating uppercut.
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,70,1,170.92,750.14,20,21,778,,3119,,"Alvarez's relentless body shots gradually wore down Torres, leading to the decisive uppercut KO."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,71,1,177.66,697.09,18,19,814,,3279,,"Alvarez's body shots finally wore down Torres, securing the decisive uppercut KO."
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,73,1,179.04,786.38,21,22,828,,3335,,"Alvarez's relentless body shots continued to wear down Torres, setting up the decisive uppercut KO."
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,74,1,180.57,730.41,19,20,844,,3437,,"Alvarez's relentless body shots finally wore down Torres, securing the decisive uppercut KO."
+caching_full,3b,0,fight-1004,B,vllm-3b,dominance_shift,77,1,72.14,509.11,15,16,115,,351,,BUT ALVAREZ'S POWER IS CRACKING TORES!
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_stable,80,1,197.85,572.3,13,14,872,,3555,,Torres' defense is cracking under Alvarez's relentless body shots.
+caching_full,3b,0,fight-1004,A,vllm-3b,narrative_tension,88,1,183.1,616.88,15,16,892,,3604,,Torres' porous defense is finally cracking under Alvarez's relentless body shots.
+caching_full,3b,0,fight-1004,A,vllm-3b,dominance_shift,91,1,182.88,644.02,16,17,904,,3724,,Alvarez's relentless body shots are finally wearing down Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,excitement_change,92,1,183.36,674.52,17,18,916,,3806,,Alvarez's relentless body shots are finally forcing cracks in Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,94,1,188.68,652.41,16,17,930,,3885,,Alvarez's body shots are finally starting to penetrate Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,95,1,186.45,649.47,16,17,951,,3960,,Alvarez's body shots have finally begun to breach Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,idle_timeout,97,1,194.3,830.15,22,23,964,,4031,,"Alvarez's body shots are finally breaching Torres' porous defense, taking a toll despite lower accuracy."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_stable,99,1,194.37,684.97,17,18,989,,4165,,Alvarez's relentless body shots are finally forcing cracks in Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,104,1,205.8,671.71,16,17,1016,,4303,,Alvarez's relentless body shots finally start to penetrate Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,115,1,196.45,663.72,16,17,1021,,4343,,Alvarez's body shots are finally starting to breach Torres' porous defense.
+caching_full,3b,0,fight-1004,A,vllm-3b,dominance_shift,123,1,193.83,780.46,20,21,1021,,4369,,"Alvarez's body shots are finally starting to breach Torres' porous defense, opening up opportunities."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,134,1,197.55,696.45,17,18,1043,,4478,,"Alvarez's relentless body shots finally breach Torres' porous defense, creating openings."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,144,1,206.72,706.1,17,18,1077,,4654,,"Alvarez's body shots finally breach Torres' defense, opening crucial scoring opportunities."
+caching_full,3b,0,fight-1004,B,vllm-3b,knockdown,146,1,74.01,457.15,13,14,131,,411,,WAIT! ALVAREZ'S POWER SEALS THE DEAL!
+caching_full,3b,0,fight-1004,A,vllm-3b,excitement_change,147,1,221.12,807.98,20,21,1096,,4715,,"Alvarez's relentless body shots finally breached Torres' porous defense, setting up the decisive knockout."
+caching_full,3b,0,fight-1004,A,vllm-3b,momentum_reversal,150,1,204.69,733.82,18,19,1112,,4808,,"Alvarez's body shots finally breached Torres' porous defense, creating crucial scoring opportunities."
+caching_full,3b,0,fight-1005,A,vllm-3b,excitement_change,1,1,71.28,617.87,19,20,522,,1828,,Garcia's jab control and consistent accuracy give him an edge early despite slow overall pace.
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,12,1,146.92,690.75,19,20,563,,2033,,"Garcia's jab continues to control the action, keeping Torres at bay despite slower volume."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,18,1,156.35,615.26,16,17,596,,2205,,"Torres lands fewer times but hits more with body shots, pressuring Garcia."
+caching_full,3b,0,fight-1005,A,vllm-3b,excitement_change,19,1,149.6,667.11,18,19,607,,2263,,"Torres' body shots put pressure on Garcia, who struggles to maintain his jab control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,28,1,158.53,703.58,19,20,632,,2385,,"Torres' relentless body shots continue to apply pressure, forcing Garcia to struggle with jab control."
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,36,1,163.31,567.13,14,15,671,,2563,,Torres' relentless body shots keep Garcia off balance despite slower volume.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,37,1,158.66,733.55,20,21,662,,2548,,"Torres' body shots remain effective, keeping Garcia off-balance even as the pace picks up."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,45,1,169.18,626.13,16,17,702,,2685,,"Torres' body shots remain effective, maintaining pressure despite faster pacing from Garcia."
+caching_full,3b,0,fight-1005,A,vllm-3b,round_context,55,1,170.31,715.03,19,20,718,,2836,,"Torres' body shots are still dominating, keeping Garcia off-balance as the pace increases."
+caching_full,3b,0,fight-1005,B,vllm-3b,dominance_shift,60,1,73.82,481.04,14,15,127,,427,,BUT GARCIA'S POWER CONTROL IS CRUCIAL NOW!
+caching_full,3b,0,fight-1005,A,vllm-3b,narrative_tension,62,1,217.47,883.01,23,24,767,,2955,,"Garcia's power control remains crucial as he counters Torres' relentless body shots, though the pace favors Torres."
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,65,1,172.17,662.08,17,18,764,,3014,,"Garcia counters Torres' body shots, maintaining power control despite faster pacy."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,67,1,173.09,780.42,21,22,778,,3123,,"Garcia counters Torres' relentless body shots with his jab, maintaining power control against the higher volume."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,71,1,178.85,700.25,18,19,800,,3243,,"Garcia's jab effectively counters Torres' relentless body shots, preserving his power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,82,1,177.4,725.61,19,20,810,,3316,,"Garcia's jab consistently counters Torres' relentless body shots, holding onto his power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,87,1,178.64,727.95,19,20,833,,3432,,"Garcia's jab continues to disrupt Torres' relentless body shots, maintaining his power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,99,1,188.53,708.91,18,19,861,,3562,,"Garcia's jab keeps disrupting Torres' relentless body shots, preserving his power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,target_zone_shift,106,1,179.91,759.53,20,21,858,,3569,,"Garcia’s jab consistently holds off Torres’ relentless body shots, keeping his power control intact."
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,108,1,179.85,758.59,20,21,880,,3712,,"Garcia's jab continues to hold off Torres' relentless body shots, maintaining his power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,110,1,187.39,794.02,21,22,904,,3809,,"Garcia's jab remains the key to his power control, countering Torres' relentless body shots."
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,111,1,194.89,714.85,18,19,932,,3929,,Garcia's jab continues to outlast and out-counter Torres' relentless body shots.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,113,1,184.13,735.91,19,20,933,,3962,,"Garcia's jab persists, outlasting Torres' relentless body shots, maintaining power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,115,1,189.16,680.05,17,18,952,,4034,,"Garcia's jab remains the key, outlasting Torres' relentless body shots."
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,121,1,186.68,738.21,19,20,967,,4112,,"Garcia's jab continues to hold off Torres' relentless body shots, maintaining power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,130,1,194.93,686.88,17,18,999,,4260,,"Garcia's jab maintains its edge, countering Torres' relentless body shots."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,134,1,197.78,809.23,21,22,1012,,4343,,"Garcia's jab remains the key, countering Torres' relentless body shots and maintaining power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,target_zone_shift,135,1,197.85,726.31,18,19,1026,,4396,,"Garcia's jab continues to counter Torres' relentless body shots, maintaining power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,137,1,199.08,758.9,19,20,1048,,4527,,"Garcia's jab continues to effectively counter Torres' relentless body shots, maintaining power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,142,1,206.63,764.48,19,20,1073,,4661,,"Garcia's jab continues to hold off Torres' relentless body shots, maintaining power control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,143,1,202.1,758.05,19,20,1077,,4717,,"Garcia's jab maintains power control, countering Torres' relentless body shots once again."
+caching_full,3b,0,fight-1005,B,vllm-3b,dominance_shift,145,1,72.78,297.43,8,9,120,,380,,BUT PLAYER TWO HAS CONTROL NOW!
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,157,1,207.89,824.44,21,22,1111,,4820,,"Garcia's jab holds off Torres' relentless body shots, reasserting his power control advantage."
+caching_full,3b,0,fight-1005,B,vllm-3b,dominance_shift,170,1,72.8,297.19,8,9,123,,382,,BUT PLAYER 2 COMPLETE CONTROL!
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,171,1,216.88,745.56,18,19,1127,,4919,,"Garcia's jab remains the dominant factor, controlling the fight despite faster pacy."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,181,1,205.88,705.14,17,18,1145,,5002,,"Garcia's jab continues to dominate, holding off Torres despite the increased pace."
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,191,1,214.4,595.25,13,14,1178,,5184,,"Garcia's jab dominates, sustaining control despite faster pacing."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,199,1,206.07,820.91,21,22,1176,,5188,,"Garcia's jab remains the key, countering Torres' relentless body shots even with faster pacing."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,213,1,212.08,827.03,21,22,1202,,5291,,"Garcia's jab continues to dominate, countering Torres' relentless body shots even with increased pace."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,227,1,219.64,805.67,20,21,1226,,5464,,"Garcia's jab continues to dominate, countering Torres' relentless body shots despite increased pace."
+caching_full,3b,0,fight-1005,A,vllm-3b,excitement_change,228,1,215.42,863.01,22,23,1235,,5541,,"Garcia's jab remains the dominant factor, countering Torres' relentless body shots even with increased pace."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,230,1,217.52,833.97,21,22,1256,,5624,,"Garcia's jab consistently counters Torres' relentless body shots, maintaining power control even with increased pace."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,231,1,218.48,899.94,23,24,1276,,5771,,"Garcia's jab continues to dominate, countering Torres' relentless body shots even as the pace slightly increases."
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,235,1,227.91,912.88,23,24,1316,,5927,,"Garcia's jab continues to dominate, countering Torres' relentless body shots even as the pace slightly increases."
+caching_full,3b,0,fight-1005,A,vllm-3b,target_zone_shift,249,1,234.22,857.44,21,22,1335,,6029,,"Garcia's jab maintains its edge, countering Torres' relentless body shots despite slight pace increase."
+caching_full,3b,0,fight-1005,B,vllm-3b,knockdown,251,1,76.4,306.54,8,9,130,,406,,WAIT! TORRES HEADSHOT KO!
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,252,1,233.88,676.37,15,16,1354,,6126,,Torres lands a headshot KO after building pressure with relentless body shots.
+caching_full,3b,0,fight-1005,A,vllm-3b,target_zone_shift,260,1,206.65,680.84,16,17,1352,,6117,,Torres' relentless body shots finally pay off with a decisive headshot KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,261,1,229.14,822.77,20,21,1386,,6273,,Torres' relentless body shots finally pay off with a decisive headshot KO in the early rounds.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,263,1,231.36,733.7,17,18,1400,,6362,,"Torres' relentless body shots finally overwhelm Garcia, securing a decisive early round KO."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,270,1,230.32,762.86,18,19,1422,,6468,,Torres' relentless body shots finally pay off with a decisive KO in the early rounds.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,274,1,229.68,702.08,16,17,1431,,6539,,Torres' relentless body shots finally overwhelm Garcia with a decisive early round KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,283,1,237.71,742.45,17,18,1464,,6666,,Torres' relentless body shots finally catch Garcia cold for a decisive early round KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,290,1,235.14,860.32,21,22,1465,,6712,,Torres' relentless body shots finally pay off with a decisive early round KO despite Garcia's jab control.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,295,1,245.11,837.44,20,21,1499,,6858,,Torres' relentless body shots finally capitalize on Garcia's jab control for a decisive early round KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,304,1,240.94,746.4,17,18,1510,,6948,,Torres' relentless body shots finally exploit Garcia's jab control for a decisive KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,308,1,243.23,779.2,18,19,1533,,7075,,Torres' relentless body shots finally capitalize on Garcia's jab control for a decisive KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,311,1,244.66,786.47,18,19,1549,,7130,,Torres' relentless body shots finally capitalize on Garcia's jab control for a decisive KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,312,1,245.26,848.66,20,21,1563,,7220,,"Torres' relentless body shots finally catch Garcia cold with a decisive KO, exploiting his jab control."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,313,1,248.58,849.11,20,21,1585,,7352,,"Torres' relentless body shots finally pay off with a decisive KO, exploiting Garcia's jab control."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,315,1,248.75,759.43,17,18,1599,,7412,,Torres' relentless body shots finally exploit Garcia's jab control for a decisive KO.
+caching_full,3b,0,fight-1005,B,vllm-3b,knockdown,316,1,73.85,360.04,10,11,123,,380,,WAIT! UPPER CUT KO FOR TORSO!
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,317,1,275.73,906.3,21,22,1637,,7546,,Torres' uppercut capitalizes on Garcia's jab control for a decisive KO in Round 2.
+caching_full,3b,0,fight-1005,A,vllm-3b,pace_change,322,1,255.43,854.53,20,21,1649,,7568,,"Torres' uppercut exploits Garcia's jab control for a decisive KO, showcasing his relentless strategy."
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,329,1,259.7,953.1,23,24,1679,,7734,,"Torres' uppercut strikes with precision, exploiting Garcia's jab control for a decisive KO in Round 2."
+caching_full,3b,0,fight-1005,B,vllm-3b,knockdown,334,1,74.68,482.49,14,15,129,,393,,WAIT! GARCIA'S UPPER CUT SHOCKS THE ROOM!
+caching_full,3b,0,fight-1005,A,vllm-3b,excitement_change,335,1,321.07,890.16,19,20,1731,,7910,,"Garcia's uppercut catches Torres cold, exploiting his jab control for a shocking KO."
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,336,1,262.88,865.35,20,21,1738,,7942,,Garcia's uppercut in Round 2 exploited Torres' jab control for a stunning knockout.
+caching_full,3b,0,fight-1005,A,vllm-3b,idle_timeout,338,1,264.36,881.33,20,21,1755,,8058,,"Garcia's uppercut takes Torres by surprise, exploiting his jab control for a shocking KO."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,340,1,269.66,1114.91,28,29,1773,,8165,,"Garcia's uppercut in the late phase of Round 2 took Torres by surprise, exploiting his jab control for a shocking KO."
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,343,1,281.78,885.64,20,21,1812,,8320,,Garcia's uppercut in the late round exploits Torres' jab control for a stunning KO.
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,349,1,287.37,799.96,17,18,1825,,8368,,Garcia's late uppercut exploits Torres' jab control for a stunning KO.
+caching_full,3b,0,fight-1005,B,vllm-3b,excitement_peak,352,1,76.63,395.16,11,12,119,,361,,AND NOW BOTH BOXERS MIX ATTACK WITH FURY!
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_stable,358,1,282.13,855.45,19,20,1838,,8414,,Torres' relentless body shots force Garcia into a late KO with an exploitative uppercut.
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,371,1,278.36,854.4,19,20,1871,,8563,,Torres' relentless body shots set up Garcia's surprise uppercut KO in the late phase.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,382,1,292.77,901.25,20,21,1896,,8694,,Torres' relentless body shots force Garcia into a late phase where an uppercut KO becomes possible.
+caching_full,3b,0,fight-1005,A,vllm-3b,dominance_shift,395,1,278.05,883.14,20,21,1912,,8793,,Torres' relentless body shots create a window for Garcia's late KO with a surprising uppercut.
+caching_full,3b,0,fight-1005,A,vllm-3b,momentum_reversal,400,1,280.75,855.99,19,20,1932,,8878,,Torres' relentless body shots leave Garcia vulnerable as they approach the end of Round 2.
+caching_full,3b,0,fight-1006,A,vllm-3b,excitement_change,1,1,71.03,588.1,18,19,509,,1829,,Alvarez's early body shot holds Johnson at bay as he maintains his patient approach.
+caching_full,3b,0,fight-1006,A,vllm-3b,dominance_shift,7,1,147.9,724.3,20,21,557,,2041,,Alvarez's relentless body shots keep Johnson on the back foot while maintaining his own controlled pace.
+caching_full,3b,0,fight-1006,A,vllm-3b,pace_change,18,1,159.75,673.96,18,19,604,,2290,,Alvarez's early dominance continues with more body shots landing than Johnson's total punches.
+caching_full,3b,0,fight-1006,B,vllm-3b,knockdown,21,1,76.08,423.62,12,13,134,,435,,WAIT ALVAREZ'S CROSS KO JOLLY!
+caching_full,3b,0,fight-1006,A,vllm-3b,momentum_stable,22,1,164.97,622.63,16,17,618,,2341,,Alvarez's body shots maintain an edge over Johnson's overall punch count.
+caching_full,3b,0,fight-1006,A,vllm-3b,idle_timeout,23,1,150.89,722.41,20,21,620,,2339,,"Alvarez's body shots continue to edge Johnson's overall punch count, maintaining his dominant position."
+caching_full,3b,0,fight-1006,A,vllm-3b,momentum_reversal,37,1,164.53,706.33,19,20,659,,2545,,Johnson's body shots are falling short as Alvarez's continue to edge him in overall punch count.
+caching_full,3b,0,fight-1006,A,vllm-3b,pace_change,39,1,167.15,773.26,21,22,681,,2671,,"Alvarez's body shots still dominate Johnson's overall punch count, keeping him on the back foot."
+caching_full,3b,0,fight-1006,A,vllm-3b,momentum_reversal,49,1,174.68,719.12,19,20,712,,2792,,"Alvarez's relentless body shots remain the key factor, keeping Johnson on the back foot."
+caching_full,3b,0,fight-1006,B,vllm-3b,dominance_shift,59,1,73.43,451.69,13,14,121,,372,,BUT PLAYER 1 COMES IN LIKE A LION!
+caching_full,3b,0,fight-1006,A,vllm-3b,round_context,60,1,182.81,643.15,16,17,734,,2873,,Johnson's aggressive jab threatens to turn the tide against Alvarez's relentless body shots.
+caching_full,3b,0,fight-1007,A,vllm-3b,excitement_change,1,1,70.17,903.51,29,30,516,,1824,,"Alvarez's slow start shows his preference for building pressure, while Torres' lack of impact hints at his reliance on volume over knockout power."
+caching_full,3b,0,fight-1007,A,vllm-3b,dominance_shift,5,1,153.38,845.01,24,25,584,,2156,,"Alvarez's body shots suggest he's setting up, while Torres' lack of impact confirms his reliance on volume."
+caching_full,3b,0,fight-1007,A,vllm-3b,pace_change,18,1,161.3,709.68,19,20,630,,2389,,Torres' volume attacks are evident as he lands more body shots than Alvarez despite lower accuracy.
+caching_full,3b,0,fight-1007,A,vllm-3b,dominance_shift,24,1,196.14,626.02,15,16,659,,2503,,"Torres' volume attacks are clear, outlanding Alvarez despite lower accuracy."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_stable,26,1,154.5,642.45,17,18,638,,2491,,"Torres continues to overwhelm Alvarez with volume, landing more body shots despite lower accuracy."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,27,1,162.24,563.69,14,15,653,,2553,,Torres maintains volume but underperforms in accuracy compared to Alvarez.
+caching_full,3b,0,fight-1007,A,vllm-3b,pace_change,28,1,162.93,592.69,15,16,675,,2661,,"Torres maintains volume but struggles with accuracy, unlike Alvarez's precise pressure."
+caching_full,3b,0,fight-1007,A,vllm-3b,idle_timeout,29,1,160.91,738.34,20,21,678,,2704,,"Torres' volume attacks continue, but his accuracy remains poor, contrasting with Alvarez's precise pressure."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_stable,36,1,168.22,682.05,18,19,702,,2869,,Torres continues to attack with volume but struggles to maintain accuracy against Alvarez's precise pressure.
+caching_full,3b,0,fight-1007,A,vllm-3b,idle_timeout,38,1,163.41,536.25,13,14,717,,2966,,Torres' volume attacks falter as Alvarez maintains precise pressure.
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,39,1,177.5,605.1,15,16,751,,3089,,Torres' volume attacks falter as Alvarez's precise pressure takes hold.
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_stable,40,1,176.91,662.33,17,18,755,,3102,,Torres' volume attacks remain ineffective as Alvarez's precise pressure gains the upper hand.
+caching_full,3b,0,fight-1007,A,vllm-3b,idle_timeout,41,1,171.21,720.63,19,20,772,,3179,,"Alvarez's precise pressure finally gains the upper hand, limiting Torres' ineffective volume attacks."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,46,1,176.87,698.45,18,19,799,,3352,,"Alvarez's precise pressure is finally asserting dominance, limiting Torres' ineffective volume attacks."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,56,1,179.44,671.0,17,18,815,,3461,,"Alvarez's precise pressure limits Torres' ineffective volume attacks, regaining dominance."
+caching_full,3b,0,fight-1007,B,vllm-3b,knockdown,60,1,75.59,421.98,12,13,127,,400,,WAIT ALVAREZ ON HIM WITH EVERY PUNCH!
+caching_full,3b,0,fight-1007,A,vllm-3b,target_zone_shift,61,1,187.81,707.99,18,19,824,,3469,,"Alvarez's precise pressure continues to limit Torres' ineffective volume attacks, maintaining dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,idle_timeout,62,1,178.87,672.55,17,18,840,,3589,,"Alvarez's precise pressure limits Torres' ineffective volume attacks, preserving his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,66,1,184.6,733.93,19,20,873,,3791,,"Alvarez's precise pressure keeps Torres' ineffective volume attacks in check, maintaining his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,excitement_change,68,1,186.4,790.95,21,22,885,,3867,,"Alvarez's precise pressure continues to keep Torres' ineffective volume attacks at bay, maintaining his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,dominance_shift,73,1,187.3,680.14,17,18,909,,4026,,"Alvarez's precise pressure holds Torres back, keeping him from effective volume attacks."
+caching_full,3b,0,fight-1007,A,vllm-3b,target_zone_shift,78,1,179.64,729.72,19,20,917,,4046,,"Alvarez's precise pressure holds Torres' ineffective volume attacks at bay, maintaining his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,83,1,189.45,768.61,20,21,949,,4213,,"Alvarez's precise pressure continues to stifle Torres' ineffective volume attacks, holding him back."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,92,1,200.25,722.28,18,19,978,,4327,,"Alvarez's precise pressure continues to stifle Torres, limiting his ineffective volume attacks."
+caching_full,3b,0,fight-1007,A,vllm-3b,target_zone_shift,94,1,193.47,743.48,19,20,982,,4394,,"Alvarez's precise pressure holds Torres' ineffective volume attacks at bay, maintaining his dominance."
+caching_full,3b,0,fight-1007,B,vllm-3b,knockdown,95,1,74.42,452.75,13,14,126,,393,,WAIT ALVAREZ FALLS UNDER TORRES' CROSS!
+caching_full,3b,0,fight-1007,A,vllm-3b,excitement_change,96,1,213.53,708.37,17,18,1018,,4539,,"Torres' high volume fails against Alvarez's precise pressure, still struggling with accuracy."
+caching_full,3b,0,fight-1007,A,vllm-3b,target_zone_shift,101,1,189.3,684.23,17,18,1014,,4552,,"Torres' high volume failed to match Alvarez's precise pressure, maintaining his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,dominance_shift,114,1,197.6,727.66,18,19,1047,,4710,,"Alvarez's precise pressure continues to limit Torres' ineffective volume attacks, maintaining dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,119,1,202.26,699.68,17,18,1071,,4870,,"Alvarez's precise pressure limits Torres' ineffective volume attacks, maintaining his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,dominance_shift,120,1,205.49,763.09,19,20,1085,,4991,,"Alvarez's precise pressure holds Torres' ineffective volume attacks at bay, maintaining his dominance."
+caching_full,3b,0,fight-1007,A,vllm-3b,idle_timeout,121,1,205.48,819.38,21,22,1091,,5034,,"Alvarez's precise pressure continues to stifle Torres' ineffective volume attacks, reinforcing his dominant position."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_stable,123,1,205.59,791.49,20,21,1109,,5153,,"Alvarez's precise pressure continues to control the pace, stifling Torres' ineffective volume attacks."
+caching_full,3b,0,fight-1007,A,vllm-3b,momentum_reversal,128,1,207.45,736.08,18,19,1142,,5317,,"Alvarez's precise pressure controls the pace, stifling Torres' ineffective volume attacks."
+caching_full,3b,0,fight-1007,A,vllm-3b,dominance_shift,138,1,207.3,704.67,17,18,1158,,5361,,"Alvarez's precise pressure maintains control, stifling Torres' ineffective volume attacks."
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,1,1,69.93,612.59,19,20,517,,1815,,"Torres struggles to land even a single punch as slow, technical boxing dominates the early exchanges."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,13,1,150.7,637.85,17,18,565,,2053,,"Garcia's jab is proving effective against Torres' slow, unproductive offense."
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,14,1,159.5,672.8,18,19,594,,2195,,"Torres continues to struggle, landing just one body shot while Garcia maintains his jab dominance."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,16,1,155.39,843.36,24,25,607,,2278,,"Torres struggles to land any significant shots as Garcia's jab continues to dominate, with only one body shot from him."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,17,1,161.14,677.82,18,19,642,,2449,,"Torres remains outlanded despite one body shot, as Garcia's jab control persists."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,19,1,160.82,737.76,20,21,658,,2510,,"Torres remains heavily outlanded despite a single body shot, as Garcia's jab control persists."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,20,1,169.85,745.07,20,21,674,,2580,,"Torres' heavy landing disadvantage persists despite a single body shot, as Garcia's jab remains dominant."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,22,1,175.82,659.14,17,18,713,,2780,,"Garcia's jab continues to dominate, limiting Torres' few attempts at landing."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,23,1,166.44,651.85,17,18,715,,2795,,"Garcia's relentless jab controls the pace, leaving Torres struggling to find consistency."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,26,1,163.53,596.51,15,16,725,,2862,,"Garcia's jab maintains control, leaving Torres struggling to find rhythm."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,28,1,172.72,799.5,22,23,747,,2969,,"Torres' heavy landing disadvantage persists despite a slight uptick in accuracy, as Garcia's jab remains dominant."
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,35,1,172.56,808.94,22,23,771,,3091,,"Garcia's relentless jab continues to stymie Torres, who struggles to land a single significant shot."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,38,1,174.69,723.4,19,20,789,,3226,,"Garcia's relentless jab continues to dominate, forcing Torres to remain heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,40,1,173.43,751.76,20,21,806,,3280,,"Garcia's jab remains dominant, keeping Torres heavily outlanded and struggling to find consistency."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,41,1,181.79,702.38,18,19,829,,3418,,"Garcia's jab continues to dictate the fight, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,43,1,187.31,738.09,19,20,865,,3544,,"Garcia's relentless jab continues to control the fight, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,47,1,179.38,728.49,19,20,856,,3523,,"Garcia's relentless jab keeps Torres heavily outlanded, maintaining control throughout the round."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,50,1,181.61,674.59,17,18,869,,3645,,"Garcia's jab remains the key factor, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,52,1,186.43,707.77,18,19,906,,3750,,"Garcia's relentless jab continues to keep Torres heavily outlanded, maintaining control."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,53,1,184.95,648.88,16,17,907,,3803,,"Garcia's relentless jab maintains control, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,54,1,182.25,674.94,17,18,920,,3861,,"Garcia's relentless jab maintains complete control, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,56,1,180.19,733.02,19,20,928,,3931,,"Garcia's relentless jab continues to maintain complete control, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,58,1,183.75,676.74,17,18,949,,4056,,"Garcia's relentless jab continues to dominate, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,59,1,186.96,708.11,18,19,970,,4138,,"Garcia's relentless jab maintains complete control, outlanding Torres in every significant exchange."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,60,1,185.51,706.6,18,19,979,,4246,,"Garcia's relentless jab continues to dictate the round, outlanding Torres decisively."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,62,1,198.23,725.47,18,19,1020,,4422,,"Garcia's relentless jab continues to dictate the round, outlanding Torres decisively."
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,65,1,197.25,697.23,17,18,1038,,4472,,"Garcia's relentless jab maintains complete control, outlanding Torres decisively again."
+caching_full,3b,0,fight-1008,B,vllm-3b,knockdown,66,1,74.87,546.51,16,17,128,,399,,WAIT! GARCIA'S POWER DROPPED TORRES LIKE A POKE!
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,67,1,223.1,723.82,17,18,1069,,4585,,"Garcia's power drop finally catches Torres off guard, landing a decisive punch."
+caching_full,3b,0,fight-1008,B,vllm-3b,dominance_shift,71,1,73.1,356.84,10,11,118,,376,,BUT GARCIA DOMINATES NOW!
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,73,1,210.22,767.72,19,20,1087,,4652,,"Garcia's decisive jab punch breaks Torres' rhythm, but he quickly regains footing."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,75,1,205.1,701.0,17,18,1110,,4766,,"Garcia's relentless jab finally lands a decisive blow, breaking Torres' rhythm."
+caching_full,3b,0,fight-1008,B,vllm-3b,knockdown,82,1,64.61,656.26,20,21,130,,416,,WAIT! GARCIA'S POWER DROPPED TORRES LIKE A SACK OF HUSKS!
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,83,1,225.25,754.05,18,19,1146,,4884,,"Garcia's jab finally landed a knockout blow, exploiting Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,89,1,210.71,768.31,19,20,1161,,4976,,"Garcia's relentless jab finally landed the decisive knockout, exploiting Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,narrative_tension,91,1,225.49,784.05,19,20,1207,,5256,,"Garcia's relentless jab finally landed the decisive knockout, exploiting Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,93,1,214.8,771.52,19,20,1207,,5318,,"Garcia's relentless jab finally landed the decisive knockout, exploiting Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,B,vllm-3b,dominance_shift,104,1,72.99,358.31,10,11,123,,388,,BUT PLAYER TWO IS DOMINATING NOW!
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,107,1,220.45,777.34,19,20,1217,,5377,,"Garcia's jab continued to dominate, finally catching Torres off guard with a decisive blow."
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,110,1,204.83,703.32,17,18,1226,,5389,,"Garcia's relentless jab finally landed the decisive blow, catching Torres off guard."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,123,1,215.56,831.84,21,22,1254,,5544,,"Garcia's relentless jab finally landed a decisive blow, capitalizing on Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,126,1,213.34,771.65,19,20,1268,,5657,,"Garcia's jab finally broke through, showcasing its effectiveness against Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,128,1,219.89,753.22,18,19,1296,,5829,,"Garcia's jab finally landed a crucial blow, exploiting Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,135,1,225.55,789.0,19,20,1315,,5922,,"Garcia's relentless jab finally landed a decisive blow, exploiting Torres' heavy landing disadvantage."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,137,1,226.85,760.91,18,19,1340,,6036,,"Garcia's relentless jab continues to exploit Torres' heavy landing disadvantage, maintaining control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,138,1,229.15,820.45,20,21,1346,,6127,,"Garcia's relentless jab finally landed a decisive blow, breaking Torres' rhythm and extending control."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,139,1,227.19,702.46,16,17,1360,,6194,,"Garcia's relentless jab maintains control, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,141,1,224.57,790.27,19,20,1378,,6256,,"Garcia's relentless jab continues to dictate the round, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,143,1,224.26,789.1,19,20,1394,,6329,,"Garcia's relentless jab continues to dictate the round, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,148,1,232.35,735.66,17,18,1418,,6465,,"Garcia's relentless jab maintains control, outlanding Torres decisively once again."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,151,1,237.13,769.1,18,19,1444,,6587,,"Garcia's jab holds firm, controlling the round and outlanding Torres decisively."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,154,1,235.1,770.31,18,19,1464,,6664,,"Garcia's relentless jab continues to dictate the round, outlanding Torres decisively."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,155,1,236.81,772.63,18,19,1474,,6733,,"Garcia's relentless jab maintains full control, continuing to outland Torres decisively."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,156,1,239.24,774.14,18,19,1484,,6802,,"Garcia's relentless jab maintains complete control, outlanding Torres decisively yet again."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,159,1,242.07,715.15,16,17,1505,,6917,,"Garcia's relentless jab continues to dominate, outlanding Torres decisively."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,162,1,242.29,749.31,17,18,1529,,7019,,"Garcia's relentless jab continues to dominate, keeping Torres heavily outlanded."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,171,1,242.73,783.54,18,19,1531,,7031,,"Garcia's relentless jab maintains full control, outlanding Torres decisively yet again."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,186,1,252.97,823.95,19,20,1554,,7167,,"Garcia's relentless jab holds firm, keeping Torres heavily outlanded and losing ground."
+caching_full,3b,0,fight-1008,B,vllm-3b,excitement_peak,190,1,78.52,464.11,13,14,124,,396,,"AND NOW GARCIA SEIZES CONTROL, POWERING FORWARD!"
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,192,1,273.16,818.0,18,19,1592,,7283,,"Garcia's relentless jab continues to dominate, pressuring Torres into fewer landings."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,200,1,252.74,853.83,20,21,1603,,7349,,"Garcia's jab has pressured Torres, reducing his landing rate to 54.5%."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,210,1,250.92,790.64,18,19,1618,,7422,,"Garcia's relentless jab continues to force Torres into fewer landings, maintaining pressure."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,218,1,258.74,774.62,17,18,1646,,7534,,Torres' landing rate rises slightly as Garcia's relentless jab pressure begins to ease.
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,224,1,256.56,888.77,21,22,1646,,7625,,"Garcia's jab is still dictating the pace, though Torres' landing rate is slowly increasing."
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,228,1,263.84,951.72,23,24,1671,,7703,,"Garcia's jab continues to dictate the pace, but Torres' landing rate is finally starting to increase slightly."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,235,1,268.21,838.16,19,20,1709,,7881,,"Garcia's relentless jab maintains control, but Torres' landing rate is finally increasing slightly."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,251,1,258.86,771.65,17,18,1720,,7991,,"Garcia's jab retains control, but Torres' landing rate is gradually improving."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,252,1,263.6,803.62,18,19,1731,,8026,,"Torres' landing rate is inching up, hinting at a potential turning point."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,254,1,265.16,988.78,24,25,1750,,8101,,"Garcia's control is waning as Torres' landing rate improves, hinting at a potential shift in momentum."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,256,1,270.43,963.23,23,24,1772,,8192,,"Garcia's control is weakening as Torres' landing rate improves, hinting at a potential shift in momentum."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,262,1,266.61,815.05,18,19,1799,,8338,,Torres' improved landing rate threatens to turn the tide as Garcia's control weakens.
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,266,1,276.21,788.95,17,18,1818,,8447,,Torres' improved landing rate suggests he's gaining momentum against Garcia's weakening control.
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,270,1,266.18,779.56,17,18,1818,,8479,,Torres' increased landing rate now hints at a potential shift in this balanced fight.
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,277,1,273.29,849.47,19,20,1845,,8602,,Torres' body shots are starting to make an impact as he gains more consistent landing rate.
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,294,1,273.2,1030.46,25,26,1862,,8686,,"Garcia's control is weakening as Torres' body shots gain more consistency, hinting at a potential shift in momentum."
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,295,1,293.98,930.04,21,22,1905,,8861,,"Torres' body shots are gaining more consistency, threatening to turn the tide against Garcia's weakening control."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,304,1,290.95,746.29,15,16,1923,,8983,,"Torres' body shots show improvement, potentially shifting the fight's momentum."
+caching_full,3b,0,fight-1008,A,vllm-3b,excitement_change,306,1,283.28,829.12,18,19,1918,,9016,,"Torres' body shots are increasingly effective, posing a growing threat to Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,307,1,276.09,827.82,18,19,1928,,9059,,"Torres' body shots are gaining consistency, posing an increasing threat to Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,309,1,284.72,797.51,17,18,1950,,9157,,"Torres' body shots are gaining consistency, putting increasing pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,314,1,271.83,949.43,22,23,1973,,9297,,"Torres' body shots are becoming a growing threat as they gain consistency, putting pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,321,1,289.23,896.26,20,21,1993,,9403,,"Torres' body shots are gaining consistency, posing a growing threat as Garcia's control wavers."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,323,1,289.6,906.0,20,21,2021,,9523,,"Torres' body shots are gaining consistency, posing an increasing threat as Garcia's control wavers."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,336,1,300.26,760.11,15,16,2041,,9610,,"Torres' body shots are becoming increasingly effective, challenging Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,337,1,290.36,809.22,17,18,2066,,9761,,"Torres' body shots are gaining consistency, putting relentless pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,338,1,289.77,900.8,20,21,2061,,9776,,"Torres' body shots are gaining consistency, posing an increasing threat as Garcia's control wavers."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,340,1,293.72,729.1,14,15,2083,,9881,,"Torres' body shots are increasingly effective, challenging Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,345,1,282.57,844.27,18,19,2096,,9953,,"Torres' body shots are finally making a difference, putting pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,348,1,292.13,816.7,17,18,2117,,10052,,"Torres' body shots are finally gaining the upper hand, putting pressure on Garcia."
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,357,1,296.19,920.03,20,21,2137,,10128,,"Torres' body shots are finally gaining the upper hand, exerting pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,367,1,298.21,856.5,18,19,2162,,10254,,"Torres' body shots are finally finding their mark, putting pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,pace_change,376,1,308.5,860.45,18,19,2191,,10378,,"Torres' body shots are finally making an impact, putting pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,377,1,301.45,885.27,19,20,2192,,10403,,"Torres' body shots are finally gaining consistency, posing an increasing threat to Garcia's control."
+caching_full,3b,0,fight-1008,B,vllm-3b,knockdown,379,1,65.07,449.5,13,14,122,,377,,WAIT! TORRES PUMPS GARCIA WITH POWER!
+caching_full,3b,0,fight-1008,A,vllm-3b,dominance_shift,380,1,335.19,923.07,19,20,2233,,10552,,Torres' consistent body shots are finally starting to pose a serious threat to Garcia's control.
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,385,1,310.42,837.81,17,18,2249,,10626,,Torres' body shots are finally becoming a significant threat after Garcia's early dominance.
+caching_full,3b,0,fight-1008,A,vllm-3b,target_zone_shift,389,1,303.58,790.51,16,17,2261,,10739,,"Torres' body shots are finally showing effect, eroding Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,394,1,307.04,859.19,18,19,2273,,10794,,"Torres' consistent body shots are finally making a difference, eroding Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_reversal,396,1,314.42,874.43,18,19,2307,,10936,,"Torres' body shots are finally starting to break through, eroding Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,momentum_stable,397,1,314.03,874.71,18,19,2321,,11033,,"Torres' body shots are finally finding their mark, putting pressure on Garcia's control."
+caching_full,3b,0,fight-1008,A,vllm-3b,idle_timeout,399,1,318.85,818.4,16,17,2334,,11084,,"Torres' body shots are finally gaining effectiveness, putting real pressure on Garcia."
+caching_full,3b,0,fight-1009,A,vllm-3b,excitement_change,1,1,134.66,908.66,27,28,525,,1871,,"Garcia's slow start shows he prefers a measured approach, while Alvarez's lack of offense hints at his strategy to build pressure."
+caching_full,3b,0,fight-1009,A,vllm-3b,idle_timeout,3,1,154.78,781.89,22,23,574,,2134,,"Garcia's measured approach contrasts with Alvarez's strategic pacing, hinting at a buildup of pressure ahead."
+caching_full,3b,0,fight-1009,A,vllm-3b,target_zone_shift,5,1,164.13,739.95,20,21,629,,2381,,"Garcia's cautious early offense aligns with Alvarez's deliberate pacing, suggesting a pressure buildup."
+caching_full,3b,0,fight-1009,A,vllm-3b,pace_change,10,1,159.63,590.5,15,16,635,,2460,,Garcia's cautious jabs set up Alvarez's planned pressure buildup.
+caching_full,3b,0,fight-1009,A,vllm-3b,dominance_shift,16,1,161.36,590.41,15,16,652,,2500,,Garcia's jabs create openings as Alvarez methodically builds pressure.
+caching_full,3b,0,fight-1009,A,vllm-3b,pace_change,18,1,159.04,616.09,16,17,651,,2519,,Garcia's jabs continue to find openings as Alvarez systematically builds pressure.
+caching_full,3b,0,fight-1009,A,vllm-3b,dominance_shift,19,1,165.88,765.56,21,22,681,,2648,,"Garcia's jabs remain sharp, consistently finding openings as Alvarez methodically ramps up the pressure."
+caching_full,3b,0,fight-1009,A,vllm-3b,idle_timeout,20,1,170.43,661.11,17,18,698,,2758,,"Garcia's precise jabs exploit Alvarez's early defensive positioning, opening opportunities."
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_reversal,22,1,171.12,720.62,19,20,729,,2918,,"Garcia's jabs continue to exploit Alvarez's early defensive positioning, widening the gap."
+caching_full,3b,0,fight-1009,A,vllm-3b,dominance_shift,24,1,168.67,683.58,18,19,742,,2996,,"Garcia's jabs maintain their precision, further widening the offensive gap against Alvarez."
+caching_full,3b,0,fight-1009,A,vllm-3b,dominance_shift,25,1,167.6,627.18,16,17,745,,3040,,"Garcia's jabs maintain precision, widening the offensive gap even further."
+caching_full,3b,0,fight-1009,A,vllm-3b,idle_timeout,26,1,166.87,687.63,18,19,756,,3079,,"Garcia's jabs continue to find openings, putting pressure on Alvarez's defense."
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_reversal,27,1,171.68,664.96,17,18,784,,3194,,"Garcia’s jabs continue to find openings, applying increasing pressure on Alvarez."
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_stable,28,1,174.9,636.55,16,17,793,,3265,,"Garcia's jabs remain precise, maintaining pressure on Alvarez's defense."
+caching_full,3b,0,fight-1009,A,vllm-3b,pace_change,33,1,172.34,663.79,17,18,808,,3336,,Garcia’s precise jabs continue to apply increasing pressure on Alvarez’s defense.
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_reversal,36,1,181.28,732.25,19,20,834,,3445,,"Garcia's precise jabs continue to widen the gap, applying relentless pressure on Alvarez."
+caching_full,3b,0,fight-1009,B,vllm-3b,knockdown,38,1,78.21,545.21,16,17,132,,413,,WAIT ALVAREZ UPPER CUT KNOCKS OUT GARCIA!!!
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_reversal,39,1,203.38,725.53,18,19,878,,3610,,"Alvarez's decisive uppercut exploits Garcia's jabbing precision, ending the round."
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_stable,40,1,182.35,790.56,21,22,885,,3638,,"Alvarez's uppercut capitalizes on Garcia's jabbing precision, ending the round decisively."
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_reversal,50,1,189.12,797.23,21,22,903,,3747,,"Alvarez's uppercut takes advantage of Garcia's jabbing precision, ending the round decisively."
+caching_full,3b,0,fight-1009,A,vllm-3b,idle_timeout,52,1,189.81,740.24,19,20,919,,3848,,"Alvarez's uppercut exploits Garcia's jabbing precision, ending the round decisively."
+caching_full,3b,0,fight-1009,A,vllm-3b,target_zone_shift,53,1,189.2,769.56,20,21,938,,3926,,"Alvarez's uppercut capitalizes on Garcia's jabbing, ending the round decisively."
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_reversal,54,1,195.03,686.95,17,18,972,,4059,,Alvarez's decisive uppercut capitalizes on Garcia's consistent jabbing precision.
+caching_full,3b,0,fight-1009,A,vllm-3b,momentum_stable,55,1,195.42,715.72,18,19,977,,4106,,"Alvarez's uppercut exploits Garcia's jabbing precision, securing the decisive victory."

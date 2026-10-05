@@ -1,0 +1,43 @@
+{
+  "config": {
+    "backend": "vllm-7b-awq",
+    "routing": false,
+    "track_a": null,
+    "track_b": null,
+    "fallback": [],
+    "label": "7b-awq",
+    "tag": "baseline",
+    "fights": 10,
+    "kind": "all",
+    "repeats": 1,
+    "concurrency": 1,
+    "context_mode": "recent",
+    "history_cap": 8,
+    "max_tokens_a": null,
+    "max_tokens_b": null,
+    "max_requests": null,
+    "max_usd": null,
+    "rpm": null,
+    "dry_run": false,
+    "warmup": true,
+    "scrape_metrics": true,
+    "out_dir": null
+  },
+  "label": "7b-awq",
+  "git_commit": "1e0aae6",
+  "python": "3.13.15",
+  "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "vllm_version": "0.30.0",
+  "backends": {
+    "vllm-7b-awq": {
+      "model": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "base_url": "http://localhost:8000/v1",
+      "price_in": 0.0,
+      "price_out": 0.0,
+      "gpu_hour_usd": 0.35
+    }
+  },
+  "requests_made": 470,
+  "estimated_spend_usd": 0.0,
+  "timestamp": "2026-10-05T06:06:22"
+}
